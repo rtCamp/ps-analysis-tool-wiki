@@ -189,7 +189,31 @@ After Third-Party Cookies Deprecation, when a user visits site A the analytics s
 
 The following sequence diagram shows these behaviors before and after third-party cookie deprecation.
 
-![](https://lh6.googleusercontent.com/80Ke31JZ4pqKXjmXumJU2vYERRauyHZR4QYEjF_n1Mbv1pkGW3H4NXy2VKbOmjMH4frp3V4CauoJSut_fgiptHWNWpMXSm2YXDYiNsljGIlBrBunR6RUukEe02XM9w36Nu85ak2JtkpvCYDAD5fcbh7I9dB7Z2rqcQqdOhlsCAORMDFDvHukUmEhIeY3fkmnqvbbggtwb0UiJp-i90hQatTy3dlD9Q0Vx3dhgw)
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant DomainC
+    
+    Note over User,DomainC: Current Behaviour
+    
+    User->>DomainA: Visits
+    DomainA->>DomainC: Requests tracking script from Domain C
+    DomainC->>User: Stores unique ID in cookie
+    User->>DomainB: Visits
+    DomainB->>DomainC: Retrieves unique ID from cookie
+    DomainC->>User: Recognizes as the same User
+
+    Note over User,DomainC: After Third-party Cookie Deprecation
+    
+    User->>DomainA: Visits
+    DomainA->>DomainC: Unable to assign unique ID
+    DomainC-->>User: Cannot store ID (no cookie)
+    User->>DomainB: Visits
+    DomainB->>DomainC: Cannot retrieve unique ID
+    DomainC-->>User: Treats as a new User
+```
 
 ### **Debugging the Scenario**
 
