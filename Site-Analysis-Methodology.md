@@ -31,16 +31,22 @@ To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we 
 2. Start Chrome versions with the relevant command line arguments:
 
 Linux OS
-        
-        google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
+
+```
+google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
+```
         
 Mac OS
-        
-        open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
-        
+
+```        
+open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
+```        
+
 Windows OS
-        
-        "\Program Files\Google\Chrome\Application\chrome.exe" --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
+
+```        
+"\Program Files\Google\Chrome\Application\chrome.exe" --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
+```
         
 3. Consider using a new Chrome profile for a clean testing environment, or deactivate browser plugins/extensions that might interfere with cookies.
 
