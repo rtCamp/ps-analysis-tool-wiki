@@ -59,12 +59,12 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
 
 ![](https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg)
 
-1. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
+5. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
     - In this methodology, we use the following naming convention
         - **Chrome Browser Open**: refers to the chrome instance with 3P cookie functionality available
         - **Chrome Browser Private**: refers to the chrome instance with 3P cookie and storage access APIs secured
 
-2. During testing with 3P cookies blocked, turn cookies on an off via the URL bar
+6. During testing with 3P cookies blocked, turn cookies on an off via the URL bar
     - Click the small “eye” icon in the URL bar
     - Click on “site not working” -> “Allow cookies”
 
@@ -84,7 +84,7 @@ You can learn more about DevTools [[here](https://developer.chrome.com/docs/devt
 
 ## **Privacy Sandbox Analysis CLI**
 
-**▶️Screencast**: Analyzing sites with PSAT CLI.
+**▶️ Screencast**: Analyzing sites with PSAT CLI.
 
 The PSA CLI provides access to functionality similar to the PSA Extension, and makes it accessible through the command line. The CLI enables the following use cases:
 
@@ -97,7 +97,7 @@ The current version of the CLI is limited as it does not include yet an extensiv
 
 ## **Analyzing Cookies with PSA DevTools Extension**
 
-**▶️Screencast**: Analyzing sites with PSAT.
+**▶️ Screencast**: Analyzing sites with PSAT.
 
 The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions. In the future, the extension will be also available on the Chrome Store (TODO: https://developer.chrome.com/docs/webstore/publish/).
 
