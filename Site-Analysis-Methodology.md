@@ -56,12 +56,13 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
     - Restart your browser
 
 
-[Experimental third-party storage partitioning](https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg)
+https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg
 
 1. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
     - In this methodology, we use the following naming convention
         - **Chrome Browser Open**: refers to the chrome instance with 3P cookie functionality available
         - **Chrome Browser Private**: refers to the chrome instance with 3P cookie and storage access APIs secured
+
 2. During testing with 3P cookies blocked, turn cookies on an off via the URL bar
     - Click the small “eye” icon in the URL bar
     - Click on “site not working” -> “Allow cookies”
@@ -99,7 +100,7 @@ The current version of the CLI is limited as it does not include yet an extensiv
 
 The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions. In the future, the extension will be also available on the Chrome Store (TODO: https://developer.chrome.com/docs/webstore/publish/).
 
-- Download and install PSAT, which is being developed as an open source project and you can access the project [[here](https://github.com/GoogleChromeLabs/ps-analysis-tool)](https://github.com/GoogleChromeLabs/ps-analysis-tool).
+- Download and install PSAT, which is being developed as an open source project and you can access the project [[here](https://github.com/GoogleChromeLabs/ps-analysis-tool).
 - Load the website on the evaluation environment (i.e. Chrome Stable, Chrome Canary)
 - Open DevTools:
     - On Mac : Command(⌘) + Option(⌥) + C
