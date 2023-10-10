@@ -42,7 +42,7 @@ google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySe
 open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
 ```        
 
-*Windows OS*
+**Windows OS**
 
 ```        
 "\Program Files\Google\Chrome\Application\chrome.exe" --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
@@ -51,12 +51,13 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
 3. Consider using a new Chrome profile for a clean testing environment, or deactivate browser plugins/extensions that might interfere with cookies.
 
 4. Enable Storage Partitioning (available in all release channels)
+
     - Go to chrome://flags#third-party-storage-partitioning
     - Select “Enable”
     - Restart your browser
 
 
-https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg
+![](https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg)
 
 1. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
     - In this methodology, we use the following naming convention
@@ -69,7 +70,7 @@ https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_R
 
 ## **Analyzing Cookies with DevTools**
 
-**▶️Screencast**: [[Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)](https://www.youtube.com/watch?v=_FErYRFIXHA).
+**▶️Screencast**: [Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)
 
 DevTools is a powerful debugging companion to Chrome providing a myriad of vantage points to observe the operational execution of sites running on the browser. DT provides visibility to all data about cookies. To get to it some access points are:
 
@@ -117,10 +118,7 @@ The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assis
 **The term “Breakage”** refers to functionality that is available to the user on the site but does not work as advertised (e.g. a “login” button not logging in, a video not loading, the site reporting an error at any point). Breakages frequently occur in one of the following situations:
 
 - When users are signing up, signing in, or managing various aspects of their account
-- When the site is integrating with another site in some way, e.g. by showing an embedded video from a video hosting service, hosting an embedded feedback form, or forwarding a payment request to an external payment provider. Some of these third-party integrations
-    
-    might be hard to spot, since sites want their user experience to be seamless
-    
+- When the site is integrating with another site in some way, e.g. by showing an embedded video from a video hosting service, hosting an embedded feedback form, or forwarding a payment request to an external payment provider. Some of these third-party integrations might be hard to spot, since sites want their user experience to be seamless    
 - A site notifying the user that the browser or cookie settings are “not supported”
 
 Analyzing websites for potential breakages is not a trivial process, as there are many factors to take into account, and lots of information to be grasped. This section describes various factors that can be considered during a site analysis.
