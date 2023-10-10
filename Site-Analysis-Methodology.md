@@ -99,7 +99,7 @@ The current version of the CLI is limited as it does not include yet an extensiv
 
 **▶️ Screencast**: Analyzing sites with PSAT.
 
-The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions. In the future, the extension will be also available on the Chrome Store (TODO: https://developer.chrome.com/docs/webstore/publish/).
+The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions.
 
 - Download and install PSAT, which is being developed as an open source project and you can access the project [[here](https://github.com/GoogleChromeLabs/ps-analysis-tool).
 - Load the website on the evaluation environment (i.e. Chrome Stable, Chrome Canary)
