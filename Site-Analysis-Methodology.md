@@ -80,7 +80,7 @@ DevTools is a powerful debugging companion to Chrome providing a myriad of vanta
 4. **Observe Network Activity**: In the "Network" tab, you'll see a list of network requests made by the webpage. Look for entries related to cookies, which might have a "Set-Cookie" header in the response or other relevant information.
 5. **Inspect Cookies**: Click on a network request entry to view its details. Look for the "Headers" tab, which should include information about cookies, including those being added or modified as a result of the action you performed.
 
-You can learn more about DevTools [[here](https://developer.chrome.com/docs/devtools/)](https://developer.chrome.com/docs/devtools/).  We will leverage DT capabilities when performing the tests on specific CUJs as described below.
+You can learn more about DevTools [here](https://developer.chrome.com/docs/devtools/).  We will leverage DT capabilities when performing the tests on specific CUJs as described below.
 
 ## **Privacy Sandbox Analysis CLI**
 
