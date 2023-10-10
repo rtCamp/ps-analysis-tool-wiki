@@ -137,19 +137,19 @@ Quite often, top-level navigations happen *invisibly* to you when you only look 
 
 To see top-level navigations without the added noise of other requests, toggle the “Doc” filter in the network panel as shown below, then look at the origin of the request URL to see if it is cross-site with the one that is in the URL bar
 
-https://lh5.googleusercontent.com/6P9RVjbKERsgDM2JGUjDq03-IeUvgReoQxVjLoSfk99R6oi4GQgyNB9D_-QORhZ_VRMhLl7Lti8_mWET97w7UAzghw37PVYWb1uMk3mLNxc9y2_Az1a90zY9qj8JTTQJthAZjqpHuri5MZzukVAXwr6iBhMRJMxErvR1nlalq7cUXXGcWTF7qI1F1fwjfjXIvmDAZmPVGKnJbLOGlrNmfUquOacEgK-SIJv58g
+![](https://lh5.googleusercontent.com/6P9RVjbKERsgDM2JGUjDq03-IeUvgReoQxVjLoSfk99R6oi4GQgyNB9D_-QORhZ_VRMhLl7Lti8_mWET97w7UAzghw37PVYWb1uMk3mLNxc9y2_Az1a90zY9qj8JTTQJthAZjqpHuri5MZzukVAXwr6iBhMRJMxErvR1nlalq7cUXXGcWTF7qI1F1fwjfjXIvmDAZmPVGKnJbLOGlrNmfUquOacEgK-SIJv58g)
 
 ## **JS/Network errors**
 
 Lack of 3PC access can very frequently cause errors to be thrown in DevTools. One example is the bug “Nintendo - sign-in doesn't work”, where a 3P request to [accounts.nintendo.com](http://accounts.nintendo.com/) throws a 403 without the right cookies attached.
 
-https://lh6.googleusercontent.com/aToiHmXtzmRh8NDYRwFbjI2kcUzDcUtB7vtVHq_pCC8hyiNyPtvI3cqsd742h5mIDf_SIMoEwEoK9Mv94w1hSmicpwmvZXuewy7cEGDbgMhenlzwZl_w-flt5ROdMox0LhmCuq0FXbkFvk-lW9vFkwyY3Vb_MIDFwG6o4Lq9pTLrjyzxSOfV4KveatVKIuHvmoihhfNzWBjbVWySBF3PO8a06_YFXD-UaEpVVA
+![](https://lh6.googleusercontent.com/aToiHmXtzmRh8NDYRwFbjI2kcUzDcUtB7vtVHq_pCC8hyiNyPtvI3cqsd742h5mIDf_SIMoEwEoK9Mv94w1hSmicpwmvZXuewy7cEGDbgMhenlzwZl_w-flt5ROdMox0LhmCuq0FXbkFvk-lW9vFkwyY3Vb_MIDFwG6o4Lq9pTLrjyzxSOfV4KveatVKIuHvmoihhfNzWBjbVWySBF3PO8a06_YFXD-UaEpVVA)
 
 ## **Partitioned storage**
 
 A reported bug on “S-Bahn München status page” reported by https://www.s-bahn-muenchen.de/fahren/betriebslage, where lack of partitioned storage throws an error on the localStorage getter. Through the JS exception chain we can actually see the origin of the file that ran this code, and derive that this could be the 3rd party in this case.
 
-https://lh6.googleusercontent.com/znBDHSuyEGse0gP0SQHU4jJiVUy_3p7iGqSF7D0aL527ePlOQT5bQCgqdxb1_SouLxY5WMO2Od9oDymBpp3s4UU10QIc-VZVpRIXd7shsmkwPbf4ltVQsz90ZxiHhrNdCDmFmYhGWBUx7XaXHooV93aURc0PMt_NnRbtHAofkr5YeoUyhnKCRxFK4Cy0LAIAl5nTkdCQ9caJaTqfvhUeb5NdLHPvXgvoQE2hCw
+![](https://lh6.googleusercontent.com/znBDHSuyEGse0gP0SQHU4jJiVUy_3p7iGqSF7D0aL527ePlOQT5bQCgqdxb1_SouLxY5WMO2Od9oDymBpp3s4UU10QIc-VZVpRIXd7shsmkwPbf4ltVQsz90ZxiHhrNdCDmFmYhGWBUx7XaXHooV93aURc0PMt_NnRbtHAofkr5YeoUyhnKCRxFK4Cy0LAIAl5nTkdCQ9caJaTqfvhUeb5NdLHPvXgvoQE2hCw)
 
 ## **Cross-site requests in the network tab**
 
@@ -161,7 +161,7 @@ Sometimes embedded iframes can appear to be part of the 1P experience on the web
 
 An example of this is Mindbody Inc. which serves embedded iframes for website owners to allow their customers to book appointments. This iframe looks a lot like it’s part of the website, but reveals itself in the inspector.
 
-https://lh5.googleusercontent.com/S8TAjyBXswXkrV_wnXHt2YbDzFQMqjGca97z4-8KoT9Uaonw8MyjN_SR4fCERH4cdz5NarXkabljsde5Y_A1PtMkK3xRAOzptnx1bB8PjxneQc5FyB6V4Nzp5odXrhdMUcQwnfG1adhBW5fLF1HHnfZDXQwuX8nZW87tr_9IO7QsLB4banjcv5gVnqJNNKH1aepPAtq-VMkc1ZYdxUlY-eHKlkfkQ3swWGfkYQ
+![](https://lh5.googleusercontent.com/S8TAjyBXswXkrV_wnXHt2YbDzFQMqjGca97z4-8KoT9Uaonw8MyjN_SR4fCERH4cdz5NarXkabljsde5Y_A1PtMkK3xRAOzptnx1bB8PjxneQc5FyB6V4Nzp5odXrhdMUcQwnfG1adhBW5fLF1HHnfZDXQwuX8nZW87tr_9IO7QsLB4banjcv5gVnqJNNKH1aepPAtq-VMkc1ZYdxUlY-eHKlkfkQ3swWGfkYQ)
 
 ## **Checking for known breakages: GSI v2**
 
@@ -169,7 +169,7 @@ GSI v2 is a legacy library from Google Identity that is integrated with a lot of
 
 ## **DOM Storage usage**
 
-Some sites are not trying to use cookies, but instead LocalStorage or Quota Storage like IndexedDB. These can often be spotted by observing exceptions being thrown, see [[Look at JS/Network errors.](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.24lfqsh6zaqj)](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.24lfqsh6zaqj)
+Some sites are not trying to use cookies, but instead LocalStorage or Quota Storage like IndexedDB. These can often be spotted by observing exceptions being thrown, see [Look at JS/Network errors](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.24lfqsh6zaqj).
 
 # **Analysis Scenarios and Critical User Journeys**
 
@@ -181,7 +181,7 @@ This scenario encompasses a website use of analytics providers (e.g. Google Anal
 
 ### **How the Demo Works**
 
-In this demo, we have two distinct sites running on [[domain A](https://domain-aaa.com/analytic)](https://domain-aaa.com/analytic) and [[domain B](https://domain-bbb.com/analytics)](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
+In this demo, we have two distinct sites running on [domain A](https://domain-aaa.com/analytic) and [domain B](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
@@ -189,29 +189,36 @@ After Third-Party Cookies Deprecation, when a user visits site A the analytics s
 
 The following sequence diagram shows these behaviors before and after third-party cookie deprecation.
 
-https://lh6.googleusercontent.com/80Ke31JZ4pqKXjmXumJU2vYERRauyHZR4QYEjF_n1Mbv1pkGW3H4NXy2VKbOmjMH4frp3V4CauoJSut_fgiptHWNWpMXSm2YXDYiNsljGIlBrBunR6RUukEe02XM9w36Nu85ak2JtkpvCYDAD5fcbh7I9dB7Z2rqcQqdOhlsCAORMDFDvHukUmEhIeY3fkmnqvbbggtwb0UiJp-i90hQatTy3dlD9Q0Vx3dhgw
+![](https://lh6.googleusercontent.com/80Ke31JZ4pqKXjmXumJU2vYERRauyHZR4QYEjF_n1Mbv1pkGW3H4NXy2VKbOmjMH4frp3V4CauoJSut_fgiptHWNWpMXSm2YXDYiNsljGIlBrBunR6RUukEe02XM9w36Nu85ak2JtkpvCYDAD5fcbh7I9dB7Z2rqcQqdOhlsCAORMDFDvHukUmEhIeY3fkmnqvbbggtwb0UiJp-i90hQatTy3dlD9Q0Vx3dhgw)
 
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+
 2. **Open Developer Tools in both instances**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
     2. It is important to open DevTools first, to ensure capturing all the network interactions as the demo pages load
+
 3. **Adjust Network Tab Settings**
     1. In the network tab, enable “Preserve Log” and “Disable Cache” in both instances of Google Chrome.
     2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
+
 4. **Navigate and interact with the website**
     1. Open the site https://domain-aaa.com/analytics in both instances
     2. Click the button “Click Me”.
     3. This mimics the actions that cause the analytics tracker to record eventdata on cookies.
+
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools in the default Chrome instance and the instance simulating third-party cookie deprecation.
     2. Navigate to the “Cookies” section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies in both instance of Google Chrome
+
     3. Note the cookies present from domains other than [[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/), in our case it will be [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/) in both instances of Chrome.
+
 6. **Compare the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
     2. Identify the network request which sets the cookie in the Chrome Open instance, and track that request in the Chrome Private instance
+
 7. **Navigate to the other domain**
     1. Open the site https://domain-bbb.com/analytics in both instances
     2. Click the button “Click Me”.
@@ -227,7 +234,7 @@ This scenario goes through the workings of an e-commerce setup that leverages a 
 
 ### **How the Demo Works**
 
-We have two separate e-commerce sites hosted on [[domain A](http://domain-aaa.com/)](http://domain-aaa.com/) and [[domain B](http://domain-bbb.com/)](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [[domain C](http://domain-ccc.com/)](http://domain-ccc.com/).
+We have two separate e-commerce sites hosted on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
