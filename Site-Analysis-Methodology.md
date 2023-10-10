@@ -30,19 +30,19 @@ To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we 
 
 2. Start Chrome versions with the relevant command line arguments:
 
-Linux OS
+*Linux OS*
 
 ```
 google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
 ```
         
-Mac OS
+*Mac OS*
 
 ```        
 open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
 ```        
 
-Windows OS
+*Windows OS*
 
 ```        
 "\Program Files\Google\Chrome\Application\chrome.exe" --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
@@ -55,7 +55,8 @@ Windows OS
     - Select “Enable”
     - Restart your browser
 
-https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg
+
+[Experimental third-party storage partitioning](https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg)
 
 1. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
     - In this methodology, we use the following naming convention
