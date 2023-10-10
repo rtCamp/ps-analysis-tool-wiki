@@ -70,7 +70,7 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
 
 ## **Analyzing Cookies with DevTools**
 
-**▶️Screencast**: [Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)
+▶️**Screencast**: [Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)
 
 DevTools is a powerful debugging companion to Chrome providing a myriad of vantage points to observe the operational execution of sites running on the browser. DT provides visibility to all data about cookies. To get to it some access points are:
 
