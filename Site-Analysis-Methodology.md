@@ -30,13 +30,13 @@ To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we 
 
 2. Start Chrome versions with the relevant command line arguments:
 
-*Linux OS*
+**Linux OS**
 
 ```
 google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
 ```
         
-*Mac OS*
+**Mac OS**
 
 ```        
 open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
