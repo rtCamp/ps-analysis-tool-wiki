@@ -175,7 +175,7 @@ Some sites are not trying to use cookies, but instead LocalStorage or Quota Stor
 
 This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential 3PCD breakages.
 
-## **Analytics Tracking ✅**
+## **Analytics Tracking**
 
 This scenario encompasses a website use of analytics providers (e.g. Google Analytics, others) for tracking user behavior. We want to verify user activity/events on 3P analytics service platforms are being captured properly. The goal of this demo is to show details that are part of this scenario, and show you how to analyze the behavior and determine if there are failures.
 
@@ -221,7 +221,7 @@ At this point, we debugged the scenario which is common for implementations of a
 
 If you are a 3P provider, or if you are checking if the 3P analytics providers on your site are working, then you can map the process  outlined in this demo to your scenario.
 
-## **E-commerce: Cross-domain Shopping Cart ✅**
+## **E-commerce: Cross-domain Shopping Cart**
 
 This scenario goes through the workings of an e-commerce setup that leverages a third-party service for cart management across multiple domains. The goal of the demo is to illustrate how third-party cookies are used to maintain cart continuity across different first-party domains, and provide a detailed overview of how to analyze this kind of scenario and determine if there are potential failures.
 
@@ -278,7 +278,7 @@ By this stage, you've debugged the sequence that represents the behavior of many
 
 If you are a 3P provider, or if you are checking if the 3P e-commerce providers on your site are working, then you can map the process outlined in this demo to your scenario.
 
-## **Single Sign-On (SSO) Services ✅**
+## **Single Sign-On (SSO) Services**
 
 This scenario demonstrates how a third-party Single Sign-On (SSO) service enables users to log in seamlessly across multiple websites, using third-party cookies to maintain their logged-in state. Our goal is to demonstrate the process by focusing on the specific details of how data flows through third-party cookies. We will evaluate the SSO functionality and identify any possible issues or problems.
 
