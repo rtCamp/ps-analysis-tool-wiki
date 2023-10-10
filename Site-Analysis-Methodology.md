@@ -256,6 +256,12 @@ If you are a 3P provider, or if you are checking if the 3P analytics providers o
 
 This scenario goes through the workings of an e-commerce setup that leverages a third-party service for cart management across multiple domains. The goal of the demo is to illustrate how third-party cookies are used to maintain cart continuity across different first-party domains, and provide a detailed overview of how to analyze this kind of scenario and determine if there are potential failures.
 
+**Domain Setup**
+
+* **domain-aaa.com** - First-party domain utilizing the third-party ecommerce service.
+* **domain-bbb.com** - Another first-party domain also utilizing the third-party ecommerce service.
+* **domain-ccc.com** - The third-party ecommerce service domain.
+
 ### **How the Demo Works**
 
 We have two separate e-commerce sites hosted on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
@@ -266,7 +272,44 @@ This behavior will be affected with the deprecation of third-party cookies. When
 
 The following sequence diagram shows the cart behavior with cookies enabled:
 
-https://lh4.googleusercontent.com/9ieLJRVZ4-5hcDHrUjiH2jjbjl8WehSru7_7WcLrvw5_djRh4YAJu4pV0d0xuIQQiHS5pz3JDbggBOfvqnLhzlSDIRrrwHoCOVV7CT2Pn_DKII2xIIeBZ32Ablo05ljSaHvIbeV20eS0sVYq0ALPCQerJ7htcGJo6HQaYUzhFKIT4gZxFSmxIKQ-V_l9CmSxduMBKUvT-XzxlPOInPHTzRVX-DQW9bIkkRDTEQ
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant DomainC
+
+    Note over User,DomainC: Current Behaviour
+
+    User->>DomainA: Access homepage
+    DomainA->>User: Render homepage with embedded iframe to DomainC/products
+    User->>DomainC: Clicks on "Add to cart" for Product 1
+    DomainC->>DomainC: Updates cart cookie
+    DomainC->>User: Updates cart icon count
+    User->>DomainC: Clicks on "Add to cart" for Product 2
+    DomainC->>DomainC: Updates cart cookie
+    DomainC->>User: Updates cart icon count
+    User->>DomainB: Navigates to domain-bbb.com
+    DomainB->>User: Render homepage with embedded iframe to DomainC/products
+    User->>DomainC: Observes the same cart icon count as on domain-aaa.com
+    User->>DomainC: Navigates to cart
+    DomainC->>DomainC: Fetches cart data from cookie
+    DomainC->>User: Displays cart contents (Product 1 and Product 2)
+
+    Note over User,DomainC: After third-party cookie deprecation
+
+    User->>DomainA: Access homepage again
+    DomainA->>User: Render homepage with embedded iframe to DomainC/products
+    User->>DomainC: Clicks on "Add to cart" for Product 3
+    DomainC-->>DomainC: Cannot set/update cart cookie
+    DomainC->>User: Fails to update cart icon count or displays incorrect count
+    User->>DomainB: Navigates to domain-bbb.com again
+    DomainB->>User: Render homepage with embedded iframe to DomainC/products
+    User->>DomainC: Observes cart icon with no items
+    User->>DomainC: Navigates to cart
+    DomainC-->>DomainC: Cannot fetch cart data from cookie
+    DomainC->>User: Displays empty cart
+```
 
 And this one, shows the behavior of the scenario when third-party are not available:
 
