@@ -330,27 +330,27 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
     2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
 
 4. **Navigate to the first domain**
-    1. On both browsers, open the site **[https://domain-aaa.com/](https://domain-aaa.com/)**.
+    1. On both browsers, open the site [https://domain-aaa.com/](https://domain-aaa.com/).
     2. Interact with the products and add them to the cart.
     3. This mimics what you would do while online shopping on any site.
 
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the "Application" tab in the DevTools in both Chrome instances.
-    2. Navigate to the "Cookies" section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies set for that domain.
-    3. Note the cookies present from domains other than [[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/). In our scenario, particularly note cookies from [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/).
+    2. Navigate to the "Cookies" section and select the frame ([domain-aaa.com](http://domain-aaa.com/) to view the cookies set for that domain.
+    3. Note the cookies present from domains other than [domain-aaa.com](http://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com](http://domain-ccc.com/).
 
 6. **Compare the behavior of the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
     2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
     3. On Chrome Private, the same cookie identified will not be present (blocked).
-    4. Go to the Network tab and search for “[[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/)”, and click on the network request named “add-to-cart”
+    4. Go to the Network tab and search for “[domain-ccc.com](http://domain-ccc.com/)”, and click on the network request named “add-to-cart”
     5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block 3P cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
 
 7. **Navigate to the second domain**
-    1. Open the site [**https://domain-bbb.com/**](https://domain-bbb.com/) in both Chrome instances.
+    1. Open the site [https://domain-bbb.com/](https://domain-bbb.com/) in both Chrome instances.
     2. Observe the cart contents and the count icon.
-    3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame ([[domain-bbb.com](http://domain-bbb.com/)](http://domain-bbb.com/)).
-    4. Make note of cookies, especially those from [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/).
+    3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame ([domain-bbb.com](http://domain-bbb.com/).
+    4. Make note of cookies, especially those from [domain-ccc.com](http://domain-ccc.com/).
     5. Compare the cookies between the two instances similarly as in Step 6 to understand discrepancies, if any.
 
 By this stage, you've debugged the sequence that represents the behavior of many e-commerce and analytics solutions relying on third-party cookies, and gaining a clear insight into how third-party cookies function (and the implications when they don't) equips you to address potential issues as an e-commerce website operator.
