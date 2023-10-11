@@ -171,7 +171,7 @@ GSI v2 is a legacy library from Google Identity that is integrated with a lot of
 
 Some sites are not trying to use cookies, but instead LocalStorage or Quota Storage like IndexedDB. These can often be spotted by observing exceptions being thrown, see [Look at JS/Network errors](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.24lfqsh6zaqj).
 
-# **Analysis Scenarios and Critical User Journeys**
+# **Analysis Scenarios**
 
 This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential 3PCD breakages.
 
@@ -256,15 +256,9 @@ If you are a 3P provider, or if you are checking if the 3P analytics providers o
 
 This scenario goes through the workings of an e-commerce setup that leverages a third-party service for cart management across multiple domains. The goal of the demo is to illustrate how third-party cookies are used to maintain cart continuity across different first-party domains, and provide a detailed overview of how to analyze this kind of scenario and determine if there are potential failures.
 
-**Domain Setup**
-
-* **domain-aaa.com** - First-party domain utilizing the third-party ecommerce service.
-* **domain-bbb.com** - Another first-party domain also utilizing the third-party ecommerce service.
-* **domain-ccc.com** - The third-party ecommerce service domain.
-
 ### **How the Demo Works**
 
-We have two separate e-commerce sites hosted on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
+This demo encompasses two distinct e-commerce sites hosted on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
@@ -295,6 +289,15 @@ sequenceDiagram
     User->>DomainC: Navigates to cart
     DomainC->>DomainC: Fetches cart data from cookie
     DomainC->>User: Displays cart contents (Product 1 and Product 2)
+```
+And this one, shows the behavior of the scenario when third-party are not available:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant DomainC
 
     Note over User,DomainC: After third-party cookie deprecation
 
@@ -311,36 +314,38 @@ sequenceDiagram
     DomainC->>User: Displays empty cart
 ```
 
-And this one, shows the behavior of the scenario when third-party are not available:
-
-https://lh5.googleusercontent.com/62Tujj1x1LHAlzeUNhTklyFyHZriHLhOTtkENP0I0hIl7dU00vQivUQkYLtYbWEIMHdRTpUxWY9F_7g-CxzIldwGSZZ-hXHwFIU3woarm5g_1lO8zvEz4EeKdHmX4-uchl2DO9AxtbfobCN4BqPRVfpBEPS8GkGlb61cCAKfiOUMVvxeaAhlLnb-1y5Stv4_iVYv_2adID7jljLky9LJLRKs-AVpoDUPKE_jPg
-
 We can observe in the diagrams how blocked cookies will ruin the shopping experience for the user across multiple domains. Read on to learn how we debug this kind of scenario.
 
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+
 2. **Open Developer Tools**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
     2. It is important to open DevTools first, to ensure capturing all the network interactions as the demo pages load
+
 3. **Adjust Network Tab Settings**
     1. On both browsers, go to the network tab and enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
     2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
+
 4. **Navigate to the first domain**
-    1. On both browsers, open the site [**https://domain-aaa.com/**](https://domain-aaa.com/)
+    1. On both browsers, open the site **[https://domain-aaa.com/](https://domain-aaa.com/)**.
     2. Interact with the products and add them to the cart.
     3. This mimics what you would do while online shopping on any site.
+
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the "Application" tab in the DevTools in both Chrome instances.
     2. Navigate to the "Cookies" section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies set for that domain.
     3. Note the cookies present from domains other than [[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/). In our scenario, particularly note cookies from [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/).
+
 6. **Compare the behavior of the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
-    2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of th
+    2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
     3. On Chrome Private, the same cookie identified will not be present (blocked).
     4. Go to the Network tab and search for “[[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/)”, and click on the network request named “add-to-cart”
     5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block 3P cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
+
 7. **Navigate to the second domain**
     1. Open the site [**https://domain-bbb.com/**](https://domain-bbb.com/) in both Chrome instances.
     2. Observe the cart contents and the count icon.
