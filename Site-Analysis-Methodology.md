@@ -424,37 +424,38 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (using flags) and the other using the default settings.
-2. **Open Developer Tools in both instances**
+    1. Set up your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/)].
+2. **Open Developer Tools in both Chrome instances**
 3. **Adjust Network Tab Settings**
     1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
 4. **Visit the First Domain**
-    1. Open the site [**https://domain-aaa.com/**](https://domain-aaa.com/) in both instances.
+    1. Open the site [domain-aaa.com/](https://domain-aaa.com/) in both instances.
     2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools in both the default browser instance and the one simulating third-party cookie deprecation.
-    2. Navigate to the “Cookies” section and select the frame (**[[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)**) to view the cookies.
-    3. Note the presence of the cookie from [**[domain-ccc.com](http://domain-ccc.com/)**](http://domain-ccc.com/) (our SSO service) in both instances of the browser.
+    2. Navigate to the “Cookies” section and select the frame ([domain-aaa.com](https://domain-aaa.com/) to view the cookies.
+    3. Note the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
 6. **Compare the Cookies**
     1. Examine the cookies set in the default browser instance and compare them with the ones in the instance simulating third-party cookie deprecation.
     2. Identify which cookies, if any, are missing from the latter instance.
 7. **Navigate to the Other Domain**
-    1. Open [**https://domain-bbb.com/**](https://domain-bbb.com/) in both instances.
+    1. Open [domain-bbb.com/](https://domain-bbb.com/) in both instances.
     2. Observe the user's logged-in status.
-    3. Go back to the “Application” tab in the DevTools, and under the “Cookies” section, now select the frame (**[[domain-bbb.com](http://domain-bbb.com/)](http://domain-bbb.com/)**). Check for the presence of the cookie from [**[domain-ccc.com](http://domain-ccc.com/)**](http://domain-ccc.com/) in both instances of the browser.
-    4. Identify discrepancies between the two instances regarding login status and the presence of the third-party cookie.
+    3. Go back to the “Application” tab in the DevTools, and under the “Cookies” section, now select the frame [domain-bbb.com](http://domain-bbb.com/)
+    4. Check for the presence of the cookie from [domain-ccc.com](http://domain-ccc.com/) in both instances of the browser.
+    5. Identify discrepancies between the two instances regarding login status and the presence of the third-party cookie.
 
 By now, you should have a clearer understanding of how third-party cookies are used for Single Sign-On (SSO) processes across multiple domains. If you're working on implementing or testing an SSO service, this debugging scenario can be quite useful. It can help developers and testers validate their SSO implementations and prepare them for any upcoming third-party cookie deprecation. By following the process outlined in this demo, you can easily map it to your specific use case.
 
-## **Embedded Content ✅**
+## **Embedded Content**
 
-▶️ [[Screencast](https://youtu.be/gHh1B3QqKXg?si=83uI5p47rt1tgX1D)](https://youtu.be/gHh1B3QqKXg?si=83uI5p47rt1tgX1D)  ✍️ [[Video Transcript](https://docs.google.com/document/d/1ExunW3_LDqkTfe7UQCoA8Ch-bOO_Tx0v/edit)](https://docs.google.com/document/d/1ExunW3_LDqkTfe7UQCoA8Ch-bOO_Tx0v/edit)
+▶️ [Screencast](https://youtu.be/gHh1B3QqKXg?si=83uI5p47rt1tgX1D) 
 
 This scenario goes through the workings of embedded content platforms, such as video streaming, which operate across multiple top-level domains utilizing third-party cookies and local storage for retaining user session and preferences. The primary objective of this demo is to provide details on how to analyze this kind of scenario and determine if there are potential breakages.
 
 ### **How the Demo Works**
 
-We have two independent websites on [[domain A](http://domain-aaa.com/)](http://domain-aaa.com/) and [[domain B](http://domain-bbb.com/)](http://domain-bbb.com/). Both host embedded video content through a third-party streaming service residing on [[YouTube.com](http://youtube.com/)](http://youtube.com/)
+This demo encompasses two independent websites on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/). Both host embedded video content through a third-party streaming service residing on [YouTube.com](http://youtube.com/).
 
 When a user engages with a video on domain A and adjusts certain playback preferences, these are recorded by the third-party streaming service on YouTube via third-party cookies (i.e. for user session) and local storage (i.e. for preferences). These storage mechanisms allow YouTube embeds to maintain consistency, no matter which first-party domain the user navigates to. As a result, when the user transitions to domain B, the preferences set on domain A, such as volume level or playback speed, persist.
 
@@ -462,19 +463,63 @@ This seamless experience breaks with the deprecation of third-party cookies. Whe
 
 The following sequence diagram illustrates the behavior of embedded content as described above, when cookies are available:
 
-https://lh6.googleusercontent.com/Xd2-sjtVSvE9M2Qb-hyd41C9MbnL8hhEKs--ifhDNt0-iJLy8aiGH3BH7Dd5hm9fFiKO01F0f6E2h_2V8gUO1VfXYbAGIijvAN6vUuX31we9mVXcglHFReYmPYFgWwiYVSJFFcD6XfsesDGTyBFnbA9U-gO3u9IXSEdoXM4WNmzegRn6xJcCFuJK8qAl-ETDG9aflTJ1I2kz3qsLQdyDbhhfFlzfUx_9kr3R8A
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant YouTube
+
+    Note over User,YouTube: Current Behaviour
+
+    User->>DomainA: Navigate to DomainA/embedded-video
+    DomainA->>YouTube: Load YouTube video
+    User->>YouTube: Click play & mute
+
+    User->>DomainB: Navigate to DomainB/embedded-video
+    DomainB->>YouTube: Load YouTube video
+    User->>YouTube: Click play
+    YouTube-->>User: Retained settings & recognize user
+
+    User->>YouTube: Check video history
+    YouTube-->>User: Display videos from DomainA & DomainB
+
+    User->>YouTube: Observe "watch later" button presence
+```
 
 And the following sequence diagram illustrates the behavior of the embedded content when third-party cookie deprecation changes are in place:
 
-https://lh4.googleusercontent.com/N0D17habfNXaIbkUraD0TJYFcSjhtwNSVUggV1SZzVIqTUGjpcnAJGebAyN0oka7GTyE_RMAjcVZjf-S0a1iIWlqyyw1-odjo3P11f92jhMBCFXvKAmyC969adnffXmYxPEGyoHBqINMdSGRSWV_MG2S3HlX8HaqlxcSLKppkT0jUm4zGCcLCqCYLjn6OQhk4X3O8iaGBIi9XiD-3cLj_KBCwtuoXeNl2Tzbvg
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant YouTube
+
+ Note over User,YouTube: After third-party cookie deprecation
+
+    User->>DomainA: Navigate to DomainA/embedded-video
+    DomainA->>YouTube: Load YouTube video
+    User->>YouTube: Click play
+
+    User->>DomainB: Navigate to DomainB/embedded-video
+    DomainB->>YouTube: Load YouTube video
+    User->>YouTube: Click play & mute
+    YouTube-->>User: Settings not retained
+
+    User->>YouTube: Check video history
+    YouTube-->>User: No videos from DomainA & DomainB
+
+    User->>YouTube: "watch later" button absent
+```
 
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Prepare your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv)). Ensure you have two distinct instances of Google Chrome:
+    1. Prepare your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv). Ensure you have two distinct instances of Google Chrome:
         - **Chrome Private**: Simulating third-party cookie deprecation.
         - **Chrome Open**: Running on default settings.
-    2. In both instances, navigate to [[YouTube.com](http://youtube.com/)](http://youtube.com/) and log in using an account.
+    2. In both instances, navigate to [YouTube.com](http://youtube.com/) and log in using any account available to you.
 2. **Open Developer Tools**
     1. Launch Chrome DevTools in both browsers. For Mac users, press **Cmd-Option-i** and for Linux users, press **Ctrl-Shift-i**.
     2. It's crucial to initialize DevTools prior to browsing to capture all network interactions as pages load.
@@ -499,8 +544,8 @@ https://lh4.googleusercontent.com/N0D17habfNXaIbkUraD0TJYFcSjhtwNSVUggV1SZzVIqTU
     3. In **Chrome Open**, repeat the review process. This time, videos from both domains *should* be cataloged since the session is identifiable.
 7. **Inspect Local Storage**:
     1. Use developer tools to inspect local storage associated with the YouTube frame in both browser instances.
-    2. For **Chrome Open**, the settings must be consistent across all tabs for [[youtube.com](http://youtube.com/)](http://youtube.com/).
-    3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin ([[youtube.com](http://youtube.com/)](http://youtube.com/)) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
+    2. For **Chrome Open**, the settings must be consistent across all tabs for [youtube.com](http://youtube.com/).
+    3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin ([youtube.com](http://youtube.com/) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
 8. **Analyze Additional Breakages**:
     1. In the **Chrome Open** instance, a "watch later" option should be visible. Its absence in the **Chrome Private** instance hints that YouTube cannot identify the logged-in user.
 
@@ -547,14 +592,10 @@ We have outlined a general, yet useful, methodology to approach the analysis of 
 
 Your findings are invaluable! Should you encounter any breakages or issues, make sure to reach out and share with us your findings. By reporting them you will be able to receive help to address the breakage, and  you will be helping others in the web platforms who may experience the same breakage.
 
-Before reporting, please gather information about the breakage and its context to help the training and debugging process. Once you have done that, you can report breakages on the public [[PS Dev Support repository](https://github.com/GoogleChromeLabs/privacy-sandbox-dev-support/)](https://github.com/GoogleChromeLabs/privacy-sandbox-dev-support/), or on [[Google’s tracker](https://goo.gle/report-3pc-broken)](https://goo.gle/report-3pc-broken).
+Before reporting, please gather information about the breakage and its context to help the training and debugging process. Once you have done that, you can report breakages on the public [PS Dev Support repository](https://github.com/GoogleChromeLabs/privacy-sandbox-dev-support/), or on [Google’s tracker](https://goo.gle/report-3pc-broken).
 
 Please also report any bugs/issues with the
 
-[[PS Analysis Tool](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=)](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=)
+[PS Analysis Tool](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=) , and also request features for the
 
-, and also request features for the
-
-[[PS Analysis Tool](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=)](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=)
-
-in support of use cases that would help in the analysis and debugging of sites.
+[PS Analysis Tool](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) in support of use cases that would help in the analysis and debugging of sites.
