@@ -343,14 +343,14 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
     2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
     3. On Chrome Private, the same cookie identified will not be present (blocked).
-    4. Go to the Network tab and search for “[domain-ccc.com](http://domain-ccc.com/)”, and click on the network request named “add-to-cart”
+    4. Go to the Network tab and search for “[domain-ccc.com](https://domain-ccc.com/)”, and click on the network request named “add-to-cart”
     5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block 3P cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
 
 7. **Navigate to the second domain**
-    1. Open the site [https://domain-bbb.com/](https://domain-bbb.com/) in both Chrome instances.
+    1. Open the site [domain-bbb.com/](https://domain-bbb.com/) in both Chrome instances.
     2. Observe the cart contents and the count icon.
-    3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame ([domain-bbb.com](http://domain-bbb.com/).
-    4. Make note of cookies, especially those from [domain-ccc.com](http://domain-ccc.com/).
+    3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame [domain-bbb.com](http://domain-bbb.com/).
+    4. Make note of cookies, especially those from [domain-ccc.com](https://domain-ccc.com/).
     5. Compare the cookies between the two instances similarly as in Step 6 to understand discrepancies, if any.
 
 By this stage, you've debugged the sequence that represents the behavior of many e-commerce and analytics solutions relying on third-party cookies, and gaining a clear insight into how third-party cookies function (and the implications when they don't) equips you to address potential issues as an e-commerce website operator.
@@ -363,19 +363,63 @@ This scenario demonstrates how a third-party Single Sign-On (SSO) service enable
 
 ### **How the Demo Works**
 
-This demo showcases two separate sites operating on [[domain A](https://domain-aaa.com/)](https://domain-aaa.com/) and [[domain B](https://domain-bbb.com/)](https://domain-bbb.com/). Both these sites rely on an SSO service located on [[domain C](https://domain-ccc.com/)](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
+This demo showcases two separate sites operating on [domain A](https://domain-aaa.com/) and [domain B](https://domain-bbb.com/). Both these sites rely on an SSO service located on [domain C](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
 
-When a user accesses [[domain A](http://domain-aaa.com/)](http://domain-aaa.com/) and logs in using their email, they are redirected to the SSO service on [[domain C](http://domain-ccc.com/)](http://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [[domain B](http://domain-bbb.com/)](http://domain-bbb.com/), this site communicates with [[domain C](http://domain-ccc.com/)](http://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
+When a user accesses [domain A](http://domain-aaa.com/) and logs in using their email, they are redirected to the SSO service on [domain C](http://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [domain B](http://domain-bbb.com/), this site communicates with [domain C](http://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
 
-Thanks to the third-party cookie set by [[domain C](http://domain-ccc.com/)](http://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
+Thanks to the third-party cookie set by [domain C](http://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
 
 However, post Third-Party Cookies Deprecation, the behavior will change. When the user first visits domain A and logs in, the domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
 
-The provided sequence diagrams effectively visualizes this behavior both before and after the deprecation of third-party cookies.
+The following sequence diagram depicts this behavior before the deprecation of third-party cookies:
 
-https://lh6.googleusercontent.com/MLPmYfI2pz3ZjnIz4-E_h0UV0UTG6P4SmoSvf0hNNzu4LybN0hDtagqKQ-nhwhX1YXRFjHfqqMNo4AWj-RQ8nD1YSeJmUX1btpwV7mLaIrfzm19sQDOgspvfQFf1lGWSeR1n1EuHBiyKOhLgyF7AcfLApbl2pmm4UhXQov3UNADEErR8KT9ed12ULCWZhAjPxw4PyBuWeby0Llm6NfmFEUwd1wq4d_xvup5bFA
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant DomainC
 
-https://lh3.googleusercontent.com/s6sp2pV5XkJWzJLAS3q95jV-ZBagtyf8Gpw3PuDKoZJGcie7yaHfbeTP1d1KG3ZupXuidXnA-EtA71lDSadIa0wbMoowXP_fnR2D5YO2Ee3KIE2kg_NHqJWk2jopkc_pvw3YaqfDSnQTb-QL3eVyf802l6uvblnDFUVNCuycluhChIgw7BTfSg0duY5kn9L7l8dQ-s8gtd7FeCrf4BnkUgEHTF__fhtp6rqgKw
+    Note over User,DomainC: Current Behaviour
+
+    User->>DomainA: Visit domain-aaa.com
+    DomainA->>User: Render sign-in page
+    User->>DomainA: Enter Email & Submit
+    DomainA->>DomainC: Redirect to domain-ccc.com for SSO login
+    DomainC->>User: Store email in third-party cookie
+    DomainC->>DomainA: Redirect back to domain-aaa.com with login success
+    DomainA->>User: Render profile page
+    
+    User->>DomainB: Visit domain-bbb.com
+    DomainB->>DomainC: Check third-party cookie for login info
+    DomainC->>DomainB: Confirm user is logged in
+    DomainB->>User: Render profile page
+```
+
+And this sequence diagram depicts the behavior after the deprecation of third-party cookies:
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant DomainA
+    participant DomainB
+    participant DomainC
+
+Note over User,DomainC: After Third-Party Cookies Deprecation
+
+    User->>DomainA: Visit domain-aaa.com
+    DomainA->>User: Render sign-in page
+    User->>DomainA: Enter Email & Submit
+    DomainA->>DomainC: Redirect to domain-ccc.com for SSO login
+    DomainC->>User: Attempt to store email in third-party cookie (Fails)
+    DomainC->>DomainA: Redirect back to domain-aaa.com with login success
+    DomainA->>User: Render profile page
+    
+    User->>DomainB: Visit domain-bbb.com
+    DomainB->>DomainC: Check third-party cookie for login info (Fails)
+    DomainB->>User: Render sign-in page (User needs to log in again)
+
+```
 
 ### **Debugging the Scenario**
 
