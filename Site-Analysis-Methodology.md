@@ -551,7 +551,7 @@ sequenceDiagram
 
 By now, you've thoroughly explored and debugged the scenario that illustrates how embedded content, like YouTube videos, relies on third-party cookies and/or storage APIs (e.g. localStorage)  to provide a seamless user experience. You have gained an understanding of the intricacies of how third-party cookies operate, and the challenges that arise when they're deprecated. You can apply a similar approach to investigate potential breakages on any embedded content on yoursite.  If you are an embedded content provider or are evaluating the effectiveness of such third-party content integrations on your platform, you can tailor the methodology from this demo to fit your specific situation.
 
-## **Further Scenarios ✅**
+## **Further Scenarios**
 
 At this point we have pursued in depth analyses of several CUJs commonly found across a wide range of sites, and it is likely that your site has at least one of them. There are many other scenarios commonly found  across the web ecosystem. This methodology will continue expanding on the set of considered scenarios as we create examples and run analyses on them. These scenarios include:
 
@@ -584,7 +584,7 @@ CDNs can tailor the delivery of content based on user profiles, preferences, or 
 
 In some scenarios, CDNs may rely on third-party cookies to determine if a user has access to specific content, especially in ecosystems where authentication is managed by a third party.
 
-# **Reporting Breakages ✅**
+# **Reporting Breakages**
 
 We have outlined a general, yet useful, methodology to approach the analysis of sites in search of potential breakages due to the deprecation of 3P cookies and upcoming changes to Web Storage APIs. By applying this methodology to your specific use cases, you can unearth potential issues and get ready for a successful transition to a more private web.
 
