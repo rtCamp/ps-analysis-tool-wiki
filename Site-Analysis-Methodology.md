@@ -181,7 +181,7 @@ This scenario encompasses a website use of analytics providers (e.g. Google Anal
 
 ### **How the Demo Works**
 
-In this demo, we have two distinct sites running on [domain A](https://domain-aaa.com/analytic) and [domain B](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
+In this demo, we have two distinct sites running on [domain A](https://domain-aaa.com/analytics) and [domain B](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
@@ -218,7 +218,7 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](#evaluation-environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools in both instances**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
@@ -258,7 +258,7 @@ This scenario goes through the workings of an e-commerce setup that leverages a 
 
 ### **How the Demo Works**
 
-This demo encompasses two distinct e-commerce sites hosted on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/), both using  a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
+This demo encompasses two distinct e-commerce sites hosted on [domain A](https://domain-aaa.com/ecommerce) and [domain B](http://domain-bbb.com/ecommerce), both using a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
@@ -319,7 +319,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](#evaluation-environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
@@ -330,7 +330,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
     2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
 
 4. **Navigate to the first domain**
-    1. On both browsers, open the site [https://domain-aaa.com/](https://domain-aaa.com/).
+    1. On both browsers, open the site [https://domain-aaa.com/ecommerce](https://domain-aaa.com/ecommerce).
     2. Interact with the products and add them to the cart.
     3. This mimics what you would do while online shopping on any site.
 
@@ -347,7 +347,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
     5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block 3P cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
 
 7. **Navigate to the second domain**
-    1. Open the site [domain-bbb.com/](https://domain-bbb.com/) in both Chrome instances.
+    1. Open the site [domain-bbb.com/ecommerce](https://domain-bbb.com/ecommerce) in both Chrome instances.
     2. Observe the cart contents and the count icon.
     3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame [domain-bbb.com](http://domain-bbb.com/).
     4. Make note of cookies, especially those from [domain-ccc.com](https://domain-ccc.com/).
@@ -363,9 +363,9 @@ This scenario demonstrates how a third-party Single Sign-On (SSO) service enable
 
 ### **How the Demo Works**
 
-This demo showcases two separate sites operating on [domain A](https://domain-aaa.com/) and [domain B](https://domain-bbb.com/). Both these sites rely on an SSO service located on [domain C](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
+This demo showcases two separate sites operating on [domain A](https://domain-aaa.com/single-sign-on) and [domain B](https://domain-bbb.com/single-sign-on). Both these sites rely on an SSO service located on [domain C](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
 
-When a user accesses [domain A](http://domain-aaa.com/) and logs in using their email, they are redirected to the SSO service on [domain C](http://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [domain B](http://domain-bbb.com/), this site communicates with [domain C](http://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
+When a user accesses [domain A](http://domain-aaa.com/single-sign-on) and logs in using their email, they are redirected to the SSO service on [domain C](http://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [domain B](http://domain-bbb.com/single-sign-on), this site communicates with [domain C](http://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
 
 Thanks to the third-party cookie set by [domain C](http://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
 
@@ -424,12 +424,12 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [[here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/)].
+    1. Set up your testing environment (as described [[here](#evaluation-environment)].
 2. **Open Developer Tools in both Chrome instances**
 3. **Adjust Network Tab Settings**
     1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
 4. **Visit the First Domain**
-    1. Open the site [domain-aaa.com/](https://domain-aaa.com/) in both instances.
+    1. Open the site [domain-aaa.com/single-sign-on](https://domain-aaa.com/single-sign-on) in both instances.
     2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools in both the default browser instance and the one simulating third-party cookie deprecation.
@@ -439,7 +439,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
     1. Examine the cookies set in the default browser instance and compare them with the ones in the instance simulating third-party cookie deprecation.
     2. Identify which cookies, if any, are missing from the latter instance.
 7. **Navigate to the Other Domain**
-    1. Open [domain-bbb.com/](https://domain-bbb.com/) in both instances.
+    1. Open [domain-bbb.com/single-sign-on](https://domain-bbb.com/single-sign-on) in both instances.
     2. Observe the user's logged-in status.
     3. Go back to the “Application” tab in the DevTools, and under the “Cookies” section, now select the frame [domain-bbb.com](http://domain-bbb.com/)
     4. Check for the presence of the cookie from [domain-ccc.com](http://domain-ccc.com/) in both instances of the browser.
@@ -455,7 +455,7 @@ This scenario goes through the workings of embedded content platforms, such as v
 
 ### **How the Demo Works**
 
-This demo encompasses two independent websites on [domain A](http://domain-aaa.com/) and [domain B](http://domain-bbb.com/). Both host embedded video content through a third-party streaming service residing on [YouTube.com](http://youtube.com/).
+This demo encompasses two independent websites on [domain A](http://domain-aaa.com/embedded-video) and [domain B](http://domain-bbb.com/embedded-video). Both host embedded video content through a third-party streaming service residing on [YouTube.com](http://youtube.com/).
 
 When a user engages with a video on domain A and adjusts certain playback preferences, these are recorded by the third-party streaming service on YouTube via third-party cookies (i.e. for user session) and local storage (i.e. for preferences). These storage mechanisms allow YouTube embeds to maintain consistency, no matter which first-party domain the user navigates to. As a result, when the user transitions to domain B, the preferences set on domain A, such as volume level or playback speed, persist.
 
@@ -516,7 +516,7 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Prepare your testing environment (as described [here](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.5g3v3cb5xogv). Ensure you have two distinct instances of Google Chrome:
+    1. Prepare your testing environment (as described [here](#evaluation-environment). Ensure you have two distinct instances of Google Chrome:
         - **Chrome Private**: Simulating third-party cookie deprecation.
         - **Chrome Open**: Running on default settings.
     2. In both instances, navigate to [YouTube.com](http://youtube.com/) and log in using any account available to you.
