@@ -3,7 +3,7 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
 - Clone this Cookie Analysis Tool Repository
 - `npm install` Install all dependencies
 
-# Extension (from source)
+## Extension (from source)
 
 - `npm run dev` or `npm run build` to generate a build in `/dist/extension`
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
@@ -11,7 +11,7 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
 
 
 
-# Unpacked Extension (from zip file)
+## Unpacked Extension (from zip file)
 
 - Alternatively, you can download the extension zip file from the [latest release](https://github.com/GoogleChromeLabs/ps-analysis-tool/releases) and unzip it.
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
@@ -19,7 +19,7 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
 
 
 
-# CLI
+## CLI
 
 - `npm run cli:build` to genrate a build in `/dist/cli`.
 - Run the CLI, providing a URL or a sitemap as input.
