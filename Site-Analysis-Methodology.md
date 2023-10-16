@@ -64,7 +64,7 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
         - **Chrome Browser Open**: refers to the chrome instance with 3P cookie functionality available
         - **Chrome Browser Private**: refers to the chrome instance with 3P cookie and storage access APIs secured
 
-6. During testing with 3P cookies blocked, turn cookies on an off via the URL bar
+6. During testing with 3P cookies blocked, turn cookies on and off via the URL bar
     - Click the small “eye” icon in the URL bar
     - Click on “site not working” -> “Allow cookies”
 
