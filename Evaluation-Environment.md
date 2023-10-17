@@ -60,9 +60,9 @@ DevTools is a powerful debugging companion to Chrome providing a myriad of vanta
 
 You can learn more about DevTools [here](https://developer.chrome.com/docs/devtools/).  We will leverage DT capabilities when performing the tests on specific CUJs as described below.
 
-## **Privacy Sandbox Analysis CLI**
+## **PSAT: CLI**
 
-▶️ **Screencast**: Analyzing sites with PSAT CLI.
+▶️ **Screencast**: PSAT: CLI.
 
 The PSA CLI provides access to functionality similar to the PSA Extension, and makes it accessible through the command line. The CLI enables the following use cases:
 
@@ -73,9 +73,9 @@ The PSA CLI provides access to functionality similar to the PSA Extension, and m
 
 The current version of the CLI is limited as it does not include yet an extensive automated interaction model to ensure that aspects such as Cookie Consent Banners are accounted for when exercising CUJs. But we are making progress quickly to remove this limitation. Stay tuned!
 
-## **Privacy Sandbox Analysis DevTools Extension (PSAT)**
+## **PSAT: Extension**
 
-**▶️ Screencast**: Analyzing sites with PSAT.
+**▶️ Screencast**: PSAT.
 
 The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions.
 
