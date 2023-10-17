@@ -1,4 +1,4 @@
-The goal of the methodology is to provide a systematic approach to help developers to ensure their websites and applications experience the minimum number of disruptions as they navigate the transition to a world without third-party (3P) cookies and unpartitioned storage. The methodology encompasses a set of distinct yet interconnected components:
+Analyzing sites to understand the potential impact of the changes coming to Chrome as part of the PrivacySandbox initiative, encompasses several components:
 
 1. **Evaluation environment.** A controlled environment is set up to emulate the state of the platform once 3P cookies and unpartitioned storage are deprecated. This is achieved by leveraging various Chrome Release Channels (e.g. Chrome Canary, Chrome Beta) which enable the implementation of the new capabilities of Chrome, and essential developer tools such as Chrome DevTools and the Privacy Sandbox Analysis extension, which enable developers to delve deep into network requests, scrutinize cookies, and detect reported errors.
 
