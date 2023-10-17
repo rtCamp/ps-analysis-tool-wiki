@@ -3,15 +3,14 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
 - Clone this Privacy Sandbox Analysis Tool Repository
 - Run `npm install` to install all dependencies
 
-## Extension (from source)
+## Build PSAT from source
 
 - `npm run dev` or `npm run build` to generate a build in `/dist/extension`
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
 
-
-## Unpacked Extension (from zip file)
+## Install PSAT from zip file
 
 - Alternatively, you can download the extension zip file from the [latest release](https://github.com/GoogleChromeLabs/ps-analysis-tool/releases) and unzip it.
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
@@ -19,7 +18,7 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
 
 
 
-## CLI
+## Build and Run PSAT's CLI
 
 - `npm run cli:build` to genrate a build in `/dist/cli`.
 - Run the CLI, providing a URL or a sitemap as input.
