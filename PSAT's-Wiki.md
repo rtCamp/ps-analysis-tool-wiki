@@ -8,5 +8,6 @@ Analyzing sites to understand the potential impact of the changes coming to Chro
 
 * **Reporting**. Aggregated data reports presented via dashboards, providing clarity and insights to strategic decision-making on addressing the transition to Privacy Sandbox.
 
-[Using the Privacy Sandbox Analysis-tool](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Home/Using-the-Privacy-Sandbox-Analysis-tool)
-[Site Analysis Methodology](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Home/Site-Analysis-Methodology)
+[Using the Privacy Sandbox Analysis-tool](wiki/Home/Using-the-Privacy-Sandbox-Analysis-tool)
+
+[Site Analysis Methodology](/wiki/Home/Site-Analysis-Methodology)
