@@ -7,7 +7,3 @@ Analyzing sites to understand the potential impact of the changes coming to Chro
 * **QA/Testing Steps**. Testing sequences for different components or user journeys. For instance, in checkout flows, validate the cart functionality and payment processing; if discrepancies or issues arise, follow a specific process to identify, triage, and address them.
 
 * **Reporting**. Aggregated data reports presented via dashboards, providing clarity and insights to strategic decision-making on addressing the transition to Privacy Sandbox.
-
-[Using the Privacy Sandbox Analysis-tool](wiki/Home/Using-the-Privacy-Sandbox-Analysis-tool)
-
-[Site Analysis Methodology](/wiki/Home/Site-Analysis-Methodology)
