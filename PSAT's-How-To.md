@@ -29,13 +29,14 @@ The Chrome extension provides capabilities surfaced via the extension pop-up, th
   - E.g. `npm run cli -- -u https://bbc.com -nt`. 
 
 
-## Tool Functionality
+## PSAT Landing Page
+
 The features and capabilities of this tool help you (developers) with the transition towards a more private web, by shedding light on data and context as you go about implementing privacy-preserving solutions to the features and capabilities of your websites and apps. The main functional areas of the tool are the following. 
 
 <img width="937" alt="Screenshot 2023-10-04 at 3 34 36 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4352e62f-832b-4cce-800f-41a767e1bcc3">
 
 
-### Cookie Data Manipulation and Analysis
+## Cookie Data Manipulation and Analysis
 
 DevTools provides access to lots of information regarding every functional aspect of the browser, including cookies. This extension expands a bit the capabilities of DevTools and provides additional ways to slice and dice cookie data, making it easier for everyone to understand the behaviors of cookies in different scenarios.
 
@@ -48,13 +49,12 @@ Cookies are used as a state management mechanism to power varying features and c
 
 <img width="937" alt="Screenshot 2023-10-04 at 3 32 03 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/82ab33ab-9e19-4fc3-b80f-33805b089756">
 
+## Knowledge Access Points
+
+The final goal of this tool is to make it easy to understand the role of 3P cookies on critical user journeys all the relevant aspects of Privacy Sandbox and the phasing out of 3P cookies. As you use the tool to analyze and debug your use cases, you will encounter links to documentation and other sources of information to support your learning and understanding as you navigate the transition to a more private web. 
+
 ## Reporting
 
 This tool provides capabilities to make it easy for users to report breakages, and connect with existing Privacy Sandbox feedback and bug reporting channels. As you leverage the capabilities of the tool to analyze and debug your critical user journeys, you can report breakages or questions about your use cases and directly send them to the proper feedback channel. This way you would get answers to your issues, and will contribute to our collective effort to ensure the ecosystem is ready for a world without 3P cookies as we know them today.
 
 <img width="937" alt="Screenshot 2023-10-10 at 4 02 12 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/67aff95d-4c9e-4eb9-b429-7a1b4c8c46d7">
-
-
-## Knowledge Access Points
-
-The final goal of this tool is to make it easy to understand the role of 3P cookies on critical user journeys all the relevant aspects of Privacy Sandbox and the phasing out of 3P cookies. As you use the tool to analyze and debug your use cases, you will encounter links to documentation and other sources of information to support your learning and understanding as you navigate the transition to a more private web. 
