@@ -1,3 +1,5 @@
+## **Chrome**
+
 **▶️** Screencast: [Prepare Testing Environment](https://www.youtube.com/watch?v=EjbV4sUot4M)
 
 To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we can leverage different Chrome Release versions (Stable, Canary, Beta, Dev).  Set up your evaluation environments by following the instructions below.
@@ -44,7 +46,7 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
     - Click the small “eye” icon in the URL bar
     - Click on “site not working” -> “Allow cookies”
 
-## **Analyzing Cookies with DevTools**
+## **DevTools**
 
 ▶️ **Screencast**: [Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)
 
