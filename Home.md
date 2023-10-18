@@ -1,9 +1,10 @@
-Analyzing sites to understand the potential impact of the changes coming to Chrome as part of the PrivacySandbox initiative, encompasses several components:
+This wiki is intended to empower you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome, as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. As such, it assumes you're familiar with cookies and how they're used, at least on your specific sites/applications.
 
-1. **Evaluation environment**. A controlled environment is set up to emulate the state of the platform once 3P cookies and unpartitioned storage are deprecated. This is achieved by leveraging various Chrome Release Channels (e.g. Chrome Canary, Chrome Beta) which enable the implementation of the new capabilities of Chrome, and essential developer tools such as Chrome DevTools and the Privacy Sandbox Analysis extension, which enable developers to delve deep into network requests, scrutinize cookies, and detect reported errors.
+The aim is to create a testing/evaluation methodology that will provide you with the necessary insights needed to implement changes. So, the wiki provides concrete strategies that will help in this process:
 
-2. **Testing Scope**. A primary goal of this methodology is to narrow down the evaluation space so developers can focus systematically on specific aspects of their sites and applications, including their first-party features, as well as the third-party components used.
+1. How to set up an [**Evaluation Environment**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) that will help predict what is likely to happen once the deprecation comes into effect.
+1. How to identify specific aspects of the site that are likely to be affected, amongst other [**General Actions for Analysis**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/General-Analysis-Actions).
+1. How to evaluate an existing component and/or user journey, to identify, triage and address issues, using various tools and resources including ready-made step-by-step instructions for common [**Analysis Scenarios**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Analysis-Scenarios) and the [**Privacy Sandbox Analysis Tool (PSAT)**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT's-How-To).
+1. How to [**Find Help and Report Issues**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Reporting-Issues-and-Learning-More) that are encountered during this process.
 
-3. **QA/Testing Steps**. Testing sequences for different components or user journeys. For instance, in checkout flows, validate the cart functionality and payment processing; if discrepancies or issues arise, follow a specific process to identify, triage, and address them.
-
-4. **Reporting**. Aggregated data reports presented via dashboards, providing clarity and insights to strategic decision-making on addressing the transition to Privacy Sandbox.
+In addition, within relevant contexts, it includes prompts and pathways for you to contribute your own use cases, provide feedback and seek even more guidance.
