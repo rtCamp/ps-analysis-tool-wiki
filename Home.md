@@ -1,4 +1,4 @@
-This wiki is intended to empower you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome, as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. As such, it assumes you're familiar with cookies and how they're used, at least on your specific sites/applications.
+This wiki is intended to empower you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome, as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. As such, it assumes you're familiar with cookies and how they're currently used, at least on your specific sites/applications.
 
 The aim is to create a testing/evaluation methodology that will provide you with the necessary insights needed to implement changes. So, the wiki provides concrete strategies that will help in this process:
 
