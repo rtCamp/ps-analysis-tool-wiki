@@ -45,7 +45,7 @@ DevTools provides access to lots of information regarding every functional aspec
 
 ## Frame Overlays
 
-Cookies are used as a state management mechanism to power varying features and capabilities of sites. For example, an embedded video component from some 3P provider could set and manipulate 3P cookies to serve authenticated videos without users having to re-authenticate repeatedly. This extension provides a frame overlay capability, making it easy to associate, when possible, components on a web page and the set of cookies that are associated with it. 
+Frame overlays make it easy to associate third-party cookies with embedded iframes.
 
 <img width="937" alt="Screenshot 2023-10-04 at 3 32 03 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/82ab33ab-9e19-4fc3-b80f-33805b089756">
 
