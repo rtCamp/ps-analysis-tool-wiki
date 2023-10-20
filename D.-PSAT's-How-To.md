@@ -1,4 +1,4 @@
-The Chrome extension provides capabilities surfaced via the extension pop-up, the Side Panel, and as Devtools panel. The CLI implementation parses a sitemap provided as input and outputs a JSON file listing all cookies set while navigating through the URLs in the sitemap. Follow the following steps to get the extension installed in your browser. 
+The Chrome extension provides capabilities surfaced via the extension pop-up and as Devtools panel. The CLI implementation parses a sitemap provided as input and outputs a JSON file listing all cookies set while navigating through the URLs in the sitemap. Follow the following steps to get the extension installed in your browser. 
 
 ## Installing and Running PSAT
 
