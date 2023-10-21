@@ -1,6 +1,4 @@
-This wiki is intended to empower you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome, as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. As such, it assumes you're familiar with cookies and how they're currently used, at least on your specific sites/applications.
-
-The aim is to create a testing/evaluation methodology that will provide you with the necessary insights needed to implement changes. To help in this process, the wiki provides concrete strategies:
+The purpose of this tool is to empower you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome, as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. This wiki outlines a testing/evaluation methodology that will provide you with guidance on analyzing your scenarios and the necessary insights needed to implement changes. To help in this process, the wiki provides concrete strategies:
 
 1. How to set up an [**Evaluation Environment**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) that will help predict what is likely to happen once the deprecation comes into effect.
 1. How to identify specific aspects of the site that are likely to be affected, amongst other [**General Actions for Analysis**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/General-Analysis-Actions).
