@@ -66,10 +66,10 @@ You can learn more about DevTools [here](https://developer.chrome.com/docs/devto
 
 The PSA CLI provides access to functionality similar to the PSA Extension, and makes it accessible through the command line. The CLI enables the following use cases:
 
-- Aggregated analysis of full site (i.e. sitemap.xml)
+- Aggregated analysis of the full site (i.e. sitemap.xml)
 - Site evaluation pre-analysis ⇒ Guidance on scope and prioritization
 - CLI for CI: Integrate the PSA CLI into your CI pipeline and detect potential areas of issues related to 3PCD
-- Testing for breakages by executing two access runs, with and without cookies being blocked, and provide a “cookie differential” analysis
+- Testing for breakages by executing two access runs, with and without cookies being blocked, and providing a “cookie differential” analysis
 
 The current version of the CLI is limited as it does not include yet an extensive automated interaction model to ensure that aspects such as Cookie Consent Banners are accounted for when exercising CUJs. But we are making progress quickly to remove this limitation. Stay tuned!
 
@@ -79,7 +79,7 @@ The current version of the CLI is limited as it does not include yet an extensiv
 
 The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions.
 
-- Download and install PSAT, which is being developed as an open source project and you can access the project [here](https://github.com/GoogleChromeLabs/ps-analysis-tool).
+- Download and install PSAT, which is being developed as an open-source project and you can access the project [here](https://github.com/GoogleChromeLabs/ps-analysis-tool).
 - Load the website on the evaluation environment (i.e. Chrome Stable, Chrome Canary)
 - Open DevTools:
     - On Mac : Command(⌘) + Option(⌥) + C
