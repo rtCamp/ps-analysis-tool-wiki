@@ -42,6 +42,18 @@ DevTools provides access to lots of information regarding every functional aspec
 
 <img width="937" alt="Cookies Data Manipulation Panel" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/e20cb6d0-f682-4c20-98c7-3b5e69be32df">
 
+> ### A note on _Cookie Accepted_
+>
+> Of all the cookies that a site attempts to set, some will be accepted by the browser and some would be rejected, in a 3PCD instance of Chrome (depending on whether they’re third-party or first-party cookies).
+>
+>The `Cookie Accepted` column of the _PSAT_ cookie table indicates this piece of information by adding a check icon (*✓*) next to the cookies that were accepted by the browser. Other cookies that don’t have this indicator, _have not been accepted by the browser_ and _are not set_.
+>
+>For this reason, such cookies won’t be displayed under _Applications > Cookies_ in _Chrome Developer Tools_, since that displays the current state of the application and all the cookies that are actually set (accepted) and available for use.
+>
+>In contrast, `PSAT` is obviously interested in displaying cookies that are not set and not in use, for the purpose of analysis and repair.
+>
+>This is expected behavior, but sometimes is a source of confusion because of the apparent disparity between the information displayed under _Application > Cookies_ and the _PSAT_ extension.
+
 
 ## Frame Overlays
 
