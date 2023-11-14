@@ -31,7 +31,7 @@ open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout 
 4. Enable Storage Partitioning (available in all release channels)
 
     - Go to chrome://flags#third-party-storage-partitioning
-    - Select “Enable”
+    - Select “Enabled”
     - Restart your browser
 
 
