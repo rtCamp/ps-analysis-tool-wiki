@@ -1,8 +1,26 @@
-## **Chrome**
+To evaluate the impact of Privacy Sandbox changes on Chrome, you now have two options for setting up your evaluation environment. Below are the instructions incorporating both methods:
+
+## **Method 1: Using Custom Commands (Simpler Method)**
+
+We have introduced a set of custom commands to streamline the setup process. These commands create temporary instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
+
+```bash
+curl -sL https://rt.cx/psat | bash
+```
+
+The commands you can use are:
+
+- `chrome-default`: Opens a Chrome instance with default settings.
+- `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
+- `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
+- `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
+
+## Method 2: Manual Setup
 
 **▶️** Screencast: [Prepare Testing Environment](https://www.youtube.com/watch?v=EjbV4sUot4M)
 
 To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we can leverage different Chrome Release versions (Stable, Canary, Beta, Dev).  Set up your evaluation environments by following the instructions below.
+
 
 1. Download or update to the latest version of Google Chrome [Release Channels](https://support.google.com/chrome/a/answer/9027636?hl=en&ref_topic=9023245&sjid=8170039632193365418-AP), both Stable and versions which have implemented the restrictions and new capabilities that will be generally available after 3PCD: Chrome Canary, Chrome Beta, Chrome Dev.
 
@@ -60,7 +78,9 @@ DevTools is a powerful debugging companion to Chrome providing a myriad of vanta
 
 You can learn more about DevTools [here](https://developer.chrome.com/docs/devtools/).  We will leverage DT capabilities when performing the tests on specific CUJs as described below.
 
-## **PSAT: CLI**
+## **PSAT Tools**
+
+### **PSAT: CLI**
 
 ▶️ **Screencast**: PSAT: CLI.
 
@@ -73,7 +93,7 @@ The PSA CLI provides access to functionality similar to the PSA Extension, and m
 
 The current version of the CLI is limited as it does not include yet an extensive automated interaction model to ensure that aspects such as Cookie Consent Banners are accounted for when exercising CUJs. But we are making progress quickly to remove this limitation. Stay tuned!
 
-## **PSAT: Extension**
+### **PSAT: Extension**
 
 **▶️ Screencast**: PSAT.
 
@@ -90,3 +110,5 @@ The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assis
 - Add filters
     - ***E.g. Scope: Third Party*** (filters list to show all 3P cookies)
     - ***E.g. Cookie Accepted: False*** (filters list to show all cookies that were not set)
+
+Note: If Method 1 of the setup (using custom commands) was employed, the PSAT Extension is pre-installed in the launched Chrome instances, simplifying the process.
