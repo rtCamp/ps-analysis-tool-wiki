@@ -43,14 +43,14 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools in both instances**
-    1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
+    1. On both browsers, open Chrome DevTools (on Mac: `Cmd-Option-i`, Linux: `Ctrl-Shift-i`)
     2. It is important to open DevTools first, to ensure capturing all the network interactions as the demo pages load
 
 3. **Adjust Network Tab Settings**
-    1. In the network tab, enable “Preserve Log” and “Disable Cache” in both instances of Google Chrome.
+    1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
     2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
 
 4. **Navigate and interact with the website**
@@ -161,7 +161,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the "Application" tab in the DevTools in both Chrome instances.
-    2. Navigate to the "Cookies" section and select the frame ([domain-aaa.com](http://domain-aaa.com/) to view the cookies set for that domain.
+    2. Navigate to the "Cookies" section and select the frame [domain-aaa.com](http://domain-aaa.com/) to view the cookies set for that domain.
     3. Note the cookies present from domains apart from [domain-aaa.com](http://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com](http://domain-ccc.com/).
 
 6. **Compare the behavior of the cookies**
@@ -258,7 +258,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
     2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools for both the default browser instance and the one simulating third-party cookie deprecation.
-    2. Navigate to the “Cookies” section and select the frame ([domain-aaa.com](https://domain-aaa.com/) to view the cookies.
+    2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies.
     3. Note the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
 6. **Compare the Cookies**
     1. Examine the cookies set in the default browser instance and compare them with the ones in the instance simulating third-party cookie deprecation.
@@ -360,7 +360,7 @@ sequenceDiagram
     6. In **Chrome Open**, follow the aforementioned sub-steps.
 5. **Inspect Network Activity**:
     1. In **Chrome Private**, filter out the network traffic associated with the YouTube player using the search function in the Network tab.
-    2. Click on the request beginning with “player?key=XXXXXXX”.
+    2. Click on the request beginning with `player?key=XXXXXXX`.
     3. Access the “Cookies” tab for this specific request and activate “show filtered out request cookies”.
     4. In **ChromeOpen**, repeat these sub-steps. Notice that in this instance, the cookies are transmitted to the third-party site, unlike **Chrome Private**.
 6. **Check YouTube History**:
@@ -370,11 +370,11 @@ sequenceDiagram
 7. **Inspect Local Storage**:
     1. Use developer tools to inspect local storage associated with the YouTube frame in both browser instances.
     2. For **Chrome Open**, the settings must be consistent across all tabs for [youtube.com](http://youtube.com/).
-    3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin ([youtube.com](http://youtube.com/) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
+    3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin [youtube.com](http://youtube.com/) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
 8. **Analyze Additional Breakages**:
     1. In the **Chrome Open** instance, a "watch later" option should be visible. Its absence in the **Chrome Private** instance hints that YouTube cannot identify the logged-in user.
 
-By now, you've thoroughly explored and debugged the scenario that illustrates how embedded content, like YouTube videos, relies on third-party cookies and/or storage APIs (e.g. localStorage)  to provide a seamless user experience. You have gained an understanding of the intricacies of how third-party cookies operate, and the challenges that arise when they're deprecated. You can apply a similar approach to investigate potential breakages on any embedded content on your site.  If you are an embedded content provider or are evaluating the effectiveness of such third-party content integrations on your platform, you can tailor the methodology from this demo to fit your specific situation.
+By now, you've thoroughly explored and debugged the scenario that illustrates how embedded content, like YouTube videos, relies on third-party cookies and/or storage APIs (e.g. `localStorage`)  to provide a seamless user experience. You have gained an understanding of the intricacies of how third-party cookies operate, and the challenges that arise when they're deprecated. You can apply a similar approach to investigate potential breakages on any embedded content on your site.  If you are an embedded content provider or are evaluating the effectiveness of such third-party content integrations on your platform, you can tailor the methodology from this demo to fit your specific situation.
 
 ## **Further Scenarios**
 
