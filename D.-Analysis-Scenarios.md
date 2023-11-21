@@ -60,9 +60,9 @@ sequenceDiagram
 
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools in the default Chrome instance and the instance simulating third-party cookie deprecation.
-    2. Navigate to the “Cookies” section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies in both instances of Google Chrome
+    2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](http://domain-aaa.com/) to view the cookies in both instances of Google Chrome
 
-    3. Note the cookies present from domains other than [[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/), in our case it will be [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/) in both instances of Chrome.
+    3. Note the cookies present from domains other than [domain-aaa.com](http://domain-aaa.com/), in our case it will be [domain-ccc.com](http://domain-ccc.com/) in both instances of Chrome.
 
 6. **Compare the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
@@ -152,7 +152,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 3. **Adjust Network Tab Settings**
     1. On both browsers, go to the network tab and enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
-    2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
+    2. This asks the browser to persist the information on network requests so that we can go back to them if needed as we analyze our scenarios
 
 4. **Navigate to the first domain**
     1. On both browsers, open the site [https://domain-aaa.com/ecommerce](https://domain-aaa.com/ecommerce).
@@ -257,7 +257,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
     1. Open the site [domain-aaa.com/single-sign-on](https://domain-aaa.com/single-sign-on) in both instances.
     2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
-    1. Go to the “Application” tab in the DevTools in both the default browser instance and the one simulating third-party cookie deprecation.
+    1. Go to the “Application” tab in the DevTools for both the default browser instance and the one simulating third-party cookie deprecation.
     2. Navigate to the “Cookies” section and select the frame ([domain-aaa.com](https://domain-aaa.com/) to view the cookies.
     3. Note the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
 6. **Compare the Cookies**
