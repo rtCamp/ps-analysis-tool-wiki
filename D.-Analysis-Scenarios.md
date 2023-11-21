@@ -43,7 +43,7 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [here](#evaluation-environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools in both instances**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
@@ -60,22 +60,22 @@ sequenceDiagram
 
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the “Application” tab in the DevTools in the default Chrome instance and the instance simulating third-party cookie deprecation.
-    2. Navigate to the “Cookies” section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies in both instance of Google Chrome
+    2. Navigate to the “Cookies” section and select the frame ([[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/)) to view the cookies in both instances of Google Chrome
 
     3. Note the cookies present from domains other than [[domain-aaa.com](http://domain-aaa.com/)](http://domain-aaa.com/), in our case it will be [[domain-ccc.com](http://domain-ccc.com/)](http://domain-ccc.com/) in both instances of Chrome.
 
 6. **Compare the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
-    2. Identify the network request which sets the cookie in the Chrome Open instance, and track that request in the Chrome Private instance
+    2. Identify the network request that sets the cookie in the Chrome Open instance, and track that request in the Chrome Private instance
 
 7. **Navigate to the other domain**
     1. Open the site https://domain-bbb.com/analytics in both instances
     2. Click the button “Click Me”.
     3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance and it could not when simulating third-party cookie deprecation.
 
-At this point, we debugged the scenario which is common for implementations of analytics providers, and learned how to detect potential failures. This demo can be extrapolated to other analytics providers which also use cookies as the state mechanism to implement their capabilities.
+At this point, we debugged the scenario which is common for implementations of analytics providers, and learned how to detect potential failures. This demo can be extrapolated to other analytics providers, which also use cookies as the state mechanism to implement their capabilities.
 
-If you are a 3P provider, or if you are checking if the 3P analytics providers on your site are working, then you can map the process  outlined in this demo to your scenario.
+If you are a 3P provider, or if you are checking if the 3P analytics providers on your site are working, then you can map the process outlined in this demo to your scenario.
 
 ## **E-commerce: Cross-domain Shopping Cart**
 
@@ -85,9 +85,9 @@ This scenario goes through the workings of an e-commerce setup that leverages a 
 
 This demo encompasses two distinct e-commerce sites hosted on [domain A](https://domain-aaa.com/ecommerce) and [domain B](http://domain-bbb.com/ecommerce), both using a third-party e-commerce service hosted on [domain C](http://domain-ccc.com/).
 
-When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
+When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items, irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
-This behavior will be affected with the deprecation of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
+This behavior will be affected by the deprecation of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
 
 The following sequence diagram shows the cart behavior with cookies enabled:
 
@@ -130,7 +130,7 @@ sequenceDiagram
     DomainA->>User: Render homepage with embedded iframe to DomainC/products
     User->>DomainC: Clicks on "Add to cart" for Product 3
     DomainC-->>DomainC: Cannot set/update cart cookie
-    DomainC->>User: Fails to update cart icon count or displays incorrect count
+    DomainC->>User: Fails to update cart icon count or displays an incorrect count
     User->>DomainB: Navigates to domain-bbb.com again
     DomainB->>User: Render homepage with embedded iframe to DomainC/products
     User->>DomainC: Observes cart icon with no items
@@ -144,7 +144,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Set up your testing environment (as described [here](#evaluation-environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+    1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools**
     1. On both browsers, open Chrome DevTools (on Mac: Cmd-Option-i, Linux: Ctrl-Shift-i)
@@ -162,7 +162,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 5. **Analyze the Cookies in the Application Tab**
     1. Go to the "Application" tab in the DevTools in both Chrome instances.
     2. Navigate to the "Cookies" section and select the frame ([domain-aaa.com](http://domain-aaa.com/) to view the cookies set for that domain.
-    3. Note the cookies present from domains other than [domain-aaa.com](http://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com](http://domain-ccc.com/).
+    3. Note the cookies present from domains apart from [domain-aaa.com](http://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com](http://domain-ccc.com/).
 
 6. **Compare the behavior of the cookies**
     1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
@@ -184,7 +184,7 @@ If you are a 3P provider, or if you are checking if the 3P e-commerce providers 
 
 ## **Single Sign-On (SSO) Services**
 
-This scenario demonstrates how a third-party Single Sign-On (SSO) service enables users to log in seamlessly across multiple websites, using third-party cookies to maintain their logged-in state. Our goal is to demonstrate the process by focusing on the specific details of how data flows through third-party cookies. We will evaluate the SSO functionality and identify any possible issues or problems.
+This scenario demonstrates how a third-party Single Sign-On (SSO) service enables users to log in seamlessly across multiple websites, using third-party cookies to maintain their logged-in state. Our goal is to demonstrate the process by focusing on the details of how data flows through third-party cookies. We will evaluate the SSO functionality and identify any possible issues or problems.
 
 ### **How the Demo Works**
 
@@ -341,13 +341,13 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-    1. Prepare your testing environment (as described [here](#evaluation-environment). Ensure you have two distinct instances of Google Chrome:
+    1. Prepare your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
         - **Chrome Private**: Simulating third-party cookie deprecation.
         - **Chrome Open**: Running on default settings.
     2. In both instances, navigate to [YouTube.com](http://youtube.com/) and log in using any account available to you.
 2. **Open Developer Tools**
     1. Launch Chrome DevTools in both browsers. For Mac users, press **Cmd-Option-i** and for Linux users, press **Ctrl-Shift-i**.
-    2. It's crucial to initialize DevTools prior to browsing to capture all network interactions as pages load.
+    2. It's crucial to initialize DevTools before browsing to capture all network interactions as pages load.
 3. **Adjust Network Tab Settings**
     1. In the network tab of both browsers, activate the "Preserve Log" and "Disable Cache" options.
     2. These settings ensure the persistence of network request logs for post-analysis.
@@ -374,11 +374,11 @@ sequenceDiagram
 8. **Analyze Additional Breakages**:
     1. In the **Chrome Open** instance, a "watch later" option should be visible. Its absence in the **Chrome Private** instance hints that YouTube cannot identify the logged-in user.
 
-By now, you've thoroughly explored and debugged the scenario that illustrates how embedded content, like YouTube videos, relies on third-party cookies and/or storage APIs (e.g. localStorage)  to provide a seamless user experience. You have gained an understanding of the intricacies of how third-party cookies operate, and the challenges that arise when they're deprecated. You can apply a similar approach to investigate potential breakages on any embedded content on yoursite.  If you are an embedded content provider or are evaluating the effectiveness of such third-party content integrations on your platform, you can tailor the methodology from this demo to fit your specific situation.
+By now, you've thoroughly explored and debugged the scenario that illustrates how embedded content, like YouTube videos, relies on third-party cookies and/or storage APIs (e.g. localStorage)  to provide a seamless user experience. You have gained an understanding of the intricacies of how third-party cookies operate, and the challenges that arise when they're deprecated. You can apply a similar approach to investigate potential breakages on any embedded content on your site.  If you are an embedded content provider or are evaluating the effectiveness of such third-party content integrations on your platform, you can tailor the methodology from this demo to fit your specific situation.
 
 ## **Further Scenarios**
 
-At this point we have pursued in depth analyses of several CUJs commonly found across a wide range of sites, and it is likely that your site has at least one of them. There are many other scenarios commonly found  across the web ecosystem. This methodology will continue expanding on the set of considered scenarios as we create examples and run analyses on them. These scenarios include:
+At this point, we have pursued in depth analyses of several CUJs commonly found across a wide range of sites, and it is likely that your site has at least one of them. There are many other scenarios commonly found across the web ecosystem. This methodology will continue expanding on the set of considered scenarios as we create examples and run analyses on them. These scenarios include:
 
 ### **Creating an Account**
 
@@ -395,7 +395,7 @@ Many websites incorporate third-party OAuth services like Google and Facebook fo
 
 ### **Personalization/Recommendations (e.g., Amazon Recommendations)**
 
-Personalization or recommendation services aim to curate and tailor user experiences on websites by suggesting content, products, or other items based on individual user behaviors, preferences, and histories. Such services can significmantly enhance user engagement, increase conversion rates, and foster loyalty. For example, on e-commerce platforms like Amazon, when a user browses through products, the platform provides recommendations based on the user's past interactions, viewing patterns, and purchases.
+Personalization or recommendation services aim to curate and tailor user experiences on websites by suggesting content, products, or other items based on individual user behaviors, preferences, and histories. Such services can significantly enhance user engagement, increase conversion rates, and foster loyalty. For example, on e-commerce platforms like Amazon, when a user browses through products, the platform provides recommendations based on the user's past interactions, viewing patterns, and purchases.
 
 If a user explores an Amazon product on a third-party site with an Amazon affiliate link, a third-party cookie might track this interaction. When the user later visits Amazon, they could be presented with recommendations related to this previously-viewed product.
 
@@ -411,4 +411,4 @@ In some scenarios, CDNs may rely on third-party cookies to determine if a user h
 
 # **Reporting Breakages**
 
-We have outlined a general, yet useful, methodology to approach the analysis of sites in search of potential breakages due to the deprecation of 3P cookies and upcoming changes to Web Storage APIs. By applying this methodology to your specific use cases, you can unearth potential issues and get ready for a successful transition to a more private web.
+We have outlined a general, yet useful, methodology to approach the analysis of sites searching for potential breakages due to the deprecation of 3P cookies and upcoming changes to Web Storage APIs. By applying this methodology to your specific use cases, you can unearth potential issues and get ready for a successful transition to a more private web.
