@@ -2,6 +2,14 @@ The Chrome extension provides capabilities surfaced via the extension pop-up and
 
 ## Installing and Running PSAT
 
+### Installing from Chrome Web Store
+
+- Access the [Extension page](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef)
+- Click on "Add to Chrome"
+- Accept the permission request
+- You are ready to use the tool
+
+
 ### Build PSAT from source
 
 - Clone this Privacy Sandbox Analysis Tool Repository
