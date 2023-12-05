@@ -15,23 +15,6 @@ PSAT offers three straightforward installation methods:
 
 ![PSAT Extension page](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/a2c35d8e-ceb4-44d6-9378-ef83ee1ab8c9)
 
-#### Extension settings
-
-PSAT analyses only one tab at a time by default to ensure minimum system usage. Otherwise, analysis can be resource-intensive depending on hardware limitations and the total number of open tabs at a time.
-
-However, you can change this behavior under **Extension options > Total number of allowed tabs to be processed together:** and choose **No Restriction**
-
-1. You can find the extension settings in the extension details:
-
-![psat extension on chrome](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/6723585b-7ba5-4bec-a0f0-daef5b5a25a8)
-
-2. Go to "Extension options"
-
-![Extension details panel - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/3c64cb56-0846-4d76-86a3-04257a52d449)
-
-3. Select the Behavior that you prefer:
-
-![settings PSAT - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/4f6fb582-f918-401e-8aef-19e43d70d3f8)
 
 ### 2. Installation from the PSAT zip file
 
@@ -51,9 +34,27 @@ If you need to debug the extension or submit improvements, you can download the 
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
-## Utilizing PSAT
+## Using PSAT
 
 Once PSAT is successfully installed, you can access its functionalities through the Chrome extension pop-up or the DevTools panel.
+
+### Extension settings
+
+PSAT analyses only one tab at a time by default to ensure minimum system usage. Otherwise, analysis can be resource-intensive depending on hardware limitations and the total number of open tabs at a time.
+
+However, you can change this behavior under **Extension options > Total number of allowed tabs to be processed together:** and choose **No Restriction**
+
+1. You can find the extension settings in the extension details:
+
+![psat extension on chrome](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/6723585b-7ba5-4bec-a0f0-daef5b5a25a8)
+
+2. Go to "Extension options"
+
+![Extension details panel - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/3c64cb56-0846-4d76-86a3-04257a52d449)
+
+3. Select the Behavior that you prefer:
+
+![settings PSAT - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/4f6fb582-f918-401e-8aef-19e43d70d3f8)
 
 ### Chrome Extension Pop-up:
 
