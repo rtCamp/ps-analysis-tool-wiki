@@ -13,7 +13,7 @@ PSAT offers three straightforward installation methods:
 - Click the "Add to Chrome" button.
 - Grant the necessary permissions when prompted.
 
-![PSAT Extension Page](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/60f9e403-8627-44bc-a0a3-b8db3026432f)
+![PSAT Extension page](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/a2c35d8e-ceb4-44d6-9378-ef83ee1ab8c9)
 
 #### Extension settings
 
@@ -23,11 +23,11 @@ However, you can change this behavior under **Extension options > Total number o
 
 1. You can find the extension settings in the extension details:
 
-![PSAT Extension details](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/17d15053-60be-4e58-bb40-b2a5150b1533)
+![chrome extension PSAT](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/8260b568-c4e5-4894-a416-3db9d2ed378d)
 
 2. Go to "Extension options"
 
-![Extension details panel](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/003f08da-5a27-4c56-b734-f3b53b9f6843)
+![Extension details panel](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/532ada77-19a2-46f1-bd2f-09d9340b0290)
 
 3. Select the Behavior that you prefer:
 
