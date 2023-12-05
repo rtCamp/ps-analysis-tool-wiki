@@ -23,16 +23,15 @@ However, you can change this behavior under **Extension options > Total number o
 
 1. You can find the extension settings in the extension details:
 
-![chrome extension PSAT](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/8260b568-c4e5-4894-a416-3db9d2ed378d)
+![psat extension on chrome](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/6723585b-7ba5-4bec-a0f0-daef5b5a25a8)
 
 2. Go to "Extension options"
 
-![Extension details panel](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/532ada77-19a2-46f1-bd2f-09d9340b0290)
+![Extension details panel - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/3c64cb56-0846-4d76-86a3-04257a52d449)
 
 3. Select the Behavior that you prefer:
 
-<img width="771" alt="settings PSAT" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/11f2bbdb-59c7-4c15-8aa8-586c59d9a66f">
-
+![settings PSAT - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/4f6fb582-f918-401e-8aef-19e43d70d3f8)
 
 ### 2. Installation from the PSAT zip file
 
@@ -131,7 +130,7 @@ PSAT CLI is another alternative to analyze your website. You can use a terminal 
 
 Once you create a report with the CLI, as in the image below, you will notice that a list with affected cookies will be listed in a different table. This is another advantage of using the CLI that allows quick access to the affected cookies.
 
-![PSAT CLI](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/39a7f797-c381-41cd-a0fd-e07ed36d97df)
+![PSAT CLI - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/10329cc9-9362-4c8c-8092-e5770c882c7f)
 
 ## Reporting
 
