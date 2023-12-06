@@ -123,9 +123,11 @@ PSAT CLI is another alternative to analyze your website. You can use a terminal 
 - Clone this Privacy Sandbox Analysis Tool Repository
 - Run `npm install` to install all dependencies
 - `npm run cli:build` to generate a build in `/dist/cli`.
-- Run the CLI, providing a URL or a sitemap as input.
-  - E.g. `npm run cli -- -s https://example.com/sitemap_index.xml`.
-  - E.g. `npm run cli -- -u https://bbc.com`.
+- Run the CLI by providing a URL, sitemap url, CSV file of URL set or a path to sitemap file as input.
+  - E.g. to analyze specific URL: `npm run cli -- -u https://bbc.com`.
+  - E.g. to analyze all URLs from sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
+  - E.g. to analyze set of URLs through CSV file: `npm run cli -- -c /path/to/urlset.csv`.
+  - E.g. to analyze specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
   - Please note that the dependency (Wappalyzer), which analyzes page technologies, may require permission to use its instance of Chromium. If this happens, you have the option to skip the technology analysis by using the `nt` flag for the uninterrupted analysis of cookies.
   - E.g. `npm run cli -- -u https://bbc.com -nt`.
 
