@@ -63,23 +63,8 @@ And the select the appropiate option:
 <img width="560" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
 
 
-<img width="1264" alt="Screenshot 2023-12-07 at 10 51 21 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/de6c29cd-1f4d-44a6-8149-ee6a15325a58">
 
-However, you can change this behavior under **Extension options > Total number of allowed tabs to be processed together:** and choose **No Restriction**
-
-1. You can find the extension settings in the extension details:
-
-![psat extension on chrome](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/6723585b-7ba5-4bec-a0f0-daef5b5a25a8)
-
-2. Go to "Extension options"
-
-![Extension details panel - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/3c64cb56-0846-4d76-86a3-04257a52d449)
-
-3. Select the Behavior that you prefer:
-
-![settings PSAT - small](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/4f6fb582-f918-401e-8aef-19e43d70d3f8)
-
-### Chrome Extension Pop-up:
+### PSAT Extension Pop-up
 
 - Access the URL that you want to analyze
 - Locate the PSAT extension icon on the right side of the browser toolbar and click on it.
