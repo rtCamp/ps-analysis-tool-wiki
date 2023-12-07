@@ -1,30 +1,46 @@
-The Privacy Sandbox Analysis Tool (PSAT) is a tool that helps developers understand and manage cookies to prepare for changes to improve privacy for users on the web. It provides several features to help you:
+### Methodology
 
-- **Identify third-party cookies**: PSAT can help you identify third-party cookies being set on your site, which can be affected by third-party cookies deprecation.
-- **Report breakages**: PSAT CLI provides a way for you to easily report breakages that you find in the Privacy Sandbox, which can help to improve the ecosystem.
+Analyzing and Debugging Cookies with PSAT encompasses the following steps:
 
-## Installing and Running PSAT
+<div align='left'>
+<img width="960" alt="Screenshot 2023-12-07 at 9 56 55 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/55e12372-f25a-435c-9810-9dcff05415ef">
+</div>
 
+### Spinning Chrome Instances from Command Line
+
+PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
+
+```bash
+curl -sL https://rt.cx/psat | bash
+```
+
+The commands you can use are:
+
+- `chrome-default`: Opens a Chrome instance with default settings.
+- `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
+- `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
+- `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
 PSAT offers three straightforward installation methods:
 
-### 1. Chrome Web Store Installation
+### Installing PSAT from Chrome Web Store
 
-- Visit the PSAT [extension page](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef) on the Chrome Web Store. 
-- Click the "Add to Chrome" button.
-- Grant the necessary permissions when prompted.
-
-![PSAT Extension page](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/330792/a2c35d8e-ceb4-44d6-9378-ef83ee1ab8c9)
+<div align='left'>
+<img width="560" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
+</div>
 
 
-### 2. Installation from the PSAT zip file
+### Installation from the PSAT zip file
 
-This option is an alternative if you want to install a specific version. You can find it in our repository.
+Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo, select the latest version form the available tags, expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
 
-- You can download the extension zip file from the [release list](https://github.com/GoogleChromeLabs/ps-analysis-tool/releases) and unzip it.
-- Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
-- Click the "Load unpacked" button and select the unzipped extension folder.
+<img width="1813" alt="Screenshot 2023-12-07 at 10 34 42 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/a2148c71-e0a0-421f-951d-173271e0af94">
 
-### 3. PSAT Source code installation
+Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
+
+<img width="560" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
+
+
+### PSAT Source code installation
 
 If you need to debug the extension or submit improvements, you can download the source code and run it locally.
 
@@ -34,13 +50,20 @@ If you need to debug the extension or submit improvements, you can download the 
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
-## Using PSAT
-
-Once PSAT is successfully installed, you can access its functionalities through the Chrome extension pop-up or the DevTools panel.
-
 ### Extension settings
 
-PSAT analyses only one tab at a time by default to ensure minimum system usage. Otherwise, analysis can be resource-intensive depending on hardware limitations and the total number of open tabs at a time.
+PSAT can be configured to focus on the analysis of a single tab, or allow any number of open tabs. The recommended approach is to analyze browsing sessions from a single tab perspective, or a very small number of tabs, as doing so minimizes the amount of resources consumed by PSAT. 
+
+To configure this capability of PSAT:
+
+<img width="560" alt="Screenshot 2023-12-07 at 11 03 01 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/888f43b9-3820-488d-a174-c7f3aa0c1200">
+
+And the select the appropiate option:
+
+<img width="560" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
+
+
+<img width="1264" alt="Screenshot 2023-12-07 at 10 51 21 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/de6c29cd-1f4d-44a6-8149-ee6a15325a58">
 
 However, you can change this behavior under **Extension options > Total number of allowed tabs to be processed together:** and choose **No Restriction**
 
