@@ -111,8 +111,12 @@ Click on the Cookies component in PSAT's landing page, which will open the Cooki
 
 <img width="742" alt="Screenshot 2023-12-07 at 5 19 35 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/1c7d3973-a0c5-4a7a-bac2-8b6b70920373">
 
+The Cookies landing page:
 
-### A note on _Cookie Accepted_ Column
+<img width="1532" alt="Screenshot 2023-12-07 at 5 25 30 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/a92fd0eb-d3e8-42df-ba17-13ef8c206403">
+
+
+#### A note on _Cookie Accepted_ Column
 
 >Of all the cookies that a site attempts to set, the browser will accept some, and some will be rejected, in a 3PCD instance of Chrome (depending on whether they’re third-party or first-party cookies).
 >
