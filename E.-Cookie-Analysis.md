@@ -1,14 +1,6 @@
-
-
-
-
-
-
-
-
 # PSAT Features
 
-## PSAT's Cookies Landing Page
+## Cookies Landing Page
 
 Click on the Cookies component in PSAT's landing page, which will open the Cookies landing page. As discussed above, PSAT can be configured to avoid using too much resources by restricting the tool to only analyze a single tab at a time. If that configuration setting is set, PSAT presents an `Analyze thus tab` button to switch the focus of the tool to the current tab. 
 
