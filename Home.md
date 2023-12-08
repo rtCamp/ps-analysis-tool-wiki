@@ -1,3 +1,5 @@
+![PS_Logo Set_RGB_Outline_PS_Horizontal with Logotype-](https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/dc0295c3-a116-4926-9939-3a80a9a7f6c6)
+
 Welcome to the Privacy Sandbox Analysis Tool(PSAT) Wiki!
 
 The [Privacy Sandbox initiative](https://privacysandbox.com/) aims to create technologies that both protect people's privacy online and give companies and developers tools to build thriving digital businesses. The main goal of Privacy Sandbox is to reduce cross-site tracking while still enabling the functionality that keeps online content and services freely accessible by everyone. Deprecating and removing third-party cookies encapsulates the challenge, as they enable critical functionality across sign-in, fraud protection, advertising, and generally the ability to embed rich, third-party content in your sites—but at the same time they're also the key enablers of cross-site tracking.
