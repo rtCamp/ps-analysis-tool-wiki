@@ -6,6 +6,10 @@ Analyzing and Debugging Cookies with PSAT encompasses the following steps:
 <img width="960" alt="Screenshot 2023-12-07 at 9 56 55 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/55e12372-f25a-435c-9810-9dcff05415ef">
 </div>
 
+## Preparing the environment
+
+Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of 3P cookies; and (2) install PSAT.
+
 ### Spinning Chrome Instances from Command Line
 
 PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
@@ -46,17 +50,12 @@ Expand the “Assets” dropdown, and click on the file named “extension-v*.*.
 <img width="560" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
 
 
-
-
-
-
-
 Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
 <img width="560" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
 
 
-### PSAT Source code installation
+### Source code installation
 
 If you need to debug the extension or submit improvements, you can download the source code and run it locally.
 
@@ -79,15 +78,14 @@ And the select the appropiate option:
 <img width="560" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
 
 
-
-### PSAT Extension Pop-up
+## PSAT Extension Pop-up
 
 - Access the URL that you want to analyze
 - Locate the PSAT extension icon on the right side of the browser toolbar and click on it.
 - Initiate the analysis process by clicking the "Analyze this tab" button.
 - PSAT will present a detailed list of all cookies encountered in the specific URL Address.
 
-### DevTools Panel:
+## PSAT's Privacy Sandbox DevTools Panel
 
 1. Access the URL that you want to analyze
 1. Launch Chrome DevTools.
@@ -96,20 +94,13 @@ And the select the appropiate option:
 1. Commence the analysis by clicking the "Analyze this tab" button.
 1. PSAT will display a comprehensive list of all cookies set through the URL provided.
 
-## PSAT main functionalities
-
-Based on version `0.3.2` We will list three main functionalities, but more functionalities are planned to be included in future versions. The features are:
-- PSAT Landing Page
-- Cookie Data Manipulation and Analysis
-- Frame overlay
-
 ### PSAT Landing Page
 
 The features and capabilities of this tool help you (developers) transition towards a more private web, by shedding light on data and context as you implement privacy-preserving solutions to the features and capabilities of your websites and apps. The main functional areas of the tool are as follows. 
 
 <img width="937" alt="Privacy Sandbox Analysis tool landing page" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4352e62f-832b-4cce-800f-41a767e1bcc3">
 
-### Cookie Data Manipulation and Analysis
+### Cookies Landing Page
 
 DevTools provides access to lots of information regarding every functional aspect of the browser, including cookies. This extension expands the capabilities of DevTools and provides additional ways to slice and dice cookie data, making it easier for everyone to understand the behaviors of cookies in different scenarios.
 
