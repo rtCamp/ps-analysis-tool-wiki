@@ -496,6 +496,3 @@ CDNs can tailor the delivery of content based on user profiles, preferences, or 
 
 In some scenarios, CDNs may rely on third-party cookies to determine if a user has access to specific content, especially in ecosystems where authentication is managed by a third party.
 
-# **Reporting Breakages**
-
-We have outlined a general, yet useful, methodology to approach the analysis of sites searching for potential breakages due to the deprecation of 3P cookies and upcoming changes to Web Storage APIs. By applying this methodology to your specific use cases, you can unearth potential issues and get ready for a successful transition to a more private web.
