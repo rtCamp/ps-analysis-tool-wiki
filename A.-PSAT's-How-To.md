@@ -33,9 +33,23 @@ PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/de
 
 ### Installation from the PSAT zip file
 
-Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo, select the latest version form the available tags, expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
+Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo
 
-<img width="1813" alt="Screenshot 2023-12-07 at 10 34 42 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/a2148c71-e0a0-421f-951d-173271e0af94">
+<img width="560" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
+
+Select the latest version from the available tags:
+
+<img width="560" alt="Install from zip file, step two" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4dd56d99-46eb-4cad-8f4d-28d672062436">
+
+Expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
+
+<img width="560" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
+
+
+
+
+
+
 
 Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
