@@ -1,8 +1,8 @@
-To evaluate the impact of Privacy Sandbox changes on Chrome, you now have two options for setting up your evaluation environment. Below are the instructions incorporating both methods:
+Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of 3P cookies; and (2) install PSAT.
 
-## **Method 1: Using Custom Commands (Simpler Method)**
+## Spinning Chrome Instances from Command Line
 
-We have introduced a set of custom commands to streamline the setup process. These commands create temporary instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
+PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
 
 ```bash
 curl -sL https://rt.cx/psat | bash
@@ -14,101 +14,78 @@ The commands you can use are:
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
+PSAT offers three straightforward installation methods:
 
-## Method 2: Manual Setup
+## Installing PSAT from Chrome Web Store
 
-**▶️** Screencast: [Prepare Testing Environment](https://www.youtube.com/watch?v=EjbV4sUot4M)
+PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`. 
 
-To fully evaluate the potential impact of Privacy Sandbox changes on Chrome, we can leverage different Chrome Release versions (Stable, Canary, Beta, Dev).  Set up your evaluation environments by following the instructions below.
-
-
-1. Download or update to the latest version of Google Chrome [Release Channels](https://support.google.com/chrome/a/answer/9027636?hl=en&ref_topic=9023245&sjid=8170039632193365418-AP), both Stable and versions which have implemented the restrictions and new capabilities that will be generally available after 3PCD: Chrome Canary, Chrome Beta, Chrome Dev.
-
-2. Start Chrome versions with the relevant command line arguments:
-
-**Linux OS**
-
-```
-google-chrome --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
-```
-        
-**Mac OS**
-
-```        
-open /Applications/Google\ Chrome.app --args --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
-```        
-
-**Windows OS**
-
-```        
-"\Program Files\Google\Chrome\Application\chrome.exe" --test-third-party-cookie-phaseout --enable-features="FirstPartySets,StorageAccessAPI,StorageAccessAPIForOriginExtension,PageInfoCookiesSubpage,PrivacySandboxFirstPartySetsUI"
-```
-        
-3. Consider using a new Chrome profile for a clean testing environment, or deactivate browser plugins/extensions that might interfere with cookies.
-
-4. Enable Storage Partitioning (available in all release channels)
-
-    - Go to chrome://flags#third-party-storage-partitioning
-    - Select “Enabled”
-    - Restart your browser
+<div align='left'>
+<img width="742" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
+</div>
 
 
-![](https://lh5.googleusercontent.com/iSv0ZkoxWo9yhuXsCV8JfJxELEZt_JEikEILCZNHko5c_Rj5Zp8FU4DUhunZ9xE8n2sdqRfbNxb9LiCDJglQ7eAIwmbt-cbm_f5K9_om11iDgJJ3Rz0yRyI9i9Zw6YC1jAmweWp-qLeXBSEh8wN2ZYNRSG7S0k16-kSPKbfkWhtjg6U4iJfwFchwPxmy5WUOxgDnK2ybWyt1R8gKgiaQM9_TWBbQQ6SfEgTEAg)
+## Installation from the PSAT zip file
 
-5. Run tests on the different Chrome versions (Stable, Canary with 3PCD enabled)
-    - In this methodology, we use the following naming convention
-        - **Chrome Browser Open**: refers to the chrome instance with 3P cookie functionality available
-        - **Chrome Browser Private**: refers to the chrome instance with 3P cookie and storage access APIs secured
+Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo
 
-6. During testing with 3P cookies blocked, turn cookies on and off via the URL bar
-    - Click the small “eye” icon in the URL bar
-    - Click on “site not working” -> “Allow cookies”
+<img width="742" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
 
-## **DevTools**
+Select the latest version from the available tags:
 
-▶️ **Screencast**: [Analyzing site with DevTools](https://www.youtube.com/watch?v=_FErYRFIXHA)
+<img width="742" alt="Install from zip file, step two" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4dd56d99-46eb-4cad-8f4d-28d672062436">
 
-DevTools is a powerful debugging companion to Chrome providing a myriad of vantage points to observe the operational execution of sites running on the browser. DT provides visibility to all data about cookies. To get to it some access points are:
+Expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
 
-1. **Open Chrome Developer Tools**: Right-click on the webpage and select "Inspect" or press Ctrl+Shift+I (Windows/Linux) or Cmd+Option+I (Mac) to open the Developer Tools.
-2. **Navigate to the Network Tab**: In the Developer Tools window, navigate to the "Network" tab.
-3. **Perform the Action**: Interact with the website, such as clicking a button, submitting a form, or navigating to a new page.
-4. **Observe Network Activity**: In the "Network" tab, you'll see a list of network requests made by the webpage. Look for entries related to cookies, which might have a "Set-Cookie" header in the response or other relevant information.
-5. **Inspect Cookies**: Click on a network request entry to view its details. Look for the "Headers" tab, which should include information about cookies, including those being added or modified as a result of the action you performed.
+<img width="742" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
 
-You can learn more about DevTools [here](https://developer.chrome.com/docs/devtools/).  We will leverage DT capabilities when performing the tests on specific CUJs as described below.
+Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
-## **PSAT Tools**
+<img width="742" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
 
-### **PSAT: CLI**
 
-▶️ **Screencast**: PSAT: CLI.
+## PSAT installation from source code 
 
-The PSA CLI provides access to functionality similar to the PSA Extension, and makes it accessible through the command line. The CLI enables the following use cases:
+If you need to debug the extension or submit improvements, you can download the source code and run it locally.
 
-- Aggregated analysis of the full site (i.e. sitemap.xml)
-- Site evaluation pre-analysis ⇒ Guidance on scope and prioritization
-- CLI for CI: Integrate the PSA CLI into your CI pipeline and detect potential areas of issues related to 3PCD
-- Testing for breakages by executing two access runs, with and without cookies being blocked, and providing a “cookie differential” analysis
+- Clone this Privacy Sandbox Analysis Tool Repository
+- Run `npm install` to install all dependencies
+- `npm run dev` or `npm run build` to generate a build in `/dist/extension`
+- Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
+- Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
-The current version of the CLI is limited as it does not include yet an extensive automated interaction model to ensure that aspects such as Cookie Consent Banners are accounted for when exercising CUJs. But we are making progress quickly to remove this limitation. Stay tuned!
+## Extension settings
 
-### **PSAT: Extension**
+PSAT can be configured to focus on the analysis of a single tab, or allow any number of open tabs. The recommended approach is to analyze browsing sessions from a single tab perspective, or a very small number of tabs, as doing so minimizes the amount of resources consumed by PSAT. 
 
-**▶️ Screencast**: PSAT.
+To configure this capability of PSAT:
 
-The Privacy Sandbox Analysis Tool (PSAT) is a Chrome DevTools extension to assist developers in the analysis and debugging of cookie, storage, and PS API usage during Browsing Sessions.
+<img width="742" alt="Screenshot 2023-12-07 at 11 03 01 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/888f43b9-3820-488d-a174-c7f3aa0c1200">
 
-- Download and install PSAT, which is being developed as an open-source project and you can access the project [here](https://github.com/GoogleChromeLabs/ps-analysis-tool).
-- Load the website on the evaluation environment (i.e. Chrome Stable, Chrome Canary)
-- Open DevTools:
-    - On Mac : Command(⌘) + Option(⌥) + C
-    - Windows, Linux, ChromeOS: Control(⌃) + Shift(⇧) + C
-- Click on the “Privacy Sandbox” Tab
-- Click on the *Cookies > Site Frame*
-- Open filters by clicking on the Filter icon
-- Add filters
-    - ***E.g. Scope: Third Party*** (filters list to show all 3P cookies)
-    - ***E.g. Cookie Accepted: False*** (filters list to show all cookies that were not set)
+And the select the appropiate option:
 
-Note: If Method 1 of the setup (using custom commands) was employed, the PSAT Extension is pre-installed in the launched Chrome instances, simplifying the process.
+<img width="742" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
