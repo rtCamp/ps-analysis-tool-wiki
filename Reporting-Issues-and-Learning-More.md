@@ -4,7 +4,7 @@ TBD.
 
 ## Found an Issue or Breakage?
 
-Your findings are invaluable! Should you encounter any breakages or issues, make sure to reach out and share with us your findings. By reporting them you will be able to receive help to address the breakage, and  you will be helping others in the web platforms who may experience the same breakage.
+Your findings are invaluable! Should you encounter any breakages or issues, make sure to reach out and share with us your findings. By reporting them you will be able to receive help to address the breakage, and you will be helping others in the web platforms who may experience the same breakage.
 
 Before reporting, please gather information about the breakage and its context to help the training and debugging process. Once you have done that, you can report breakages on the public [PS Dev Support repository](https://github.com/GoogleChromeLabs/privacy-sandbox-dev-support/), or on [Google’s tracker](https://goo.gle/report-3pc-broken).
 
