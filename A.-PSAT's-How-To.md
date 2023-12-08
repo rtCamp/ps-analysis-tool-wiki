@@ -31,7 +31,7 @@ PSAT offers three straightforward installation methods:
 PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`. 
 
 <div align='left'>
-<img width="560" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
+<img width="742" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
 </div>
 
 
@@ -39,23 +39,22 @@ PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/de
 
 Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo
 
-<img width="560" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
+<img width="742" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
 
 Select the latest version from the available tags:
 
-<img width="560" alt="Install from zip file, step two" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4dd56d99-46eb-4cad-8f4d-28d672062436">
+<img width="742" alt="Install from zip file, step two" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4dd56d99-46eb-4cad-8f4d-28d672062436">
 
 Expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
 
-<img width="560" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
-
+<img width="742" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
 
 Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
-<img width="560" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
+<img width="742" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
 
 
-### Source code installation
+### PSAT installation from source code 
 
 If you need to debug the extension or submit improvements, you can download the source code and run it locally.
 
@@ -71,11 +70,11 @@ PSAT can be configured to focus on the analysis of a single tab, or allow any nu
 
 To configure this capability of PSAT:
 
-<img width="560" alt="Screenshot 2023-12-07 at 11 03 01 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/888f43b9-3820-488d-a174-c7f3aa0c1200">
+<img width="742" alt="Screenshot 2023-12-07 at 11 03 01 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/888f43b9-3820-488d-a174-c7f3aa0c1200">
 
 And the select the appropiate option:
 
-<img width="560" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
+<img width="742" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
 
 
 ## PSAT Extension Pop-up
@@ -85,7 +84,11 @@ And the select the appropiate option:
 - Initiate the analysis process by clicking the "Analyze this tab" button.
 - PSAT will present a detailed list of all cookies encountered in the specific URL Address.
 
-## PSAT's Privacy Sandbox DevTools Panel
+## PSAT's Privacy Sandbox Panel in DevTools
+
+DevTools provides a very large set of powerful capabilities enabling the understanding and debugging of every functional aspect of web development, including cookies and all storage APIs. PSAT expands DevTools with additional features to support tackling the deprecation of unrestricted 3P cookies, and the adoption of new privacy-preserving building blocks (i.e. Chrome APIs).
+
+To access PSAT:
 
 1. Access the URL that you want to analyze
 1. Launch Chrome DevTools.
@@ -96,15 +99,18 @@ And the select the appropiate option:
 
 ### PSAT Landing Page
 
-The features and capabilities of this tool help you (developers) transition towards a more private web, by shedding light on data and context as you implement privacy-preserving solutions to the features and capabilities of your websites and apps. The main functional areas of the tool are as follows. 
+PSAT features and capabilities aim at supporting developers transition towards a more private web, by shedding light on cookie usage, and the new building blocks available for implementing privacy-preserving solutions for features and capabilities of websites and apps. PSAT's landing paghe in DevTools reflects this goal:
 
-<img width="937" alt="Privacy Sandbox Analysis tool landing page" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4352e62f-832b-4cce-800f-41a767e1bcc3">
+<img width="742" alt="Screenshot 2023-12-07 at 5 07 13 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/9a38dace-5ee1-423b-8fae-98942533d03f">
+
+On the left there are four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each of these sections corresponds to a feature area of PSAT, which are being developed progressively. 
 
 ### Cookies Landing Page
 
-DevTools provides access to lots of information regarding every functional aspect of the browser, including cookies. This extension expands the capabilities of DevTools and provides additional ways to slice and dice cookie data, making it easier for everyone to understand the behaviors of cookies in different scenarios.
+Click on the Cookies component in PSAT's landing page, which will open the Cookies landing page. As discussed above, PSAT can be configured to avoid using too much resources by restricting the tool to only analyze a single tab at a time. If that configuration setting is set, PSAT presents an `Analyze thus tab` button to switch the focus of the tool to the current tab. 
 
-<img width="937" alt="Cookies Data Manipulation Panel" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/e20cb6d0-f682-4c20-98c7-3b5e69be32df">
+<img width="742" alt="Screenshot 2023-12-07 at 5 19 35 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/1c7d3973-a0c5-4a7a-bac2-8b6b70920373">
+
 
 ### A note on _Cookie Accepted_ Column
 
