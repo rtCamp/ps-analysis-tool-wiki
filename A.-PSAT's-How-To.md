@@ -1,4 +1,4 @@
-### Methodology
+## Methodology
 
 Analyzing and Debugging Cookies with PSAT encompasses the following steps:
 
