@@ -24,6 +24,8 @@ PSAT offers three straightforward installation methods:
 
 ### Installing PSAT from Chrome Web Store
 
+PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`. 
+
 <div align='left'>
 <img width="560" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
 </div>
