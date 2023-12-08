@@ -5,9 +5,9 @@
 - [[Home]] of the Wiki
 - [[Roadmap]]
 - [[Glossary]]
-- [Contributor Guide](https://github.com/flutter/flutter/blob/master/CONTRIBUTING.md)
-- [[Support Forum]] on GitHub discussions
-- [Code of Conduct](https://github.com/flutter/flutter/blob/master/CODE_OF_CONDUCT.md)
+- [Contributor Guide](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/CONTRIBUTING.md)
+- [Support Forum](https://github.com/GoogleChromeLabs/ps-analysis-tool/discussions/categories/support-forum) on GitHub discussions
+- [Code of Conduct](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/CODE_OF_CONDUCT.md)
 
 ## Privacy Sandbox Analysis
 
