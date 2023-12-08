@@ -14,16 +14,15 @@ The commands you can use are:
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
-PSAT offers three straightforward installation methods:
+  PSAT offers three straightforward installation methodsmeet:
 
 ## Installing PSAT from Chrome Web Store
 
-PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`. 
+PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
 
 <div align='left'>
 <img width="742" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
 </div>
-
 
 ## Installation from the PSAT zip file
 
@@ -43,8 +42,7 @@ Go to `chrome://extensions` in the browser you want PSAT to be installed on, tur
 
 <img width="742" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
 
-
-## PSAT installation from source code 
+## PSAT installation from source code
 
 If you need to debug the extension or submit improvements, you can download the source code and run it locally.
 
@@ -56,7 +54,7 @@ If you need to debug the extension or submit improvements, you can download the 
 
 ## Extension settings
 
-PSAT can be configured to focus on the analysis of a single tab, or allow any number of open tabs. The recommended approach is to analyze browsing sessions from a single tab perspective, or a very small number of tabs, as doing so minimizes the amount of resources consumed by PSAT. 
+PSAT can be configured to focus on the analysis of a single tab, or allow any number of open tabs. The recommended approach is to analyze browsing sessions from a single tab perspective, or a very small number of tabs, as doing so minimizes the amount of resources consumed by PSAT.
 
 To configure this capability of PSAT:
 
@@ -65,27 +63,3 @@ To configure this capability of PSAT:
 And the select the appropiate option:
 
 <img width="742" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
