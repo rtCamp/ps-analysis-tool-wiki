@@ -1,10 +1,9 @@
 # PSAT Wiki
 
-- [[Home]] of the Wiki
+- [[Home]]
 - [[Glossary]]
-- [Support Forum](https://github.com/GoogleChromeLabs/ps-analysis-tool/discussions/categories/support-forum) on GitHub discussions
+- [Support Forum](https://github.com/GoogleChromeLabs/ps-analysis-tool/discussions/categories/support-forum)
 - [Contributor Guide](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/CONTRIBUTING.md)
-
 - [Code of Conduct](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/code-of-conduct.md)
 
 ## Privacy Sandbox Analysis
@@ -29,4 +28,5 @@
 
 ## PSAT CLI Tool
 
-- [[The PSAT CLI tool]]
+- [[PSAT CLI]]
+- [[PSAT as a Service]]
