@@ -12,9 +12,9 @@ The PSAT CLI is an alternative way to run analyses on your website. You can use 
   - E.g. `npm run cli -- -u https://bbc.com -nt`.
 
 
-The PSA CLI provides access to functionality similar to the PSA Extension, and makes it accessible through the command line. The CLI enables the following use cases:
+The PSAT CLI provides access to functionality similar to the PSAT Extension, and makes it accessible through the command line. The CLI enables the following use cases:
 
 - Aggregated analysis of the full site (i.e. sitemap.xml)
 - Site evaluation pre-analysis ⇒ Guidance on scope and prioritization
-- CLI for CI: Integrate the PSA CLI into your CI pipeline and detect potential areas of issues related to 3PCD
+- CLI for CI: Integrate the PSAT CLI into your CI pipeline and detect potential areas of issues related to 3PCD
 - Testing for breakages by executing two access runs, with and without cookies being blocked, and providing a “cookie differential” analysis
