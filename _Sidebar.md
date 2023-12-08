@@ -1,4 +1,4 @@
-[[[/images/home/psat-logomark-350px.png|alt="Privacy Sandbox Logo"]]](https://privacysandbox.com)
+[[[/images/home/ps-logo-500px.png|alt="Privacy Sandbox Logo"]]](https://privacysandbox.com)
 
 # PSAT Wiki
 
