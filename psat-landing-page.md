@@ -8,5 +8,4 @@ PSAT features and capabilities aim at supporting developers transition towards a
 
 <img width="742" alt="Screenshot 2023-12-07 at 5 07 13 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/9a38dace-5ee1-423b-8fae-98942533d03f">
 
-On the left there are four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each of these sections corresponds to a feature area of PSAT, which are being developed progressively. 
-
+On the left there are four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each of these sections corresponds to a feature area of PSAT, which are being developed progressively.
