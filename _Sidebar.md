@@ -15,7 +15,7 @@
   - [[Filtering]]
   - [[Frame overlays]]
   - [[General debugging actions]]
-  - [[Example anlaysis scenarios]]
+  - [[Example analysis scenarios]]
 - [[Site Boundaries]]
   - [[CHIPS]]
   - [[Related Websites Sets]]
