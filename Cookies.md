@@ -8,5 +8,5 @@ In the early 1990s, a visionary developer named [Lou Montulli ](https://en.wikip
 
 To tackle the shopping cart problem, Lou adapted an existing technique, [magic cookies](https://en.wikipedia.org/wiki/Magic_cookie), which allowed data exchange between computer programs to maintain state during communications. This gave the browser the ability to remember the items users had selected, even as they explored different pages on the site. This work soon found its way into the fabric of the Netscape browser, and paved the way for what we know today as cookies.
 
-[!IMPORTANT]  
+**Note**
 Crucial information necessary for users to succeed.
