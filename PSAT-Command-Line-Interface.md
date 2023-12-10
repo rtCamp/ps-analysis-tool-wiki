@@ -11,7 +11,6 @@ The PSAT CLI is an alternative way to run analyses on your website. You can use 
   - Please note that the dependency (Wappalyzer), which analyzes page technologies, may require permission to use its instance of Chromium. If this happens, you have the option to skip the technology analysis by using the `nt` flag for the uninterrupted analysis of cookies.
   - E.g. `npm run cli -- -u https://bbc.com -nt`.
 
-
 The PSAT CLI provides access to functionality similar to the PSAT Extension, and makes it accessible through the command line. The CLI enables the following use cases:
 
 - Aggregated analysis of the full site (i.e. sitemap.xml)
