@@ -20,7 +20,6 @@
 - [[Site Boundaries]]
     <!--- - [[CHIPS]] --->
   - [[Related Website Sets]]
-  <!---
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
   - [[Fingerprinting]]
@@ -28,7 +27,6 @@
 - [[Private Advertising]]
   - [[Topics]]
   - [[Attribution Reporting]]
-    --->
 
 ## PSAT CLI Tool
 
