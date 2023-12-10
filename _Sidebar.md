@@ -18,8 +18,9 @@
   - [[General debugging actions]]
   - [[Example analysis scenarios]]
 - [[Site Boundaries]]
-  - [[CHIPS]]
+    <!--- - [[CHIPS]] --->
   - [[Related Website Sets]]
+  <!---
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
   - [[Fingerprinting]]
@@ -27,6 +28,7 @@
 - [[Private Advertising]]
   - [[Topics]]
   - [[Attribution Reporting]]
+    --->
 
 ## PSAT CLI Tool
 
