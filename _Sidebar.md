@@ -1,6 +1,6 @@
 # PSAT Wiki
 
-- [[Privacy Sandbox Analysis Tool]]
+- [[Home]]
 - [[Glossary]]
 - [Support Forum](https://github.com/GoogleChromeLabs/ps-analysis-tool/discussions/categories/support-forum)
 - [Contributor Guide](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/CONTRIBUTING.md)
