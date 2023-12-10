@@ -1,12 +1,12 @@
 # PSAT Wiki
 
-- [[Home]]
+- [[Privacy Sandbox Analysis Tool]]
 - [[Glossary]]
 - [Support Forum](https://github.com/GoogleChromeLabs/ps-analysis-tool/discussions/categories/support-forum)
 - [Contributor Guide](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/CONTRIBUTING.md)
 - [Code of Conduct](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/code-of-conduct.md)
 
-## Privacy Sandbox Analysis
+## PSAT DevTools Extension
 
 - [[Evaluation Environment]]
 - [[PSAT Extension Popup]]
@@ -28,7 +28,7 @@
   - [[Topics]]
   - [[Attribution Reporting]]
 
-## PSAT CLI Tool
+## PSAT CLI
 
 - [[PSAT Command Line Interface]]
 - [[PSAT as a Service]]
