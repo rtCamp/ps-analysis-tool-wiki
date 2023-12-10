@@ -19,7 +19,7 @@
   - [[Example analysis scenarios]]
 - [[Site Boundaries]]
   - [[CHIPS]]
-  - [[Related Websites Sets]]
+  - [[Related Website Sets]]
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
   - [[Fingerprinting]]
