@@ -1,4 +1,4 @@
-Welcome to the Privacy Sandbox Analysis Tool(PSAT) Wiki!
+Welcome to the Privacy Sandbox Analysis Tool (PSAT) Wiki!
 
 The [Privacy Sandbox initiative](https://privacysandbox.com/) aims to create technologies that both protect people's privacy online and give companies and developers tools to build thriving digital businesses. The main goal of Privacy Sandbox is to reduce cross-site tracking while still enabling the functionality that keeps online content and services freely accessible by everyone. Deprecating and removing third-party cookies encapsulates the challenge, as they enable critical functionality across sign-in, fraud protection, advertising, and generally the ability to embed rich, third-party content in your sites—but at the same time they're also the key enablers of cross-site tracking.
 
