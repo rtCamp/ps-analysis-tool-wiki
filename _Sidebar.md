@@ -1,4 +1,4 @@
-# Privacy Sandbox Analysis Tool
+# PSAT Wiki
 
 - [[Home]]
 - [[Glossary]]
