@@ -2,7 +2,7 @@ The first component in PSAT's Privacy Sandbox DevTools panel corresponds to the 
 
 As discussed in the Evaluation Enviroment section, PSAT can be configured to avoid using too much resources by restricting the tool to only analyze a single tab at a time. If that configuration optino is set, PSAT presents an `Analyze this tab` button to switch the focus of the tool to the current tab.
 
-<img width="742" alt="Screenshot 2023-12-07 at 5 19 35 PM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/1c7d3973-a0c5-4a7a-bac2-8b6b70920373">
+<img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/analyze-this-tab.png">
 
 Once the PSAT's focus has been switched to the current tab, we get to the Cookies Landing Page:
 
