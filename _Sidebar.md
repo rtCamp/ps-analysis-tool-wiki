@@ -18,7 +18,7 @@
   - [[General debugging actions]]
   - [[Example analysis scenarios]]
 - [[Site Boundaries]]
-    <!--- - [[CHIPS]] --->
+  - [[CHIPS]]
   - [[Related Website Sets]]
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
