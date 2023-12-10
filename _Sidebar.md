@@ -9,6 +9,7 @@
 ## Privacy Sandbox Analysis
 
 - [[Evaluation Environment]]
+- [[PSAT Extension Popup]]
 - [[PSAT landing page]]
 - [[Cookies]]
   - [[Cookies landing page]]
