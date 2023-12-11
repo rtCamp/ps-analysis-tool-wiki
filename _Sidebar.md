@@ -13,6 +13,7 @@
 - [[PSAT landing page]]
 - [[Cookies]]
   - [[Cookies landing page]]
+  - [[Cookies Table]]
   - [[Filtering]]
   - [[Frame overlays]]
   - [[General debugging actions]]
