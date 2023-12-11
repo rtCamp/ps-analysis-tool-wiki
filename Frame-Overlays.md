@@ -11,5 +11,4 @@ With `Frame Overalys` activated we can directly correlate specific page componen
 
 1. Hover the mouse over the weg page and observe how the underlying frames in the page get highlighted
 1. For each highlighted frame, PSAT shows a popup window with relevant Privacy Sandbox information about the frame, such as the type of frame, the number of `1P` and `3P` cookies that were set by the frame, whether or not the domain associated with the frame belogs to a `Related Websites Set` which includes also the top-level site, and the set of privacy-sandbox-related features available to the frame.
-
-In this way,
+1. While hovering a given page frame, the corresponding frame is highlighted in the cookies, and the cookies associated with that frame are listed on the cookies table.
