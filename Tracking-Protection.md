@@ -1,1 +1,11 @@
-🚧 👷 🚧 👷‍♀️
+Chrome is saying goodbye to third-party cookies in 2024, but they aren’t the only way users can be tracked online.
+
+The Privacy Sandbox initiative includes [proposals](https://privacysandbox.info/en/privacy-sandbox/prevent-covert-tracking/#prevent-covert-tracking) for preveting unwanted tracking (e.g. fingerprinting). This proposals include:
+
+| Proposal                                                                                                     | Description                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [User-Agent reduction](https://privacysandbox.info/docs/privacy-sandbox/user-agent/)                         | User-Agent reduction limits passively shared browser data to reduce the volume of sensitive information which leads to fingerprinting. The reduction is now complete. |
+| [User-Agent reduction snippets](https://privacysandbox.info/docs/privacy-sandbox/user-agent/snippets/)       | Test your sites and services against the reduced Chrome user-agent with regular expressions.                                                                          |
+| [IP Protection](https://privacysandbox.info/docs/privacy-sandbox/ip-protection/)                             | A proposal to improve user privacy by protecting their IP address from being used for tracking.                                                                       |
+| [Privacy Budget](https://privacysandbox.info/docs/privacy-sandbox/privacy-budget/)                           | A proposal to limit the amount of individual user data exposed to sites to prevent covert tracking.                                                                   |
+| [Bounce tracking mitigations](https://privacysandbox.info/docs/privacy-sandbox/bounce-tracking-mitigations/) | Reduce or eliminate the ability of bounce tracking to recognize people across contexts.                                                                               |
