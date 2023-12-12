@@ -2,7 +2,7 @@ DevTools provides a very large set of powerful capabilities enabling the underst
 
 To access PSAT, access the URL that you want to analyze, open Chrome DevTools, and navigate to the "Private Sandbox" panel.
 
-PSAT features and capabilities aim at supporting developers transition smoothly towards a more private web, by shedding light on cookie usage, and the new building blocks available for implementing privacy-preserving solutions for features and capabilities of websites and apps. PSAT's landing paghe in DevTools reflects this goal:
+PSAT features and capabilities aim at supporting developers transition smoothly towards a more private web, by shedding light on cookie usage, and the new building blocks available for implementing privacy-preserving solutions for features and capabilities of websites and apps. PSAT's landing page in DevTools reflects this goal:
 
 <img width="742" alt="PSAT Landing Page" src="images/psat-landing-page/psat-landing-page.png">
 
