@@ -19,7 +19,7 @@
   - [[General debugging actions]]
   - [[Example analysis scenarios]]
 - [[Site Boundaries]]
-  - [[CHIPS]]
+  - [[Cookies-Having-Independent-Paritioned-State--CHIPS]]
   - [[Related Website Sets]]
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
