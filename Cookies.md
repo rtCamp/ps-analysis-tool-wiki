@@ -21,7 +21,3 @@ Third-party or cross-site cookies, are cookies set or sent from a different doma
 Cookies facilitate tracking because they are persistent across user agent sessions and can be shared between sites. They are not the only mechanism servers can use to track users across HTTP requests, but is certainly one of the most widely used to do that.
 
 In order to make the web platform more robust regarding privacy, the **unrestricted use of third-party cookies** has been deprecated in browsers such as Firefox and Safari, and they will be deprecated in Chrome starting in 2024.
-
-## Review and Learn More about Cookies
-
-TODO: Add pointers to key sources of information to review cookie concepts and learn more.
