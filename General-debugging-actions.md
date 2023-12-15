@@ -1,5 +1,3 @@
-# General Debugging Actions
-
 Analyzing websites for potential breakages is not a trivial process, as there are many factors to consider and lots of information to be grasped. This section describes various factors that can be considered during a site analysis.
 
 ## **Authentication**
