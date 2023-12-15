@@ -1,5 +1,3 @@
-# Example Analysis Scenarios
-
 This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential breakages due to the deprecation of 3P cookies and partitioned storage APIs.
 
 ## **Analytics Tracking**
