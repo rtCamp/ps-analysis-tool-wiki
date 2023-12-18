@@ -8,9 +8,9 @@ Once the PSAT's focus has been switched to the current tab, we get to the Cookie
 
 <img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/cookie-landing-page.png">
 
-The purpose of PSAT's cookie landing page is to provide information and insights regarding the behavior and distributino of cookies on web pages, as users navigate across sites during browsing sessions.
+The purpose of PSAT's cookie landing page is to provide information and insights regarding the behavior and distribution of cookies on web pages, while navigating across sites during browsing sessions.
 
-Cuurently the cookie landing page provides an classification of observed cookies on a given page (total, first-party, third-party).
+Currently the cookie landing page provides a classification of observed cookies on a given page (total, first-party, third-party).
 
 PSAT leverages, and contributes to, the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 

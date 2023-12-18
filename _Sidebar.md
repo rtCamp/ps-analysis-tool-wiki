@@ -31,4 +31,3 @@
 ## PSAT CLI
 
 - [[PSAT Command Line Interface]]
-- [[PSAT as a Service]]
