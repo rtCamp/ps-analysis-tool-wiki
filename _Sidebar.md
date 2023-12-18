@@ -25,9 +25,6 @@
   - [[Bounce Tracking]]
   - [[Fingerprinting]]
   - [[User Agent Strings]]
-- [[Private Advertising]]
-  - [[Topics]]
-  - [[Attribution Reporting]]
 
 ## PSAT CLI
 
