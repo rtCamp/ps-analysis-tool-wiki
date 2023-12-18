@@ -14,6 +14,7 @@
   - [[Cookies landing page]]
   - [[Cookies Table]]
   - [[Filtering]]
+  - [[Blocking]]
   - [[Frame overlays]]
   - [[General debugging actions]]
   - [[Example analysis scenarios]]
