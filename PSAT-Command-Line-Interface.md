@@ -1,4 +1,8 @@
-The PSAT CLI is an alternative way to run analyses on your website. You can use a terminal to scan an entire sitemap to create a more extensive report. I will create a webpage with a similar structure to the Chrome extension. Including an option to download a CSV file.
+The PSAT CLI is an alternative way to run analyses on your website. You can use a terminal to scan a given URL, or an entire sitemap to create a more extensive report. The CLI creates a local site showing similar information as PSAT's extension.
+
+<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/cli-cookies-landing-page.png">
+
+To use PSAT's CLI, follow these steps:
 
 - Clone this Privacy Sandbox Analysis Tool Repository
 - Run `npm install` to install all dependencies
