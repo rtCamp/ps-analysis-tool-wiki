@@ -20,6 +20,8 @@ Clicking on the funel icon, allows you to select from all the observed cookies,o
 
 ## Blocked Cookies
 
+<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookie-blocking-1.png">
+
 ## Frame Overlays
 
 Frame overlays make it easy to associate third-party cookies with embedded iframes. To use it:
