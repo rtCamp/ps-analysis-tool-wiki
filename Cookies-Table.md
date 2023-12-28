@@ -1,8 +1,10 @@
 PSAT cookie's table provides functionality simialr to the cookies table in DevTools' Application panel, with some additions tailored for debugging scenbarios related to the deprecation of third-party cookies.
 
-## List
-
 <img width="742" alt="PSAT Cookies Table" src="images/cookie-analysis/cookies-table.png">
+
+PSAT's cookies table is the starting point for analyzing and debugging the behavior of cookies in search
+
+## List
 
 ## Filtering
 
