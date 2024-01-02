@@ -4,6 +4,16 @@ PSAT cookie's table provides functionality simialr to the cookies table in DevTo
 
 PSAT's cookies table is the starting point for analyzing and debugging the behavior of cookies in search
 
+## Data Gathering
+
+The purpose of PSAT is to help developers analyze the use of third-party cookies, as they get ready for changes in the Chrome browser, which will limit the use of unrestricted third-party cookies. To achieve this, the extension leverages the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) to gather data regarding Cookies from network traffic.
+
+As of v0.4 PSAT data processing may experience delays causing the rendering of cookie information in the Cookies Table.
+
+To account for these delays, PSAT indicates when it has displayed for a given frame in the cookies table, the corresponding cookies. This is shown by the icon on the left side of the frame, which is displayed as a filled cookie when information is available, and as an "outlined" cookie when no cookies data for the given frame has been receved.
+
+This issue is being addressed see issue [#380](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/380) and we will provide an update shortly.
+
 ## Filtering
 
 PSAT makes it easy to reduce the analysis scope by filtering observed cookies by the different dimensions that characterize them, which correspond to the columns in the cookie table.
