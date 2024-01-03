@@ -12,7 +12,7 @@ As of v0.4 PSAT data processing may experience delays causing the rendering of c
 
 To account for these delays, PSAT indicates when it has displayed for a given frame in the cookies table, the corresponding cookies. Initially, all frames in the sidebar are grayed out, indicating that the data is not yet populated. Once the cookie data for a specific frame has been received and processed, the frame's appearance in the sidebar will change from being grayed out to its normal state. This serves as a visual indicator that the information for that frame has processed.
 
-![Cookies Frames with Empty Tables](images/cookie-analysis/cookies-frames-with-empty-tables.png "Cookies Frames with Empty Tables")
+<img width="742" alt="Cookies Frames with Empty Tables" src="images/cookie-analysis/cookies-frames-with-empty-tables.png">
 
 This issue is being addressed see issue [#380](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/380) and we will provide an update shortly.
 
