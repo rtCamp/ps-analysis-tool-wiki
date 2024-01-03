@@ -1,4 +1,4 @@
-PSAT cookie's table provides functionality simialr to the cookies table in DevTools' Application panel, with some additions tailored for debugging scenbarios related to the deprecation of third-party cookies.
+PSAT cookie's table provides functionality similar to the cookies table in DevTools' Application panel, with some additions tailored for debugging scenarios related to the deprecation of third-party cookies.
 
 <img width="742" alt="PSAT Cookies Table" src="images/cookie-analysis/cookies-table.png">
 
@@ -10,7 +10,9 @@ The purpose of PSAT is to help developers analyze the use of third-party cookies
 
 As of v0.4 PSAT data processing may experience delays causing the rendering of cookie information in the Cookies Table.
 
-To account for these delays, PSAT indicates when it has displayed for a given frame in the cookies table, the corresponding cookies. This is shown by the icon on the left side of the frame, which is displayed as a filled cookie when information is available, and as an "outlined" cookie when no cookies data for the given frame has been receved.
+To account for these delays, PSAT indicates when it has displayed for a given frame in the cookies table, the corresponding cookies. Initially, all frames in the sidebar are grayed out, indicating that the data is not yet populated. Once the cookie data for a specific frame has been received and processed, the frame's appearance in the sidebar will change from being grayed out to its normal state. This serves as a visual indicator that the information for that frame has processed.
+
+![Cookies Frames with Empty Tables](images/cookie-analysis/cookies-frames-with-empty-tables.png "Cookies Frames with Empty Tables")
 
 This issue is being addressed see issue [#380](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/380) and we will provide an update shortly.
 
