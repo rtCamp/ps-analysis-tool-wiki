@@ -1,6 +1,6 @@
 Chrome is saying goodbye to third-party cookies in 2024, but they aren’t the only way users can be tracked online.
 
-The Privacy Sandbox initiative includes [proposals](https://privacysandbox.info/en/privacy-sandbox/prevent-covert-tracking/#prevent-covert-tracking) for preveting unwanted tracking (e.g. fingerprinting). This proposals include:
+The Privacy Sandbox initiative includes [proposals](https://privacysandbox.info/en/privacy-sandbox/prevent-covert-tracking/#prevent-covert-tracking) for preventing unwanted tracking (e.g. fingerprinting). This proposals include:
 
 | Proposal                                                                                                     | Description                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

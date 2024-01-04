@@ -10,7 +10,7 @@ In this demo, we have two distinct sites running on [domain A](https://domain-aa
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
-After Third-Party Cookies Deprecation, when a user visits site A the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
+After Third-Party Cookies Deprecation, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
 
 The following sequence diagram shows these behaviors before and after third-party cookie deprecation.
 
@@ -262,7 +262,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-   1. Set up your testing environment (as described [[here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment)].
+   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment).
 2. **Open Developer Tools in both Chrome instances**
 3. **Adjust Network Tab Settings**
    1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
@@ -354,7 +354,7 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-   1. Prepare your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
+   1. Prepare your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
       - **Chrome Private**: Simulating third-party cookie deprecation.
       - **Chrome Open**: Running on default settings.
    2. In both instances, navigate to [YouTube.com](http://youtube.com/) and log in using any account available to you.

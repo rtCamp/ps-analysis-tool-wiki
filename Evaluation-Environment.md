@@ -14,7 +14,7 @@ The commands you can use are:
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
-  PSAT offers three straightforward installation methodsmeet:
+  PSAT offers three straightforward installation methods:
 
 ## Installing PSAT from Chrome Web Store
 
@@ -26,7 +26,7 @@ PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/de
 
 ## Installation from the PSAT zip file
 
-Go to the `Releases` Section in the PSAT github repo: bit.ly/psat-repo
+Go to the `Releases` Section in the PSAT GitHub repo: bit.ly/psat-repo
 
 <img width="742" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
 
