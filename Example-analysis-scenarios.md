@@ -44,7 +44,7 @@ sequenceDiagram
 
 1. **Setup Testing Environment**
 
-   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools in both instances**
 
@@ -152,7 +152,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 1. **Setup Testing Environment**
 
-   1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+   1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
 
 2. **Open Developer Tools**
 
@@ -262,7 +262,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-   1. Set up your testing environment (as described [[here](#evaluation-environment)].
+   1. Set up your testing environment (as described [[here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment)].
 2. **Open Developer Tools in both Chrome instances**
 3. **Adjust Network Tab Settings**
    1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
@@ -354,7 +354,7 @@ sequenceDiagram
 ### **Debugging the Scenario**
 
 1. **Setup Testing Environment**
-   1. Prepare your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/B.-Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
+   1. Prepare your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
       - **Chrome Private**: Simulating third-party cookie deprecation.
       - **Chrome Open**: Running on default settings.
    2. In both instances, navigate to [YouTube.com](http://youtube.com/) and log in using any account available to you.
