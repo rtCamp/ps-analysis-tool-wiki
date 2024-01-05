@@ -30,7 +30,13 @@ Clicking on the funnel icon, allows you to select from all the observed cookies,
 
 ## Blocked Cookies
 
-<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookie-blocking-1.png">
+PSAT gathers information regarding the cookies that were blocked by Chrome and the corresponding reasons for the blocking. Blocked cookies are highlighted in Yellow in the Cookies table.
+
+<img width="742" alt="PSAT Cookie Blocking Highlighting" src="images/cookie-analysis/cookie-blocking-1.png">
+
+When selecting a blocked cookie, PSAT shows the reasons why the cookie was blocked in the "Cookie Information" box.
+
+<img width="742" alt="PSAT Cookie Blocking Reasons" src="images/cookie-analysis/cookie-blocking-2.png">
 
 ## Frame Overlays
 
