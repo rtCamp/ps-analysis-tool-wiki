@@ -14,7 +14,8 @@ The commands you can use are:
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
-  PSAT offers three straightforward installation methods:
+
+PSAT offers three straightforward installation methods:
 
 ## Installing PSAT from Chrome Web Store
 
