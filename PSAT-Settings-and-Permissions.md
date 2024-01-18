@@ -1,13 +1,22 @@
+PSAT Extension features a dedicated settings page, where users can easily access and modify certain configuration settings, and also view system information.
+
+<img width="742" alt="PSAT Settings Section" src="images/settings/psat-settings-1.png">
+
+## Enabling Chrome DevTools Protocol in PSAT
+
 One of the main purposes of PSAT is to help developers analyze and understand the usage of third-party cookies during browsing sessions. To achieve this, PSAT uses the Chrome DevTools Protocol (CDP) to debug and collect information about sites being loaded during a browsing session.
 
 Since CDP is a debugging capability, Chrome displays a message letting the user know that CDP is active and the browser session is being debugged.
 
-As of v0.4 there are two approaches that can be followed when installing and using PSAT.
+PSAT allows the turning on and off of its debugging capabilities directly from the tool itself, so that the extension can be enabled but the debugging components can be turned on only when needed.
 
-1. Enable PSAT during debugging sessions, and disable it after completing them
-2. Keep PSAT enabled all the time, and just ignore the notification.
+<img width="742" alt="PSAT Enable CDP" src="images/settings/psat-settings-cdp.png">
 
-And in an upcoming version, PSAT will allow the turning on and off of its debugging capabilities directly from the tool itself, so that the extension can be enabled but the debugging components can be turned on only when needed.
+## Multi-tab Debugging
+
+PSAT lets users control the number of tabs analyzed concurrently. To optimize performance and ensure smooth operation, the default setting allows analysis of one tab at a time. However, users who require simultaneous multiple tab analysis can easily adjust this setting to meet their specific debugging needs.
+
+<img width="742" alt="PSAT Multitab" src="images/settings/psat-settings-multitab.png">
 
 ## PSAT Permissions
 
