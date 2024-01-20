@@ -53,14 +53,3 @@ If you need to debug the extension or submit improvements, you can download the 
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
-## Extension settings
-
-PSAT can be configured to focus on the analysis of a single tab, or allow any number of open tabs. The recommended approach is to analyze browsing sessions from a single tab perspective, or a very small number of tabs, as doing so minimizes the amount of resources consumed by PSAT.
-
-To configure this capability of PSAT:
-
-<img width="742" alt="Screenshot 2023-12-07 at 11 03 01 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/888f43b9-3820-488d-a174-c7f3aa0c1200">
-
-And the select the appropiate option:
-
-<img width="742" alt="Screenshot 2023-12-07 at 10 54 33 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/693f831c-c520-46e7-a218-5217ea9aa8ba">
