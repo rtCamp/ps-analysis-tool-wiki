@@ -2,22 +2,53 @@ The PSAT CLI is an alternative way to run analyses on your website. You can use 
 
 <img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/cli-cookies-landing-page.png">
 
-To use PSAT's CLI, follow these steps:
+### Getting Started with PSAT CLI:
 
-- Clone this Privacy Sandbox Analysis Tool Repository
-- Run `npm install` to install all dependencies
-- `npm run cli:build` to generate a build in `/dist/cli`.
-- Run the CLI by providing a URL, sitemap url, CSV file of URL set or a path to sitemap file as input.
-  - E.g. to analyze specific URL: `npm run cli -- -u https://bbc.com`.
-  - E.g. to analyze all URLs from sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
-  - E.g. to analyze set of URLs through CSV file: `npm run cli -- -c /path/to/urlset.csv`.
-  - E.g. to analyze specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
-  - Please note that the dependency (Wappalyzer), which analyzes page technologies, may require permission to use its instance of Chromium. If this happens, you have the option to skip the technology analysis by using the `nt` flag for the uninterrupted analysis of cookies.
-  - E.g. `npm run cli -- -u https://bbc.com -nt`.
+To leverage the PSAT CLI's capabilities, follow these steps:
 
-The PSAT CLI provides access to functionality similar to the PSAT Extension, and makes it accessible through the command line. The CLI enables the following use cases:
+1. **Clone the Privacy Sandbox Analysis Tool Repository.**
+2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
+3. **Build Generation:** Execute `npm run cli:build` to create a build located at `/dist/cli`.
+4. **Running the CLI:** Launch the CLI by inputting a URL, sitemap URL, CSV file of URL set, or a path to a sitemap file.
+  - Analyze a specific URL: `npm run cli -- -u https://bbc.com`.
+  - Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
+  - Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
+  - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
+  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
 
-- Aggregated analysis of the full site (i.e. sitemap.xml)
-- Site evaluation pre-analysis ⇒ Guidance on scope and prioritization
-- CLI for CI: Integrate the PSAT CLI into your CI pipeline and detect potential areas of issues related to 3PCD
-- Testing for breakages by executing two access runs, with and without cookies being blocked, and providing a “cookie differential” analysis
+### CLI Use Cases:
+
+The PSAT CLI is not just a command-line version of the PSAT Extension; it's a versatile tool enabling various use cases:
+
+- **Comprehensive Site Analysis:** Aggregated evaluation of entire sites (via sitemap.xml).
+- **Pre-analysis Site Evaluation:** Offers guidance on scope and prioritization for site evaluation.
+- **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to third-party cookie deprecation (3PCD).
+- **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
+
+### CLI Options:
+
+For a detailed understanding of the CLI options, you can use the `npm run cli -- --help` command:
+
+```bash
+$ npm run cli -- --help
+
+> ps-analysis-tool@0.4.1 cli
+> node dist/cli/index.js --help
+
+Usage: index [options]
+
+CLI to test a URL for 3p cookies
+
+Options:
+  -V, --version               output the version number
+  -u, --url <value>           URL of a site
+  -s, --sitemap-url <value>   URL of a sitemap
+  -c, --csv-path <value>      Path to a CSV file with a set of URLs
+  -p, --sitemap-path <value>  Path to a sitemap saved in the file system
+  -ul, --url-limit <value>    Number of URLs to analyze
+  -nh, --no-headless          Flag for running Puppeteer in non-headless mode
+  -np, --no-prompts           Flag for skipping all prompts (Default options will be used)
+  -nt, --no-technology        Flag for skipping technology analysis
+  -h, --help                  Display help for command
+
+```
