@@ -2,7 +2,7 @@ The PSAT CLI is an alternative way to run analyses on your website. You can use 
 
 <img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/cli-cookies-landing-page.png">
 
-### Getting Started with PSAT CLI:
+### Getting Started with PSAT CLI
 
 To leverage the PSAT CLI's capabilities, follow these steps:
 
@@ -16,7 +16,7 @@ To leverage the PSAT CLI's capabilities, follow these steps:
   - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
 
-### CLI Use Cases:
+### CLI Use Cases
 
 The PSAT CLI is not just a command-line version of the PSAT Extension; it's a versatile tool enabling various use cases:
 
@@ -25,7 +25,7 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 - **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to third-party cookie deprecation (3PCD).
 - **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
 
-### CLI Options:
+### CLI Options
 
 For a detailed understanding of the CLI options, you can use the `npm run cli -- --help` command:
 
