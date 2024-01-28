@@ -10,7 +10,7 @@ In this demo, we have two distinct sites running on [domain A](https://domain-aa
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
-After Third-Party Cookies Deprecation, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
+Once third-party cookies are deprecated, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
 
 The following sequence diagram shows these behaviors before and after third-party cookie deprecation.
 
