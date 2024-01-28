@@ -46,4 +46,4 @@ GSI v2 is a legacy library from Google Identity that is integrated with plenty o
 
 ## **DOM Storage usage**
 
-Some sites are not trying to use cookies, but instead `LocalStorage` or Quota Storage like `IndexedDB`. These can often be spotted by observing exceptions being thrown, see [Look at JS/Network errors](https://docs.google.com/document/d/1SlFMWZx8YPDqgMRQi1mjR69v1mUvVDORMfQgKisS0FU/edit?resourcekey=0-A2dMtm454TShDq4mPHTQYg#bookmark=id.24lfqsh6zaqj).
+Some sites are not trying to use cookies, but instead `LocalStorage` or Quota Storage like `IndexedDB`. These can often be spotted by observing exceptions being thrown, see "Look at JS/Network errors".
