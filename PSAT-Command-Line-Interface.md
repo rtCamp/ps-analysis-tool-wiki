@@ -59,10 +59,13 @@ The PSAT browser extension and the CLI tool both capture valuable insights, but 
 Following are three key reasons for discrepancies:
 
 **1.  Environment**
+
 The CLI tool utilizes a browser with the 3rd-party cookie phaseout enabled. While the extension relies on Chrome settings for third-party cookies, this difference in the browsing environment can lead to varied website behaviours, contributing to discrepancies.
 
 **2. Duration**
+
 The CLI tool adopts a concise approach by launching a website and monitoring it for a brief period of 10 seconds. This short duration may not capture the complete set of cookies if certain scripts or functionalities take longer to load or execute, which may cause discrepancy.
 
 **3. User Interactions**
+
 Unlike the PSAT extension, the CLI tool does not emulate any user interactions during the website monitoring process. The lack of user interactions may impact how websites handle cookies, as certain cookies may load after user actions.
