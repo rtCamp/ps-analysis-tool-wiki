@@ -53,7 +53,7 @@ Options:
 
 ```
 
-### Important Note
+### Discrepancy between CLI and extension
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate under different environment, leading to potential discrepancies. Understanding these differences will help you in making informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
 
 Following are three key reasons for discrepancies:
