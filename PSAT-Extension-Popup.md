@@ -1,6 +1,6 @@
 PSAT's extension icon provides the capability of getting a glimpse of the number and type of cookies being set up and manipulated by the current web page loaded in the browser.
 
-<img width="742" alt="PSAT Extension Popup" src="images/extension-popup/extension-popup.png">
+<img width="742" alt="PSAT Extension Popup" src="images/extension-popup/psat_v0.5_pop_up_07_02.jpg">
 
 To check the values shown in PSAT's extension popup:
 
