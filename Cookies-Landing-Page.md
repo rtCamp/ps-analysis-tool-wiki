@@ -15,3 +15,10 @@ Currently the cookie landing page provides a classification of observed cookies 
 PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
 As PSAT continues to evolve rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
+
+
+## Detecting potential breakages
+
+PSAT helps developers ensure a smooth transition through the deprecation of 3P cookies by identifying known breakages caused by deprecated libraries like Google Sign-In (GSI), and Google Identity Services (GIS). Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
+
+<img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.5_breakage_detection_07_02.jpg">
