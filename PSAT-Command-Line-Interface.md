@@ -1,4 +1,4 @@
-The PSAT CLI is an alternative way to run analyses on your website. You can use a terminal to scan a given URL, or an entire sitemap to create a more extensive report. The CLI creates a local site showing similar information as PSAT's extension.
+The PSAT CLI is an alternative way to run analysis on your website. You can use a terminal to scan a given URL, or an entire sitemap to create a more extensive report. The CLI creates a local site showing information similar to PSAT's extension.
 
 <img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/cli-cookies-landing-page.png">
 
@@ -10,10 +10,18 @@ To leverage the PSAT CLI's capabilities, follow these steps:
 2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
 3. **Build Generation:** Execute `npm run cli:build` to create a build located at `/dist/cli`.
 4. **Running the CLI:** Launch the CLI by inputting a URL, sitemap URL, CSV file of URL set, or a path to a sitemap file.
+
+The CLI provides the following options as a source to create a report:
+
   - Analyze a specific URL: `npm run cli -- -u https://bbc.com`.
   - Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
   - Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
   - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
+
+To customize and change the behavior of the analysis of those reports, the CLI also supports options:
+
+  - Limit the number of URLs to analyze from a specific sitemap or CSV: npm run cli -- -p /path/to/sitemap.xml -ul 10
+  - Export the report to a specific folder without creating a dashboard URL: npm run cli -- -u https://bbc.com -d <path-to-dir> or npm run cli -- -u https://bbc.com -out-dir <path-to-dir>.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
 
 ### CLI Use Cases
@@ -24,15 +32,17 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 - **Pre-analysis Site Evaluation:** Offers guidance on scope and prioritization for site evaluation.
 - **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to third-party cookie deprecation (3PCD).
 - **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
+- List the Blocked cookies' reasons to guide developers in solving those issues.
+- Help developers by allowing them to download detailed reports.
 
 ### CLI Options
 
-For a detailed understanding of the CLI options, you can use the `npm run cli -- --help` command:
+For a detailed understanding of the CLI options, you can use the npm run cli -- --help command:
 
 ```bash
 $ npm run cli -- --help
 
-> ps-analysis-tool@0.4.1 cli
+> ps-analysis-tool@0.5.0 cli
 > node dist/cli/index.js --help
 
 Usage: index [options]
@@ -43,13 +53,16 @@ Options:
   -V, --version               output the version number
   -u, --url <value>           URL of a site
   -s, --sitemap-url <value>   URL of a sitemap
-  -c, --csv-path <value>      Path to a CSV file with a set of URLs
+  -c, --csv-path <value>      Path to a CSV file with a set of URLs.
   -p, --sitemap-path <value>  Path to a sitemap saved in the file system
-  -ul, --url-limit <value>    Number of URLs to analyze
-  -nh, --no-headless          Flag for running Puppeteer in non-headless mode
-  -np, --no-prompts           Flag for skipping all prompts (Default options will be used)
-  -nt, --no-technology        Flag for skipping technology analysis
-  -h, --help                  Display help for command
+  -ul, --url-limit <value>    No of URLs to analyze
+  -nh, --no-headless          Flag for running puppeteer in non-headless mode
+  -np, --no-prompts           Flags for skipping all prompts. Default options
+                              will be used
+  -nt, --no-technology        Flags for skipping technology analysis.
+  -d, --out-dir <value>       Directory path where the analysis data will be
+                              stored
+  -h, --help                  display help for command
 
 ```
 
