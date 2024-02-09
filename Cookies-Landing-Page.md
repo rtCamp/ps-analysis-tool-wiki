@@ -22,3 +22,5 @@ As PSAT continues to evolve rapidly, the cookie landing page will incorporate mo
 PSAT helps developers ensure a smooth transition through the deprecation of 3P cookies by identifying known breakages caused by deprecated libraries like Google Sign-In (GSI), and Google Identity Services (GIS). Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
 
 <img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.5_breakage_detection_07_02.jpg">
+
+The PSAT extension has the capability to adopt more such libraries, which could help identify more libraries that might cause issues in the future.
