@@ -6,11 +6,12 @@ PSAT Extension features a dedicated settings page, where users can easily access
 
 One of the main purposes of PSAT is to help developers analyze and understand the usage of third-party cookies during browsing sessions. To achieve this, PSAT uses the Chrome DevTools Protocol (CDP) to debug and collect information about sites being loaded during a browsing session.
 
-Since CDP is a debugging capability, Chrome displays a message letting the user know that CDP is active and the browser session is being debugged.
+When users enable the CDP to troubleshoot their website, Chrome warns users that their session is being debugged. However, to avoid disrupting the user experience, activating CDP doesn't automatically reload other open tabs. Instead, PSAT offers a separate “Reload” button when CDP is turned on, allowing users to refresh tabs when needed manually. 
 
-PSAT allows the turning on and off of its debugging capabilities directly from the tool itself, so that the extension can be enabled but the debugging components can be turned on only when needed.
+PSAT allows the Enabling and Disabling of its debugging capabilities directly from the tool itself so that the extension can be enabled. Still, the debugging components can be turned on only when needed.
 
-<img width="742" alt="PSAT Enable CDP" src="images/settings/psat_v0.5_settings_enable_cdp_07_02.jpg">
+
+<img width="742" alt="PSAT Enable CDP" src="images/settings/psat_v0.5.1_enabling_cdp_in_psat_2024_02_22.png">
 
 ## Multi-tab Debugging
 
