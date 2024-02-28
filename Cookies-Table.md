@@ -36,15 +36,15 @@ PSAT identifies cookie blocking with distinct icons for each scenario of request
 The following are the possible icons and their scenario.
 | Icons  | Scenario |
 | ------------- | ------------- |
-| <img src="images/feature/icons/past_v0.5.1-blocked_in_all_responses_22_02_2024.png" width="20" height="20">  | The cookie was blocked in all responses.  |
-| <img src="images/feature/icons/past_v0.5.1_blocked_in_one_response_22_02_2024.png" width="20" height="20">  | The cookie was blocked in at least one of the responses.  |
-| <img src="images/feature/icons/past_v0.5.1-blocked_in_all_requests_22_02_2024.png" width="20" height="20">  | The cookie was blocked in all requests. |
-| <img src="images/feature/icons/past_v0.5.1_blocked_in_one_requests_22_02_2024.png" width="20" height="20">  | The cookie was blocked in at least one of the requests. |
-| <img src="images/feature/icons/past_v0.5.1_blocked_in_all_requests_and_responses_22_02_2024" width="20" height="20">  | The cookie was blocked in all of the requests and responses. |
-| <img src="images/feature/icons/psat_v0.5.1_blocked_in_one_of_the_request_and_response_22_02_2024.png" width="20" height="20">  | The cookie was blocked in at least one of the requests and at least one of the responses. |
-| <img src="images/feature/icons/past_v0.5.1_blocked_all_requests_and_one_response_22_02_2024.png" width="20" height="20">  | This cookie was blocked in all requests and at least one of the responses. |
-| <img src="images/feature/icons/past_v0.5.1_blocked_in_all_responses_and_one_request_22_02_2024.png" width="20" height="20">  | The cookie was blocked in at least one of the requests and all of the responses. |
-| <img src="images/feature/icons/past_v0.5.1_blocked_reason_unknon_22_02_2024.png" width="20" height="20">  | We could not identify this cookie’s blocking status. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_responses_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in all responses.  |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_one_response_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in at least one of the responses.  |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_requests_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in all requests. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_one_requests_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in at least one of the requests. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_requests_and_responses_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in all of the requests and responses. |
+| <img src="images/cookie-analysis/icons/psat_v0.5.1_blocked_in_one_of_the_request_and_response_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in at least one of the requests and at least one of the responses. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_all_requests_and_one_response_22_02_2024.svg" width="20" height="20">  | This cookie was blocked in all requests and at least one of the responses. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_responses_and_one_request_22_02_2024.svg" width="20" height="20">  | The cookie was blocked in at least one of the requests and all of the responses. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_reason_unknon_22_02_2024.svg" width="20" height="20">  | We could not identify this cookie’s blocking status. |
 
 When selecting a blocked cookie, PSAT shows the reasons why the cookie was blocked in the "Cookie Information" box.
 
