@@ -4,6 +4,29 @@ PSAT Cookies table provides functionality similar to the cookies table in DevToo
 
 PSAT's cookies table is the starting point for analyzing and debugging the behavior of cookies in the search process for breakages.
 
+## Frames
+Frames are the sections of a web page that display content from independent sources, essentially acting like smaller windows within the main page.
+
+<img width="742" alt="PSAT Cookie Frames" src="images/cookie-analysis/psat_v0.5.2_frames_orphaned_umapped_cookies_04_03_2024.png">
+
+First-party frames are created and used by the website you are directly visiting. They help the site remember your preferences, keep you logged in, and improve your overall experience.
+
+Third-party frames are created by domains apart from the website you are visiting. These cookies are often used by advertisers or analytics companies to track your activity across multiple websites, allowing them to build user profiles and target you with personalized ads.
+
+##### Orphaned Cookies
+An Orphaned cookie means the cookies exist in your browser's storage, but the frames that originally set them are no longer present in the DOM.
+
+This typically happens when:
+- The webpage might dynamically remove the frame after setting the cookie, potentially for efficiency or other reasons.
+- If the frame is part of an external source and not reloaded with the main page, it gets removed from the DOM, leaving its cookies orphaned.
+
+##### Unmapped Cookies
+The Unmapped Cookies mean the PSAT Chrome extension cannot map cookies to any frames. 
+
+This typically happens when:
+- The extension might not be able to access or process all the information needed to accurately map cookies to frames, especially for complex webpages or those using advanced techniques.
+- If the way frames are loaded or managed on a webpage changes on the fly, it might break the extension's mapping mechanism.
+
 ## Data Gathering
 
 The purpose of PSAT is to help developers analyze the use of third-party cookies, as they get ready for changes in the Chrome browser, which will limit the use of unrestricted third-party cookies. To achieve this, the extension leverages the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) to gather data regarding Cookies from network traffic.
