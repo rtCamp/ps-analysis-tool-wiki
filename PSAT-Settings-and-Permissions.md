@@ -23,7 +23,7 @@ PSAT lets users control the number of tabs analyzed concurrently. To optimize pe
 <img width="742" alt="PSAT Multitab" src="images/settings/psat_v0.5_settings_multitab_debbuging_07_02.jpg">
 
 > [!TIP]
-> You can enable Multi-tab debugging with query prarmeter by adding `?psat_multitab=on` in your URL.
+> You can enable Multi-tab debugging with query prarmeter by adding `psat_multitab=on` in your URL.
 
 ## PSAT Permissions
 
