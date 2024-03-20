@@ -11,14 +11,14 @@ First-party frames are created and used by the website you are directly visiting
 
 Third-party frames are created by domains apart from the website you are visiting. These cookies are often used by advertisers or analytics companies to track your activity across multiple websites, allowing them to build user profiles and target you with personalized ads.
 
-##### Orphaned Cookies
+### Orphaned Cookies
 An Orphaned cookie means the cookies exist in your browser's storage, but the frames that originally set them are no longer present in the DOM.
 
 This typically happens when:
 - The webpage might dynamically remove the frame after setting the cookie, potentially for efficiency or other reasons.
 - If the frame is part of an external source and not reloaded with the main page, it gets removed from the DOM, leaving its cookies orphaned.
 
-##### Unmapped Cookies
+### Unmapped Cookies
 The Unmapped Cookies mean the PSAT Chrome extension cannot map cookies to any frames. 
 
 This typically happens when:
