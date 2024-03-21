@@ -25,7 +25,7 @@ This typically happens when:
 - The extension might not be able to access or process all the information needed to accurately map cookies to frames, especially for complex webpages or those using advanced techniques.
 - If the way frames are loaded or managed on a webpage changes on the fly, it might break the extension's mapping mechanism.
 
-<img width="742" alt="PSAT Cookie Frames" src="images/cookie-analysis/psat_v0.5.2_frames_orphaned_umapped_cookies_20_03_2024.png">
+<img width="742" alt="PSAT Cookie Frames" src="images/cookie-analysis/psat_v0.6.0_frames_orphaned_unmapped_cookies_2024_03_20.png">
 
 In PSAT's cookie table, orphaned cookies and unmapped cookies can be viewed from the mapping's column, you need to enable the “Mappings” column by right-clicking the column's header and toggle it ON.
 
