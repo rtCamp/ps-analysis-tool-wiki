@@ -66,6 +66,33 @@ Options:
 
 ```
 
+### CLI Output
+
+PSAT offers a Command Line Interface (CLI) for users to interact with its functionalities. When users run PSAT commands through the CLI, they receive outputs in various formats depending on how what parameters they have used in the specific commands they've executed.
+
+Following are two major outputs:
+
+#### PSAT Dashboard
+
+The PSAT dashboard is a locally run application which runs analysis on a website and gives cookies results. It is served over a URL, you can open it in any browser to get an interactive dashboard just like the PSAT extensions panel. Due to limitations mentioned discrepancy section, the PSAT CLI dashboard does not include all details.
+
+<img src="images/psat-cli/psat_v0.6.0_cli_command_execution_2024_03_22.png" alt="PSAT CLI Command" />
+
+#### Export Files
+You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
+
+<img src="images/psat-cli/psta_v.0.6.0_cli_dashboard_export_2024_03_22.png" alt="PSAT Export Files" />
+
+The reports can be downloaded from PSAT CLI dashboard or exported directly to an location using the --out-dir flag.
+
+The exported repots contains the following files
+
+- *affected-cookies.csv* : the file contains a list of all the cookies that have been blocked, either in request or response.
+- *cookies.csv* : The file contains a list of all the cookies that are created by site, either by first party or third-party frames.
+- *report.csv* : the file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies etc.
+- *report.json* : the file contains data for technological analysis and cookie data in a JSON format.
+- *technologies.csv* : the file contains only technological analysis data of site.
+
 ### Discrepancy between CLI and extension
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate under different environment, leading to potential discrepancies. Understanding these differences will help you in making informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
 
