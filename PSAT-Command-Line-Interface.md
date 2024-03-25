@@ -91,11 +91,11 @@ The reports can be downloaded from PSAT CLI dashboard or exported directly to an
 
 The exported repots contains the following files
 
-- *affected-cookies.csv* : the file contains a list of all the cookies that have been blocked, either in request or response.
-- *cookies.csv* : The file contains a list of all the cookies that are created by site, either by first party or third-party frames.
-- *report.csv* : the file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies etc.
-- *report.json* : the file contains data for technological analysis and cookie data in a JSON format.
-- *technologies.csv* : the file contains only technological analysis data of site.
+- **affected-cookies.csv** : the file contains a list of all the cookies that have been blocked, either in request or response.
+- **cookies.csv** : The file contains a list of all the cookies that are created by site, either by first party or third-party frames.
+- **report.csv** : the file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies etc.
+- **report.json** : the file contains data for technological analysis and cookie data in a JSON format.
+- **technologies.csv** : the file contains only technological analysis data of site.
 
 ### Discrepancy between CLI and extension
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate under different environment, leading to potential discrepancies. Understanding these differences will help you in making informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
