@@ -4,7 +4,7 @@ The PSAT CLI is an alternative way to run analysis on your website. You can use 
 
 The sidebar section can help you navigate through various reports, the main section will help you identify all the cookies that are being used by a site. 
 
-The affected cookies section will help you identify cookies that are being affected by third-party cookie deprecation, and the technologies report will provide a technical analysis of the website.
+Within the CLI Dashboard, you'll find the “affected cookies” section, highlighting cookies impacted by third-party cookie deprecation. Additionally, a “technologies report” offers an in-depth technical analysis of the website.
 
 ### Getting Started with PSAT CLI
 
