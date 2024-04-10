@@ -31,7 +31,8 @@
 - [[Private Advertising]]
   - [[Topics]]
   - [[Attribution Reporting]]
-
+- [[Facilitated Testing]]
+  - [[Identifying Facilitated Testing Participation]]
 ## PSAT CLI
 
 - [[PSAT Command Line Interface]]
