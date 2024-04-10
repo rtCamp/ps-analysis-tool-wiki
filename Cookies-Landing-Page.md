@@ -18,7 +18,7 @@ Currently the cookie landing page provides a classification of observed cookies 
 
 The cookie landing page features interactive sections for cookie classification and blocked reasons. Clicking on a classification will navigate you to the corresponding section of the cookie table and automatically filter the results to display only the cookies associated with that selection.
 
-<img src='images/cookie-analysis/psat_v0.7.0_cookie_landing_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
+<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
 
 PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
