@@ -24,8 +24,8 @@ The CLI provides the following options as a source to create a report:
 
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
-  - Limit the number of URLs to analyze from a specific sitemap or CSV: npm run cli -- -p /path/to/sitemap.xml -ul 10
-  - Export the report to a specific folder without creating a dashboard URL: npm run cli -- -u https://bbc.com -d <path-to-dir> or npm run cli -- -u https://bbc.com -out-dir <path-to-dir>.
+  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
+  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://bbc.com -d <path-to-dir>` or `npm run cli -- -u https://bbc.com -out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
   - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
 
