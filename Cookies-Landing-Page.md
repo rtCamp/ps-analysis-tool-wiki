@@ -24,6 +24,18 @@ PSAT leverages and contributes to the [Open Cookie Database](https://github.com/
 
 As PSAT continues to evolve rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
 
+## Cookie Exemptions
+
+The Cookie Insights page will now display a dedicated section for “Cookie Exemptions,” similar to the existing “Blocked cookies” section. This section will clearly list the exempt cookies and provide details about the exemption reason.
+
+There are specific reasons why some cookies are exempt from blocking. These reasons are determined by technical necessities or user actions such as allow listing third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDPs) to access this information and provide you with transparency.
+
+PSAT has introduced a dedicated section for “Cookie Exemptions” on the Cookie Lading page, it will display information about exempt cookies.
+
+<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_exemptions_2024_04_09.png" alt="Cookie Exemptions" />
+
+By knowing why certain cookies are exempt, you gain valuable context about how websites function and how your cookie preferences interact with those functions.
+
 ## Detecting potential breakages
 
 PSAT helps developers ensure a smooth transition through the deprecation of 3P cookies by identifying known breakages caused by deprecated libraries. Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
