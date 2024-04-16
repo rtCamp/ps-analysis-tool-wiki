@@ -13,8 +13,8 @@
 - [[PSAT landing page]]
 - [[Cookies]]
   - [[Cookies landing page]]
+  - [Cookie Exemptions](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#cookie-exemptions)
     - [Known Breakages](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#detecting-potential-breakages)
-    - [[Cookie Exemptions]]
   - [[Cookies Table]]
     - [Filtering](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#filtering)
     - [Blocked Cookies](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#blocked-cookies)
@@ -33,7 +33,7 @@
   - [[Topics]]
   - [[Attribution Reporting]]
 - [[Facilitated Testing]]
-  - [[Identifying Facilitated Testing Participation]]
+  - [Identifying Facilitated Testing Participation](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Facilitated-Testing#identifying-facilitated-testing-participation)
 ## PSAT CLI
 
 - [[PSAT Command Line Interface]]

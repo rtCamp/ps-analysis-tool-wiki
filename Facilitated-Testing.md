@@ -12,7 +12,7 @@ You can learn more about different modes and labels from the [official guide](ht
 
 The PSAT extension now includes a dedicated "Facilitated Testing" menu within the sidebar. This menu provides access to helpful guides and resources to learn more about facilitated testing and how it might impact your browsing experience.
 
-<img src="/images/features/facilitated-testing/psat_v0.7.0_facilitated_testing_2024_03_29.png" alt="Facilitated Testing">
+<img src="images/features/facilitated-testing/psat_v0.7.0_facilitated_testing_2024_03_29.png" alt="Facilitated Testing">
 
 ### Identifying Facilitated Testing Participation
 

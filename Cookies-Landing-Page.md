@@ -12,7 +12,7 @@ The purpose of PSAT's cookie landing page is to provide information and insights
 
 The PSAT Cookie landing page has a navigation menu in the top-right corner for easy access to different sections.
 
-<img src="/images/cookie-analysis/psat_v0.7.0_cookie_landing_page_navigations_2024_04_09.png" alt="PSAT Cookie Landing Page Navigation">
+<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_page_navigations_2024_04_09.png" alt="PSAT Cookie Landing Page Navigation">
 
 Currently the cookie landing page provides a classification of observed cookies on a given page (total, first-party, third-party).
 
