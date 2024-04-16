@@ -13,8 +13,9 @@
 - [[PSAT landing page]]
 - [[Cookies]]
   - [[Cookies landing page]]
-  - [Cookie Exemptions](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#cookie-exemptions)
+    - [Cookie Exemptions](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#cookie-exemptions)
     - [Known Breakages](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#detecting-potential-breakages)
+    
   - [[Cookies Table]]
     - [Filtering](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#filtering)
     - [Blocked Cookies](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#blocked-cookies)
