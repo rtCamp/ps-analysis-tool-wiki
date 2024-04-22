@@ -29,6 +29,9 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
   - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
 
+> [!IMPORTANT]
+> If you're using URLs that contain multiple search parameters, be aware that the ampersand (&) symbol has a special meaning in PowerShell. To use URLs with ampersands, enclose the entire URL in double quotes ("). eg: `npm run cli -- -s https://veja.abril.com.br/sitemap.xml?yyyy=2024&mm=04&dd=18`
+
 ### CLI Use Cases
 
 The PSAT CLI is not just a command-line version of the PSAT Extension; it's a versatile tool enabling various use cases:
