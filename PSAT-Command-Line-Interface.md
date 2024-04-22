@@ -30,7 +30,7 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
 
 > [!IMPORTANT]
-> If you're using URLs that contain multiple search parameters, be aware that the ampersand (&) symbol has a special meaning in PowerShell. To use URLs with ampersands, enclose the entire URL in double quotes ("). eg: `npm run cli -- -s "https://veja.abril.com.br/sitemap.xml?yyyy=2024&mm=04&dd=18"`
+> When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
 
 ### CLI Use Cases
 
