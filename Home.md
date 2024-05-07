@@ -4,7 +4,7 @@ The [Privacy Sandbox initiative](https://privacysandbox.com/) aims to create tec
 
 ## Preparing for the end of third-party cookies
 
-If your site uses third-party cookies it's time to take action as we approach their deprecation. Chrome plans to disable third-party cookies for 1% of users from Q1 2024 to facilitate testing, and then ramp up to 100% of users from Q3 2024.  
+If your site uses third-party cookies it's time to take action as we approach their deprecation. Chrome plans to disable third-party cookies for 1% of users from Q1 2024 to facilitate testing, and then ramp up to 100% of users from Q1 2025.  
 
 Getting ready for Privacy Sandbox encompasses following a set of key steps o ensure you're prepared for your site to run without third-party cookies:
 
