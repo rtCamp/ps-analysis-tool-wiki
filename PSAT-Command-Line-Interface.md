@@ -28,6 +28,7 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://bbc.com -d <path-to-dir>` or `npm run cli -- -u https://bbc.com -out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
   - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
+  - Accept the GDPR banner if present on the site: `npm run cli -- -u https://bbc.com -ab`.
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -102,6 +103,13 @@ The exported reports contain the following files:
 - **report.csv** : the file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc.
 - **report.json** : the file contains data for technological analysis and cookie data in a JSON format.
 - **technologies.csv** : the file contains only the technological analysis data of the site.
+
+#### GDPR
+The PSAT CLI can accept the GDPR banner if present on the site with the help of CLI options `-ab` this feature is useful when analysing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyse the site without any interruptions, providing a comprehensive report on the cookies used.
+
+PSAT keeps an eye out for common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
+
+If your site is using a GDPR banner that is not automatically being accepted, you can [report](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) the specific library causing trouble so the PSAT team can add it to their detection list and make things smoother in the future.
 
 ### Discrepancy between CLI and extension
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate under different environments, leading to potential discrepancies. Understanding these differences will help you in making informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
