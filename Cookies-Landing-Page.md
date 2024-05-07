@@ -51,6 +51,6 @@ PSAT currently detects the following libraries, you can test their working on re
 - Jetpack Like
 - Google reCAPTCHA
 
-<img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.5_breakage_detection_07_02.jpg">
+<img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.8.0_known_breakages_2024_05_06.png">
 
 The PSAT extension has the capability to adopt more such libraries, which could help identify more libraries that might cause issues in the future.
