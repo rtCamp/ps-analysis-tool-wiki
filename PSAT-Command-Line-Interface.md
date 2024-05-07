@@ -92,8 +92,8 @@ You can export analysis data as CSV or JSON files. These file formats store the 
 
 <img src="images/psat-cli/psat_v0.8.0_cli_download_button_2024-05-06.png" alt="PSAT Export Files" />
 
-[!NOTE]
-When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
+>[!NOTE]
+>When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
 
 The exported reports contain the following files:
 
