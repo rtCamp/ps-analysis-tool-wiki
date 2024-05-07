@@ -50,7 +50,7 @@ For a detailed understanding of the CLI options, you can use the npm run cli -- 
 ```bash
 $ npm run cli -- --help
 
-> ps-analysis-tool@0.5.0 cli
+> ps-analysis-tool@0.8.0 cli
 > node dist/cli/index.js --help
 
 Usage: index [options]
@@ -66,11 +66,11 @@ Options:
   -po, --port <value>         A port for the CLI dashboard server.
   -ul, --url-limit <value>    No of URLs to analyze
   -nh, --no-headless          Flag for running puppeteer in non-headless mode
-  -np, --no-prompts           Flags for skipping all prompts. Default options
-                              will be used
+  -np, --no-prompts           Flags for skipping all prompts. Default options will be
+                              used
   -nt, --no-technology        Flags for skipping technology analysis.
-  -d, --out-dir <value>       Directory path where the analysis data will be
-                              stored
+  -d, --out-dir <value>       Directory path where the analysis data will be stored
+  -ab, --accept-banner        This will accept the GDPR banner if present.
   -h, --help                  display help for command
 
 ```
