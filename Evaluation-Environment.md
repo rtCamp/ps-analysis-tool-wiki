@@ -1,3 +1,15 @@
+## What is Evaluation Environment?
+An evaluation environment refers to a controlled testing space. It's specifically designed to isolate the PSAT extension and its interaction with third-party cookies.
+
+### Why is it important to have an evaluation environment?
+
+**Isolation:** This environment is isolated from your regular browsing data, like browsing history and cookies. Imagine a clean computer without any past activity.
+
+**Accurate:** By removing external factors like browsing history and cookies, the evaluation environment allows PSAT to focus solely on how third-party cookies function itself. This reduces the chances of misleading results caused by unrelated browsing activity.
+
+**Precise:** The controlled environment minimizes distractions and extraneous data, enabling PSAT to pinpoint any issues related to third-party cookies with greater precision.
+
+### How to set up an evaluation environment for PSAT?
 Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of 3P cookies; and (2) install PSAT.
 
 ## Spinning Chrome Instances from Command Line
