@@ -1,6 +1,6 @@
 The PSAT CLI is an alternative way to run analysis on your website. You can use a terminal to scan a given URL, or an entire sitemap to create a more extensive report. The CLI creates a local site showing information similar to PSAT's extension.
 
-<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
+<img alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site. 
 
@@ -98,9 +98,10 @@ You can export analysis data as CSV or JSON files. These file formats store the 
 The exported reports contain the following files:
 
 - **cookies-issues.csv** : the file contains a list of all the cookies that have been blocked, either in request or response.
-- **cookies.csv** : The file contains a list of all the cookies that are created by the site, either by first party or third-party frames.
+- **cookies.csv** : the file contains a list of all the cookies that are created by the site, either by first party or third-party frames.
 - **report.csv** : the file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc.
 - **report.json** : the file contains data for technological analysis and cookie data in a JSON format.
+- **report.html** : the file contains the resume of the report in HTML format similar to the Cookies' insight page.
 - **technologies.csv** : the file contains only the technological analysis data of the site.
 
 #### GDPR
