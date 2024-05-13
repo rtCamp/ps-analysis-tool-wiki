@@ -12,13 +12,13 @@ The purpose of PSAT's cookie landing page is to provide information and insights
 
 The PSAT Cookie landing page has a navigation menu in the top-right corner for easy access to different sections.
 
-<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_page_navigations_2024_04_09.png" alt="PSAT Cookie Landing Page Navigation">
+<img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_page_navigations_2024_04_09.png" alt="PSAT Cookie Landing Page Navigation">
 
 Currently the cookie landing page provides a classification of observed cookies on a given page (total, first-party, third-party).
 
 The cookie landing page features interactive sections for cookie classification and blocked reasons. Clicking on a classification will navigate you to the corresponding section of the cookie table and automatically filter the results to display only the cookies associated with that selection.
 
-<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
+<img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
 
 PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
@@ -28,11 +28,11 @@ As PSAT continues to evolve rapidly, the cookie landing page will incorporate mo
 
 The Cookie Insights page will now display a dedicated section for “Cookie Exemptions,” similar to the existing “Blocked cookies” section. This section will clearly list the exempt cookies and provide details about the exemption reason.
 
-There are specific reasons why some cookies are exempt from blocking. These reasons are determined by technical necessities or user actions such as allow listing third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDPs) to access this information and provide you with transparency.
+There are specific reasons why some cookies are exempt from blocking. These exemptions are granted for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDPs) to access this information and provide you with transparency.
 
 PSAT has introduced a dedicated section for “Cookie Exemptions” on the Cookie Lading page, it will display information about exempt cookies.
 
-<img src="images/cookie-analysis/psat_v0.7.0_cookie_landing_exemptions_2024_04_09.png" alt="Cookie Exemptions" />
+<img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_exemptions_2024_04_09.png" alt="Cookie Exemptions" />
 
 By knowing why certain cookies are exempt, you gain valuable context about how websites function and how your cookie preferences interact with those functions.
 
