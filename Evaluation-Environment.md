@@ -1,4 +1,4 @@
-Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of 3P cookies; and (2) install PSAT.
+Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of third-party cookies; and (2) install PSAT.
 
 ## Spinning Chrome Instances from Command Line
 

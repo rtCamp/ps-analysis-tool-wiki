@@ -16,7 +16,7 @@ Getting ready for Privacy Sandbox encompasses following a set of key steps o ens
 
 ## The Privacy Sandbox Analysis Tool
 
-The purpose of this tool is to empower developers like you in making your sites/applications ready for the upcoming deprecation of 3rd Party Cookies (3PC) and unpartitioned storage on Chrome as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. This wiki outlines a testing/evaluation methodology that will guide you in analyzing your scenarios and the necessary insights needed to implement changes.
+The purpose of this tool is to empower developers like you in making your sites/applications ready for the upcoming deprecation of Third-party Cookies (3PC) and unpartitioned storage on Chrome as part of the [Privacy Sandbox](https://privacysandbox.com/) initiative. This wiki outlines a testing/evaluation methodology that will guide you in analyzing your scenarios and the necessary insights needed to implement changes.
 
 This wiki contains different pages to help in this process of identifying and evaluating the impact of the upcoming changes related to cookies:
 

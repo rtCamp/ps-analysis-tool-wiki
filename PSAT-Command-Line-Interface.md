@@ -56,7 +56,7 @@ $ npm run cli -- --help
 
 Usage: index [options]
 
-CLI to test a URL for 3p cookies
+CLI to test a URL for third-party cookies
 
 Options:
   -V, --version               output the version number
@@ -117,7 +117,7 @@ The following are three key reasons for discrepancies:
 
 **1.  Environment**
 
-The CLI tool utilizes a browser with the 3rd-party cookie phaseout enabled. While the extension relies on Chrome settings for third-party cookies, this difference in the browsing environment can lead to varied website behaviors, contributing to discrepancies.
+The CLI tool utilizes a browser with the third-party cookie phase out enabled. While the extension relies on Chrome settings for third-party cookies, this difference in the browsing environment can lead to varied website behaviors, contributing to discrepancies.
 
 **2. Duration**
 
