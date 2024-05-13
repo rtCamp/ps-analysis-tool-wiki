@@ -16,7 +16,7 @@ Cookies emerged as a transformative element, revolutionizing how websites intera
 
 Cookies are associated with a specific domain. When a web server sets a cookie, it includes the [web origin](https://web.dev/same-site-same-origin/) as part of the cookie's metadata.
 
-Third-party or cross-site cookies, are cookies set or sent from a different domain as compared to the top-level site being accessed by the user.
+Third-party or cross-site cookies, are cookies set or sent from a domain different from the top-level site being accessed by the user.
 
 Cookies facilitate tracking because they are persistent across user agent sessions and can be shared between sites. They are not the only mechanism servers can use to track users across HTTP requests, but is certainly one of the most widely used to do that.
 
