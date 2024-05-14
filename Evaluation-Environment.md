@@ -3,7 +3,7 @@ An evaluation environment is a controlled testing space designed to isolate the 
 
 ### Why is it important to have an evaluation environment?
 
-**Isolation**: This environment is completely isolated from your browsing data, like browsing history and cookies. It's like having a clean computer without any past activity, ensuring the integrity of the testing process.
+**Isolation**: This environment is completely isolated from your browsing data, like browsing history and cookies. It's like having a newly installed browser without any past activity, ensuring the integrity of the testing process.
 
 **Accuracy**: By removing external factors like browsing history and cookies, the evaluation environment allows PSAT to focus solely on how third-party cookies function. This reduces the chances of misleading results caused by unrelated browsing activity.
 
