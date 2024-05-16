@@ -2,14 +2,8 @@ Preparing the environment for analyzing and debugging the behavior of cookies an
 
 ## Prerequisites
 
-**PSAT Extension**
-
 The PSAT extension only works with **Chrome version 113 or newer**. You can see what version of Chrome you're using by going to this address in your browser: `chrome://settings/help`.
 For the best experience, make sure you keep Chrome updated to the latest version.
-
-**PSAT CLI**
-
-For optimal performance PSAT CLI recommendeds use with **Node.js version 18.1 or later**.
 
 ## Spinning Chrome Instances from Command Line
 
