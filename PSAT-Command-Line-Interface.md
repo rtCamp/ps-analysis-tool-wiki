@@ -13,7 +13,7 @@ To leverage the PSAT CLI's capabilities, follow these steps:
 1. **Clone the Privacy Sandbox Analysis Tool Repository.**
 2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
 3. **Build Generation:** Execute `npm run cli:build` to create a build located at `/dist/cli`.
-4. **Running the CLI:** Launch the CLI by inputting a URL, sitemap URL, CSV file of URL set, or a path to a sitemap file.
+4. **Running the CLI:** Start the analysis by specifying a URL, sitemap URL, CSV file of URL set, or a path to a sitemap file.
 
 The CLI provides the following options as a source to create a report:
 
@@ -56,7 +56,7 @@ $ npm run cli -- --help
 
 Usage: index [options]
 
-CLI to test a URL for 3p cookies
+CLI to test a URL for third-party cookies
 
 Options:
   -V, --version               output the version number
@@ -107,9 +107,9 @@ The exported reports contain the following files:
 #### GDPR
 The PSAT CLI can accept the GDPR banner if present on the site with the help of CLI options `-ab` this feature is useful when analysing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyse the site without any interruptions, providing a comprehensive report on the cookies used.
 
-PSAT keeps an eye out for common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
+PSAT identifies common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
 
-If your site is using a GDPR banner that is not automatically being accepted, you can [report](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) the specific library causing issues so the PSAT team can add it to their detection list and make things smoother in the future.
+If PSAT doesn't automatically accept your site's GDPR banner, please [report](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) the specific library that's causing the issue. The PSAT team can then add it to their detection list for a smoother experience in the future.
 
 ### Discrepancy between CLI and extension
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate under different environments, leading to potential discrepancies. Understanding these differences will help you in making informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
@@ -118,7 +118,7 @@ The following are three key reasons for discrepancies:
 
 **1.  Environment**
 
-The CLI tool utilizes a browser with the 3rd-party cookie phaseout enabled. While the extension relies on Chrome settings for third-party cookies, this difference in the browsing environment can lead to varied website behaviors, contributing to discrepancies.
+The CLI tool utilizes a browser with the third-party cookie phase out enabled. While the extension relies on Chrome settings for third-party cookies. This difference in environment can lead to discrepancies in website behavior, contributing to discrepancies.
 
 **2. Duration**
 

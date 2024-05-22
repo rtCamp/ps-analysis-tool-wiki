@@ -1,4 +1,4 @@
-This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential breakages due to the deprecation of 3P cookies and partitioned storage APIs.
+This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential breakages due to the deprecation of third-party cookies and partitioned storage APIs.
 
 ## **Analytics Tracking**
 
@@ -182,7 +182,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
    2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
    3. On Chrome Private, the same cookie identified will not be present (blocked).
    4. Go to the Network tab and search for “[domain-ccc.com](https://domain-ccc.com/)”, and click on the network request named “add-to-cart”
-   5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block 3P cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
+   5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block third-party cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
 
 7. **Navigate to the second domain**
    1. Open the site [domain-bbb.com/ecommerce](https://domain-bbb.com/ecommerce) in both Chrome instances.

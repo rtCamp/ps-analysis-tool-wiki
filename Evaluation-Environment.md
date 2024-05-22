@@ -1,4 +1,4 @@
-Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of 3P cookies; and (2) install PSAT.
+Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of third-party cookies; and (2) install PSAT.
 
 ## Spinning Chrome Instances from Command Line
 
@@ -15,7 +15,7 @@ The commands you can use are:
 - `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
 
-To ensure the Chrome Launcher script remains up to date with the latest PSAT extension, follow these steps for updating the script:
+To keep the Chrome Launcher script current with the latest PSAT Extension, simply rerun the installation command:
 
 1. Open your terminal.
 2. Run the following command: `curl -sL https://rt.cx/psat | bash`
@@ -27,13 +27,12 @@ PSAT offers three straightforward installation methods:
 
 PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
 
-<div align='left'>
-<img width="742" align="center" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
-</div>
+
+<img width="742" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
 
 ## Installation from the PSAT zip file
 
-Go to the `Releases` Section in the PSAT GitHub repo: bit.ly/psat-repo
+Go to the `Releases` Section in the PSAT GitHub repo: [bit.ly/psat-repo](bit.ly/psat-repo)
 
 <img width="742" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
 
