@@ -6,6 +6,9 @@ The sidebar section can help you navigate through various reports. The main sect
 
 Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked reasons". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, a "technologies report" offers an in-depth technical website analysis.
 
+### Prerequisites
+For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend using a nvm (node version manager).
+
 ### Getting Started with PSAT CLI
 
 To leverage the PSAT CLI's capabilities, follow these steps:

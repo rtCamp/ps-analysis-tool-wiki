@@ -12,6 +12,11 @@ An evaluation environment is a controlled testing space designed to isolate the 
 ### How to set up an evaluation environment for PSAT?
 Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of third-party cookies; and (2) install PSAT.
 
+## Prerequisites
+
+The PSAT extension only works with **Chrome version 113 or newer**. You can see what version of Chrome you're using by going to this address in your browser: `chrome://settings/help`.
+For the best experience, make sure you keep Chrome updated to the latest version.
+
 ## Spinning Chrome Instances from Command Line
 
 PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
