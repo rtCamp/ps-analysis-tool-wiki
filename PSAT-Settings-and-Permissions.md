@@ -1,6 +1,6 @@
 PSAT Extension features a dedicated settings page, where users can easily access and modify certain configuration settings, and also view system information.
 
-<img width="742" alt="PSAT Settings Section" src="images/settings/psat_v0.5_settings_07_02.jpg">
+<img width="742" alt="PSAT Settings Section" src="images/settings/psat_v0.8.0_settings_2024_05_27.png">
 
 ## Enabling Chrome DevTools Protocol in PSAT
 
@@ -17,7 +17,7 @@ PSAT allows the Enabling and Disabling of its debugging capabilities directly fr
 
 PSAT lets users control the number of tabs analyzed concurrently. To optimize performance and ensure smooth operation, the default setting allows analysis of one tab at a time. However, users who require simultaneous multiple tab analysis can easily adjust this setting to meet their specific debugging needs.
 
-<img width="742" alt="PSAT Multitab" src="images/settings/psat_v0.5_settings_multitab_debbuging_07_02.jpg">
+<img width="742" alt="PSAT Multitab" src="images/settings/psat_v0.8.0_multitab_debugging_2024_05_27.png">
 
 ## PSAT Permissions
 
