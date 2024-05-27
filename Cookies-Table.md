@@ -83,7 +83,7 @@ Frame overlays make it easy to associate third-party cookies with embedded ifram
 1. Click on PSAT's `Cookies` component on the right sidebar
 1. Click on the icon on the side of the Cookies component to activate the functionality
 
-<img width="742" alt="PSAT Frame Overlays" src="images/cookie-analysis/frame-overlays.png">
+<img width="742" alt="PSAT Frame Overlays" src="images/cookie-analysis/psat_v0.8.0_frame_overaly_2024_05_27.png">
 
 With `Frame Overalys` activated we can directly correlate specific page components, with the corresponding cookies set and manipulated by them. Specifically, you can:
 
