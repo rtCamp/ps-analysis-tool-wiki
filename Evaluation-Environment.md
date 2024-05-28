@@ -45,25 +45,25 @@ PSAT offers three straightforward installation methods:
 PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
 
 
-<img width="742" alt="PSAT on Chrome Web Store" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/b664c5ed-a858-447c-9481-ef816d05b353">
+<img width="742" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v0.8.0_chrome_store_24_05_24.png">
 
 ## Installation from the PSAT zip file
 
-Go to the `Releases` Section in the PSAT GitHub repo: [bit.ly/psat-repo](bit.ly/psat-repo)
+Go to the `Releases` Section in the PSAT GitHub repo: [bit.ly/psat-repo](https://bit.ly/psat-repo)
 
-<img width="742" alt="Install from zip file, step one" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/2350fc22-c60e-49e2-9e3b-149cb78ebc30">
+<img width="742" alt="Install from zip file, step one" src="images/evaluation-environment/psat_v0.8.0_psat_repository_24_05_2024.png">
 
 Select the latest version from the available tags:
 
-<img width="742" alt="Install from zip file, step two" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/4dd56d99-46eb-4cad-8f4d-28d672062436">
+<img width="742" alt="Install from zip file, step two" src="images/evaluation-environment/psat_v0.8.0_psat_release_page_github_24_05_2024.png">
 
 Expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
 
-<img width="742" alt="Install from zip file, step three" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/c1184b95-bc92-4ac3-8ea1-882e8e4485e7">
+<img width="742" alt="Install from zip file, step three" src="images/evaluation-environment/psat_v0.8.0_download_zip_24_04_2024.png">
 
 Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
-<img width="742" alt="Screenshot 2023-12-07 at 10 45 00 AM" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/0b0c2a99-81ee-4433-a93e-98cfbd02a3ea">
+<img width="742" alt="Chrome Settings page, step four" src="images/evaluation-environment/psat_v0.8.0_chrome_extension_settings_24_05_2024.png">
 
 ## PSAT installation from source code
 
