@@ -10,9 +10,9 @@
 - [[Evaluation Environment]]
 - [[PSAT Settings and Permissions]]
 - [[PSAT Extension Popup]]
-- [[PSAT landing page]]
+- [[PSAT Landing Page]]
 - [[Cookies]]
-  - [[Cookies landing page]]
+  - [[Cookies Landing Page]]
     - [Cookie Exemptions](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#cookie-exemptions)
     - [Known Breakages](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Landing-Page#detecting-potential-breakages)
   - [[Cookies Table]]
@@ -20,8 +20,8 @@
     - [Blocked Cookies](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#blocked-cookies)
     - [Frame Overlays](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#frame-overlays)
     - [Allow List](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Cookies-Table#allow-cookies-for-specific-domains-during-browsing-sessions)
-  - [[General debugging actions]]
-  - [[Example analysis scenarios]]
+  - [[General Debugging Actions]]
+  - [[Example Analysis Scenarios]]
 - [[Site Boundaries]]
   - [[Cookies Having Independent Partitioned State]]
   - [[Related Website Sets]]
@@ -34,6 +34,7 @@
   - [[Attribution Reporting]]
 - [[Facilitated Testing]]
   - [Identifying Facilitated Testing Participation](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Facilitated-Testing#identifying-facilitated-testing-participation)
+
 ## PSAT CLI
 
 - [[PSAT Command Line Interface]]
