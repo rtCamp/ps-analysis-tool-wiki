@@ -7,9 +7,13 @@ PSAT's cookies table is the starting point for analyzing and debugging the behav
 ## Frames
 Frames are the sections of a web page that display content from independent sources, essentially acting like smaller windows within the main page.
 
-First-party frames are created and used by the website you are directly visiting. They help the site remember your preferences, keep you logged in, and improve your overall experience.
+This includes the main frame of the web page and any embedded frames, like iframes (inline frames), which can display additional content, such as advertisements, third-party widgets, or isolated sections of the webpage.
 
-Third-party frames are created by domains apart from the website you are visiting. These cookies are often used by advertisers or analytics companies to track your activity across multiple websites, allowing them to build user profiles and target you with personalized ads.
+### Main Frame
+The main frame is the primary window of the webpage, displaying the main content of the site. It is the top-level frame that contains all other frames and elements on the page.
+
+### Embedded Frames
+Embedded frames, These are nested frames within the main document that can load and display content independently of the main frame. They can be used to show ads, social media widgets, videos, or other content that is not part of the main page.
 
 ### Orphaned Cookies
 An Orphaned cookie means the cookies exist in your browser's storage, but the frames that originally set them are no longer present in the DOM.
