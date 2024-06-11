@@ -31,7 +31,7 @@ This typically happens when:
 
 <img width="742" alt="PSAT Cookie Frames" src="images/cookie-analysis/psat_v0.6.0_frames_orphaned_unmapped_cookies_2024_03_20.png">
 
-In PSAT's cookie table, orphaned cookies and unmapped cookies can be viewed from the mapping's column, you need to enable the “Mappings” column by right-clicking the column's header and toggle it ON.
+In PSAT's cookie table, orphaned cookies and unmapped cookies can be viewed from the mapping's column, you need to enable the "Mapping" column by right-clicking the column's header and toggle it ON.
 
 ## Data Gathering
 
