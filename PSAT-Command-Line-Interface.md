@@ -2,7 +2,7 @@ The PSAT CLI is an alternative way to run analysis on your website. You can use 
 
 <img alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
 
-The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site. 
+The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
 Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked reasons". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, a "technologies report" offers an in-depth technical website analysis.
 
@@ -28,7 +28,7 @@ The CLI provides the following options as a source to create a report:
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
   - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
-  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://bbc.com -d <path-to-dir>` or `npm run cli -- -u https://bbc.com -out-dir <path-to-dir>`.
+  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://bbc.com -d <path-to-dir>` or `npm run cli -- -u https://bbc.com --out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
   - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
   - Accept the GDPR banner if present on the site: `npm run cli -- -u https://bbc.com -ab`.
