@@ -109,7 +109,7 @@ After doing that, the query string is copied in to the clipboard. Then go to the
 
 ## Allow cookies for specific domains during browsing sessions
 
-For debugging purposes, the developer has the capability to unblock cookies from a specific domain, by right-clicking on the blocked cookie and selecting “Allow Domain During Session”. Once the domain is included on the allow list, the extension will unblock all cookies from the same domain until the session is closed.
+For debugging purposes, Chrome provides developers with the ability to unblock cookies from a specific domain for the duration of the current browsing session. This can be achieved by adding the domain pair in Chrome's settings, or directly from PSAT by right-clicking on the blocked cookie and selecting “Allow Domain During Session”. Once the domain is included on the allow list, Chrome will unblock all cookies from the same domain until the browsing session is over.
 
 <img width="742" alt="Allow Domain During Session" src="images/features/allow-domain/psat_v0.5.1_allow_blocked_domain_2024_02_22.png">
 
