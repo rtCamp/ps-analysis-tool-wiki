@@ -14,7 +14,7 @@ Quite often, top-level navigation happens _invisibly_ to you when you only look 
 
 To see top-level navigation without the added noise of other requests. Toggle the “Doc” filter in the network panel as shown below, then look at the origin of the request URL to see if it is cross-site with the one that is in the URL bar.
 
-<img width="742" alt="Top-level Navigations" src="https://github.com/GoogleChromeLabs/ps-analysis-tool/assets/506089/44b0573d-757a-456b-87d5-d441dbd532a1">
+<img width="742" alt="Top-level Navigations" src="images/general-debugging-actions/top-level-navigations-chrome-devtools.png">
 
 ## **JS/Network errors**
 
