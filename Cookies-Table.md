@@ -23,7 +23,7 @@ This typically happens when:
 - If the frame is part of an external source and not reloaded with the main page, it gets removed from the DOM, leaving its cookies orphaned.
 
 ### Unmapped Cookies
-The Unmapped Cookies mean the PSAT Chrome extension cannot map cookies to any frames. 
+The Unmapped Cookies mean the PSAT Chrome extension cannot map cookies to any frames.
 
 This typically happens when:
 - The extension might not be able to access or process all the information needed to accurately map cookies to frames, especially for complex webpages or those using advanced techniques.
@@ -109,7 +109,7 @@ After doing that, the query string is copied in to the clipboard. Then go to the
 
 ## Allow cookies for specific domains during browsing sessions
 
-For debugging purposes, the developer has the capability to unblock cookies from a specific domain, by right-clicking on the blocked cookie and selecting “Allow Domain During Session”. Once the domain is included on the allow list, the extension will unblock all cookies from the same domain until the session is closed. 
+For debugging purposes, the developer has the capability to unblock cookies from a specific domain, by right-clicking on the blocked cookie and selecting “Allow Domain During Session”. Once the domain is included on the allow list, the extension will unblock all cookies from the same domain until the session is closed.
 
 <img width="742" alt="Allow Domain During Session" src="images/features/allow-domain/psat_v0.5.1_allow_blocked_domain_2024_02_22.png">
 
