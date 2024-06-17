@@ -11,7 +11,21 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 ### Getting Started with PSAT CLI
 
-To leverage the PSAT CLI's capabilities, follow these steps:
+To leverage the PSAT CLI's capabilities you can either choose to install it as node module or clone the repository and build it locally.
+
+#### Install as Node Module
+
+To install the PSAT CLI as a node module, follow these steps:
+
+1. **Install the PSAT CLI:** Run `npm install -g ps-analysis-tool/cli` to install the PSAT CLI globally.
+2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
+3. **Help Command:** Use the `psat --help` command to view all available options.
+
+The PSAT CLI is now installed and ready to use. you can learn more about CLI options from node module reade, The CLI will generate a report and serve it in `/out/` directory.
+
+#### Clone and Build Locally
+
+To install the PSAT CLI locally, follow these steps:
 
 1. **Clone the Privacy Sandbox Analysis Tool Repository.**
 2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
@@ -20,7 +34,7 @@ To leverage the PSAT CLI's capabilities, follow these steps:
 
 The CLI provides the following options as a source to create a report:
 
-  - Analyze a specific URL: `npm run cli -- -u https://bbc.com`.
+  - Analyze a specific URL: `npm run cli https://example.com`.
   - Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
   - Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
   - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
@@ -28,10 +42,9 @@ The CLI provides the following options as a source to create a report:
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
   - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
-  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://bbc.com -d <path-to-dir>` or `npm run cli -- -u https://bbc.com --out-dir <path-to-dir>`.
-  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://bbc.com -nt`.
-  - Use port of your preference to server PSAT dashboard `npm run cli -- -po 9009 -u https://bbc.com`
-  - Accept the GDPR banner if present on the site: `npm run cli -- -u https://bbc.com -ab`.
+  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
+  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
+  - Accept the GDPR banner if present on the site: `npm run cli -- -u https://example.com -ab`.
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -57,9 +70,11 @@ $ npm run cli -- --help
 > ps-analysis-tool@0.8.0 cli
 > node dist/cli/index.js --help
 
-Usage: index [options]
+Usage: main [options] [website-url]
 
 CLI to test a URL for third-party cookies
+Arguments:
+  website-url                 The URL of website you want to analyse
 
 Options:
   -V, --version               output the version number
@@ -67,7 +82,6 @@ Options:
   -s, --sitemap-url <value>   URL of a sitemap
   -c, --csv-path <value>      Path to a CSV file with a set of URLs.
   -p, --sitemap-path <value>  Path to a sitemap saved in the file system
-  -po, --port <value>         A port for the CLI dashboard server.
   -ul, --url-limit <value>    No of URLs to analyze
   -nh, --no-headless          Flag for running puppeteer in non-headless mode
   -np, --no-prompts           Flags for skipping all prompts. Default options will be used
@@ -75,7 +89,6 @@ Options:
   -d, --out-dir <value>       Directory path where the analysis data will be stored
   -ab, --accept-banner        This will accept the GDPR banner if present.
   -h, --help                  display help for command
-
 ```
 
 ### CLI Output
@@ -86,7 +99,7 @@ The following are two major outputs:
 
 #### PSAT Dashboard
 
-The PSAT dashboard is a locally run application which runs analysis on a website and gives cookies results. It is served over a URL, you can open it in any browser to get an interactive dashboard just like the PSAT extensions panel. Due to limitations mentioned discrepancy section, the PSAT CLI dashboard does not include all details.
+The PSAT dashboard is a locally run HTML application which process the result from json file for analysis and gives cookies results. It is served in `/out/` directory of repo, you can open it in any browser to get an interactive dashboard just like the PSAT extensions panel. Due to limitations mentioned discrepancy section, the PSAT CLI dashboard does not include all details.
 
 <img src="images/psat-cli/psat_v0.6.0_cli_command_execution_2024_03_22.png" alt="PSAT CLI Command" />
 
