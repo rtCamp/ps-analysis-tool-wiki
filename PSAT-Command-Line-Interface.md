@@ -30,7 +30,7 @@ To install the PSAT CLI locally, follow these steps:
 1. **Clone the Privacy Sandbox Analysis Tool Repository.**
 2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
 3. **Build Generation:** Execute `npm run build-cli` to create a build located at `/dist/cli`.
-4. **Running the CLI:** Start the analysis by specifying a URL, a sitemap URL, a CSV file of the URL set, or a path to a sitemap file.
+4. **Running the CLI:** Start the analysis by specifying a URL, sitemap URL, CSV file of URL set, or a path to a sitemap file.
 
 The CLI provides the following options as a source to create a report:
 
