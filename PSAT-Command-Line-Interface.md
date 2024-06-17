@@ -101,12 +101,12 @@ The following are two major outputs:
 
 The PSAT dashboard is a locally run HTML application which process the result from json file for analysis and gives cookies results. It is served in `/out/` directory of repo, you can open it in any browser to get an interactive dashboard just like the PSAT extensions panel. Due to limitations mentioned discrepancy section, the PSAT CLI dashboard does not include all details.
 
-<img src="images/psat-cli/psat_v0.6.0_cli_command_execution_2024_03_22.png" alt="PSAT CLI Command" />
+<img src="images/psat-cli/psat_v1.0.0_cli_command_execution_2024_06_17.png" alt="PSAT CLI Command" />
 
 #### Export Files
 You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
 
-<img src="images/psat-cli/psat_v0.8.0_cli_download_button_2024-05-06.png" alt="PSAT Export Files" />
+<img src="images/psat-cli/psat_v1.0.0_cli_download_button_2024-06-17.png" alt="PSAT Export Files" />
 
 >[!NOTE]
 >When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
