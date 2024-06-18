@@ -58,7 +58,7 @@ Clicking on the funnel icon, allows you to select from all the observed cookies,
 
 After exploring and analyzing the cookie information presented in the Cookie Table panel, developers can easily generate a CSV report containing all displayed data. This report will dynamically reflect any applied filters, ensuring the exported dataset aligns with the current view.
 
-To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file, providing a structured format for subsequent analysis, archiving, or integration with external tools.
+To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file(www-your-domain-com-report.csv), providing a structured format for subsequent analysis, archiving, or integration with external tools.
 
 <img width="742" alt="PSAT downloading cookies report" src="images/cookie-analysis/psat_v1.0.0_download_csv_report_2024_06_18.png">
 
