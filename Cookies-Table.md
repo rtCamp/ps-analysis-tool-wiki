@@ -106,15 +106,15 @@ With `Frame Overalys` activated we can directly correlate specific page componen
 
 ## Network Requests With a Given Cookie
 
-PSAT does not implement yet the capability of transferring the focus from the cookies table to the network tab, filtering the network requests associated with a given cookie. Implementing such capability is not possible on Chrome extensions currently. But, PSAT makes it easier to get to those requests, by generating the query strings to be used on DevTools' Network panel.
+PSAT empowers developers to efficiently pinpoint and examine network requests associated with specific cookies. This filtering capability reduces the time and effort required to diagnose cookie-related issues filtering requests related to a specific cookie.
 
-To gather the query string for a given cookie, right click on it, and select the only option shown in the context menu.
+<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/psat_v1.0.0_Show_Request_With_this_cookie_2024_06_18.png">
 
-<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/psat_v0.5.1_network_request_given_cookie_2024_02_22.png">
+To utilize this feature, developers should first locate the desired cookie within the "Cookies Table" section in PSAT and right-click on the chosen cookie will reveal a context menu. Selecting the "Show Requests With This Cookie" option from this menu triggers a filter on the "Network" tab, presenting only the requests involving the specified cookie. 
 
-After doing that, the query string is copied in to the clipboard. Then go to the Network tab, and paste the value in the filtering box.
+<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/psat_v1.0.0_network_tab_with_filtered_cookies_2024_06_18.png">
 
-<img width="742" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/psat_v0.5.1_network_requested_cookies_searched_2024_02_22.png">
+Upon activating this filter(by cookie name and domain), the Network tab becomes a real-time display of network traffic exclusively linked to the selected cookie, facilitating seamless analysis. 
 
 ## Allow cookies for specific domains during browsing sessions
 
