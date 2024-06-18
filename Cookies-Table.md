@@ -54,6 +54,15 @@ Clicking on the funnel icon, allows you to select from all the observed cookies,
 
 <img width="742" alt="PSAT Cookie Filters" src="images/cookie-analysis/psat_v0.5.1_cookie_table_filtering_in_actions_2024_02_22.png">
 
+## Exporting Cookie Data to CSV
+
+After exploring and analyzing the cookie information presented in the Cookie Table panel, developers can easily generate a CSV report containing all displayed data. This report will dynamically reflect any applied filters, ensuring the exported dataset aligns with the current view.
+
+To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file, providing a structured format for subsequent analysis, archiving, or integration with external tools.
+
+<img width="742" alt="PSAT downloading cookies report" src="images/cookie-analysis/psat_v1.0.0_download_csv_report_2024_06_18.png">
+
+
 ## Blocked Cookies
 
 PSAT gathers information regarding the cookies and the corresponding reasons for the blocking. Blocked cookies are highlighted in yellow or have a warning icon in the Cookies table, depending on when they were blocked by response or request.
