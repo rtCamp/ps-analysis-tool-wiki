@@ -41,6 +41,7 @@ The CLI provides the following options as a source to create a report:
 
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
+  - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
   - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
@@ -82,6 +83,7 @@ Options:
   -s, --sitemap-url <value>   URL of a sitemap
   -c, --csv-path <value>      Path to a CSV file with a set of URLs.
   -p, --sitemap-path <value>  Path to a sitemap saved in the file system
+  -l, --locale <value>        Locale to use for the CLI, supported: en, hi, ja, ko, pt-BR
   -ul, --url-limit <value>    No of URLs to analyze
   -nh, --no-headless          Flag for running puppeteer in non-headless mode
   -np, --no-prompts           Flags for skipping all prompts. Default options will be used
