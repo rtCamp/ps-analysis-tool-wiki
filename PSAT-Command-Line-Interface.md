@@ -34,7 +34,7 @@ To install the PSAT CLI locally, follow these steps:
 
 The CLI provides the following options as a source to create a report:
 
-  - Analyze a specific URL: `npm run cli https://example.com`.
+  - Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
   - Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
   - Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
   - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
