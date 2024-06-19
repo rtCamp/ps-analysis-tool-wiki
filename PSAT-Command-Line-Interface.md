@@ -29,7 +29,7 @@ To install the PSAT CLI locally, follow these steps:
 
 1. **Clone the Privacy Sandbox Analysis Tool Repository.**
 2. **Install Dependencies:** Run `npm install` to set up all required dependencies.
-3. **Build Generation:** Execute `npm run cli:build` to create a build located at `/dist/cli`.
+3. **Build Generation:** Execute `npm run build-cli` to create a build located at `/dist/cli`.
 4. **Running the CLI:** Start the analysis by specifying a URL, a sitemap URL, a CSV file of the URL set, or a path to a sitemap file.
 
 The CLI provides the following options as a source to create a report:
@@ -122,7 +122,7 @@ The exported reports contain the following files:
 - **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
 - **technologies.csv** : the file contains only the technological analysis data of the site.
 
-#### GDPR
+### GDPR
 The PSAT CLI can accept the GDPR banner if it is present on the site with the help of CLI options `-ab` this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used.
 
 PSAT identifies the common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
@@ -134,14 +134,14 @@ The PSAT browser extension and the CLI tool both capture valuable insights, but 
 
 The following are three key reasons for discrepancies:
 
-**1. Environment**
+#### 1. Environment
 
 The CLI tool utilizes a browser with the third-party cookie phase-out enabled. While the extension relies on Chrome settings for third-party cookies. This difference in environment can lead to discrepancies in website behavior, contributing to discrepancies.
 
-**2. Duration**
+#### 2. Duration
 
 The CLI tool adopts a concise approach by launching a website and monitoring it for a brief period of 10 seconds. This short duration may not capture the complete set of cookies if certain scripts or functionalities take longer to load or execute, which may cause discrepancies.
 
-**3. User Interactions**
+#### 3. User Interactions
 
 Unlike the PSAT extension, the CLI tool does not emulate user interactions during website monitoring. The lack of user interactions may impact how websites handle cookies, as certain cookies may load after user actions.
