@@ -83,7 +83,7 @@ Options:
   -s, --sitemap-url <value>   URL of a sitemap
   -c, --csv-path <value>      Path to a CSV file with a set of URLs.
   -p, --sitemap-path <value>  Path to a sitemap saved in the file system
-  -l, --locale <value>        Locale to use for the CLI, supported: en, hi, ja, ko, pt-BR
+  -l, --locale <value>        Locale to use for the CLI, supported: en, hi, es, ja, ko, pt-BR
   -ul, --url-limit <value>    No of URLs to analyze
   -nh, --no-headless          Flag for running puppeteer in non-headless mode
   -np, --no-prompts           Flags for skipping all prompts. Default options will be used
