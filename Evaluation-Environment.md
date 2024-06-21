@@ -71,7 +71,7 @@ If you need to debug the extension or submit improvements, you can download the 
 
 - Clone this Privacy Sandbox Analysis Tool Repository
 - Run `npm install` to install all dependencies
-- `npm run extension:dev` or `npm run extension:build` to generate a build in `/dist/extension`
+- `npm run ext:dev` or `npm run ext:build` to generate a build in `/dist/extension`
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
 
