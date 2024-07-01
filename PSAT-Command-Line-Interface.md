@@ -1,6 +1,6 @@
 The PSAT CLI is an alternative way to run analysis on your website. You can use a terminal to scan a given URL or an entire sitemap to create a more extensive report. The CLI creates a local site showing information similar to PSAT's extension.
 
-<img alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
+<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
@@ -22,6 +22,8 @@ To install the [PSAT CLI as a node module](https://www.npmjs.com/package/@google
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
 The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node module [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
+
+<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.png">
 
 #### Clone and Build Locally
 
