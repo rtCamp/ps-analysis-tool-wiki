@@ -15,13 +15,13 @@ To leverage the PSAT CLI's capabilities, you can either choose to install it as 
 
 #### Install as a Node Module
 
-To install the PSAT CLI as a node module, follow these steps:
+To install the [PSAT CLI as a node module](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
-1. **Install the PSAT CLI:** Run `npm install -g ps-analysis-tool/cli` to install the PSAT CLI globally.
+1. **Install the PSAT CLI:** Run `npm i -g @google-psat/cli` to install the PSAT CLI globally.
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
-The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node module README. The CLI will generate a report and store it in the `/out/` directory by default.
+The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node module [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
 #### Clone and Build Locally
 
