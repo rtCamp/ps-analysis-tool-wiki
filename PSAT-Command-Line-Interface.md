@@ -13,7 +13,7 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 To leverage the PSAT CLI's capabilities, you can either choose to install it as a node package or clone the repository and build it locally.
 
-#### Installing a PSAT CLI package
+#### Installing PSAT CLI as package
 
 To install the [PSAT CLI from Node](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
