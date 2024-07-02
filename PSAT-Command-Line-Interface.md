@@ -13,9 +13,9 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 To leverage the PSAT CLI's capabilities, you can either choose to install it as a node module or clone the repository and build it locally.
 
-#### Install as a Node Module
+#### Using the PSAT as Node CLI
 
-To install the [PSAT CLI as a node module](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
+To install the [PSAT CLI as a Node CLI](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
 1. **Install the PSAT CLI:** Run `npm i -g @google-psat/cli` to install the PSAT CLI globally.
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
