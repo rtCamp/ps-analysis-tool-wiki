@@ -11,7 +11,7 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 ### Getting Started with PSAT CLI
 
-To leverage the PSAT CLI's capabilities, you can either choose to install it as a node module or clone the repository and build it locally.
+To leverage the PSAT CLI's capabilities, you can either choose to install it as a node package or clone the repository and build it locally.
 
 #### Installing a PSAT CLI package
 
@@ -21,7 +21,7 @@ To install the [PSAT CLI from Node](https://www.npmjs.com/package/@google-psat/c
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
-The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node module [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
+The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
 <img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.png">
 
