@@ -20,7 +20,7 @@ To change the display language on macOS, follow these steps:
 6. Choose Chrome and a language from the pop-up menus, then click Add.
 7. Restart Chrome if necessary.
 
-### Windows (Steps may vary depending on your Windows version)
+### Windows
 To change the display language on Windows, follow these steps:
 
 1. Visit - `chrome://settings/languages`
