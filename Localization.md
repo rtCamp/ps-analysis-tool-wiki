@@ -1,4 +1,4 @@
-The PSAT extension and CLI is now available in 6 different languages:
+The PSAT extension and CLI are now available in 6 different languages:
 - English (Default)
 - Hindi
 - Spanish
@@ -12,28 +12,23 @@ To view PSAT in your preferred language, you can change the language settings of
 ### Mac
 To change the display language on macOS, follow these steps:
 
-1. Open System Preferences.
-2. In Genral settings, click on "Language and Region".
-3. Switch to the "Apps" tab.
-4. Click the "+" icon.
-5. Choose Chrome from the application list.
-6. Select your desired language from the list.
+1. On your Mac, choose Apple menu  > System Settings, 
+2. Click General  in the sidebar
+3. Click Language & Region on the right. (You may need to scroll down.)
+4. Go to Applications
+5. Click the Add button (+)
+6. Choose Chrome and a language from the pop-up menus, then click Add.
 7. Restart Chrome if necessary.
 
 ### Windows (Steps may vary depending on your Windows version)
 To change the display language on Windows, follow these steps:
 
-1. Go to Settings > Time & Language > Language & region.
-2. Add a preferred language: Click on "Add a language" under the preferred languages section and select your preferred language.
-3. Choose the language you want to apply and click next.
-4. Install and set as display language.
-
-If your Windows licence does not support switching the display language.
-
-You can directly change the language in Chrome:
-1. Visit `chrome://settings/languages`.
-2. Add the language you want.
-3. Select it as the display language and relaunch the browser.
+1. Visit - `chrome://settings/languages`
+2. Click on Add Languages.
+3. Select the language you want to add.
+4. Once the language gets added click on language option (the three dots on the right side of the language).
+4. Select "Display Google chrome in this language" from options.
+5. Once done relaunch the browser.
 
 
 ### Linux (Steps may vary depending on your Linux distribution)
@@ -63,7 +58,7 @@ PSAT CLI currently supports the following languages with their respective langua
 | Korean               | ko                  |
 | Portuguese (Brazil)  | pt-BR               |
 
-### Settings Laguage in CLI
+### Setting Laguage in CLI
 
 Here is an example of how to set the language when using PSAT CLI:
 
