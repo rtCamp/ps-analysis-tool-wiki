@@ -7,10 +7,10 @@ The PSAT extension and CLI are now available in 6 different languages:
 - Spanish
 
 ## Using PSAT extension in your language
-To view PSAT in your preferred language, you can change the language settings of your Chrome browser. Here are the steps for each operating system:
+To view PSAT in your preferred language, you can change the display language settings of your Chrome browser. Here are the steps for each operating system:
 
 ### Mac
-To change the display language on macOS, follow these steps:
+To change the Chrome's display language on macOS, follow these steps:
 
 1. On your Mac, choose Apple menu  > System Settings, 
 2. Click General  in the sidebar
@@ -21,18 +21,18 @@ To change the display language on macOS, follow these steps:
 7. Restart Chrome if necessary.
 
 ### Windows
-To change the display language on Windows, follow these steps:
+To change the Chrome's display language on Windows, follow these steps:
 
 1. Visit - `chrome://settings/languages`
 2. Click on Add Languages.
 3. Select the language you want to add.
-4. Once the language gets added click on language option (the three dots on the right side of the language).
-4. Select "Display Google chrome in this language" from options.
-5. Once done relaunch the browser.
+4. Once the language is added, click the three dots to the right of the language.
+5. Select "Display Google Chrome in this language" from options.
+6. Once done relaunch the browser.
 
 
 ### Linux (Steps may vary depending on your Linux distribution)
-To change the display language on Ubuntu, follow these steps:
+To change the Chrome's display language on Ubuntu, follow these steps:
 
 1. Open Settings.
 2. Open "Language and Region".
