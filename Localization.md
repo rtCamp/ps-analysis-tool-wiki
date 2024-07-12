@@ -44,7 +44,7 @@ To change the display language on Ubuntu, follow these steps:
 8. Restart your system.
 
 ## Get PSAT CLI Reports in Your Language
-You can view PSAT CLI reports in your preferred language by using the `-l` or `--locale` option when running the command, by default the language is set to English.
+To generate PSAT CLI reports in your preferred language, use `-l` or `--locale` option when running the command. By default, the language is set to English.
 
 ### Supported Languages
 
