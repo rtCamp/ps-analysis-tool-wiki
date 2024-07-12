@@ -58,7 +58,7 @@ PSAT CLI currently supports the following languages with their respective langua
 | Portuguese (Brazil)  | pt-BR               |
 | Spanish              | es                  |
 
-### Setting Laguage in CLI
+### Setting Language in CLI
 
 Here is an example of how to set the language when using PSAT CLI:
 
