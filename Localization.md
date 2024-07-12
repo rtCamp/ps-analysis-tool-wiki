@@ -1,10 +1,10 @@
 The PSAT extension and CLI are now available in 6 different languages:
 - English (Default)
 - Hindi
-- Spanish
 - Japanese
 - Korean
 - Portuguese (Brazil)
+- Spanish
 
 ## Using PSAT extension in your language
 To view PSAT in your preferred language, you can change the language settings of your Chrome browser. Here are the steps for each operating system:
@@ -53,10 +53,10 @@ PSAT CLI currently supports the following languages with their respective langua
 | -------------------- | ------------------- |
 | English              | en (default)        |
 | Hindi                | hi                  |
-| Spanish              | es                  |
 | Japanese             | ja                  |
 | Korean               | ko                  |
 | Portuguese (Brazil)  | pt-BR               |
+| Spanish              | es                  |
 
 ### Setting Laguage in CLI
 
