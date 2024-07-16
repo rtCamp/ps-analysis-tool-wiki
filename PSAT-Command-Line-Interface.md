@@ -11,19 +11,15 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 #### Installing and Using the Required Node.js Version using NVM
 
-1. **Navigate to the `ps-analysis-tool` directory:**
+1. **Install the Node.js version specified in `.nvmrc` which is Node 18:**
    ```bash
-   cd ps-analysis-tool
+   nvm install 18
    ```
-2. **Install the Node.js version specified in `.nvmrc`:**
+2. **Use the installed Node.js version:**
    ```bash
-   nvm install
+   nvm use 18
    ```
-3. **Use the installed Node.js version:**
-   ```bash
-   nvm use
-   ```
-4. **Verify Node.js installation:** Run `node --version` to confirm the correct version is being used.
+3. **Verify Node.js installation:** Run `node --version` to confirm the correct version is being used.
 
 ### Getting Started with PSAT CLI
 
