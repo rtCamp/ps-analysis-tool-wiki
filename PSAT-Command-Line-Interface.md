@@ -4,7 +4,7 @@ The PSAT CLI is an alternative way to run analysis on your website. You can use 
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
-Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, a "technologies report" offers an in-depth technical website analysis.
+Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, when enabled a "technologies report" offers an in-depth technical website analysis.
 
 ### Prerequisites
 For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend using a nvm (node version manager).
@@ -48,6 +48,7 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
   - Accept the GDPR banner if present on the site: `npm run cli -- -u https://example.com -ab`.
+  - If your machine is processing any long task or a specific cookie is set after a particular time you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -65,34 +66,36 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 
 ### CLI Options
 
-For a detailed understanding of the CLI options, you can use the `npm run cli -- --help` command:
+For a detailed understanding of the CLI options, you can use the `npm run cli -- --help` or `psat --help` command:
 
 ```bash
 $ npm run cli -- --help
 
-> ps-analysis-tool@0.8.0 cli
-> node dist/cli/index.js --help
+> ps-analysis-tool@1.0.0 cli
+> node packages/cli/dist/main.js --help
 
-Usage: main [options] [website-url]
+Usage: npm run cli [website-url] -- [options]
 
-CLI to test a URL for third-party cookies
-Arguments:
-  website-url                 The URL of website you want to analyse
+CLI to test a URL for 3p cookies.
 
 Options:
   -V, --version               output the version number
-  -u, --url <value>           URL of a site
-  -s, --sitemap-url <value>   URL of a sitemap
-  -c, --csv-path <value>      Path to a CSV file with a set of URLs.
-  -p, --sitemap-path <value>  Path to a sitemap saved in the file system
-  -l, --locale <value>        Locale to use for the CLI, supported: en, hi, es, ja, ko, pt-BR
-  -ul, --url-limit <value>    No of URLs to analyze
-  -nh, --no-headless          Flag for running puppeteer in non-headless mode
-  -np, --no-prompts           Flags for skipping all prompts. Default options will be used
-  -nt, --no-technology        Flags for skipping technology analysis.
-  -d, --out-dir <value>       Directory path where the analysis data will be stored
-  -ab, --accept-banner        This will accept the GDPR banner if present.
-  -h, --help                  display help for command
+  -u, --url <url>             The URL of a single site to analyze
+  -s, --source-url <url>      The URL of a sitemap or CSV to analyze
+  -f, --file <path>           The path to a local file (CSV or XML sitemap) to analyze
+  -n, --number-of-urls <num>  Limit the number of URLs to analyze (from sitemap or CSV)
+  -d, --display               Flag for running CLI in non-headless mode (default: false)
+  -v, --verbose               Enables verbose logging (default: false)
+  -t, --tech                  Enables technology analysis (default: false)
+  -o, --out-dir <path>        Directory to store analysis data (JSON, CSV, HTML) without launching the dashboard
+  -i, --ignore-gdpr           Ignore automatically accepting the GDPR banner if present (default: false)
+  -q, --quiet                 Skips all prompts; uses default options (default: false)
+  -c, --concurrency <num>     Number of tabs to open in parallel during sitemap or CSV analysis (default: 3)
+  -w, --wait <num>            Number of milliseconds to wait after the page is loaded before generating the report (default: 20000)
+  -l, --locale <language>     Locale to use for the CLI, supported: en, hi, es, ja, ko, pt-BR (default: "en")
+  -h, --help                  Display help for command
+
+To learn more, visit our wiki: https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki.
 ```
 
 ### CLI Output
@@ -113,7 +116,7 @@ You can export analysis data as CSV or JSON files. These file formats store the 
 <img src="images/psat-cli/psat_v1.0.0_cli_download_button_2024-06-17.png" alt="PSAT Export Files" />
 
 >[!NOTE]
->When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
+>When exporting files without a specified output directory (using the `--out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
 
 The exported reports contain the following files:
 
@@ -122,7 +125,7 @@ The exported reports contain the following files:
 - **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc.
 - **report.json** : The file contains data for technological analysis and cookie data in a JSON format.
 - **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
-- **technologies.csv** : the file contains only the technological analysis data of the site.
+- **technologies.csv** : the file contains only the technological analysis data of the site, this report is disable by default to enable it use the flag `--tech`.
 
 ### GDPR
 The PSAT CLI can accept the GDPR banner if it is present on the site with the help of CLI options `-ab` this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used.
@@ -142,8 +145,12 @@ The CLI tool utilizes a browser with the third-party cookie phase-out enabled. W
 
 #### 2. Duration
 
-The CLI tool adopts a concise approach by launching a website and monitoring it for a brief period of 10 seconds. This short duration may not capture the complete set of cookies if certain scripts or functionalities take longer to load or execute, which may cause discrepancies.
+The CLI tool adopts a concise approach by launching a website and monitoring it for a brief period of 20 seconds. This short duration may not capture the complete set of cookies if certain scripts or functionalities take longer to load or execute, which may cause discrepancies. Using the flag `--wait` the developer can set a different waiting time.
 
 #### 3. User Interactions
 
 Unlike the PSAT extension, the CLI tool does not emulate user interactions during website monitoring. The lack of user interactions may impact how websites handle cookies, as certain cookies may load after user actions.
+
+#### 4. Arm64 processor
+
+Users with Mac Silicon processors should use the recommended version of node `18.20.0`, lower versions may impact report performance causing discrepancies in the final result.
