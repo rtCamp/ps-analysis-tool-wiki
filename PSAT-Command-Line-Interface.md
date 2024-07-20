@@ -172,4 +172,14 @@ Unlike the PSAT extension, the CLI tool does not emulate user interactions durin
 
 #### 4. Arm64 processor
 
-Users with Mac Silicon processors should use the recommended version of node `18.20.0`, lower versions may impact report performance causing discrepancies in the final result.
+Users with Mac Silicon processors should use the recommended version of node `18.20.0`, lower versions may impact report performance causing discrepancies in the final result. If you are using a old version of node the CLI will warning your with the following message:
+
+```bash
+  Degraded performance warning:
+  Launching Chrome on Mac Silicon (arm64) from an x64 Node installation results in
+  Rosetta translating the Chrome binary, even if Chrome is already arm64. This would
+  result in huge performance issues. To resolve this, you must run Puppeteer with
+  a version of Node built for arm64.
+```
+
+To fix it update the node version to the recommended version and run the report again.
