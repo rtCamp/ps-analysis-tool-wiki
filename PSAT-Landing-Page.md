@@ -1,4 +1,4 @@
-DevTools provides a wide range of capabilities enabling the analysis and debugging of every functional aspect of web development, including cookies and storage APIs. The PSAT extension complements DevTools with additional features to support tackling the deprecation of unrestricted third-party cookies, breakage detection, and adopting new privacy-preserving building blocks (i.e. Chrome APIs).
+DevTools provides a wide range of capabilities enabling the analysis and debugging of every functional aspect of web development, including cookies and storage APIs. The PSAT extension complements DevTools with additional features to support indentify unrestricted third-party cookies, breakage detection, and adopting new privacy-preserving building blocks (i.e. Chrome APIs).
 
 To access the Privacy Sandbox panel, access the URL you want to analyze, open Chrome DevTools, and navigate to the "Privacy Sandbox" panel.
 
