@@ -1,4 +1,4 @@
-PSAT Cookies table provides functionality similar to the cookies table in DevTools' Application panel, with some additions tailored for debugging scenarios related to the deprecation of third-party cookies.
+PSAT Cookies table provides functionality similar to the cookies table in DevTools' Application panel, but with additional features designed to support debugging in the context of the Privacy Sandbox API.
 
 <img width="742" alt="PSAT Cookies Table" src="images/cookie-analysis/psat_v0.5.1_cookies_table_2024_02_22.png">
 
