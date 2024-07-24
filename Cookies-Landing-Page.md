@@ -38,7 +38,7 @@ By knowing why certain cookies are exempt, you gain valuable context about how w
 
 ## Detecting potential breakages
 
-PSAT helps developers ensure a smooth transition through the deprecation of third-party cookies by identifying known breakages caused by deprecated libraries. Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
+PSAT helps developers to analyze the behaviors of websites in environments where the user has blocked the use of unrestricted 3P cookies and identifying components/libraries with known isues caused by the blocking of 3P. Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
 
 PSAT currently detects the following libraries, you can test their working on respective [demos](https://domain-aaa.com/)
 
