@@ -7,7 +7,19 @@ The sidebar section can help you navigate through various reports. The main sect
 Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, a "technologies report" offers an in-depth technical website analysis.
 
 ### Prerequisites
-For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend using a nvm (node version manager).
+For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
+
+#### Installing and Using the Required Node.js Version using NVM
+
+1. **Install the Node.js version specified in `.nvmrc` which is Node 18:**
+   ```bash
+   nvm install 18
+   ```
+2. **Use the installed Node.js version:**
+   ```bash
+   nvm use 18
+   ```
+3. **Verify Node.js installation:** Run `node --version` to confirm the correct version is being used.
 
 ### Getting Started with PSAT CLI
 
