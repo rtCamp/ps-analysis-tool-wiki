@@ -4,9 +4,10 @@ The PSAT CLI is an alternative way to run analysis on your website. You can use 
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
-Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.". Under "Blocked reasons", the cookies impacted by third-party cookie deprecation will be listed under the "ThirdPartyPhaseout" label. Additionally, a "technologies report" offers an in-depth technical website analysis.
+Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.". Additionally, a "technologies report" offers an in-depth technical website analysis.
 
 ### Prerequisites
+
 For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
 
 #### Installing and Using the Required Node.js Version using NVM
@@ -48,18 +49,18 @@ To install the PSAT CLI locally, follow these steps:
 
 The CLI provides the following options as a source to create a report:
 
-  - Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
-  - Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
-  - Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
-  - Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
+- Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
+- Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
+- Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
+- Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
 
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
-  - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
-  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
-  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
-  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
-  - Accept the GDPR banner if present on the site: `npm run cli -- -u https://example.com -ab`.
+- Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
+- Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
+- Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
+- **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
+- Accept the GDPR banner if present on the site: `npm run cli -- -u https://example.com -ab`.
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -120,12 +121,13 @@ The PSAT dashboard is a locally run HTML application that processes the results 
 <img src="images/psat-cli/psat_v1.0.0_cli_command_execution_2024_06_17.png" alt="PSAT CLI Command" />
 
 #### Export Files
+
 You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
 
 <img src="images/psat-cli/psat_v1.0.0_cli_download_button_2024-06-17.png" alt="PSAT Export Files" />
 
->[!NOTE]
->When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
+> [!NOTE]
+> When exporting files without a specified output directory (using the `out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
 
 The exported reports contain the following files:
 
@@ -137,6 +139,7 @@ The exported reports contain the following files:
 - **technologies.csv** : the file contains only the technological analysis data of the site.
 
 ### GDPR
+
 The PSAT CLI can accept the GDPR banner if it is present on the site with the help of CLI options `-ab` this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used.
 
 PSAT identifies the common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
@@ -144,6 +147,7 @@ PSAT identifies the common code libraries that power those cookie banners. If it
 If PSAT doesn't automatically accept your site's GDPR banner, please [report](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) the specific library that's causing the issue. The PSAT team can then add it to their detection list for a smoother experience in the future.
 
 ### Discrepancy between CLI and extension
+
 The PSAT browser extension and the CLI tool both capture valuable insights, but they operate in different environments, leading to potential discrepancies. Understanding these differences will help you make informed decisions about choosing the appropriate tool based on the testing objectives and desired testing depth.
 
 The following are three key reasons for discrepancies:

@@ -12,7 +12,7 @@ When a visitor accesses site A, an analytics service hosted on domain C assigns 
 
 Once third-party cookies are deprecated, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
 
-The following sequence diagram shows these behaviors before and after third-party cookie deprecation.
+The following sequence diagram shows these behaviors with cookies enabled and after blocking the use of unrestricted third-party cookies.
 
 ```mermaid
 sequenceDiagram
@@ -21,7 +21,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-    Note over User,DomainC: Current Behaviour
+    Note over User,DomainC: Cookies Enabled
 
     User->>DomainA: Visits
     DomainA->>DomainC: Requests tracking script from Domain C
@@ -30,7 +30,7 @@ sequenceDiagram
     DomainB->>DomainC: Retrieves unique ID from cookie
     DomainC->>User: Recognizes as the same User
 
-    Note over User,DomainC: After Third-party Cookie Deprecation
+    Note over User,DomainC: Unpartitioned Cookies Blocked
 
     User->>DomainA: Visits
     DomainA->>DomainC: Unable to assign unique ID
@@ -44,7 +44,7 @@ sequenceDiagram
 
 1. **Setup Testing Environment**
 
-   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one configured to block the use of unpartitioned cookies (Chrome Private), and the other configured to allow the use of unpartitioned cookies (Chrome Open).
 
 2. **Open Developer Tools in both instances**
 
@@ -53,7 +53,7 @@ sequenceDiagram
 
 3. **Adjust Network Tab Settings**
 
-   1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
+   1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Chrome.
    2. This asks the browser to persist the information on network requests, so that we can go back to them if needed as we analyze our scenarios
 
 4. **Navigate and interact with the website**
@@ -64,7 +64,7 @@ sequenceDiagram
 
 5. **Analyze the Cookies in the Application Tab**
 
-   1. Go to the “Application” tab in the DevTools in the default Chrome instance and the instance simulating third-party cookie deprecation.
+   1. Go to the “Application” tab in the DevTools in the "Chrome Open" instance and the "Chrome Private" instance which is blocking third-party cookies.
    2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies in both instances of Google Chrome
 
    3. Note the cookies present from domains other than [domain-aaa.com](https://domain-aaa.com/), in our case it will be [domain-ccc.com](https://domain-ccc.com/) in both instances of Chrome.
@@ -77,7 +77,7 @@ sequenceDiagram
 7. **Navigate to the other domain**
    1. Open the site https://domain-bbb.com/analytics in both instances
    2. Click the button “Click Me”.
-   3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance and it could not when simulating third-party cookie deprecation.
+   3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance and it could not when third-party cookies are blocked.
 
 At this point, we debugged the scenario which is common for implementations of analytics providers, and learned how to detect potential failures. This demo can be extrapolated to other analytics providers, which also use cookies as the state mechanism to implement their capabilities.
 
@@ -93,7 +93,7 @@ This demo encompasses two distinct e-commerce sites hosted on [domain A](https:/
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items, irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
-This behavior will be affected by the deprecation of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
+This behavior will is affected by the blocking of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
 
 The following sequence diagram shows the cart behavior with cookies enabled:
 
@@ -131,7 +131,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-    Note over User,DomainC: After third-party cookie deprecation
+    Note over User,DomainC: Third-party cookies blocked
 
     User->>DomainA: Access homepage again
     DomainA->>User: Render homepage with embedded iframe to DomainC/products
@@ -152,7 +152,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 1. **Setup Testing Environment**
 
-   1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one simulating third-party cookie deprecation (Chrome Private) and the other using the default settings (Chrome Open).
+   1. Set up your testing environment (as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one configured to block third-party cookies (Chrome Private) and the other with third-party cookies enabled (Chrome Open).
 
 2. **Open Developer Tools**
 
@@ -207,9 +207,9 @@ When a user accesses [domain A](https://domain-aaa.com/single-sign-on) and logs 
 
 Thanks to the third-party cookie set by [domain C](https://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
 
-However, post Third-Party Cookies Deprecation, the behavior will change. When the user first visits domain A and logs in, the domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
+However, when third-party cookies are blocked, the behavior changes. When the user first visits domain A and logs in, the domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
 
-The following sequence diagram depicts this behavior before the deprecation of third-party cookies:
+The following sequence diagram depicts this behavior third-party cookies are enabled:
 
 ```mermaid
 sequenceDiagram
@@ -218,7 +218,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-    Note over User,DomainC: Current Behaviour
+    Note over User,DomainC: Third-party cookies enabled
 
     User->>DomainA: Visit domain-aaa.com
     DomainA->>User: Render sign-in page
@@ -234,7 +234,7 @@ sequenceDiagram
     DomainB->>User: Render profile page
 ```
 
-And this sequence diagram depicts the behavior after the deprecation of third-party cookies:
+And this sequence diagram depicts the behavior with third-party cookies enabled:
 
 ```mermaid
 sequenceDiagram
@@ -243,7 +243,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-Note over User,DomainC: After Third-Party Cookies Deprecation
+Note over User,DomainC: Third-Party Cookies Blocked
 
     User->>DomainA: Visit domain-aaa.com
     DomainA->>User: Render sign-in page
@@ -270,11 +270,11 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
    1. Open the site [domain-aaa.com/single-sign-on](https://domain-aaa.com/single-sign-on) in both instances.
    2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
-   1. Go to the “Application” tab in the DevTools for both the default browser instance and the one simulating third-party cookie deprecation.
+   1. Go to the “Application” tab in the DevTools for both the browser instance configured to block cookies.
    2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies.
    3. Note the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
 6. **Compare the Cookies**
-   1. Examine the cookies set in the default browser instance and compare them with the ones in the instance simulating third-party cookie deprecation.
+   1. Examine the cookies set in the browser instance with cookies enabled and compare them with the ones in the instance with third-party cookie blocked.
    2. Identify which cookies, if any, are missing from the latter instance.
 7. **Navigate to the Other Domain**
    1. Open [domain-bbb.com/single-sign-on](https://domain-bbb.com/single-sign-on) in both instances.
@@ -283,7 +283,7 @@ Note over User,DomainC: After Third-Party Cookies Deprecation
    4. Check for the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) in both instances of the browser.
    5. Identify discrepancies between the two instances regarding login status and the presence of the third-party cookie.
 
-By now, you should have a clearer understanding of how third-party cookies are used for Single Sign-On (SSO) processes across multiple domains. If you're working on implementing or testing an SSO service, this debugging scenario can be quite useful. It can help developers and testers validate their SSO implementations and prepare them for any upcoming third-party cookie deprecation. By following the process outlined in this demo, you can easily map it to your specific use case.
+By now, you should have a clearer understanding of how third-party cookies are used for Single Sign-On (SSO) processes across multiple domains. If you're working on implementing or testing an SSO service, this debugging scenario can be quite useful. It can help developers and testers validate their SSO implementations and adapt them to work properly when third-party cookies are blocked. By following the process outlined in this demo, you can easily map it to your specific use case.
 
 ## **Embedded Content**
 
@@ -297,7 +297,7 @@ This demo encompasses two independent websites on [domain A](https://domain-aaa.
 
 When a user engages with a video on domain A and adjusts certain playback preferences, these are recorded by the third-party streaming service on YouTube via third-party cookies (i.e. for user session) and local storage (i.e. for preferences). These storage mechanisms allow YouTube embeds to maintain consistency, no matter which first-party domain the user navigates to. As a result, when the user transitions to domain B, the preferences set on domain A, such as volume level or playback speed, persist.
 
-This seamless experience breaks with the deprecation of third-party cookies. When a user adjusts video settings on domain A, YouTube's service will not be able to remember those preferences using a third-party cookie or local storage. Consequently, as the user navigates to domain B, the customized settings from domain A will not be replicated, leading to a disjointed user experience.
+This seamless experience breaks when third-party cookies are blocked. When a user adjusts video settings on domain A, YouTube's service will not be able to remember those preferences using a third-party cookie or local storage. Consequently, as the user navigates to domain B, the customized settings from domain A will not be replicated, leading to a disjointed user experience.
 
 The following sequence diagram illustrates the behavior of embedded content as described above, when cookies are available:
 
@@ -308,7 +308,7 @@ sequenceDiagram
     participant DomainB
     participant YouTube
 
-    Note over User,YouTube: Current Behaviour
+    Note over User,YouTube: Cookies Enabled
 
     User->>DomainA: Navigate to DomainA/embedded-video
     DomainA->>YouTube: Load YouTube video
@@ -325,7 +325,7 @@ sequenceDiagram
     User->>YouTube: Observe "watch later" button presence
 ```
 
-And the following sequence diagram illustrates the behavior of the embedded content when third-party cookie deprecation changes are in place:
+And the following sequence diagram illustrates the behavior of the embedded content when third-party cookies are blocked:
 
 ```mermaid
 sequenceDiagram
@@ -334,7 +334,7 @@ sequenceDiagram
     participant DomainB
     participant YouTube
 
- Note over User,YouTube: After third-party cookie deprecation
+ Note over User,YouTube: Third-party cookiea blocked
 
     User->>DomainA: Navigate to DomainA/embedded-video
     DomainA->>YouTube: Load YouTube video

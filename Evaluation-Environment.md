@@ -1,4 +1,5 @@
 ## What is Evaluation Environment?
+
 An evaluation environment is a controlled testing space designed to isolate the PSAT extension and its interaction with third-party cookies. This environment provides a clean slate, simulating a browser with no prior history or existing cookies.
 
 ### Why is it important to have an evaluation environment?
@@ -10,6 +11,7 @@ An evaluation environment is a controlled testing space designed to isolate the 
 **Precision**: The controlled environment minimizes distractions and extraneous data, allowing for more precise identification of any issues related to third-party cookies.
 
 ### How to set up an evaluation environment for PSAT?
+
 Preparing the environment for analyzing and debugging the behavior of cookies and storage APIs during browsing sessions encompasses two aspects: (1) access to Chrome instances with and without Privacy Sandbox APIs enabled and restricted use of third-party cookies; and (2) install PSAT.
 
 ## Prerequisites
@@ -28,9 +30,9 @@ curl -sL https://rt.cx/psat | bash
 The commands you can use are:
 
 - `chrome-default`: Opens a Chrome instance with default settings.
-- `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookie Deprecation (3PCD) enabled.
-- `chrome-default-ps`: Opens a Chrome instance with default settings and the Privacy Sandbox extension installed.
-- `chrome-3pcd-ps`: Opens a Chrome instance with 3PCD enabled and the Privacy Sandbox extension installed.
+- `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookies blocked.
+- `chrome-default-ps`: Opens a Chrome instance with third-party cookies enabled and PSAT installed.
+- `chrome-3pcd-ps`: Opens a Chrome instance with Third-Party Cookies blocked enabled and the Privacy Sandbox extension installed.
 
 To keep the Chrome Launcher script current with the latest PSAT Extension, simply rerun the installation command:
 
@@ -43,7 +45,6 @@ PSAT offers three straightforward installation methods:
 ## Installing PSAT from Chrome Web Store
 
 PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
-
 
 <img width="742" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v0.8.0_chrome_store_24_05_24.png">
 
@@ -74,4 +75,3 @@ If you need to debug the extension or submit improvements, you can download the 
 - `npm run ext:dev` or `npm run ext:build` to generate a build in `/dist/extension`
 - Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder
-
