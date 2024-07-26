@@ -1,4 +1,4 @@
-PSAT Cookies table provides functionality similar to the cookies table in DevTools' Application panel, with some additional features for debugging scenarios in environments where unrestricted 3P cookies have been blocked.
+PSAT Cookies table provides functionality similar to the cookies table in DevTools' Application panel, with some additional features for debugging scenarios in environments where unrestricted third-party cookies have been blocked.
 
 <img width="742" alt="PSAT Cookies Table" src="images/cookie-analysis/psat_v0.5.1_cookies_table_2024_02_22.png">
 
@@ -106,7 +106,7 @@ Frame overlays make it easy to associate third-party cookies with embedded ifram
 With `Frame Overalys` activated we can directly correlate specific page components, with the corresponding cookies set and manipulated by them. Specifically, you can:
 
 1. Hover the mouse over the weg page and observe how the underlying frames in the page get highlighted
-1. For each highlighted frame, PSAT shows a popup window with relevant Privacy Sandbox information about the frame, such as the type of frame, the number of `1P` and `3P` cookies that were set by the frame, whether or not the domain associated with the frame belongs to a `Related Websites Set` which includes also the top-level site, and the set of privacy-sandbox-related features available to the frame.
+1. For each highlighted frame, PSAT shows a popup window with relevant Privacy Sandbox information about the frame, such as the type of frame, the number of `1P` and `third-party` cookies that were set by the frame, whether or not the domain associated with the frame belongs to a `Related Websites Set` which includes also the top-level site, and the set of privacy-sandbox-related features available to the frame.
 1. While hovering over a page frame, the corresponding frame is highlighted in PSAT's cookie's panel, and the cookies set by the frame are listed in the cookies table.
 
 ## Network Requests With a Given Cookie

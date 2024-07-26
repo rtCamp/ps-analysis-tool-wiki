@@ -1,8 +1,8 @@
-This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential breakages in environments where 3P cookies have been blocked.
+This section describes the analysis/debugging of Critical User Journeys (CUJs) which are commonly implemented in sites across verticals. Each of these CUJs represents a testing scenario to be checked for potential breakages in environments where third-party cookies have been blocked.
 
 ## **Analytics Tracking**
 
-This scenario encompasses a website use of analytics providers (e.g. Google Analytics, others) for tracking user behavior. We want to verify if user activity/events on 3P analytics service platforms are being captured properly. The goal of this demo is to show details that are part of this scenario, and show you how to analyze the behavior and determine if there are failures.
+This scenario encompasses a website use of analytics providers (e.g. Google Analytics, others) for tracking user behavior. We want to verify if user activity/events on third-party analytics service platforms are being captured properly. The goal of this demo is to show details that are part of this scenario, and show you how to analyze the behavior and determine if there are failures.
 
 ### **How the Demo Works**
 
@@ -81,7 +81,7 @@ sequenceDiagram
 
 At this point, we debugged the scenario which is common for implementations of analytics providers, and learned how to detect potential failures. This demo can be extrapolated to other analytics providers, which also use cookies as the state mechanism to implement their capabilities.
 
-If you are a 3P provider, or if you are checking if the 3P analytics providers on your site are working, then you can map the process outlined in this demo to your scenario.
+If you are a third-party provider, or if you are checking if the third-party analytics providers on your site are working, then you can map the process outlined in this demo to your scenario.
 
 ## **E-commerce: Cross-domain Shopping Cart**
 
@@ -93,7 +93,7 @@ This demo encompasses two distinct e-commerce sites hosted on [domain A](https:/
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items, irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
-This behavior will is affected by the blocking of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
+This behavior will be affected by the blocking of third-party cookies. When a visitor shops on domain A, domain C's service will not be able to store the cart information using a third-party cookie, and therefore cart information from domain A cannot be carried over.
 
 The following sequence diagram shows the cart behavior with cookies enabled:
 
@@ -193,7 +193,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 By this stage, you've debugged the sequence that represents the behavior of many e-commerce and analytics solutions relying on third-party cookies, and gaining a clear insight into how third-party cookies function (and the implications when they don't) equips you to address potential issues as an e-commerce website operator.
 
-If you are a 3P provider, or if you are checking if the 3P e-commerce providers on your site are working, then you can map the process outlined in this demo to your scenario.
+If you are a third-party provider, or if you are checking if third-party e-commerce providers on your site are working, then you can map the process outlined in this demo to your scenario.
 
 ## **Single Sign-On (SSO) Services**
 

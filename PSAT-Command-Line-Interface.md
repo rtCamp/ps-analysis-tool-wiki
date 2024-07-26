@@ -71,7 +71,7 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 
 - **Comprehensive Site Analysis:** Aggregated evaluation of entire sites (via sitemap.xml).
 - **Pre-analysis Site Evaluation:** Offers guidance on scope and prioritization for site evaluation.
-- **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to third-party cookie deprecation (3PCD).
+- **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to the blocking of third-party cookies.
 - **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
 - List the Blocked cookies' reasons to guide developers in solving those issues.
 - Help developers by allowing them to download detailed reports.
