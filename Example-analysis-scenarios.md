@@ -355,7 +355,7 @@ sequenceDiagram
 
 1. **Setup Testing Environment**
    1. Prepare your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
-      - **Chrome Private**: Simulating third-party cookie deprecation.
+      - **Chrome Private**: Chrome instance configured to block third-party cookies.
       - **Chrome Open**: Running on default settings.
    2. In both instances, navigate to [YouTube.com](https://youtube.com/) and log in using any account available to you.
 2. **Open Developer Tools**

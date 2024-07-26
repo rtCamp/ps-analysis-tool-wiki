@@ -18,7 +18,7 @@ Transitioning to a more private web encompasses the following steps:
 
 The purpose of this tool is to help developers like you in making your sites/applications more robust in protecting the privacy of users. This wiki outlines a testing/evaluation methodology that will guide you in analyzing your scenarios and the necessary insights needed to implement changes, including:
 
-1. How to set up an [**Evaluation Environment**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) that will help predict what is likely to happen once the deprecation comes into effect.
+1. How to set up an [**Evaluation Environment**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) that will help predict what is likely to happen when third-party cookies have been blocked.
 1. How to identify specific aspects of the site that are likely to be affected, amongst other [**General debugging actions for Analysis**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/General-debugging-actions).
 1. How to evaluate an existing component and/or user journey, to identify, triage and address issues, using various tools and resources, including ready-made step-by-step instructions for common [**Example Analysis Scenarios**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Example-analysis-scenarios).
 1. How to [**Find Help and Report Issues**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Reporting-Issues-and-Learning-More) that are encountered during this process.
