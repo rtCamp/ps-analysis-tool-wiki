@@ -18,7 +18,7 @@ To see top-level navigation without the added noise of other requests. Toggle th
 
 ## **JS/Network errors**
 
-Lack of 3PC access can very frequently cause errors to be thrown in DevTools. One example is the bug “Nintendo - sign-in doesn't work”, where a 3P request to [accounts.nintendo.com](http://accounts.nintendo.com/) throws a 403 without the right cookies attached.
+Lack of access to third-party cookies can cause errors to be thrown in DevTools. One example is the bug “Nintendo - sign-in doesn't work”, where a third-party request to [accounts.nintendo.com](http://accounts.nintendo.com/) throws a 403 without the right cookies attached.
 
 ![](https://lh6.googleusercontent.com/aToiHmXtzmRh8NDYRwFbjI2kcUzDcUtB7vtVHq_pCC8hyiNyPtvI3cqsd742h5mIDf_SIMoEwEoK9Mv94w1hSmicpwmvZXuewy7cEGDbgMhenlzwZl_w-flt5ROdMox0LhmCuq0FXbkFvk-lW9vFkwyY3Vb_MIDFwG6o4Lq9pTLrjyzxSOfV4KveatVKIuHvmoihhfNzWBjbVWySBF3PO8a06_YFXD-UaEpVVA)
 
@@ -30,11 +30,11 @@ A reported bug on “S-Bahn München status page” reported by https://www.s-ba
 
 ## **Cross-site requests in the network tab**
 
-Sometimes sites send 3P network requests without the right cookies, but those requests don’t fail. They could just return a 200 because the user not being logged in isn’t considered an error state for them. Here, it’s helpful to search the network DevTools panel for “3rd-party requests” only by checking the corresponding checkbox. There might be a lot of noise here, e.g., calls to ads servers, but also some useful information. This is especially useful if you have some repeatable way of triggering the breakage on the site, e.g., by clicking on a login button or similar. Unless the site is using JS-based cookie access through `document.cookie`, there should be an outgoing network request at that moment.
+Sometimes sites send third-party network requests without the right cookies, but those requests don’t fail. They could just return a 200 because the user not being logged in isn’t considered an error state for them. Here, it’s helpful to search the network DevTools panel for “3rd-party requests” only by checking the corresponding checkbox. There might be a lot of noise here, e.g., calls to ads servers, but also some useful information. This is especially useful if you have some repeatable way of triggering the breakage on the site, e.g., by clicking on a login button or similar. Unless the site is using JS-based cookie access through `document.cookie`, there should be an outgoing network request at that moment.
 
 ## **Authenticated embeds**
 
-Sometimes embedded iframes can appear to be part of the 1P experience on the website. To detect them, it can be helpful to use the DOM inspector in DevTools (starting with the UI that isn’t loading or is showing an error to the user) to figure out if it’s really an iframe. Then, the source of that iframe is likely the 3P that is involved and it’s often an “auth embeds” use case that can be solved with `requestStorageAccess`, or even CHIPS if there’s no top-level navigation.
+Sometimes embedded iframes can appear to be part of the 1P experience on the website. To detect them, it can be helpful to use the DOM inspector in DevTools (starting with the UI that isn’t loading or is showing an error to the user) to figure out if it’s really an iframe. Then, the source of that iframe is likely the third-party that is involved and it’s often an “auth embeds” use case that can be solved with `requestStorageAccess`, or even CHIPS if there’s no top-level navigation.
 
 An example of this is Mindbody Inc. which serves embedded iframes for website owners to allow their customers to book appointments. This iframe looks a lot like it’s part of the website, but reveals itself in the inspector.
 

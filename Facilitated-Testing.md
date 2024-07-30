@@ -1,11 +1,13 @@
-Chrome Facilitated Testing is a valuable tool for a smoother transition to a more private web. By testing and adapting now, websites and different vendor providers can ensure they're prepared for third-party cookie deprecation.
+Chrome Facilitated Testing is a valuable tool for a smoother transition to a more private web. By testing and adapting now, websites and different vendor providers can ensure they're prepared for functioning properly when third-party cookies are blocked.
 
 Facilitated Testing offers two key modes to simulate a world without third-party cookies:
 
 ### Mode A: Labeled Browsers
+
 This mode lets testers identify specific Chrome users as part of a test group or a control group. By analyzing website behavior in each group, testers can see how their platform functions with and without cookies.
 
-### Mode B: Disabling Cookies for 1% of Traffic 
+### Mode B: Disabling Cookies for 1% of Traffic
+
 This mode provides a real-world preview. Chrome actually disables third-party cookies for a small percentage of its users. This allows testers to see how a larger audience might experience the web without these cookies.
 
 You can learn more about different modes and labels from the [official guide](https://developers.google.com/privacy-sandbox/relevance/setup/web/chrome-facilitated-testing) of Facilitated Testing.
