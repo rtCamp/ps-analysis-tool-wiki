@@ -50,7 +50,7 @@ PSAT currently detects the following libraries, you can test their working on re
 - Jetpack Comment
 - Jetpack Like
 
-<img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.8.0_known_breakages_2024_05_06.png">
+<img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.10.0_known_breakages_2024_07_30.png">
 
 ## Filtering Data
 
