@@ -1,6 +1,6 @@
 The first component in PSAT's Privacy Sandbox DevTools panel corresponds to the area of Cookie Analysis.
 
-As discussed in the Evaluation Environment section, PSAT can be configured to avoid using too many resources by restricting the tool to only analyze a single tab at a time. If that configuration option is set, PSAT presents an `Analyze this tab` button to switch the focus of the tool to the current tab.
+As discussed in the Evaluation Environment section, PSAT can be configured to avoid using too many resources by restricting the tool to analyze only a single tab at a time. If that configuration option is set, PSAT presents an `Analyze this tab` button to switch the tool's focus to the current tab.
 
 <img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v0.9.0_analyze_this_tab_2024_06_24.png">
 
@@ -8,13 +8,13 @@ Once the PSAT's focus has been switched to the current tab, we get to the Cookie
 
 <img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_2024_07_30.png">
 
-The purpose of PSAT's cookie landing page is to provide information and insights regarding the behavior and distribution of cookies on web pages, while navigating across sites during browsing sessions.
+The purpose of PSAT's cookie landing page is to provide information and insights regarding the behavior and distribution of cookies on web pages while navigating across sites during browsing sessions.
 
 The PSAT Cookie landing page has a navigation menu in the top-right corner for easy access to different sections.
 
 <img width="742" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_navigation_2024_07_30.png" alt="PSAT Cookie Landing Page Navigation">
 
-Currently the cookie landing page provides a classification of observed cookies on a given page (total, first-party, third-party).
+The cookie insights page categorizes observed cookies on a given page (total, first-party, third-party).
 
 The cookie landing page features interactive sections for cookie classification and blocked reasons. Clicking on a classification will navigate you to the corresponding section of the cookie table and automatically filter the results to display only the cookies associated with that selection.
 
@@ -22,23 +22,23 @@ The cookie landing page features interactive sections for cookie classification 
 
 PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
-As PSAT continues to evolve rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
+As PSAT evolves rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
 
 ## Cookie Exemptions
 
-The Cookie Insights page will now display a dedicated section for “Cookie Exemptions,” similar to the existing “Blocked cookies” section. This section will clearly list the exempt cookies and provide details about the exemption reason.
+The Cookie Insights page will now display a dedicated section for “Cookie Exemptions,” similar to the existing “Blocked cookies” section. This section will list the exempt cookies and provide details about the reason for the exemption.
 
-There are specific reasons why some cookies are exempt from blocking. These exemptions are granted for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDPs) to access this information and provide you with transparency.
+Some cookies are exempt from blocking for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDP) to access this information and provide you with transparency.
 
-PSAT has introduced a dedicated section for “Cookie Exemptions” on the Cookie Lading page, it will display information about exempt cookies.
+PSAT has introduced a dedicated “Cookie Exemptions” section on the Cookie Lading page, displaying information about exempt cookies.
 
 <img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_exemptions_2024_04_09.png" alt="Cookie Exemptions" />
 
 By knowing why certain cookies are exempt, you gain valuable context about how websites function and how your cookie preferences interact with those functions.
 
-## Detecting potential breakages
+## Detecting Potential Breakages
 
-PSAT helps developers to analyze the behaviors of websites in environments where the user has blocked the use of unrestricted third-party cookies and identifying components/libraries with known isues caused by the blocking of third-party cookies. Information about these breakages is available on the cookie landing page, with an expansion toggle, details of broken features, and possible migration guides.
+PSAT helps developers analyze website behaviors in environments where the user has blocked the use of unrestricted third-party cookies and identify components/libraries with known issues caused by this blocking. The cookie landing page, with an expansion toggle, details of broken features, and possible migration guides, provides information about these breakages.
 
 PSAT currently detects the following libraries, you can test their working on respective [demos](https://domain-aaa.com/)
 
@@ -51,3 +51,11 @@ PSAT currently detects the following libraries, you can test their working on re
 - Jetpack Like
 
 <img width="742" alt="PSAT Breakage Detection" src="images/features/breakage-detection/psat_v0.8.0_known_breakages_2024_05_06.png">
+
+## Filtering Data
+
+The data on the Cookies Insights page can be filtered. Enabling the filter at the top-left allows the user to change the context of the report, listing only data from a specific scope or cookie category.
+
+<img width="742" alt="PSAT Cookies Landing Page Filtering Data" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_with_filtering_2024_07_30.png">
+
+Once the filter is applied, the report will only display the cookies that fits on those selected filters.
