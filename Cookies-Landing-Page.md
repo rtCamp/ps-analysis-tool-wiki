@@ -2,23 +2,23 @@ The first component in PSAT's Privacy Sandbox DevTools panel corresponds to the 
 
 As discussed in the Evaluation Environment section, PSAT can be configured to avoid using too many resources by restricting the tool to only analyze a single tab at a time. If that configuration option is set, PSAT presents an `Analyze this tab` button to switch the focus of the tool to the current tab.
 
-<img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v1.0.0_analyze_this_tab_2024_06_24.png">
+<img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v0.9.0_analyze_this_tab_2024_06_24.png">
 
 Once the PSAT's focus has been switched to the current tab, we get to the Cookies Landing Page:
 
-<img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v1.0.0_cookies_landing_page_2024_06_24.png">
+<img width="742" alt="PSAT Cookie Landing Page" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_2024_07_30.png">
 
 The purpose of PSAT's cookie landing page is to provide information and insights regarding the behavior and distribution of cookies on web pages, while navigating across sites during browsing sessions.
 
 The PSAT Cookie landing page has a navigation menu in the top-right corner for easy access to different sections.
 
-<img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_page_navigations_2024_04_09.png" alt="PSAT Cookie Landing Page Navigation">
+<img width="742" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_navigation_2024_07_30.png" alt="PSAT Cookie Landing Page Navigation">
 
 Currently the cookie landing page provides a classification of observed cookies on a given page (total, first-party, third-party).
 
 The cookie landing page features interactive sections for cookie classification and blocked reasons. Clicking on a classification will navigate you to the corresponding section of the cookie table and automatically filter the results to display only the cookies associated with that selection.
 
-<img width="742" src="images/cookie-analysis/psat_v0.7.0_cookie_landing_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
+<img width="742" src="images/cookie-analysis/psat_v0.10.0_cookies_landing_page_mapped_sections_2024_04_05.png" alt="PSAT Cooking Landing Page mapped sections.">
 
 PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
