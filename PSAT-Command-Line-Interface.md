@@ -1,6 +1,6 @@
 The PSAT CLI is an alternative way to run analysis on your website. You can use a terminal to scan a given URL or an entire sitemap to create a more extensive report. The CLI creates a local site showing information similar to PSAT's extension.
 
-<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.8.0_cli_cookies_landing_page_2024_05_06.png">
+<img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.10.0_cli_landing_page_2024_07_30.png">
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
@@ -131,7 +131,7 @@ The PSAT dashboard is a locally run HTML application that processes the results 
 
 You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
 
-<img src="images/psat-cli/psat_v1.0.0_cli_download_button_2024-06-17.png" alt="PSAT Export Files" />
+<img src="images/psat-cli/psat_v0.10.0_cli_download_button_2024_07_30.png" alt="PSAT Export Files" />
 
 >[!NOTE]
 >When exporting files without a specified output directory (using the `--out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
