@@ -1,1 +1,8 @@
-🚧 👷 🚧 👷‍♀️
+The Privacy Sandbox offers advertising solutions without cross-site tracking. Explore and build upon Private advertising APIs such as Attribution Reporting, Protected Audience, Topics, Fenced Frames, and Shared Storage to enable your key advertising functions while prioritizing user privacy.
+
+| Proposal                                                                                                     | Description                                                                                                                            |
+| ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [Protected Audience](https://developers.google.com/privacy-sandbox/relevance/protected-audience)             | The Protected Audience API serves remarketing and custom audience use cases without third party cross-site tracking.                   |
+| [Attribution Reporting](https://developers.google.com/privacy-sandbox/relevance/attribution-reporting)       | The Attribution Reporting API enables measurement of ad performance without third party cross-site tracking.                           |
+| [Private Aggregation](https://privacysandbox.info/docs/privacy-sandbox/ip-protection/)                       | The Private Aggregation API has been built for aggregating and reporting on cross-site data in a privacy-preserving manner.            |
+| [Topics](https://developers.google.com/privacy-sandbox/relevance/topics)                                     | The Topics API enables interest-based advertising while preserving user privacy.                                                       |
