@@ -27,19 +27,6 @@ This typically happens when:
 - The webpage might dynamically remove the frame after setting the cookie, potentially for efficiency or other reasons.
 - If the frame is part of an external source and not reloaded with the main page, it gets removed from the DOM, leaving its cookies orphaned.
 
-### Unmapped Cookies
-
-The Unmapped Cookies mean the PSAT Chrome extension cannot map cookies to any frames.
-
-This typically happens when:
-
-- The extension might not be able to access or process all the information needed to accurately map cookies to frames, especially for complex webpages or those using advanced techniques.
-- If the way frames are loaded or managed on a webpage changes on the fly, it might break the extension's mapping mechanism.
-
-<img width="742" alt="PSAT Cookie Frames" src="images/cookie-analysis/psat_v0.6.0_frames_orphaned_unmapped_cookies_2024_03_20.png">
-
-In PSAT's cookie table, orphaned cookies and unmapped cookies can be viewed from the mapping's column, you need to enable the "Mapping" column by right-clicking the column's header and toggle it ON.
-
 ## Data Gathering
 
 The purpose of PSAT is to help developers analyze the use of third-party cookies, as they get ready for changes in the Chrome browser, which will enable users to limit the use of unrestricted third-party cookies. To achieve this, the extension leverages the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) to gather data regarding Cookies from network traffic.
