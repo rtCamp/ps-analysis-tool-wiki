@@ -50,21 +50,20 @@ To install the PSAT CLI locally, follow these steps:
 The CLI provides the following options as a source to create a report:
 
 - Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
-- Analyze URLs from a sitemap: `npm run cli -- -s https://example.com/sitemap_index.xml`.
-- Analyze URLs from a CSV file: `npm run cli -- -c /path/to/urlset.csv`.
-- Analyze a specific XML sitemap file: `npm run cli -- -p /path/to/sitemap.xml`.
+- Analyze CSV or XML sitemap from URL : `npm run cli -- -s https://example.com/sitemap_index.xml`.
+- Analyze CSV for XML sitemap from file path : `npm run cli -- -f /path/to/urlset.csv`.
 
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
   - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
-  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -ul 10`
-  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -d <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
-  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. To bypass technology analysis, use the `nt` flag: `npm run cli -- -u https://example.com -nt`.
-  - Accept the GDPR banner if present on the site: `npm run cli -- -u https://example.com -ab`.
+  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -n 10`
+  - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -o <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
+  - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. you can include technology analysis by using the `-t` flag: `npm run cli -- -u https://example.com -t`.
+  - GDPR banners are accpeted by default, you can ignore thme by using `-i` flag : `npm run cli -- -u https://example.com -i`.
   - If your machine is processing any long task or a specific cookie is set after a particular time you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
   - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5` by default it opens 3 tabs.
   - If you want to run the CLI in non-headless mode, you can use the `-d` flag: `npm run cli -- -u https://example.com -d`.
-  - If you want to run the CLI in verbose mode, you can use the `-v` flag: `npm run cli -- -u https://example.com -v`.
+  - If you want to run the CLI in verbose mode to learn behind the scense process as they happen, you can use the `-v` flag: `npm run cli -- -u https://example.com -v`.
   - If you want to run the CLI in quiet mode, you can use the `-q` flag: `npm run cli -- -u https://example.com -q`.
 
 > [!IMPORTANT]
@@ -146,7 +145,7 @@ The exported reports contain the following files:
 - **technologies.csv** : the file contains only the technological analysis data of the site, this report is disable by default to enable it use the flag `--tech`.
 
 ### GDPR
-The PSAT CLI can accept the GDPR banner if it is present on the site with the help of CLI options `-ab` this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used.
+The PSAT CLI can accept the GDPR banner if it is present on the site by default this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used. If you want to disable this feature, you can use the `-i` flag.
 
 PSAT identifies the common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
 
