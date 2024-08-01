@@ -61,9 +61,9 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. you can include technology analysis by using the `-t` flag: `npm run cli -- -u https://example.com -t`.
   - GDPR banners are accpeted by default, you can ignore thme by using `-i` flag : `npm run cli -- -u https://example.com -i`.
   - If your machine is processing any long task or a specific cookie is set after a particular time you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
-  - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5` by default it opens 3 tabs.
+  - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5`, by default it opens 3 tabs.
   - If you want to run the CLI in non-headless mode, you can use the `-d` flag: `npm run cli -- -u https://example.com -d`.
-  - If you want to run the CLI in verbose mode to learn behind the scense process as they happen, you can use the `-v` flag: `npm run cli -- -u https://example.com -v`.
+  - Want to see detailed information about what the CLI is doing? Use the `-v` flag. This enables verbose mode, showing you each step as it happens. Here's an example with a sample URL: `npm run cli -- -u https://example.com -v`
   - If you want to run the CLI in quiet mode, you can use the `-q` flag: `npm run cli -- -u https://example.com -q`.
 
 > [!IMPORTANT]
