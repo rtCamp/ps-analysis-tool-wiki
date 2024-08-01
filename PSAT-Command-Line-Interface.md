@@ -59,7 +59,7 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -n 10`
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -o <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. you can include technology analysis by using the `-t` flag: `npm run cli -- -u https://example.com -t`.
-  - GDPR banners are accpeted by default, you can ignore thme by using `-i` flag : `npm run cli -- -u https://example.com -i`.
+  - GDPR banners are accpeted by default, you can ignore them by using `-i` flag : `npm run cli -- -u https://example.com -i`.
   - If your machine is processing any long task or a specific cookie is set after a particular time you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
   - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5`, by default it opens 3 tabs.
   - If you want to run the CLI in non-headless mode, you can use the `-d` flag: `npm run cli -- -u https://example.com -d`.
