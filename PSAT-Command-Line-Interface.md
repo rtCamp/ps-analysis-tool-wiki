@@ -56,7 +56,7 @@ The CLI provides the following options as a source to create a report:
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
   - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
-  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -p /path/to/sitemap.xml -n 10`
+  - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -f /path/to/sitemap.xml -n 10`
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -o <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
   - **Note:** Wappalyzer, used for page technology analysis, may request permission for its Chromium instance. you can include technology analysis by using the `-t` flag: `npm run cli -- -u https://example.com -t`.
   - GDPR banners are accpeted by default, you can ignore them by using `-i` flag : `npm run cli -- -u https://example.com -i`.
