@@ -16,8 +16,10 @@ Preparing the environment for analyzing and debugging the behavior of cookies an
 
 ## Prerequisites
 
-The PSAT extension only works with **Chrome version 113 or newer**. You can see what version of Chrome you're using by going to this address in your browser: `chrome://settings/help`.
+- The PSAT extension only works with **Chrome version 113 or newer**. You can see what version of Chrome you're using by going to this address in your browser: `chrome://settings/help`.
 For the best experience, make sure you keep Chrome updated to the latest version.
+
+- To improve your PSAT debugging experiance, please disable Chrome's Preloading. Navigate to `chrome://settings/performance#speed` and untick "Preload Pages".
 
 ## Spinning Chrome Instances from Command Line
 
