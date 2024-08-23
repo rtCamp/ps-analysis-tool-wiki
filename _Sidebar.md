@@ -9,7 +9,7 @@
 ## PSAT DevTools Extension
 
 - [[Evaluation Environment]]
-- [[PSAT Settings And Permissions]]
+- [[PSAT Settings and Permissions]]
 - [[PSAT Extension Popup]]
 - [[PSAT Landing Page]]
 - [[Cookies]]
