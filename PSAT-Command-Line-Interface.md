@@ -53,6 +53,16 @@ The CLI provides the following options as a source to create a report:
 - Analyze CSV or XML sitemap from URL : `npm run cli -- -s https://example.com/sitemap_index.xml`.
 - Analyze CSV for XML sitemap from file path : `npm run cli -- -f /path/to/urlset.csv`.
 
+Ensure the local files follow the standards to run an audit. The sitemap file should be a valid XML file, and the CSV file should contain only one column with the following structure:
+
+```
+https://example1.com
+https://example1.com
+https://example1.com
+
+...
+```
+
 To customize and change the behavior of the analysis of those reports, the CLI also supports options:
 
   - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
