@@ -87,12 +87,15 @@ For a detailed understanding of the CLI options, you can use the `npm run cli --
 ```bash
 $ npm run cli -- --help
 
-> ps-analysis-tool@1.0.0 cli
+> ps-analysis-tool@0.10.1 cli
 > node packages/cli/dist/main.js --help
 
 Usage: npm run cli [website-url] -- [options]
 
 CLI to test a URL for 3p cookies.
+
+Arguments:
+  website-url                 The URL of a single site to analyze
 
 Options:
   -V, --version               output the version number
