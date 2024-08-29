@@ -8,11 +8,11 @@ If you are website developer, or a developer of components used by web sites, an
 
 Transitioning to a more private web encompasses the following steps:
 
-- [Audit your third-party cookie usage &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#audit).
-- [Test for breakage &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#test).
-- For cross-site cookies which store data on a per site basis, like an embed, consider [Partitioned with CHIPS &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#partitioned).
-- For cross-site cookies across a small group of meaningfully linked sites, consider [Related Website Sets &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#rws).
-- For other third-party cookie use cases, [migrate to the relevant web APIs &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#migrate).
+- [Audit your third-party cookie usage. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#audit)
+- [Test for breakage. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#test)
+- For cross-site cookies which store data on a per site basis, like an embed, consider [Partitioned with CHIPS. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#partitioned)
+- For cross-site cookies across a small group of meaningfully linked sites, consider [Related Website Sets. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#rws)
+- For other third-party cookie use cases, [migrate to the relevant web APIs. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#migrate)
 
 ## The Privacy Sandbox Analysis Tool
 
