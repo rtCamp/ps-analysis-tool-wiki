@@ -8,7 +8,7 @@ Within the CLI Dashboard, you'll find the following sections: "Categories" and "
 
 ### Prerequisites
 
-For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
+For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager) &#10548;](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
 
 #### Installing and Using the Required Node.js Version using NVM
 
@@ -28,7 +28,7 @@ To leverage the PSAT CLI's capabilities, you can either choose to install it as 
 
 #### Installing PSAT CLI as package
 
-To install the [PSAT CLI from Node](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
+To install the [PSAT CLI from Node &#10548;](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
 1. **Install the PSAT CLI:** Run `npm i -g @google-psat/cli` to install the PSAT CLI globally.
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.

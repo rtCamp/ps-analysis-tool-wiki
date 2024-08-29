@@ -29,7 +29,7 @@ This typically happens when:
 
 ## Data Gathering
 
-The purpose of PSAT is to help developers analyze the use of third-party cookies, as they get ready for changes in the Chrome browser, which will enable users to limit the use of unrestricted third-party cookies. To achieve this, the extension leverages the [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/) to gather data regarding Cookies from network traffic.
+The purpose of PSAT is to help developers analyze the use of third-party cookies, as they get ready for changes in the Chrome browser, which will enable users to limit the use of unrestricted third-party cookies. To achieve this, the extension leverages the [Chrome DevTools Protocol &#10548;](https://chromedevtools.github.io/devtools-protocol/) to gather data regarding Cookies from network traffic.
 
 To account for these delays, PSAT indicates when the corresponding cookies have been displayed for a given frame in the cookies table. Initially, all frames in the sidebar are grayed out, indicating that the data is not yet populated. Once the cookie data for a specific frame has been received and processed, the frame's appearance in the sidebar will change from being grayed out to its normal state. This serves as a visual indicator that the information for that frame has been processed.
 

@@ -6,7 +6,7 @@ The component displays RWS membership information, if the top-level site current
 
 <img width="742" alt="Related Web Sites Membership" src="images/site-boundaries/rws/psat_v0.8.0_related_website_sets_memebership_2024_05_27.png">
 
-THe component provides a Related Website Sets Generator, to help you create the resources needed for submitting a RWS definition request, as outline in [the documentation](https://github.com/GoogleChrome/related-website-sets/blob/main/RWS-Submission_Guidelines.md).
+THe component provides a Related Website Sets Generator, to help you create the resources needed for submitting a RWS definition request, as outline in [the documentation &#10548;](https://github.com/GoogleChrome/related-website-sets/blob/main/RWS-Submission_Guidelines.md).
 
 <img width="742" alt="Related Web Sites JSON Generator" src="images/site-boundaries/rws/psat_v0.8.0_related_website_sets_json_generator_2024_05_27.png">
 

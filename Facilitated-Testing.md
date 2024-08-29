@@ -10,7 +10,7 @@ This mode lets testers identify specific Chrome users as part of a test group or
 
 This mode provides a real-world preview. Chrome actually disables third-party cookies for a small percentage of its users. This allows testers to see how a larger audience might experience the web without these cookies.
 
-You can learn more about different modes and labels from the [official guide](https://developers.google.com/privacy-sandbox/relevance/setup/web/chrome-facilitated-testing) of Facilitated Testing.
+You can learn more about different modes and labels from the [official guide &#10548;](https://developers.google.com/privacy-sandbox/relevance/setup/web/chrome-facilitated-testing) of Facilitated Testing.
 
 The PSAT extension now includes a dedicated "Facilitated Testing" menu within the sidebar. This menu provides access to helpful guides and resources to learn more about facilitated testing and how it might impact your browsing experience.
 
