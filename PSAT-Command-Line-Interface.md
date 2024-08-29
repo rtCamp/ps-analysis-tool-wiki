@@ -69,6 +69,9 @@ To customize and change the behavior of the analysis of those reports, the CLI a
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
 
+> [!WARNING]
+> The technology analysis may not be accurate for all sites. We recommend manual analysis of technologies used on the site for a more accurate report.
+
 ### CLI Use Cases
 
 The PSAT CLI is not just a command-line version of the PSAT Extension; it's a versatile tool enabling various use cases:
