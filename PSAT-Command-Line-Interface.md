@@ -139,7 +139,7 @@ The exported reports contain the following files:
 
 - **cookies-issues.csv** : The file contains a list of all the cookies that have been blocked, either in request or response.
 - **cookies.csv** : The file contains a list of all the cookies that are created by the site, either by first-party or third-party frames.
-- **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc.
+- **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc. A CSV or sitemap analysis will result in both an aggregated cookie report and a site-specific report, organized in separate directories.
 - **report.json** : The file contains data for technological analysis and cookie data in a JSON format.
 - **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
 - **technologies.csv** : the file contains only the technological analysis data of the site, this report is disable by default to enable it use the flag `--tech`.
