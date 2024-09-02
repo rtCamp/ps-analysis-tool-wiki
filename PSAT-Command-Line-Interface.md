@@ -34,7 +34,9 @@ To install the [PSAT CLI from Node](https://www.npmjs.com/package/@google-psat/c
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
-The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
+The PSAT CLI is now installed, and it's ready to use. You can keep the PSAT CLI up-to-date by running `npm update -g @google-psat/cli`. When a new version available, you will see prompts to update the package.
+
+You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
 <img width="742" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.png">
 
