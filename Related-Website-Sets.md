@@ -22,6 +22,6 @@ Click on `Generate` to create the JSON resources.
 
 <img width="742" alt="Generate Resources" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_json_generated_2024_09_03.png">
 
-PSAT generates your JSON resources and displays them for your review. It also provides guidance on submitting your RWS request.
+PSAT generates your JSON resources and displays them for your review. It also provides guidance on submitting your RWS request. Review the generated JSON carefully, and then follow the provided instructions to submit your RWS request.
 
 <img width="742" alt="Generate Resources" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_exported_json_2024_09_03.png">
