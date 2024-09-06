@@ -1,4 +1,4 @@
-PSAT's Related Website Sets component provides access to information about the API organized by tabs and guidance on generating the JSON resources for registering related website sets.
+PSAT's Related Website Sets component provides access to information about the API and guidance on generating the JSON resources for registering related website sets.
 
 <img width="742" alt="Related Web Sites Features" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_overview_2024_09_03.png">
 
