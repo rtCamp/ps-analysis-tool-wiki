@@ -18,7 +18,7 @@ To generate your RWS resources, define your set by providing PSAT with:
 1. The specific `Service Subsets` and the rationale for their inclusion.
 1. The specific `ccTLD Subsets` and the rationale for their inclusion.
 
-and then click on `Generate`.
+Click on `Generate` to create the JSON resources.
 
 <img width="742" alt="Generate Resources" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_json_generated_2024_09_03.png">
 
