@@ -2,7 +2,7 @@ PSAT's Related Website Sets component provides access to information about the A
 
 <img width="742" alt="Related Web Sites Features" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_overview_2024_09_03.png">
 
-The second tab on this panel displays RWS membership information, if the top-level site currently on focus belongs to a registered RWS.
+The 'Membership' tab displays RWS membership information if the current top-level site belongs to an RWS that is approved in the [canonical RWS list](https://github.com/GoogleChrome/related-website-sets/blob/main/related_website_sets.JSON).
 
 <img width="742" alt="Related Web Sites Membership" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_memebership_2024_09_03.png">
 
