@@ -95,6 +95,7 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - If you want to run the CLI in non-headless mode, you can use the `-d` flag: `npm run cli -- -u https://example.com -d`.
   - Want to see detailed information about what the CLI is doing? Use the `-v` flag. This enables verbose mode, showing you each step as it happens. Here's an example with a sample URL: `npm run cli -- -u https://example.com -v`
   - If you want to run the CLI in quiet mode, you can use the `-q` flag: `npm run cli -- -u https://example.com -q`.
+  - If you want to accept the GDPR banner automatically, you can use the `-b` flag to pass a JSON file with xpath, CSS selectors, button text to be used for GDPR banner acceptance: `npm run cli -- -u https://example.com -b /path/to/button-selectors.json`.
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -142,6 +143,7 @@ Options:
   -c, --concurrency <num>     Number of tabs to open in parallel during sitemap or CSV analysis (default: 3)
   -w, --wait <num>            Number of milliseconds to wait after the page is loaded before generating the report (default: 20000)
   -l, --locale <language>     Locale to use for the CLI, supported: en, hi, es, ja, ko, pt-BR (default: "en")
+ -b, --button-selectors <path>  The path to a json file which contains selectors or button text to be used for GDPR banner acceptance
   -h, --help                  Display help for command
 
 To learn more, visit our wiki: https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki.
@@ -181,6 +183,27 @@ The exported reports contain the following files:
 The PSAT CLI can accept the GDPR banner if it is present on the site by default this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used. If you want to disable this feature, you can use the `-i` flag.
 
 PSAT identifies the common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
+
+You can also provide a JSON file with the selectors, button text or xpath to be used for GDPR banner acceptance. The JSON file should contain the following fields:
+
+```json
+  {
+    "cssSelectors":["buttonClass"],
+    "textSelectors": ["Accept All"],
+    "xPath": ["//*[@id="buttonID"]"]
+  }
+```
+name | type | description
+--- | --- | ---
+cssSelectors | Array | Array of CSS selectors to be used for clicking the button.
+textSelectors | Array | Array of button text to be used for clicking the button.
+xPath | Array | Array of xPath to be used for clicking the button.
+
+To use this feature, you can use the `-b` flag followed by the path to the JSON file. For example:
+
+```bash
+npm run cli -- -u https://example.com -b /path/to/button-selectors.json
+```
 
 If PSAT doesn't automatically accept your site's GDPR banner, please [report](https://github.com/GoogleChromeLabs/ps-analysis-tool/issues/new?assignees=&labels=&projects=&template=feature-request.md&title=) the specific library that's causing the issue. The PSAT team can then add it to their detection list for a smoother experience in the future.
 
