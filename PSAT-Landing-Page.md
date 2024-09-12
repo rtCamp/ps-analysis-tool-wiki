@@ -20,10 +20,6 @@ Access our comprehensive documentation instantly within the PSAT Extension. Our 
 
 ## PSAT Dashboard
 
-The dashboard can be accessed by users from the sidebar or the PSAT landing page. It provides quick access to PSAT's main features and a quick overview of all listed sections and related functionalities.
+Users can access the dashboard from the sidebar or the PSAT landing page. It provides quick access to PSAT's main features and a quick overview of all listed sections and related functionalities.
 
 <img width="1200" alt="PSAT Dashboard" src="images/psat-landing-page/psat_v0.11.0_dashboard_2024_09_11.png">
-
-
-
-
