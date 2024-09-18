@@ -1,6 +1,6 @@
 PSAT Cookies table provides functionality similar to the cookies table in DevTools' Application panel, with some additional features for debugging scenarios in environments where unrestricted third-party cookies have been blocked.
 
-<img width="1200" alt="PSAT Cookies Table" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_2024_09_16.png">
+<img width="1200" alt="PSAT Cookies Table" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_2024_09_16.avif">
 
 PSAT's cookies table is the starting point for analyzing and debugging cookie behavior in the search process for breakages.
 
@@ -33,7 +33,7 @@ The purpose of PSAT is to help developers analyze the use of third-party cookies
 
 To account for these delays, PSAT indicates when the corresponding cookies have been displayed for a given frame in the cookies table. Initially, all frames in the sidebar are grayed out, indicating that the data is not yet populated. Once the cookie data for a specific frame has been received and processed, the frame's appearance in the sidebar will change from being grayed out to its normal state. This serves as a visual indicator that the information for that frame has been processed.
 
-<img width="1200" alt="Cookies Frames with Empty Tables" src="images/cookie-analysis/cookies-table/psat_v0.11.0_data_gathering_2024_09_16.png">
+<img width="1200" alt="Cookies Frames with Empty Tables" src="images/cookie-analysis/cookies-table/psat_v0.11.0_data_gathering_2024_09_16.avif">
 
 ## Filtering
 
@@ -41,11 +41,11 @@ PSAT makes it easy to reduce the analysis scope by filtering observed cookies by
 
 The filtering capability is accessed via the little funnel icon at the top-left corner of PSAT's cookie table:
 
-<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookie-psat_v0.11.0_cookie_table_filtering_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_filtering_2024_09_16.avif">
 
 Clicking on the funnel icon, allows you to select from all the observed cookies,only those that meet certain criteria; e.g. Functional third-party cookies, which have the `SameSite` attribute set to `None`.
 
-<img width="1200" alt="PSAT Cookie Filters" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_filtering_in_action_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Filters" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_filtering_in_action_2024_09_16.avif">
 
 ## Exporting Cookie Data to CSV
 
@@ -53,7 +53,7 @@ After exploring and analyzing the cookie information presented in the Cookie Tab
 
 To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file(www-your-domain-com-report.csv), providing a structured format for subsequent analysis, archiving, or integration with external tools.
 
-<img width="1200" alt="PSAT downloading cookies report" src="images/cookie-analysis/cookies-table/psat_v0.11.0_download_csv_report_2024_09_16.png">
+<img width="1200" alt="PSAT downloading cookies report" src="images/cookie-analysis/cookies-table/psat_v0.11.0_download_csv_report_2024_09_16.avif">
 
 ## Blocked Cookies
 
@@ -61,7 +61,7 @@ PSAT gathers information regarding the cookies and the corresponding reasons for
 
 PSAT identifies cookie blocking with distinct icons for each scenario of requests and responses, helping users understand when and why a cookie was blocked under each specific scenario.
 
-<img width="1200" alt="PSAT Cookie Blocking Highlighting" src="images/cookie-analysis/cookies-table/psat_v0.11.0_blocked_cookies_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Blocking Highlighting" src="images/cookie-analysis/cookies-table/psat_v0.11.0_blocked_cookies_2024_09_16.avif">
 
 The following are the possible icons and their scenario.
 | Icons | Scenario |
@@ -77,7 +77,7 @@ The following are the possible icons and their scenario.
 
 When selecting a blocked cookie, PSAT shows the reasons why the cookie was blocked in the "Cookie Information" box.
 
-<img width="1200" alt="PSAT Cookie Blocking Reasons" src="images/cookie-analysis/cookies-table/psat_v0.11.0_blocked_cookies_reasons_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Blocking Reasons" src="images/cookie-analysis/cookies-table/psat_v0.11.0_blocked_cookies_reasons_2024_09_16.avif">
 
 ## Frame Overlays
 
@@ -88,7 +88,7 @@ Frame overlays make it easy to associate third-party cookies with embedded ifram
 1. Click on PSAT's `Cookies` component on the right sidebar
 1. Click on the icon on the side of the Cookies component to activate the functionality
 
-<img width="1200" alt="PSAT Frame Overlays" src="images/cookie-analysis/cookies-table/psat_v0.11.0_frame_overaly_2024_09_16.png">
+<img width="1200" alt="PSAT Frame Overlays" src="images/cookie-analysis/cookies-table/psat_v0.11.0_frame_overaly_2024_09_16.avif">
 
 With `Frame Overlays` activated, we can directly correlate specific page components with the corresponding cookies set and manipulated by them. Specifically, you can:
 
@@ -100,11 +100,11 @@ With `Frame Overlays` activated, we can directly correlate specific page compone
 
 PSAT empowers developers to efficiently pinpoint and examine network requests associated with specific cookies. This filtering capability reduces the time and effort required to diagnose cookie-related issues filtering requests related to a specific cookie.
 
-<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_show_request_with_this_cookie_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_show_request_with_this_cookie_2024_09_16.avif">
 
 To utilize this feature, developers should first locate the desired cookie within the "Cookies Table" section in PSAT and right-click on the chosen cookie will reveal a context menu. Selecting the "Show Requests With This Cookie" option from this menu triggers a filter on the "Network" tab, presenting only the requests involving the specified cookie.
 
-<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_network_tab_with_filtered_cookies_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_network_tab_with_filtered_cookies_2024_09_16.avif">
 
 Upon activating this filter(by cookie name and domain), the Network tab becomes a real-time display of network traffic exclusively linked to the selected cookie, facilitating seamless analysis.
 
@@ -112,12 +112,12 @@ Upon activating this filter(by cookie name and domain), the Network tab becomes 
 
 For debugging purposes, Chrome provides developers with the ability to unblock cookies from a specific domain for the duration of the current browsing session. This can be achieved by adding the domain pair in Chrome's settings, or directly from PSAT by right-clicking on the blocked cookie and selecting “Allow Domain During Session”. Once the domain is included on the allow list, Chrome will unblock all cookies from the same domain until the browsing session is over.
 
-<img width="1200" alt="Allow Domain During Session" src="images/cookie-analysis/cookies-table/psat_v0.11.0_allow_blocked_domain_2024_09_11.png">
+<img width="1200" alt="Allow Domain During Session" src="images/cookie-analysis/cookies-table/psat_v0.11.0_allow_blocked_domain_2024_09_11.avif">
 
 The cookies from the Allowed domain will be highlighted in green to specify those cookies are allowed by the users.
 
-<img width="1200" alt="Allowed Cookies" src="images/cookie-analysis/cookies-table/psat_v0.11.0_allowed_cookie_2024_09_11.png">
+<img width="1200" alt="Allowed Cookies" src="images/cookie-analysis/cookies-table/psat_v0.11.0_allowed_cookie_2024_09_11.avif">
 
 Once the cookie is included in the "Allowed List", the developer can remove it at any time, by right-clicking on the cookie that was Allowed previously and selecting "Remove Domain from Allow List".
 
-<img width="1200" alt="Remove Domain from Allow List" src="images/cookie-analysis/cookies-table/psat_v0.11.0_remove_allowed_domain_2024_09_11.png">
+<img width="1200" alt="Remove Domain from Allow List" src="images/cookie-analysis/cookies-table/psat_v0.11.0_remove_allowed_domain_2024_09_11.avif">
