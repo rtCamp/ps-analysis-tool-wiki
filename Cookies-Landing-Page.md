@@ -20,7 +20,7 @@ The cookie landing page features interactive sections for cookie classification 
 
 <img width="1200" src="images/cookie-analysis/cookie-landing-page/psat_v0.11.0_cookies_landing_page_mapped_sections_2024_09_16.png" alt="PSAT Cooking Landing Page mapped sections.">
 
-PSAT leverages and contributes to the [Open Cookie Database](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
+PSAT leverages and contributes to the [Open Cookie Database &#10548;](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
 As PSAT evolves rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
 
@@ -40,7 +40,7 @@ By knowing why certain cookies are exempt, you gain valuable context about how w
 
 PSAT helps developers analyze website behaviors in environments where the user has blocked the use of unrestricted third-party cookies and identify components/libraries with known issues caused by this blocking. The cookie landing page, with an expansion toggle, details of broken features, and possible migration guides, provides information about these breakages.
 
-PSAT currently detects the following libraries; you can test their working on respective [demos](https://domain-aaa.com/)
+PSAT currently detects the following libraries; you can test their working on respective [demos &#10548;](https://domain-aaa.com/)
 
 - Google Sign-In (GSI)
 - Google Identity Services (GIS)

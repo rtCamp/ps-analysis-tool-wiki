@@ -6,7 +6,7 @@ This scenario encompasses a website use of analytics providers (e.g. Google Anal
 
 ### **How the Demo Works**
 
-In this demo, we have two distinct sites running on [domain A](https://domain-aaa.com/analytics) and [domain B](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
+In this demo, we have two distinct sites running on [domain A &#10548;](https://domain-aaa.com/analytics) and [domain B &#10548;](https://domain-bbb.com/analytics) respectively, both of which are using an analytics service delivered from Domain C, which uses the third-party cookies.
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
@@ -44,7 +44,7 @@ sequenceDiagram
 
 1. **Setup Testing Environment**
 
-   1. Set up your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one configured to block the use of unpartitioned cookies (Chrome Private), and the other configured to allow the use of unpartitioned cookies (Chrome Open).
+   1. Set up your testing environment as described [here &#10548;](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) with two instances of Google Chrome browser: one configured to block the use of unpartitioned cookies (Chrome Private), and the other configured to allow the use of unpartitioned cookies (Chrome Open).
 
 2. **Open Developer Tools in both instances**
 
@@ -58,16 +58,16 @@ sequenceDiagram
 
 4. **Navigate and interact with the website**
 
-   1. Open the site https://domain-aaa.com/analytics in both instances
+   1. Open the site https://domain-aaa.com/analytics &#10548; in both instances
    2. Click the button “Click Me”.
    3. This mimics the actions that cause the analytics tracker to record eventdata on cookies.
 
 5. **Analyze the Cookies in the Application Tab**
 
    1. Go to the “Application” tab in the DevTools in the "Chrome Open" instance and the "Chrome Private" instance which is blocking third-party cookies.
-   2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies in both instances of Google Chrome
+   2. Navigate to the “Cookies” section and select the frame [domain-aaa.com &#10548;](https://domain-aaa.com/) to view the cookies in both instances of Google Chrome
 
-   3. Note the cookies present from domains other than [domain-aaa.com](https://domain-aaa.com/), in our case it will be [domain-ccc.com](https://domain-ccc.com/) in both instances of Chrome.
+   3. Note the cookies present from domains other than [domain-aaa.com &#10548;](https://domain-aaa.com/), in our case it will be [domain-ccc.com &#10548;](https://domain-ccc.com/) in both instances of Chrome.
 
 6. **Compare the cookies**
 
@@ -75,7 +75,7 @@ sequenceDiagram
    2. Identify the network request that sets the cookie in the Chrome Open instance, and track that request in the Chrome Private instance
 
 7. **Navigate to the other domain**
-   1. Open the site https://domain-bbb.com/analytics in both instances
+   1. Open the site https://domain-bbb.com/analytics &#10548; in both instances
    2. Click the button “Click Me”.
    3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance and it could not when third-party cookies are blocked.
 
@@ -89,7 +89,7 @@ This scenario goes through the workings of an e-commerce setup that leverages a 
 
 ### **How the Demo Works**
 
-This demo encompasses two distinct e-commerce sites hosted on [domain A](https://domain-aaa.com/ecommerce) and [domain B](https://domain-bbb.com/ecommerce), both using a third-party e-commerce service hosted on [domain C](https://domain-ccc.com/).
+This demo encompasses two distinct e-commerce sites hosted on [domain A &#10548;](https://domain-aaa.com/ecommerce) and [domain B &#10548;](https://domain-bbb.com/ecommerce), both using a third-party e-commerce service hosted on [domain C &#10548;](https://domain-ccc.com/).
 
 When a visitor shops on domain A, items added to the cart are stored by the third-party e-commerce service on domain C using a third-party cookie. This cookie acts as a memory bank for the cart items, irrespective of which first-party domain the visitor is on. Therefore, if the visitor subsequently navigates to domain B, the items they added to the cart on domain A are still visible in their cart.
 
@@ -166,29 +166,29 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 
 4. **Navigate to the first domain**
 
-   1. On both browsers, open the site [https://domain-aaa.com/ecommerce](https://domain-aaa.com/ecommerce).
+   1. On both browsers, open the site [https://domain-aaa.com/ecommerce &#10548;](https://domain-aaa.com/ecommerce).
    2. Interact with the products and add them to the cart.
    3. This mimics what you would do while online shopping on any site.
 
 5. **Analyze the Cookies in the Application Tab**
 
    1. Go to the "Application" tab in the DevTools in both Chrome instances.
-   2. Navigate to the "Cookies" section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies set for that domain.
-   3. Note the cookies present from domains apart from [domain-aaa.com](https://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com](https://domain-ccc.com/).
+   2. Navigate to the "Cookies" section and select the frame [domain-aaa.com &#10548;](https://domain-aaa.com/) to view the cookies set for that domain.
+   3. Note the cookies present from domains apart from [domain-aaa.com &#10548;](https://domain-aaa.com/). In our scenario, particularly note cookies from [domain-ccc.com &#10548;](https://domain-ccc.com/).
 
 6. **Compare the behavior of the cookies**
 
    1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
    2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
    3. On Chrome Private, the same cookie identified will not be present (blocked).
-   4. Go to the Network tab and search for “[domain-ccc.com](https://domain-ccc.com/)”, and click on the network request named “add-to-cart”
+   4. Go to the Network tab and search for “[domain-ccc.com &#10548;](https://domain-ccc.com/)”, and click on the network request named “add-to-cart”
    5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block third-party cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
 
 7. **Navigate to the second domain**
-   1. Open the site [domain-bbb.com/ecommerce](https://domain-bbb.com/ecommerce) in both Chrome instances.
+   1. Open the site [domain-bbb.com/ecommerce &#10548;](https://domain-bbb.com/ecommerce) in both Chrome instances.
    2. Observe the cart contents and the count icon.
-   3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame [domain-bbb.com](https://domain-bbb.com/).
-   4. Make note of cookies, especially those from [domain-ccc.com](https://domain-ccc.com/).
+   3. Return to the "Application" tab in both Chrome instances and navigate to the "Cookies" section, this time selecting the frame [domain-bbb.com &#10548;](https://domain-bbb.com/).
+   4. Make note of cookies, especially those from [domain-ccc.com &#10548;](https://domain-ccc.com/).
    5. Compare the cookies between the two instances similarly as in Step 6 to understand discrepancies, if any.
 
 By this stage, you've debugged the sequence that represents the behavior of many e-commerce and analytics solutions relying on third-party cookies, and gaining a clear insight into how third-party cookies function (and the implications when they don't) equips you to address potential issues as an e-commerce website operator.
@@ -201,11 +201,11 @@ This scenario demonstrates how a third-party Single Sign-On (SSO) service enable
 
 ### **How the Demo Works**
 
-This demo showcases two separate sites operating on [domain A](https://domain-aaa.com/single-sign-on) and [domain B](https://domain-bbb.com/single-sign-on). Both these sites rely on an SSO service located on [domain C](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
+This demo showcases two separate sites operating on [domain A &#10548;](https://domain-aaa.com/single-sign-on) and [domain B &#10548;](https://domain-bbb.com/single-sign-on). Both these sites rely on an SSO service located on [domain C &#10548;](https://domain-ccc.com/), which utilizes third-party cookies for its operation.
 
-When a user accesses [domain A](https://domain-aaa.com/single-sign-on) and logs in using their email, they are redirected to the SSO service on [domain C](https://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [domain B](https://domain-bbb.com/single-sign-on), this site communicates with [domain C](https://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
+When a user accesses [domain A &#10548;](https://domain-aaa.com/single-sign-on) and logs in using their email, they are redirected to the SSO service on [domain C &#10548;](https://domain-ccc.com/). This service then sets a third-party cookie containing the user's email, marking them as logged in. As the user later navigates to [domain B &#10548;](https://domain-bbb.com/single-sign-on), this site communicates with [domain C &#10548;](https://domain-ccc.com/), checking the presence and validity of the third-party cookie to ascertain the user's logged-in status.
 
-Thanks to the third-party cookie set by [domain C](https://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
+Thanks to the third-party cookie set by [domain C &#10548;](https://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
 
 However, when third-party cookies are blocked, the behavior changes. When the user first visits domain A and logs in, the domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
 
@@ -267,33 +267,33 @@ Note over User,DomainC: Third-Party Cookies Blocked
 3. **Adjust Network Tab Settings**
    1. In the network tab, enable "Preserve Log" and "Disable Cache" in both instances of Google Chrome.
 4. **Visit the First Domain**
-   1. Open the site [domain-aaa.com/single-sign-on](https://domain-aaa.com/single-sign-on) in both instances.
+   1. Open the site [domain-aaa.com/single-sign-on &#10548;](https://domain-aaa.com/single-sign-on) in both instances.
    2. Input your email and initiate the Single Sign-On process.
 5. **Analyze the Cookies in the Application Tab**
    1. Go to the “Application” tab in the DevTools for both the browser instance configured to block cookies.
-   2. Navigate to the “Cookies” section and select the frame [domain-aaa.com](https://domain-aaa.com/) to view the cookies.
-   3. Note the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
+   2. Navigate to the “Cookies” section and select the frame [domain-aaa.com &#10548;](https://domain-aaa.com/) to view the cookies.
+   3. Note the presence of the cookie from [domain-ccc.com &#10548;](https://domain-ccc.com/) associated with our SSO service in both Chrome instances.
 6. **Compare the Cookies**
    1. Examine the cookies set in the browser instance with cookies enabled and compare them with the ones in the instance with third-party cookie blocked.
    2. Identify which cookies, if any, are missing from the latter instance.
 7. **Navigate to the Other Domain**
-   1. Open [domain-bbb.com/single-sign-on](https://domain-bbb.com/single-sign-on) in both instances.
+   1. Open [domain-bbb.com/single-sign-on &#10548;](https://domain-bbb.com/single-sign-on) in both instances.
    2. Observe the user's logged-in status.
-   3. Go back to the “Application” tab in the DevTools, and under the “Cookies” section, now select the frame [domain-bbb.com](https://domain-bbb.com/)
-   4. Check for the presence of the cookie from [domain-ccc.com](https://domain-ccc.com/) in both instances of the browser.
+   3. Go back to the “Application” tab in the DevTools, and under the “Cookies” section, now select the frame [domain-bbb.com &#10548;](https://domain-bbb.com/)
+   4. Check for the presence of the cookie from [domain-ccc.com &#10548;](https://domain-ccc.com/) in both instances of the browser.
    5. Identify discrepancies between the two instances regarding login status and the presence of the third-party cookie.
 
 By now, you should have a clearer understanding of how third-party cookies are used for Single Sign-On (SSO) processes across multiple domains. If you're working on implementing or testing an SSO service, this debugging scenario can be quite useful. It can help developers and testers validate their SSO implementations and adapt them to work properly when third-party cookies are blocked. By following the process outlined in this demo, you can easily map it to your specific use case.
 
 ## **Embedded Content**
 
-▶️ [Screencast](https://youtu.be/gHh1B3QqKXg?si=83uI5p47rt1tgX1D)
+▶️ [Screencast &#10548;](https://youtu.be/gHh1B3QqKXg?si=83uI5p47rt1tgX1D)
 
 This scenario goes through the workings of embedded content platforms, such as video streaming, which operate across multiple top-level domains utilizing third-party cookies and local storage for retaining user session and preferences. The primary objective of this demo is to provide details on how to analyze this kind of scenario and determine if there are potential breakages.
 
 ### **How the Demo Works**
 
-This demo encompasses two independent websites on [domain A](https://domain-aaa.com/embedded-video) and [domain B](https://domain-bbb.com/embedded-video). Both host embedded video content through a third-party streaming service residing on [YouTube.com](https://youtube.com/).
+This demo encompasses two independent websites on [domain A &#10548;](https://domain-aaa.com/embedded-video) and [domain B &#10548;](https://domain-bbb.com/embedded-video). Both host embedded video content through a third-party streaming service residing on [YouTube.com &#10548;](https://youtube.com/).
 
 When a user engages with a video on domain A and adjusts certain playback preferences, these are recorded by the third-party streaming service on YouTube via third-party cookies (i.e. for user session) and local storage (i.e. for preferences). These storage mechanisms allow YouTube embeds to maintain consistency, no matter which first-party domain the user navigates to. As a result, when the user transitions to domain B, the preferences set on domain A, such as volume level or playback speed, persist.
 
@@ -357,7 +357,7 @@ sequenceDiagram
    1. Prepare your testing environment as described [here](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment). Ensure you have two distinct instances of Google Chrome:
       - **Chrome Private**: Chrome instance configured to block third-party cookies.
       - **Chrome Open**: Running on default settings.
-   2. In both instances, navigate to [YouTube.com](https://youtube.com/) and log in using any account available to you.
+   2. In both instances, navigate to [YouTube.com &#10548;](https://youtube.com/) and log in using any account available to you.
 2. **Open Developer Tools**
    1. Launch Chrome DevTools in both browsers. For Mac users, press **Cmd-Option-i** and for Linux users, press **Ctrl-Shift-i**.
    2. It's crucial to initialize DevTools before browsing to capture all network interactions as pages load.
@@ -365,9 +365,9 @@ sequenceDiagram
    1. In the network tab of both browsers, activate the "Preserve Log" and "Disable Cache" options.
    2. These settings ensure the persistence of network request logs for post-analysis.
 4. **Navigate to the embedded video site:**
-   1. In **Chrome Private**, access [https://domain-aaa.com/embedded-video](https://domain-aaa.com/embedded-video).
+   1. In **Chrome Private**, access [https://domain-aaa.com/embedded-video &#10548;](https://domain-aaa.com/embedded-video).
    2. Initiate the YouTube video player by pressing play and ensure the video streams seamlessly.
-   3. In a new tab (with DevTools active), visit [https://domain-bbb.com/embedded-video](https://domain-bbb.com/embedded-video).
+   3. In a new tab (with DevTools active), visit [https://domain-bbb.com/embedded-video &#10548;](https://domain-bbb.com/embedded-video).
    4. Play the video. Alter a setting (e.g., muting the audio) and observe if preferences from the previous site (domain A) persist.
    5. If the preferences are not consistently maintained across navigation, proceed to the next steps to investigate the reasons.
    6. In **Chrome Open**, follow the aforementioned sub-steps.
@@ -382,8 +382,8 @@ sequenceDiagram
    3. In **Chrome Open**, repeat the review process. This time, videos from both domains _should_ be cataloged since the session is identifiable.
 7. **Inspect Local Storage**:
    1. Use developer tools to inspect local storage associated with the YouTube frame in both browser instances.
-   2. For **Chrome Open**, the settings must be consistent across all tabs for [youtube.com](https://youtube.com/).
-   3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin [youtube.com](https://youtube.com/) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
+   2. For **Chrome Open**, the settings must be consistent across all tabs for [youtube.com &#10548;](https://youtube.com/).
+   3. Contrastingly, in **Chrome Private**, the local storage reveals not just the origin [youtube.com &#10548;](https://youtube.com/) but the top-level site (domain A or B) as well, causing potential discrepancies in user experiences.
 8. **Analyze Additional Breakages**:
    1. In the **Chrome Open** instance, a "watch later" option should be visible. Its absence in the **Chrome Private** instance hints that YouTube cannot identify the logged-in user.
 
