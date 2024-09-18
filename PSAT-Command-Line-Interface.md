@@ -8,7 +8,7 @@ Within the CLI Dashboard, you'll find the following sections: "Categories" and "
 
 ### Prerequisites
 
-For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
+For the best performance of the PSAT CLI, it's recommended to use **Node.js version 18.1 or later.** To easily manage different Node.js versions, we recommend installing Node.js via [NVM (Node Version Manager) &#10548;](https://github.com/nvm-sh/nvm#installing-and-updating). For detailed installation instructions, please refer to the official NVM documentation.
 
 #### Installing and Using the Required Node.js Version using NVM
 
@@ -28,13 +28,17 @@ To leverage the PSAT CLI's capabilities, you can either choose to install it as 
 
 #### Installing PSAT CLI as package
 
-To install the [PSAT CLI from Node](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
+To install the [PSAT CLI from Node &#10548;](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
 1. **Install the PSAT CLI:** Run `npm i -g @google-psat/cli` to install the PSAT CLI globally.
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
-The PSAT CLI is now installed, and it's ready to use. You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
+The PSAT CLI is now installed, and it's ready to use. You can keep the PSAT CLI up-to-date by running `npm update -g @google-psat/cli`. When a new version available, you will see prompts to update the package.
+
+<img wdith="1200" alt="PSAT CLI Update message" src="images/psat-cli/psat_v0.11.0_cli_update_message_2024_09_17.png" />
+
+You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
 <img idth="1200" alt="PSAT's npm page" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.png">
 
@@ -172,7 +176,7 @@ The exported reports contain the following files:
 
 - **cookies-issues.csv** : The file contains a list of all the cookies that have been blocked, either in request or response.
 - **cookies.csv** : The file contains a list of all the cookies that are created by the site, either by first-party or third-party frames.
-- **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc.
+- **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc. A CSV or sitemap analysis will result in both an aggregated cookie report and a site-specific report, organized in separate directories.
 - **report.json** : The file contains data for cookie data in a JSON format.
 - **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
 
