@@ -6,7 +6,7 @@ PSAT features and capabilities support developers in transitioning smoothly towa
 
 <img width="1200" alt="PSAT Landing Page" src="images/psat-landing-page/psat_v0.11.0_landing_page_2024_09_11.png">
 
-On the left, we have a collapsible sidebar from which you can access the [settings page](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT-Settings-and-Permissions), Wiki, Dashboard, and four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each section corresponds to a feature area of PSAT, which is being developed progressively.
+On the left, we have a collapsible sidebar from which you can access the [settings page](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT-Settings-and-Permissions), Wiki, Dashboard, and four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each section corresponds to a feature area of PSAT, which is being developed progressively.
 
 After the sidebar we have the PSAT landing page, it provides access to the PSAT Dashboard, and links to learn about Privacy Sandbox, bug reporting, discussion forums, support resources, and the latest Privacy Sandbox news.
 
@@ -14,8 +14,9 @@ After the sidebar we have the PSAT landing page, it provides access to the PSAT 
 
 ## Wiki
 
-Access our comprehensive documentation instantly within the PSAT Extension. Our wiki covers everything you need to know about the extension and the audit process for creating privacy-preserving web applications.
+The Wiki, accessible directly within the PSAT Extension, covers everything you need to know about the extension and the audit process for creating privacy-preserving web applications. You can also view wiki pages from the Wiki menu, which seamlessly integrates into the extension for easy access to documentation.
 
+And on the right, is the landing page for the Privacy Sandbox DevTools panel, which provides access to information and insights. At the bottom of the page, it provides links to learn more about Privacy Sandbox, report bugs and breakages, join the discussion and support forums, and request additional time for migration. It also provides links to the latest Privacy Sandbox news extracted from the Privacy Sandbox site's RSS feed.
 <img width="1200" alt="PSAT Wiki" src="images/psat-landing-page/psat_v0.11.0_psat_wiki_2024_09_12.png">
 
 ## PSAT Dashboard

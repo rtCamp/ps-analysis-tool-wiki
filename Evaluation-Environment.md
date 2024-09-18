@@ -46,7 +46,7 @@ PSAT offers three straightforward installation methods:
 
 ## Installing PSAT from Chrome Web Store
 
-PSAT is available in the [Chrome Web Store](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
+PSAT is available in the [Chrome Web Store. &#10548;](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef) To install, simply go to the linked store listing and click on `Add to Chrome`.
 
 <img width="742" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v0.8.0_chrome_store_24_05_24.png">
 
@@ -64,7 +64,7 @@ Expand the “Assets” dropdown, and click on the file named “extension-v*.*.
 
 <img width="742" alt="Install from zip file, step three" src="images/evaluation-environment/psat_v0.8.0_download_zip_24_04_2024.png">
 
-Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
+Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension &#10548;](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
 <img width="742" alt="Chrome Settings page, step four" src="images/evaluation-environment/psat_v0.8.0_chrome_extension_settings_24_05_2024.png">
 
@@ -75,5 +75,5 @@ If you need to debug the extension or submit improvements, you can download the 
 - Clone this Privacy Sandbox Analysis Tool Repository
 - Run `npm install` to install all dependencies
 - `npm run ext:dev` or `npm run ext:build` to generate a build in `/dist/extension`
-- Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
+- Turn on "Developer mode" in `chrome://extensions` to [load the unpacked extension &#10548;](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
 - Click on the "Load Unpacked" button and upload the `dist/extension` folder

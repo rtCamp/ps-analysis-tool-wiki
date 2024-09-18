@@ -6,7 +6,7 @@ The 'Membership' tab displays RWS membership information if the current top-leve
 
 <img width="742" alt="Related Web Sites Membership" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_memebership_2024_09_11.png">
 
-The component provides a Related Website Sets Generator to help you create the resources needed for submitting an RWS definition request, as outlined in [the RWS submission guidelines](https://github.com/GoogleChrome/related-website-sets/blob/main/RWS-Submission_Guidelines.md).
+The component provides a Related Website Sets Generator to help you create the resources needed for submitting an RWS definition request, as outlined in [the RWS submission guidelines &#10548;](https://github.com/GoogleChrome/related-website-sets/blob/main/RWS-Submission_Guidelines.md).
 
 <img width="742" alt="Related Web Sites JSON Generator" src="images/site-boundaries/rws/psat_v0.11.0_related_website_sets_json_generator_2024_09_11.png">
 
