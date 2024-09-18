@@ -8,7 +8,7 @@ PSAT features and capabilities aim at supporting developers to transition smooth
 
 On the left, there is a link to the [settings page](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT-Settings-and-Permissions), Facilitated Testing, and four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each section corresponds to a feature area of PSAT, which is being developed progressively.
 
-Additionally, You can also view wiki pages directly from the Wiki menu, which seamlessly integrates wiki content into the extension, providing easy access to documentation.
+Additionally, you can also view wiki pages directly from the Wiki menu, which seamlessly integrates wiki into the extension, providing easy access to documentation.
 
 And on the right, is the landing page for the Privacy Sandbox DevTools panel, which provides access to information and insights. At the bottom of the page, it provides links to learn more about Privacy Sandbox, report bugs and breakages, join the discussion and support forums, and request additional time for migration. It also provides links to the latest Privacy Sandbox news extracted from the Privacy Sandbox site's RSS feed.
 
