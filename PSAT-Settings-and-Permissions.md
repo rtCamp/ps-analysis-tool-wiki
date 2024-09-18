@@ -1,23 +1,23 @@
 PSAT Extension features a dedicated settings page, where users can easily access and modify certain configuration settings, and also view system information.
 
-<img width="742" alt="PSAT Settings Section" src="images/settings/psat_v0.8.0_settings_2024_05_27.png">
+<img width="1200" alt="PSAT Settings" src="images/settings/psat_v0.11.0_settings_2024_09_16.png">
 
 ## Enabling Chrome DevTools Protocol in PSAT
 
 One of the main purposes of PSAT is to help developers analyze and understand the usage of third-party cookies during browsing sessions. To achieve this, PSAT uses the Chrome DevTools Protocol (CDP) to debug and collect information about sites being loaded during a browsing session.
 
-When users enable the CDP to troubleshoot their website, Chrome warns users that their session is being debugged. However, to avoid disrupting the user experience, activating CDP doesn't automatically reload other open tabs. Instead, PSAT offers a separate “Reload” button when CDP is turned on, allowing users to refresh tabs when needed manually. 
+When users enable the CDP to troubleshoot their website, Chrome warns them that their session is being debugged. However, to avoid disrupting the user experience, activating CDP doesn't automatically reload other open tabs. Instead, PSAT offers a separate “Reload” button when CDP is turned on, allowing users to refresh tabs manually when needed.
 
 PSAT allows the Enabling and Disabling of its debugging capabilities directly from the tool itself so that the extension can be enabled. Still, the debugging components can be turned on only when needed.
 
 
-<img width="742" alt="PSAT Enable CDP" src="images/settings/psat_v0.5.1_enabling_cdp_in_psat_2024_02_22.png">
+<img width="1200" alt="PSAT Enable CDP" src="images/settings/psat_v0.11.0_enabling_cdp_in_psat_2024_09_16.png">
 
 ## Multi-tab Debugging
 
-PSAT lets users control the number of tabs analyzed concurrently. To optimize performance and ensure smooth operation, the default setting allows analysis of one tab at a time. However, users who require simultaneous multiple tab analysis can easily adjust this setting to meet their specific debugging needs.
+PSAT lets users control the number of tabs analyzed concurrently. To optimize performance and ensure smooth operation, the default setting allows analysis of one tab at a time. However, users who require simultaneous multiple-tab analysis can easily adjust this setting to meet their specific debugging needs.
 
-<img width="742" alt="PSAT Multitab" src="images/settings/psat_v0.8.0_multitab_debugging_2024_05_27.png">
+<img width="1200" alt="PSAT Multitab" src="images/settings/psat_v0.11.0_multitab_debugging_2024_06_16.png">
 
 ## PSAT Permissions
 
