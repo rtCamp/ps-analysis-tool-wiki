@@ -24,7 +24,7 @@ Lack of access to third-party cookies can cause errors to be thrown in DevTools.
 
 ## **Partitioned storage**
 
-A reported bug on “S-Bahn München status page” reported by https://www.s-bahn-muenchen.de/fahren/betriebslage, where lack of partitioned storage throws an error on the `localStorage` getter. Through the JS exception chain, we can actually see the origin of the file that ran this code, and derive that this could be the 3rd party in this case.
+A reported bug on “S-Bahn München status page” reported by https://www.s-bahn-muenchen.de/fahren/betriebslage &#10548;, where lack of partitioned storage throws an error on the `localStorage` getter. Through the JS exception chain, we can actually see the origin of the file that ran this code, and derive that this could be the 3rd party in this case.
 
 ![](https://lh6.googleusercontent.com/znBDHSuyEGse0gP0SQHU4jJiVUy_3p7iGqSF7D0aL527ePlOQT5bQCgqdxb1_SouLxY5WMO2Od9oDymBpp3s4UU10QIc-VZVpRIXd7shsmkwPbf4ltVQsz90ZxiHhrNdCDmFmYhGWBUx7XaXHooV93aURc0PMt_NnRbtHAofkr5YeoUyhnKCRxFK4Cy0LAIAl5nTkdCQ9caJaTqfvhUeb5NdLHPvXgvoQE2hCw)
 
