@@ -1,6 +1,6 @@
 The PSAT CLI is an alternative way to run analysis on your website. You can use a terminal to scan a given URL or an entire sitemap to create a more extensive report. The CLI creates a local site showing information similar to PSAT's extension.
 
-<img width="1200" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.11.0_cli_landing_page_2024_09_12.png">
+<img width="1200" alt="PSAT Cookie Filters" src="images/psat-cli/psat_v0.11.0_cli_landing_page_2024_09_12.avif">
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
@@ -36,11 +36,11 @@ To install the [PSAT CLI from Node &#10548;](https://www.npmjs.com/package/@goog
 
 The PSAT CLI is now installed, and it's ready to use. You can keep the PSAT CLI up-to-date by running `npm update -g @google-psat/cli`. When a new version available, you will see prompts to update the package.
 
-<img wdith="1200" alt="PSAT CLI Update message" src="images/psat-cli/psat_v0.11.0_cli_update_message_2024_09_17.png" />
+<img wdith="1200" alt="PSAT CLI Update message" src="images/psat-cli/psat_v0.11.0_cli_update_message_2024_09_17.avif" />
 
 You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
-<img idth="1200" alt="PSAT's npm page" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.png">
+<img idth="1200" alt="PSAT's npm page" src="images/psat-cli/psat_v0.9.0_npm_home_page_2024_06_30.avif">
 
 #### Clone and Build Locally
 
@@ -161,13 +161,13 @@ The following are two major outputs:
 
 The PSAT dashboard is a locally run HTML application that processes the results from a JSON file for analysis and gives cookies results. It is served in the `/out/` directory; you can open it in any browser to get an interactive dashboard, just like the PSAT extensions panel. Due to the limitations mentioned in the discrepancy section, the PSAT CLI dashboard does not include all details.
 
-<img idth="1200" src="images/psat-cli/psat_v0.11.0_cli_command_execution_2024_09_12.png" alt="PSAT CLI Command" />
+<img idth="1200" src="images/psat-cli/psat_v0.11.0_cli_command_execution_2024_09_12.avif" alt="PSAT CLI Command" />
 
 #### Export Files
 
 You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
 
-<img idth="1200" src="images/psat-cli/psat_v0.11.0_cli_download_button_2024_09_12.png" alt="PSAT Export Files" />
+<img idth="1200" src="images/psat-cli/psat_v0.11.0_cli_download_button_2024_09_12.avif" alt="PSAT Export Files" />
 
 >[!NOTE]
 >When exporting files without a specified output directory (using the `--out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.

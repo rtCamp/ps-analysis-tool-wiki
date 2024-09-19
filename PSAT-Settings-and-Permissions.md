@@ -1,6 +1,6 @@
 PSAT Extension features a dedicated settings page, where users can easily access and modify certain configuration settings, and also view system information.
 
-<img width="1200" alt="PSAT Settings" src="images/settings/psat_v0.11.0_settings_2024_09_16.png">
+<img width="1200" alt="PSAT Settings" src="images/settings/psat_v0.11.0_settings_2024_09_16.avif">
 
 ## Enabling Chrome DevTools Protocol in PSAT
 
@@ -11,13 +11,13 @@ When users enable the CDP to troubleshoot their website, Chrome warns them that 
 PSAT allows the Enabling and Disabling of its debugging capabilities directly from the tool itself so that the extension can be enabled. Still, the debugging components can be turned on only when needed.
 
 
-<img width="1200" alt="PSAT Enable CDP" src="images/settings/psat_v0.11.0_enabling_cdp_in_psat_2024_09_16.png">
+<img width="1200" alt="PSAT Enable CDP" src="images/settings/psat_v0.11.0_enabling_cdp_in_psat_2024_09_16.avif">
 
 ## Multi-tab Debugging
 
 PSAT lets users control the number of tabs analyzed concurrently. To optimize performance and ensure smooth operation, the default setting allows analysis of one tab at a time. However, users who require simultaneous multiple-tab analysis can easily adjust this setting to meet their specific debugging needs.
 
-<img width="1200" alt="PSAT Multitab" src="images/settings/psat_v0.11.0_multitab_debugging_2024_06_16.png">
+<img width="1200" alt="PSAT Multitab" src="images/settings/psat_v0.11.0_multitab_debugging_2024_06_16.avif">
 
 ## PSAT Permissions
 
