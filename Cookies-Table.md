@@ -41,7 +41,7 @@ PSAT makes it easy to reduce the analysis scope by filtering observed cookies by
 
 The filtering capability is accessed via the little funnel icon at the top-left corner of PSAT's cookie table:
 
-<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookie-psat_v0.11.0_cookie_table_filtering_2024_09_16.png">
+<img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.11.0_cookie_table_filtering_2024_09_16.png">
 
 Clicking on the funnel icon, allows you to select from all the observed cookies,only those that meet certain criteria; e.g. Functional third-party cookies, which have the `SameSite` attribute set to `None`.
 
