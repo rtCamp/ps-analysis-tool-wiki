@@ -34,8 +34,6 @@
   - [[Topics]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
-- [[Facilitated Testing]]
-  - [Identifying Facilitated Testing Participation](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Facilitated-Testing#identifying-facilitated-testing-participation)
 
 ## PSAT CLI
 
