@@ -4,6 +4,7 @@ To access the Privacy Sandbox panel, access the URL you want to analyze, open Ch
 
 PSAT features and capabilities support developers in transitioning smoothly towards a more private web by shedding light on cookie usage and the new building blocks available for implementing privacy-preserving solutions for features and capabilities of websites and apps. PSAT's landing page in DevTools reflects this goal:
 
+
 <img width="1200" alt="PSAT Landing Page" src="images/psat-landing-page/psat_v0.11.0_landing_page_2024_09_11.png">
 
 On the left, we have a collapsible sidebar from which you can access the [settings page](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT-Settings-and-Permissions), Wiki, Dashboard, and four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each section corresponds to a feature area of PSAT, which is being developed progressively.
