@@ -4,7 +4,7 @@ The [Privacy Sandbox initiative &#10548;](https://privacysandbox.com/) aims to c
 
 ## Transitioning to a more privacy-preserving web
 
-If you are website developer, or a developer of components used by web sites, and you use third-party cookies to achieve your goals, there good news is that you can now achieve the goals of you technologies and protect your users from violations of their privacy, by moving away from using unpartitioned third-party cookies and take advantage of new provacy-preserving APIs.
+If you are website developer, or a developer of components used by web sites, and you use third-party cookies to achieve your goals, the good news is that you can now achieve the goals of you technologies and protect your users from violations of their privacy, by moving away from using unpartitioned third-party cookies and take advantage of new privacy-preserving APIs.
 
 Transitioning to a more private web encompasses the following steps:
 
@@ -16,7 +16,7 @@ Transitioning to a more private web encompasses the following steps:
 
 ## The Privacy Sandbox Analysis Tool
 
-The purpose of this tool is to help developers like you in making your sites/applications more robust in protecting the privacy of users. This wiki outlines a testing/evaluation methodology that will guide you in analyzing your scenarios and the necessary insights needed to implement changes, including:
+The purpose of this tool is to help developers like you in making your sites/applications more robust in protecting the privacy of users. This wiki provides guidance on analyzing your critical user journeys and getting insights needed to implement changes, including:
 
 1. How to set up an [**Evaluation Environment**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment) that will help predict what is likely to happen when third-party cookies have been blocked.
 1. How to identify specific aspects of the site that are likely to be affected, amongst other [**General debugging actions for Analysis**](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/General-Debugging-Actions).
