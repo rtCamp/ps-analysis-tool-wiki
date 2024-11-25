@@ -8,7 +8,7 @@ PSAT features and capabilities support developers in transitioning smoothly towa
 
 On the left, we have a collapsible sidebar from which you can access the [settings page](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/PSAT-Settings-and-Permissions), Wiki, Dashboard, and four sections corresponding to the main technical components of Privacy Sandbox: Cookies, Site Boundaries, Private Advertising, and Tracking Protection. Each section corresponds to a feature area of PSAT, which is being developed progressively.
 
-After the sidebar we have the PSAT landing page, it provides access to the PSAT Dashboard, and links to learn about Privacy Sandbox, bug reporting, discussion forums, support resources, and the latest Privacy Sandbox news.
+After the sidebar we have the PSAT landing page, it provides access to the PSAT Dashboard, and links to learn about Privacy Sandbox, bug reporting, support forums, support resources, and the latest Privacy Sandbox news.
 
 <img width="1200" alt="PSAT Landing Page Info Links" src="images/psat-landing-page/psat_v0.11.0_landing_page_quick_links_2024_09_11.png">
 
