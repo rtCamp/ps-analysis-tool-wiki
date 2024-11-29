@@ -31,6 +31,7 @@
   - [[Fingerprinting]]
   - [[User Agent Strings]]
 - [[Private Advertising]]
+  - [[Protected Audience]]
   - [[Topics]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
