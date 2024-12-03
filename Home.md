@@ -4,7 +4,7 @@ The [Privacy Sandbox initiative &#10548;](https://privacysandbox.com/) aims to c
 
 ## Transitioning to a more privacy-preserving web
 
-If you are website developer, or a developer of components used by web sites, and you use third-party cookies to achieve your goals, the good news is that you can now achieve the goals of you technologies and protect your users from violations of their privacy, by moving away from using unpartitioned third-party cookies and take advantage of new privacy-preserving APIs.
+If you are website developer, or a developer of components used by web sites, and you use third-party cookies to achieve your goals, the good news is that, by moving away from using unpartitioned third-party cookies and take advantage of new privacy-preserving APIs, you can now achieve your technology goals while also protecting your users from privacy violations.
 
 Transitioning to a more private web encompasses the following steps:
 
