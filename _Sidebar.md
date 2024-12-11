@@ -38,3 +38,4 @@
 ## PSAT CLI
 
 - [[PSAT Command Line Interface]]
+- [[PSAT CLI Tutorial]]
