@@ -30,7 +30,7 @@ Users can access the dashboard from the sidebar or the PSAT landing page. It pro
 
 The PSAT Stories section offers a curated collection of interactive narratives that showcase the capabilities and features of PSAT through engaging visualizations. 
 
-The stories are organized into three key categories – Learning, News, and Tutorials – these stories provide concise overviews of the Privacy Sandbox APIs and their implementation within PSAT, highlighting specific features and capabilities. 
+These stories provide concise overviews of the Privacy Sandbox APIs and their implementation within PSAT, highlighting specific features and capabilities. 
 
 Users can easily navigate and explore this collection by filtering stories by category, tag, and author. They can also access the full story by clicking on the story card and search for specific stories by title, author, or tag.
 
