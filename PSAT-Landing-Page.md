@@ -32,6 +32,6 @@ The PSAT Stories section offers a curated collection of interactive narratives t
 
 These stories provide concise overviews of the Privacy Sandbox APIs and their implementation within PSAT, highlighting specific features and capabilities. 
 
-Users can easily navigate and explore this collection by filtering stories by category, tag, and author. They can also access the full story by clicking on the story card and search for specific stories by title, author, or tag.
+Users can easily navigate and explore this collection by filtering stories by category, tag, and author. They can also access the full story by clicking on the story cover and search for specific stories by title.
 
 <img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2024_12_10.png">
