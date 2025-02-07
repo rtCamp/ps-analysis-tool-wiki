@@ -80,6 +80,7 @@ The Protected Audience demo, by default, operates in auto mode. In this mode:
 - **Continuous Interest Collection:** The process continues as the user visits more advertising websites, leading to the collection of additional interests and a more refined user profile.
 
 #### Demo Modes
+
 The Protected Audience API can be explored through two distinct modes:
 
   - **Auto Play:**
@@ -97,6 +98,7 @@ The Protected Audience API can be explored through two distinct modes:
 > The Interset groups, Ad unit, Auction, and bids tabs use the Privacy Sandbox Ads relevance and measurement APIs which need to be enabled from chrome flags, we recommend setting [evaluation environments](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment), and using and chrome launcher commands `chrome-pat-ps` to simulate the required environment.
 
 ## Interset Groups
+
 An interest group is a collection of users who share a common interest, similar to a remarketing list, each interest group has an owner, which is typically an advertiser, publisher, or ad tech platform.
 
 Interest groups allow advertisers to target ads to users who have previously shown interest in their products or services, without relying on third-party cookies
@@ -112,6 +114,7 @@ It will list out interset groups as you perform actions on specific elements, eg
 The tab shows that list of interset groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
 
 ## Ad Units
+
 The Protected Audience API allows publishers to conduct on-device ad auctions in the user's browser. This means that when a user visits a website with an ad unit that's configured to use the Protected Audience API, the browser will run an auction to determine which ad to display.   
 
 [Screenshot Ad unit]
@@ -136,6 +139,7 @@ You can also filter the auction process for particular event, interest group own
 When you click and peculiar Ad Unit or auction event, you can view raw data in JSON format at footer panel. 
 
 ## Bids
+
 In the Protected Audience API, bids are a crucial component of the ad auction process. bids in the Protected Audience API are the way advertisers express their interest in showing an ad to a user within a privacy-preserving, on-device auction environment.
 
 [SCREENSHOT Bids Tab]
@@ -145,3 +149,17 @@ The Bids section contains two subsections, Received Bids and No Bids
 The first section of Received Bids show list of bidders along with information such as bid, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
 
 The second section Received Bids show list of bidders along with information of no bid.
+
+## Worklet Brek Points
+
+The Worklet Breakpoints tab will enables you to set breakpoints directly within the Protected Audience API's worklet code, facilitating debugging and a deeper understanding of the auction process.  Additionally, you will be able to use event listener breakpoints (located in the DevTools Sources tab under Event Listener) to pause execution within the event handler code after an ad auction event has occurred.
+
+You will be able to set breakpoints for following events:
+
+- Bidder Phase start, 
+- Bidder Reporting Phase Start, 
+- Seller Scoring Phase Start
+- Seller Reporting Phase Start.
+
+> [!NOTE]
+> These PSAT breakpoints are currently just for informational purposes, guiding users to set them using the DevTools interface.  They are planned to become fully functional in future PSAT releases.
