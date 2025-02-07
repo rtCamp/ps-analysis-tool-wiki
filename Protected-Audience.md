@@ -156,10 +156,10 @@ The Worklet Breakpoints tab will enables you to set breakpoints directly within 
 
 You will be able to set breakpoints for following events:
 
-- Bidder Phase start, 
-- Bidder Reporting Phase Start, 
+- Bidder Phase start
+- Bidder Reporting Phase Start
 - Seller Scoring Phase Start
-- Seller Reporting Phase Start.
+- Seller Reporting Phase Start
 
 > [!NOTE]
 > These PSAT breakpoints are currently just for informational purposes, guiding users to set them using the DevTools interface.  They are planned to become fully functional in future PSAT releases.
