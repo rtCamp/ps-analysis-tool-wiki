@@ -150,7 +150,7 @@ The first section of Received Bids show list of bidders along with information s
 
 The second section Received Bids show list of bidders along with information of no bid.
 
-## Worklet Brek Points
+## Worklet Breakpoints
 
 The Worklet Breakpoints tab will enables you to set breakpoints directly within the Protected Audience API's worklet code, facilitating debugging and a deeper understanding of the auction process.  Additionally, you will be able to use event listener breakpoints (located in the DevTools Sources tab under Event Listener) to pause execution within the event handler code after an ad auction event has occurred.
 
