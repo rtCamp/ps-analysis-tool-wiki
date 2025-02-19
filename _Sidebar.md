@@ -35,6 +35,9 @@
   - [[Protected Audience]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
+- [[Explorable Explaintaions]]
+  - [[Topics EE]]
+  - [[Protected Audience EE]]
 
 ## PSAT CLI
 
