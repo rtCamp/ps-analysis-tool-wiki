@@ -18,9 +18,6 @@ The Protected Audience API works by creating “interest groups” based on user
 
 - **User Control**: Users have control over their interest groups and can manage their preferences easily.
 
-## Conclusion
-The Protected Audience API is a significant step towards a more privacy-focused advertising ecosystem. By allowing targeted ads without tracking user behavior across different websites, it aims to balance the needs of advertisers and user privacy.
-
 ## References
 - [Google's Privacy Sandbox](https://privacysandbox.com/)
 - [Protected Audience API](https://developer.chrome.com/docs/privacy-sandbox/protected-audience/)
