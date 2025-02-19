@@ -32,7 +32,6 @@
   - [[User Agent Strings]]
 - [[Private Advertising]]
   - [[Topics]]
-  - [[Protected Audience]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
 - [[Explorable Explaintaions]]
