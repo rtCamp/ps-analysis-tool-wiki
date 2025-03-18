@@ -18,7 +18,7 @@ The Protected Audience API works by creating “interest groups” based on user
 
 - **User Control**: Users have control over their interest groups and can manage their preferences easily.
 
-## Interset Groups
+## Interest Groups
 
 An interest group is a collection of users who share a common interest, similar to a remarketing list, each interest group has an owner, which is typically an advertiser, publisher, or ad tech platform.
 
@@ -26,13 +26,13 @@ Interest groups allow advertisers to target ads to users who have previously sho
 
 When a user visits a website, the website can ask the user's browser to add the user to an interest group. 
 
-The browser stores this information locally on the user's device. When the user visits a website that participates in the Protected Audience API, that stored information can be analyzed by the Interset group tab.
+The browser stores this information locally on the user's device. When the user visits a website that participates in the Protected Audience API, that stored information can be analyzed by the Interest group tab.
 
-It will list out interset groups as you perform actions on specific elements, eg: if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interset group in your browser
+It will list out interest groups as you perform actions on specific elements, eg: if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
 
 [Screenshot Interest group]
 
-The tab shows that list of interset groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
+The tab shows that list of interest groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
 
 ## Ad Units
 
