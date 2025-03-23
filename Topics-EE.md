@@ -10,7 +10,7 @@ The Topics API uses a taxonomy, which is essentially a hierarchical classificati
 
 #### Understanding Topic Assignment in the Explorable Explanation
 
-<img width="1200" alt="Explorable Explanation Topics Timeline" src="images/explorable-explanation/topics/psat_v0.12.0_topics_explorable_explanations_2024-09-24.png" />
+<img width="1200" alt="Explorable Explanation Topics Timeline" src="images/explorable-explanation/topics/psat_v0.13.0_topics_explorable_explanations_2025-03-24.png" />
 
 The Explorable Explanations provide a visual representation of how the Topics API assigns topics to users based on their browsing behaviour.
 
