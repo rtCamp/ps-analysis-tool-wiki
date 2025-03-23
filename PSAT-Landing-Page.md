@@ -34,4 +34,4 @@ These stories provide concise overviews of the Privacy Sandbox APIs and their im
 
 Users can easily navigate and explore this collection by filtering stories by category, tag, and author. They can also access the full story by clicking on the story and search for specific stories by title.
 
-<img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2024_12_10.png">
+<img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2025_03_24.png">
