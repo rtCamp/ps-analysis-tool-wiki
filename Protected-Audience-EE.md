@@ -8,6 +8,8 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **Nodes** Each "node" within the visualization represents a distinct website or online platform.
 
+<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Nodes" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_nodes_2025_03_24.png">
+
 - **Types:**
 
   - **Advertiser Nodes:** These websites are designed to gather information about user interests. When a user visits an advertiser node, the website collects data about their browsing behavior, such as the pages they view, the content they interact with, and the products they search for. This collected data is then categorized into "interest groups."
@@ -15,6 +17,8 @@ This guide will walk you through the key concepts, user controls, and different 
   - **Publisher Nodes:** These websites aim to display relevant advertisements to their visitors. To achieve this, they access the "interest groups" previously collected by advertiser nodes. This allows them to tailor the ads shown to each user based on their individual interests.
 
 - **Colored Circles**
+
+<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Interest Groups" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_interest_groups.png">
 
   - **Representation:** The colored circles visually depict the “interest groups” associated with each node.
 
@@ -24,6 +28,8 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **The Footer Panel**
   - **Information Hub:** The footer panel serves as a central hub for detailed information related to the entire process.
+
+<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Footer Panel" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_footer_panel.png">
 
   Following key Information that can be observed:
 
@@ -37,6 +43,8 @@ This guide will walk you through the key concepts, user controls, and different 
    - **Events:** Presents a chronological timeline of all events occurring within the visualization, including website visits, interest collection, and ad auctions.
 
 - **User Controls:**
+
+<img width="1200" alt="PSAT Protected Audience Explorable Explainations - User controls" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_user_controls_2025_03_24.png">
 
   - **Speed Control:** Allows users to adjust the speed at which the events unfold in the visualization.
 
@@ -56,8 +64,6 @@ This guide will walk you through the key concepts, user controls, and different 
 - **Reset:** Allows users to reset the demo to its initial state, enabling them to start a new exploration or test different scenarios.
 
 ### How Protected Audience Demo Works
-
-### Auto Mode
 
 The Protected Audience demo, by default, operates in auto mode. In this mode:
 
