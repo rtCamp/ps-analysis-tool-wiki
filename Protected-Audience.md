@@ -30,7 +30,7 @@ The browser stores this information locally on the user's device. When the user 
 
 It will list out interest groups as you perform actions on specific elements, eg: if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
 
-[Screenshot Interest group]
+<img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v0.13.0_interest_groups_2025_03_24.png" width="1200" />
 
 The tab shows that list of interest groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
 
@@ -38,7 +38,7 @@ The tab shows that list of interest groups along with useful information such as
 
 The Protected Audience API allows publishers to conduct on-device ad auctions in the user's browser. This means that when a user visits a website with an ad unit that's configured to use the Protected Audience API, the browser will run an auction to determine which ad to display.   
 
-[Screenshot Ad unit]
+<img alt="PSAT Protected Audience - Ad Units" src="images/private-advertising/protected-audience/psat_v0.13.0_ad_unit_2025_03_24.png" width="1200" />
 
 The tab shows a list of ad units along with Ad unit Code, container size, bidders, you can also click on ad unit to focus and get detailed information in a popup. We can also filter ad units based on bidders.
 
@@ -49,7 +49,7 @@ This all happens within the user's browser, preserving privacy.
 
 The Auctions tab gives detailed information for each Ad Unit and for every event, so users can understand the auction process better.
 
-[SCREENSHOT Auctions tab]
+<img alt="PSAT Protected Audience - Auctions" src="images/private-advertising/protected-audience/psat_v0.13.0_auctions_2025_03_24.png" width="1200" />
 
 The detailed information includes event time, name, interest group origin, interest group name, bid amount, bid currency, and component seller.
 
@@ -63,7 +63,7 @@ When you click and peculiar Ad Unit or auction event, you can view raw data in J
 
 In the Protected Audience API, bids are a crucial component of the ad auction process. bids in the Protected Audience API are the way advertisers express their interest in showing an ad to a user within a privacy-preserving, on-device auction environment.
 
-[SCREENSHOT Bids Tab]
+<img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/psat_v0.13.0_bids_2025_03_24.png" width="1200" />
 
 The Bids section contains two subsections, Received Bids and No Bids
 
