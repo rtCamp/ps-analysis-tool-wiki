@@ -136,7 +136,7 @@ Reports are organized into folders named like “site-domain-report-type” with
 
 ### Cookie Insights Page
 
-<img src="images/psat-cli/tutorial/psat_v0.12.0_cookie_insight_2024_12_10.png" width="1200" alt="PSAT Cookie Insight Page">
+<img src="images/psat-cli/tutorial/psat_v0.13.0_cookie_insight_2025_03_25.png" width="1200" alt="PSAT Cookie Insight Page">
 
 Let’s break down the cookie's insight reports into three main parts: the header, sidebar, and main page. The header report contains crucial information to identify the report, such as the domain and date of the report. On the right side of the header is the PSAT CLI version. The Cookie Insights page presents information on cookie categorization, blocked cookies, cookie exemptions, known breakages, and frames. Access these sections via the menu at the top-right of the page.
 
@@ -146,7 +146,7 @@ When clicked, all the numbers related to cookie usage work as filters, and the u
 
 ### Cookies Table
 
-<img src="images/psat-cli/tutorial/psat_v0.12.0_cookies_table_2024_12_10.png" width="1200" alt="PSAT Cookie Table" >
+<img src="images/psat-cli/tutorial/psat_v0.13.0_cookies_table_2025_03_25.png" width="1200" alt="PSAT Cookie Table" >
 
 At the Cookies Table, the user will access all information about the cookies on the audited URL. The cookie table is organized into sections; the top part of the table with all cookies lists pieces of information such as scope, origin domain, and cookie category. When the user clicks on an individual cookie, more information will be displayed in the cookie details section under the cookie table. Blocked reasons, such as when the cookie was blocked, and a description of why this cookie was set in the first place, will be listed. 
 
@@ -154,7 +154,7 @@ At the Cookies Table, the user will access all information about the cookies on 
 
 Another superpower of PSAT CLI is the ability to filter data across the Cookies Insights page and Cookies table. In both cases, the filter can be accessed by clicking on the funnel icon in the top-left corner. 
 
-<img src="images/psat-cli/tutorial/psat_v0.12.0_filtering_data_2024_12_10.png" width="1200" alt="PSAT Filtering Data">
+<img src="images/psat-cli/tutorial/psat_v0.13.0_filtering_data_2025_03_25.png" width="1200" alt="PSAT Filtering Data">
 
 The filters will adapt based on the scope of the view. For example, on the Cookies Insight page, Category, Scope, Blocked Reasons, and Exemption Reasons are the filters available. For the Cookies Table, more filter options are available to the user.
 
@@ -174,7 +174,7 @@ The report.html file provides a summary of the PSAT analysis in HTML format. Thi
 
 You can download the report as a zip file from the floating navigation in the top-right corner of the PSAT CLI dashboard.
 
-<img src="images/psat-cli/tutorial/psat_v0.12.0_download_reports_2024_12_10.png" alt="PSAT Report Download button">
+<img src="images/psat-cli/tutorial/psat_v0.13.0_download_reports_2025_03_25.png" alt="PSAT Report Download button">
 
 ### Files in reports
 
