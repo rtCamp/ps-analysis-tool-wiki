@@ -1,4 +1,4 @@
-The Protected Audience EE (Explorable Explainations) is a comprehensive tool designed to help users understand the intricacies of online advertising and user data collection. This document provides an in-depth look at the various components and functionalities of the Protected Audience demo, offering insights into how user interests are gathered, processed, and utilized in the context of targeted advertising.
+The Protected Audience EE (Explorable Explanations) is a comprehensive tool designed to help users understand the intricacies of online advertising and user data collection. This document provides an in-depth look at the various components and functionalities of the Protected Audience demo, offering insights into how user interests are gathered, processed, and utilized in the context of targeted advertising.
 
 The demo is structured to simulate a user's online journey, showcasing the interactions between different types of websites (nodes) and the dynamic processes involved in ad auctions. By exploring this demo, users can gain a clearer understanding of the mechanisms behind interest-based advertising and the role of various platforms in this ecosystem.
 
@@ -6,9 +6,9 @@ This guide will walk you through the key concepts, user controls, and different 
 
 ### Understanding key concepts:
 
-- **Nodes** Each "node" within the visualization represents a distinct website or online platform.
+- **Nodes**: Each "node" within the visualization represents a distinct website or online platform.
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Nodes" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_nodes_2025_03_24.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Nodes" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_nodes_2025_03_24.png">
 
 - **Types:**
 
@@ -18,7 +18,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **Colored Circles**
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Interest Groups" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_interest_groups.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Interest Groups" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_interest_groups.png">
 
   - **Representation:** The colored circles visually depict the “interest groups” associated with each node.
 
@@ -29,9 +29,9 @@ This guide will walk you through the key concepts, user controls, and different 
 - **The Footer Panel**
   - **Information Hub:** The footer panel serves as a central hub for detailed information related to the entire process.
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explainations - Footer Panel" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_footer_panel.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Footer Panel" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_footer_panel.png">
 
-  Following key Information that can be observed:
+  Below are key information sections that can be observed:
 
   - **Interest Groups:** Displays the specific interests collected from each website visited.
 
@@ -44,7 +44,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **User Controls:**
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explainations - User controls" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_user_controls_2025_03_24.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - User controls" src="images/explorable-explanation/protected-audience/psat_v0.13.0_PA_EE_user_controls_2025_03_24.png">
 
   - **Speed Control:** Allows users to adjust the speed at which the events unfold in the visualization.
 
@@ -55,9 +55,9 @@ This guide will walk you through the key concepts, user controls, and different 
   - **Forward/Backward:** Enables users to step through the visualization one step at a time, either forward or backward.
 
   - **Mode Switching:**
-    - **Automated Mode:** The demo automatically progresses through the sequence of events, user interests are collected on advertiser nodes. On publisher nodes, an auction is conducted based on collected interests.
+    - **Automated Mode:** The demo automatically progresses through events, collecting user interest groups at advertiser nodes and conducting auctions at publisher nodes.
 
-    - **Interactive Mode:** Users can manually navigate through nodes. they have greater control over the navigation, allowing them to explore specific nodes or events in more depth.
+    - **Interactive Mode:** Users can manually navigate through nodes. They have greater control over the navigation, allowing them to explore specific nodes or events in more depth.
 
  - **Auto-expand Demos:** Enables users to view more detailed information about specific events, such as the internal workings of an ad auction.
 
@@ -67,7 +67,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 The Protected Audience demo, by default, operates in auto mode. In this mode:
 
-- **User Interaction:** The demo simulates a user's online journey, represented by a human icon.
+- **User Interaction:** The demo simulates a user's online journey, represented by a user icon.
 
 - **Interest Collection:** As the user visits advertising websites, the demo simulates the collection of user interests (interest groups) and stores them locally in the user's browser.
 
@@ -99,6 +99,6 @@ The Protected Audience API can be explored through two distinct modes:
   - **Interactive Mode**
     - Users have greater control over the demo's progression.
     - They can manually navigate through nodes, exploring specific websites and observing how user interests are collected and how ad auctions are triggered.
-	
-> [!NOTE]  
+
+> [!NOTE]
 > The Interset groups, Ad unit, Auction, and bids tabs use the Privacy Sandbox Ads relevance and measurement APIs which need to be enabled from chrome flags, we recommend setting [evaluation environments](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment), and using and chrome launcher commands `chrome-pat-ps` to simulate the required environment.
