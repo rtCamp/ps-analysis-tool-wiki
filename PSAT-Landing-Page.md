@@ -28,10 +28,6 @@ Users can access the dashboard from the sidebar or the PSAT landing page. It pro
 
 ## Stories
 
-The PSAT Stories section offers a curated collection of interactive narratives that showcase the capabilities and features of PSAT through engaging visualizations. 
-
-These stories provide concise overviews of the Privacy Sandbox APIs and their implementation within PSAT, highlighting specific features and capabilities. 
-
-Users can easily navigate and explore this collection by filtering stories by category, tag, and author. They can also access the full story by clicking on the story and search for specific stories by title.
+The PSAT Stories section offers interactive narratives showcasing PSAT's capabilities with engaging visualizations. Find concise overviews of the Privacy Sandbox APIs and their implementation. Explore the stories by filtering by category and tag, or by searching by title. Access the full story by clicking on the story.
 
 <img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2025_03_24.png">
