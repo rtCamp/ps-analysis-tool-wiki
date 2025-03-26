@@ -34,7 +34,7 @@
   - [[Topics]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
-- [[Explorable Explaintaions]]
+- [[Explorable Explanations]]
   - [[Topics EE]]
   - [[Protected Audience EE]]
 
