@@ -60,7 +60,7 @@ sequenceDiagram
 
    1. Open the site https://domain-aaa.com/analytics &#10548; in both instances
    2. Click the button “Click Me”.
-   3. This mimics the actions that cause the analytics tracker to record eventdata on cookies.
+   3. This mimics the actions that cause the analytics tracker to record event data on cookies.
 
 5. **Analyze the Cookies in the Application Tab**
 
@@ -77,7 +77,7 @@ sequenceDiagram
 7. **Navigate to the other domain**
    1. Open the site https://domain-bbb.com/analytics &#10548; in both instances
    2. Click the button “Click Me”.
-   3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance and it could not when third-party cookies are blocked.
+   3. Proceed with Step 5 and 6 to determine why Domain B was able to identify the visitor in one instance, and it could not when third-party cookies are blocked.
 
 At this point, we debugged the scenario which is common for implementations of analytics providers, and learned how to detect potential failures. This demo can be extrapolated to other analytics providers, which also use cookies as the state mechanism to implement their capabilities.
 

@@ -39,7 +39,7 @@ To account for these delays, PSAT indicates when the corresponding cookies have 
 
 PSAT makes it easy to reduce the analysis scope by filtering observed cookies by the different dimensions that characterize them, which correspond to the columns in the cookie table.
 
-The filtering capability is accessed via the little funnel icon at the top-left corner of PSAT's cookie table:
+The filtering capability is accessed via the little funnel icon in the top-left corner of PSAT's cookie table:
 
 <img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v0.13.0_cookie_table_filtering_2025_03_24.png">
 
@@ -70,10 +70,10 @@ The following are the possible icons and their scenario.
 | <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_one_response_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in at least one of the responses. |
 | <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_requests_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in all requests.|
 | <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_one_requests_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in at least one of the requests.|
-| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_requests_and_responses_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in all of the requests and responses. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_requests_and_responses_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in all the requests and responses. |
 | <img src="images/cookie-analysis/icons/psat_v0.5.1_blocked_in_one_of_the_request_and_response_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in at least one of the requests and at least one of the responses. |
 | <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_all_requests_and_one_response_22_02_2024.svg" width="20" height="20"> | This cookie was blocked in all requests and at least one of the responses. |
-| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_responses_and_one_request_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in at least one of the requests and all of the responses. |
+| <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_responses_and_one_request_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in at least one of the requests and all the responses. |
 
 When selecting a blocked cookie, PSAT shows the reasons why the cookie was blocked in the "Cookie Information" box.
 
@@ -88,12 +88,12 @@ Frame overlays make it easy to associate third-party cookies with embedded ifram
 1. Click on PSAT's `Cookies` component on the right sidebar
 1. Click on the icon on the side of the Cookies component to activate the functionality
 
-<img width="1200" alt="PSAT Frame Overlays" src="images/cookie-analysis/cookies-table/psat_v0.13.0_frame_overaly_2025_03_25.png">
+<img width="1200" alt="PSAT Frame Overlays" src="images/cookie-analysis/cookies-table/psat_v0.13.0_frame_overlay_2025_03_25.png">
 
 With `Frame Overlays` activated, we can directly correlate specific page components with the corresponding cookies set and manipulated by them. Specifically, you can:
 
 1. Hover the mouse over the web page and observe how the underlying frames in the page get highlighted
-1. For each highlighted frame, PSAT shows a popup window with relevant Privacy Sandbox information about the frame, such as the type of frame, the number of `1P` and `third-party` cookies that were set by the frame, whether or not the domain associated with the frame belongs to a `Related Websites Set` which includes also the top-level site, and the set of privacy-sandbox-related features available to the frame.
+1. For each highlighted frame, PSAT shows a popup window with relevant Privacy Sandbox information about the frame, such as the type of frame, the number of `1P` and `third-party` cookies that were set by the frame, whether the domain associated with the frame belongs to a `Related Websites Set` which includes also the top-level site, and the set of privacy-sandbox-related features available to the frame.
 1. While hovering over a page frame, the corresponding frame is highlighted in PSAT's cookie's panel, and the cookies set by the frame are listed in the cookies table.
 
 ## Network Requests With a Given Cookie

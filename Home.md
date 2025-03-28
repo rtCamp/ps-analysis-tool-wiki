@@ -4,13 +4,13 @@ The [Privacy Sandbox initiative &#10548;](https://privacysandbox.com/) aims to c
 
 ## Transitioning to a more privacy-preserving web
 
-If you are website developer, or a developer of components used by web sites, and you use third-party cookies to achieve your goals the good news is that, by moving away from using unpartitioned third-party cookies and take advantage of new privacy-preserving APIs, you can now achieve your technology goals while also protecting your users from privacy violations.
+If you are website developer, or a developer of components used by websites, and you use third-party cookies to achieve your goals the good news is that, by moving away from using unpartitioned third-party cookies and take advantage of new privacy-preserving APIs, you can now achieve your technology goals while also protecting your users from privacy violations.
 
 Transitioning to a more private web encompasses the following steps:
 
 - [Audit your third-party cookie usage. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#audit)
 - [Test for breakage. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#test)
-- For cross-site cookies which store data on a per site basis, like an embed, consider [Partitioned with CHIPS. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#partitioned)
+- For cross-site cookies which store data on a per-site basis, like an embed, consider [Partitioned with CHIPS. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#partitioned)
 - For cross-site cookies across a small group of meaningfully linked sites, consider [Related Website Sets. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#rws)
 - For other third-party cookie use cases, [migrate to the relevant web APIs. &#10548;](https://developers.google.com/privacy-sandbox/blog/cookie-countdown-2023oct#migrate)
 

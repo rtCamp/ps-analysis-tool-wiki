@@ -72,7 +72,7 @@ If you face any issues, refer to the official nvm and npm documentation for spec
 
 ### Installing PSAT CLI
 
-After installing and switching to Node.JS version 18, install PSAT CLI globally. **Open a terminal ( Mac and Linux ) or a command line( Windows ).**
+After installing and switching to Node.js version 18, install PSAT CLI globally. **Open a terminal ( Mac and Linux ) or a command line( Windows ).**
 
 **Install the package:** Run the following command:
 
@@ -132,7 +132,7 @@ psat -u https://example.com --locale pt-BR
 ```
 
 ### Understanding reports
-Reports are organized into folders named like “site-domain-report-type” with a timestamp, allowing you to maintain a history of analyses. The initial report page provides insights into cookie usage on the analyzed page.
+Reports are organized into folders named like “site-domain-report-type” with a timestamp, allowing you to maintain a history of analyses. The initial report page provides insights into cookie usage on the analysed page.
 
 ### Cookie Insights Page
 

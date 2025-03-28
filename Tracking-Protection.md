@@ -1,4 +1,4 @@
-The Privacy Sandbox initiative includes [proposals &#10548;](https://developers.google.com/privacy-sandbox/overview/web?hl=en#what_are_the_privacy_sandbox_proposals) for preventing unwanted tracking (e.g. fingerprinting). This proposals include:
+The Privacy Sandbox initiative includes [proposals &#10548;](https://developers.google.com/privacy-sandbox/overview/web?hl=en#what_are_the_privacy_sandbox_proposals) for preventing unwanted tracking (e.g. fingerprinting). These proposals include:
 
 | Proposal                                                                                                                      | Description                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

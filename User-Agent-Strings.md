@@ -4,6 +4,6 @@ The User-Agent Client Hints (UA-CH) API is a web standard that allows servers to
 
 **Proposal**: [Public explanation for the proposed solution (WICG) &#10548;](https://wicg.github.io/ua-client-hints/)
 
-**Public discussion**: [ublic questions and feedback about the proposal &#10548;](https://github.com/WICG/ua-client-hints/issues)
+**Public discussion**: [Public questions and feedback about the proposal &#10548;](https://github.com/WICG/ua-client-hints/issues)
 
 **Documentation**: [Developer documentation &#10548;](https://developers.google.com/privacy-sandbox/protections/user-agent)
