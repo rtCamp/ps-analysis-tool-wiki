@@ -25,3 +25,9 @@ The Wiki, accessible directly within the PSAT Extension, covers everything you n
 Users can access the dashboard from the sidebar or the PSAT landing page. It provides quick access to PSAT's main features and a quick overview of all listed sections and related functionalities.
 
 <img width="1200" alt="PSAT Dashboard" src="images/psat-landing-page/psat_v0.13.0_dashboard_2025_03_24.png">
+
+## Stories
+
+The PSAT Stories section offers interactive narratives showcasing PSAT's capabilities with engaging visualizations. Find concise overviews of the Privacy Sandbox APIs and their implementation. Explore the stories by filtering by category and tag, or by searching by title. Access the full story by clicking on the story.
+
+<img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2025_03_24.png">

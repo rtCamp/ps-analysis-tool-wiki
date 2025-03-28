@@ -33,8 +33,10 @@ The commands you can use are:
 
 - `chrome-default`: Opens a Chrome instance with default settings.
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookies blocked.
-- `chrome-default-ps`: Opens a Chrome instance with third-party cookies enabled and PSAT installed.
+- `chrome-default-ps`: Opens a Chrome instance with Third-party cookies enabled and PSAT installed.
 - `chrome-3pcd-ps`: Opens a Chrome instance with Third-Party Cookies blocked enabled and the Privacy Sandbox extension installed.
+- `chrome-pat` : Opens a Chrome instance with Private Advertising Testing enabled.
+- `chrome-pat-ps` : Opens a Chrome instance with Private Advertising Testing enabled and the Privacy Analysis Tool extension installed.
 
 To keep the Chrome Launcher script current with the latest PSAT Extension, simply rerun the installation command:
 
