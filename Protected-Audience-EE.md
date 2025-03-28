@@ -101,4 +101,4 @@ The Protected Audience API can be explored through two distinct modes:
     - They can manually navigate through nodes, exploring specific websites and observing how user interests are collected and how ad auctions are triggered.
 
 > [!NOTE]
-> The Interset groups, Ad unit, Auction, and bids tabs use the Privacy Sandbox Ads relevance and measurement APIs which need to be enabled from chrome flags, we recommend setting [evaluation environments](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment), and using and chrome launcher commands `chrome-pat-ps` to simulate the required environment.
+> The Interest groups, Ad unit, Auction, and bids tabs use the Privacy Sandbox Ads relevance and measurement APIs which need to be enabled from chrome flags, we recommend setting [evaluation environments](https://github.com/GoogleChromeLabs/ps-analysis-tool/wiki/Evaluation-Environment), and using and chrome launcher commands `chrome-pat-ps` to simulate the required environment.

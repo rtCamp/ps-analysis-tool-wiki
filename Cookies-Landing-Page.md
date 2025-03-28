@@ -28,7 +28,7 @@ As PSAT evolves rapidly, the cookie landing page will incorporate more informati
 
 The Cookie Insights page will now display a dedicated section for “Cookie Exemptions,” similar to the existing “Blocked cookies” section. This section will list the exempt cookies and provide details about the reason for the exemption.
 
-Some cookies are exempt from blocking for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocols (CDP) to access this information and provide you with transparency.
+Some cookies are exempt from blocking for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocol (CDP) to access this information and provide you with transparency.
 
 PSAT has introduced a dedicated “Cookie Exemptions” section on the Cookie Lading page, displaying information about exempt cookies.
 

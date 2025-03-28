@@ -26,7 +26,7 @@ For the best performance of the PSAT CLI, it's recommended to use **Node.js vers
 
 To leverage the PSAT CLI's capabilities, you can either choose to install it as a node package or clone the repository and build it locally.
 
-#### Installing PSAT CLI as package
+#### Installing PSAT CLI as a package
 
 To install the [PSAT CLI from Node &#10548;](https://www.npmjs.com/package/@google-psat/cli), follow these steps:
 
@@ -34,13 +34,13 @@ To install the [PSAT CLI from Node &#10548;](https://www.npmjs.com/package/@goog
 2. **Run the CLI Audit:** Execute `psat https://example.com` followed by the URL you want to analyze.
 3. **Help Command:** Use the `psat --help` command to view all available options.
 
-The PSAT CLI is now installed, and it's ready to use. You can keep the PSAT CLI up-to-date by running `npm update -g @google-psat/cli`. When a new version available, you will see prompts to update the package.
+The PSAT CLI is now installed, and it's ready to use. You can keep the PSAT CLI up-to-date by running `npm update -g @google-psat/cli`. When a new version is available, you will see prompts to update the package.
 
-<img wdith="1200" alt="PSAT CLI Update message" src="images/psat-cli/psat_v0.13.0_cli_update_message_2025_03_25.png" />
+<img width="1200" alt="PSAT CLI Update message" src="images/psat-cli/psat_v0.13.0_cli_update_message_2025_03_25.png" />
 
 You can learn more about CLI options from the node package [README](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/main/packages/cli/README.md). The CLI will generate a report and store it in the `/out/` directory by default.
 
-<img idth="1200" alt="PSAT's npm page" src="images/psat-cli/psat_v0.13.0_npm_home_page_2025_03_25.png" />
+<img width="1200" alt="PSAT's npm page" src="images/psat-cli/psat_v0.13.0_npm_home_page_2025_03_25.png" />
 
 #### Clone and Build Locally
 
@@ -54,8 +54,8 @@ To install the PSAT CLI locally, follow these steps:
 The CLI provides the following options as a source to create a report:
 
 - Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
-- Analyze CSV or XML sitemap from URL : `npm run cli -- -s https://example.com/sitemap_index.xml`.
-- Analyze CSV for XML sitemap from file path : `npm run cli -- -f /path/to/urlset.csv`.
+- Analyze CSV or XML sitemap from URL: `npm run cli -- -s https://example.com/sitemap_index.xml`.
+- Analyze CSV for XML sitemap from file path: `npm run cli -- -f /path/to/urlset.csv`.
 
 Ensure the local files follow the standards to run an audit. The sitemap file should be a valid XML file, and the CSV file should contain only one column with a valid URL.
 
@@ -92,13 +92,13 @@ To customize and change the behavior of the analysis of those reports, the CLI a
   - Make PSAT reports available in different languages for user convenience: `npm run cli -- -u https://example.com -l ja`.
   - Limit the number of URLs to analyze from a specific sitemap or CSV: `npm run cli -- -f /path/to/sitemap.xml -n 10`
   - Export the report to a specific folder without creating a dashboard URL: `npm run cli -- -u https://example.com -o <path-to-dir>` or `npm run cli -- -u https://example.com --out-dir <path-to-dir>`.
-  - GDPR banners are accpeted by default, you can ignore them by using `-i` flag : `npm run cli -- -u https://example.com -i`.
-  - If your machine is processing any long task or a specific cookie is set after a particular time you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
-  - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5`, by default it opens 3 tabs.
+  - GDPR banners are accepted by default, you can ignore this by using `-i` flag : `npm run cli -- -u https://example.com -i`.
+  - If your machine is processing any long task or a specific cookie is set after a particular time, you can set a waiting time in milliseconds for the report being generated: `npm run cli -- -u https://example.com --wait 50000`
+  - If your machine has a high number of cores, you can set the number of tabs to open in parallel during sitemap or CSV analysis: `npm run cli -- -s https://example.com/sitemap.xml -c 5`, by default, it opens 3 tabs.
   - If you want to run the CLI in non-headless mode, you can use the `-d` flag: `npm run cli -- -u https://example.com -d`.
   - Want to see detailed information about what the CLI is doing? Use the `-v` flag. This enables verbose mode, showing you each step as it happens. Here's an example with a sample URL: `npm run cli -- -u https://example.com -v`
   - If you want to run the CLI in quiet mode, you can use the `-q` flag: `npm run cli -- -u https://example.com -q`.
-  - If you want to accept the GDPR banner automatically, you can use the `-b` flag to pass a JSON file with xpath, CSS selectors, button text to be used for GDPR banner acceptance: `npm run cli -- -u https://example.com -b /path/to/button-selectors.json`.
+  - If you want to accept the GDPR banner automatically, you can use the `-b` flag to pass a JSON file with XPath, CSS selectors, button text to be used for GDPR banner acceptance: `npm run cli -- -u https://example.com -b /path/to/button-selectors.json`.
 
 > [!IMPORTANT]
 > When using a URL with multiple parameters joined by ampersands (&), surround the entire URL with double quotes (") to avoid errors, the quote ensures that it treats entire URL as string. For example: `npm run cli -- -u "https://example.com?param1=value1&param2=value2"`.
@@ -111,7 +111,7 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 - **Pre-analysis Site Evaluation:** Offers guidance on scope and prioritization for site evaluation.
 - **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to the blocking of third-party cookies.
 - **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
-- List the Blocked cookies' reasons to guide developers in solving those issues.
+- List the reasons for blocked cookies guide developers in solving those issues.
 - Help developers by allowing them to download detailed reports.
 
 ### CLI Options
@@ -153,21 +153,21 @@ To learn more, visit our wiki: https://github.com/GoogleChromeLabs/ps-analysis-t
 
 ### CLI Output
 
-PSAT offers a Command-line Interface (CLI) for users to interact with its functionalities. When users run PSAT commands through the CLI, they receive outputs in various formats depending on the parameters they use in the specific commands they've executed.
+PSAT offers a Command-line Interface (CLI) for users to interact with its functionalities. When users run PSAT commands through the CLI, they receive output in various formats depending on the parameters they use in the specific commands they've executed.
 
 The following are two major outputs:
 
 #### PSAT Dashboard
 
-The PSAT dashboard is a locally run HTML application that processes the results from a JSON file for analysis and gives cookies results. It is served in the `/out/` directory; you can open it in any browser to get an interactive dashboard, just like the PSAT extensions panel. Due to the limitations mentioned in the discrepancy section, the PSAT CLI dashboard does not include all details.
+The PSAT dashboard is a locally run HTML application that processes the results from a JSON file for analysis and gives cookies results. It is served in the `/out/` directory; you can open it in any browser to get an interactive dashboard, just like the PSAT extension's panel. Due to the limitations mentioned in the discrepancy section, the PSAT CLI dashboard might not include all details.
 
-<img idth="1200" src="images/psat-cli/psat_v0.13.0_cli_command_execution_2025_03_25.png" alt="PSAT CLI Command" />
+<img width="1200" src="images/psat-cli/psat_v0.13.0_cli_command_execution_2025_03_25.png" alt="PSAT CLI Command" />
 
 #### Export Files
 
 You can export analysis data as CSV or JSON files. These file formats store the data in a structured way that allows you to import it into other software tools like spreadsheets or data analysis programs. This allows for further customization and analysis of the PSAT results beyond what the dashboards might offer.
 
-<img idth="1200" src="images/psat-cli/psat_v0.13.0_cli_download_button_2025_03_25.png" alt="PSAT Export Files" />
+<img width="1200" src="images/psat-cli/psat_v0.13.0_cli_download_button_2025_03_25.png" alt="PSAT Export Files" />
 
 >[!NOTE]
 >When exporting files without a specified output directory (using the `--out-dir` flag), relative paths are used. If the path doesn't exist, it will be created.
@@ -181,24 +181,24 @@ The exported reports contain the following files:
 - **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
 
 ### GDPR
-The PSAT CLI can accept the GDPR banner if it is present on the site by default this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used. If you want to disable this feature, you can use the `-i` flag.
+The PSAT CLI can accept the GDPR banner if it is present on the site. By default, this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used. If you want to disable this feature, you can use the `-i` flag.
 
 PSAT identifies the common code libraries that power those cookie banners. If it recognizes one, it can automatically click "accept" for you, so you can get a detailed cookie report without having to interact with the site.
 
-You can also provide a JSON file with the selectors, button text or xpath to be used for GDPR banner acceptance. The JSON file should contain the following fields:
+You can also provide a JSON file with the selectors, button text or XPath to be used for GDPR banner acceptance. The JSON file should contain the following fields:
 
 ```json
   {
     "cssSelectors":["buttonClass"],
     "textSelectors": ["Accept All"],
-    "xPath": ["//*[@id="buttonID"]"]
+    "xPath": ["//*[@id='buttonID']"]
   }
 ```
-name | type | description
---- | --- | ---
-cssSelectors | Array | Array of CSS selectors to be used for clicking the button.
-textSelectors | Array | Array of button text to be used for clicking the button.
-xPath | Array | Array of xPath to be used for clicking the button.
+| name          | type  | description                                                |
+|---------------|-------|------------------------------------------------------------|
+| cssSelectors  | Array | Array of CSS selectors to be used for clicking the button. |
+| textSelectors | Array | Array of button text to be used for clicking the button.   |
+| xPath         | Array | Array of xPath to be used for clicking the button.         |
 
 To use this feature, you can use the `-b` flag followed by the path to the JSON file. For example:
 
@@ -224,11 +224,11 @@ The CLI tool adopts a concise approach by launching a website and monitoring it 
 
 #### 3. User Interactions
 
-Unlike the PSAT extension, the CLI tool does not emulate user interactions during website monitoring. The lack of user interactions may impact how websites handle cookies, as certain cookies may load after user actions.
+Unlike the PSAT extension, the CLI tool does not emulate user interactions during website monitoring. The lack of user interaction may impact how websites handle cookies, as certain cookies may load after user actions.
 
-#### 4. Arm64 processor
+#### 4. Arm64 Processor
 
-Users with Mac Silicon processors should use the recommended version of node `18.20.0`, lower versions may impact report performance causing discrepancies in the final result. If you are using a old version of node the CLI will warning your with the following message:
+Users with Mac Silicon processors should use the recommended version of node `18.20.0`, lower versions may impact report performance causing discrepancies in the final result. If you are using an old version of node, the CLI will warn you with the following message:
 
 ```bash
   Degraded performance warning:
