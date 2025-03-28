@@ -28,7 +28,7 @@ When a user visits a website, the website can ask the user's browser to add the 
 
 The browser stores this information locally on the user's device. When the user visits a website that participates in the Protected Audience API, that stored information can be analyzed by the Interest group tab.
 
-It will list out interest groups as you perform actions on specific elements, eg: if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
+It will list out interest groups as you perform actions on specific elements, for example, if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
 
 <img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v0.13.0_interest_groups_2025_03_24.png" width="1200" />
 
@@ -36,7 +36,7 @@ The tab shows that list of interest groups along with useful information such as
 
 ## Ad Units
 
-The Protected Audience API allows publishers to conduct on-device ad auctions in the user's browser. This means that when a user visits a website with an ad unit that's configured to use the Protected Audience API, the browser will run an auction to determine which ad to display.   
+The Protected Audience API allows publishers to conduct on-device ad auctions in the user's browser. This means that when a user visits a website with an ad unit that's configured to use the Protected Audience API, the browser will run an auction to determine which ad to display.
 
 <img alt="PSAT Protected Audience - Ad Units" src="images/private-advertising/protected-audience/psat_v0.13.0_ad_unit_2025_03_24.png" width="1200" />
 
@@ -73,7 +73,7 @@ The second section Received Bids show list of bidders along with information of 
 
 ## Worklet Breakpoints
 
-The Worklet Breakpoints tab will enables you to set breakpoints directly within the Protected Audience API's worklet code, facilitating debugging and a deeper understanding of the auction process.  Additionally, you will be able to use event listener breakpoints (located in the DevTools Sources tab under Event Listener) to pause execution within the event handler code after an ad auction event has occurred.
+The Worklet Breakpoints tab will enable you to set breakpoints directly within the Protected Audience API's worklet code, facilitating debugging and a deeper understanding of the auction process. Additionally, you will be able to use event listener breakpoints (located in the DevTools Sources tab under Event Listener) to pause execution within the event handler code after an ad auction event has occurred.
 
 You will be able to set breakpoints for following events:
 
@@ -83,7 +83,7 @@ You will be able to set breakpoints for following events:
 - Seller Reporting Phase Start
 
 > [!NOTE]
-> These PSAT breakpoints are currently just for informational purposes, guiding users to set them using the DevTools interface.  They are planned to become fully functional in future PSAT releases.
+> These PSAT breakpoints are currently just for informational purposes, guiding users to set them using the DevTools interface. They are planned to become fully functional in future PSAT releases.
 
 ### References
 - [Google's Privacy Sandbox](https://privacysandbox.com/)
