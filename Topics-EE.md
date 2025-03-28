@@ -6,7 +6,7 @@ The Topics API works by analysing a user's browsing history and identifying gene
 
 #### Taxonomy in Topics API
 
-The Topics API uses a taxonomy, which is essentially a hierarchical classification system, to categorise user interests. This taxonomy consists of a set of predefined topics, such as "Technology", "Travel", or "Fitness."
+The Topics API uses taxonomy, which is essentially a hierarchical classification system, to categorise user interests. This taxonomy consists of a set of predefined topics, such as "Technology", "Travel", or "Fitness."
 
 #### Understanding Topic Assignment in the Explorable Explanation
 
