@@ -13,9 +13,7 @@ PSAT allows the Enabling and Disabling of its debugging capabilities directly fr
 
 <img width="1200" alt="PSAT Enable CDP" src="images/settings/psat_v0.14.0_enabling_cdp_in_psat_2025_04_09.png">
 
-## Multi-tab Debugging
-
-PSAT is optimized to deliver the best performance when analyzing up to five tabs simultaneously. While users have the flexibility to adjust the number of tabs for concurrent analysis, opening more than five tabs may impact performance. To ensure a smooth experience, a warning message will appear if users attempt to enable CDP (Chrome DevTools Protocol) when more than five tabs with DevTools are already open.
+While PSAT is optimized for efficient site analysis, performance may degrade when more than five tabs are open. Consequently, a warning will be displayed if an attempt is made to enable CDP with more than five existing Chrome DevTools instances.
 
 <img width="1200" alt="PSAT Multitab" src="images/settings/psat_v0.14.0_multitab_debugging_2025_04_09.png">
 
