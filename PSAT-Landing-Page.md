@@ -18,7 +18,7 @@ And on the right, is the landing page for the Privacy Sandbox DevTools panel, wh
 
 The Wiki, accessible directly within the PSAT Extension, covers everything you need to know about the extension and the audit process for creating privacy-preserving web applications. You can also view wiki pages from the Wiki menu, which seamlessly integrates into the extension for easy access to documentation.
 
-<img width="1200" alt="PSAT Wiki" src="images/psat-landing-page/psat_v0.13.0_psat_wiki_2025_03_24.png">
+<img width="1200" alt="PSAT Wiki" src="images/psat-landing-page/psat_v0.14.0_psat_wiki_2025_04_09.png">
 
 ## PSAT Dashboard
 
@@ -30,4 +30,4 @@ Users can access the dashboard from the sidebar or the PSAT landing page. It pro
 
 The PSAT Stories section offers interactive narratives showcasing PSAT's capabilities with engaging visualizations. Find concise overviews of the Privacy Sandbox APIs and their implementation. Explore the stories by filtering by category and tag, or by searching by title. Access the full story by clicking on the story.
 
-<img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.13.0_stories_2025_03_24.png">
+<img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v0.14.0_stories_2025_04_09.png">

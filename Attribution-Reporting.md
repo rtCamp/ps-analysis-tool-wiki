@@ -9,7 +9,7 @@ The Attribution Reporting API is a Privacy Sandbox proposal that enables adverti
 
 Displays sources that are **currently active** and being tracked for attribution. You’ll find a list of sources (like ads or campaigns) that have been registered and are still valid. Columns typically show information like Source Event ID, Status, Source Origin, Destination, etc. This is where you monitor ongoing attribution sources.
 
-<img width="1200" alt="PSAT Private Advertising - Active Sources" src="images/private-advertising/attribution-reporting/psat_v0.13.0_active_sources_2025_03_24.png">
+<img width="1200" alt="PSAT Private Advertising - Active Sources" src="images/private-advertising/attribution-reporting/psat_v0.14.0_active_sources_2025_04_09.png">
 
 ##### Understanding Active Sources:
 - **Source Event ID:** A unique identifier for each source event.
@@ -26,7 +26,7 @@ Displays sources that are **currently active** and being tracked for attribution
 
 Focuses on the process and details of source registration. Here, you can see data on **newly** registered sources. This tab may show when and how sources are being registered for attribution purposes, including any errors or statuses during registration. Source Type can be one of the following:
 
-<img width="1200" alt="PSAT Private Advertising - Source Registration" src="images/private-advertising/attribution-reporting/psat_0.13.0_source_registrations_2025_03_24.png">
+<img width="1200" alt="PSAT Private Advertising - Source Registration" src="images/private-advertising/attribution-reporting/psat_v0.14.0_source_registrations_2025_04_09.png">
 
 ### Understanding Source Registration:
 - **Time:** When the source was registered (date and time).
@@ -45,7 +45,7 @@ Focuses on the process and details of source registration. Here, you can see dat
 
 Shows data related to triggers that have been registered. Triggers are events that lead to potential conversions (like a purchase after clicking an ad). This tab lists these triggers and the corresponding sources they are tied to. It’s crucial for understanding which actions are being tracked for conversions. Note that it happens on the "destination" site.
 
-<img width="1200" alt="PSAT Private Advertising - Trigger Registrations" src="images/private-advertising/attribution-reporting/psat_0.13.0_trigger_registrations_2025_03_24.png">
+<img width="1200" alt="PSAT Private Advertising - Trigger Registrations" src="images/private-advertising/attribution-reporting/psat_v0.14.0_trigger_registrations_2025_04_09.png">
 
 ### Understanding Trigger Registrations:
  - **Time:** When the conversion (trigger) happened.
