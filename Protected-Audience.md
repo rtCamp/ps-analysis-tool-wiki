@@ -67,7 +67,7 @@ In the Protected Audience API, bids are a crucial component of the ad auction pr
 
 The Bids section contains two subsections, Received Bids and No Bids
 
-The first section of Received Bids show list of bidders along with information such as bid, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
+The first section of Received Bids show list of bidders along with information such as event time, bid value, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
 
 The second section Received Bids show list of bidders along with information of no bid.
 
