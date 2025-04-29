@@ -30,7 +30,7 @@ The browser stores this information locally on the user's device. When the user 
 
 It will list out interest groups as you perform actions on specific elements, for example, if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
 
-<img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v0.14.0_interest_groups_2025_04_09.png" width="1200" />
+<img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v0.14.1_interest_groups_2025_04_24.png" width="1200" />
 
 The tab shows that list of interest groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
 
@@ -49,7 +49,7 @@ This all happens within the user's browser, preserving privacy.
 
 The Auctions tab gives detailed information for each Ad Unit and for every event, so users can understand the auction process better.
 
-<img alt="PSAT Protected Audience - Auctions" src="images/private-advertising/protected-audience/psat_v0.14.0_auctions_2025_04_09.png" width="1200" />
+<img alt="PSAT Protected Audience - Auctions" src="images/private-advertising/protected-audience/psat_v0.14.1_auctions_2025_04_24.png" width="1200" />
 
 The detailed information includes event time, name, interest group origin, interest group name, bid amount, bid currency, and component seller.
 
@@ -63,11 +63,11 @@ When you click and peculiar Ad Unit or auction event, you can view raw data in J
 
 In the Protected Audience API, bids are a crucial component of the ad auction process. bids in the Protected Audience API are the way advertisers express their interest in showing an ad to a user within a privacy-preserving, on-device auction environment.
 
-<img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/psat_v0.14.0_bids_2025_04_09.png" width="1200" />
+<img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/psat_v0.14.1_bids_2025_04_24.png" width="1200" />
 
 The Bids section contains two subsections, Received Bids and No Bids
 
-The first section of Received Bids show list of bidders along with information such as bid, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
+The first section of Received Bids show list of bidders along with information such as event time, bid value, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
 
 The second section Received Bids show list of bidders along with information of no bid.
 
