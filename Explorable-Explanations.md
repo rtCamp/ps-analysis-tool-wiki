@@ -4,8 +4,39 @@ The core idea is to move beyond passive reading and create documents designed fo
 
 By interacting with these explanations, readers can explore the impact of different assumptions, for example, joining various interest groups.  This allows for a deeper understanding of processes like auctions and bidding.
 
-In summary, explorable explanations are a powerful new interactive medium that can significantly improve comprehension of complex topics, especially those related to the Privacy Sandbox APIs. They offer a valuable tool for both developers and advertisers, enhancing accessibility and engagement with intricate concepts.
+### Key Characteristics of Explorable Explanations
+
+- **Interactive:** The user can manipulate variables or parameters in real-time and immediately see the effect.
+- **Visual:** Concepts are often illustrated with dynamic graphs, animations, or diagrams.
+- **Explanatory:** They guide the user through a narrative or concept step-by-step, often combining traditional text with interaction.
+- **User-driven:** Users “learn by doing” rather than just reading or listening.
+- **Open-ended or Playful:** Often designed to encourage curiosity and experimentation.
+
+### Why Are Explorable Explanations Effective?
+- They engage active learning instead of passive consumption.
+- They allow trial-and-error learning through experimentation.
+- They cater to visual and kinesthetic learners.
+- They make abstract concepts more tangible and intuitive.
+- They encourage curiosity, which can lead to deeper understanding.
+
+### Tools Used to Create Explorable Explanations
+
+- JavaScript Libraries
+  - [D3.js](https://d3js.org/)
+  - [p5.js](https://p5js.org/)
+  - [React](https://react.dev/)
+  - [three.js](https://threejs.org/)
+
+- Data Science and Computation
+  - [Jupyter Notebooks](https://jupyter.org/)
+
+- JavaScript Notebook Environment
+  - [Observable](https://observablehq.com/)
+
+- Explorable Explanations Frameworks
+  - [Tangle](http://worrydream.com/Tangle/)
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Explorable_explanations)
 - [Explorable Explanations](https://explorabl.es/)
+- [Brett Victor](https://worrydream.com/ExplorableExplanations/)
