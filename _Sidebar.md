@@ -28,7 +28,6 @@
   - [[Related Website Sets]]
 - [[Tracking Protection]]
   - [[Bounce Tracking]]
-  - [[Fingerprinting]]
   - [[User Agent Strings]]
   - [[IP Protection]]
     - [[Masked Domains]]
