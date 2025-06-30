@@ -107,25 +107,25 @@ PSAT offers three straightforward installation methods:
 
 PSAT is available in the [Chrome Web Store. &#10548;](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef) To install, simply go to the linked store listing and click on `Add to Chrome`.
 
-<img width="1200" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v0.13.0_chrome_store_2025_03_24.png">
+<img width="1200" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v1.0.0_chrome_store_2025_06_30.png">
 
 ## Installation from the PSAT zip file
 
 Go to the `Releases` Section in the PSAT GitHub repo: [bit.ly/psat-repo](https://bit.ly/psat-repo)
 
-<img width="1200" alt="Install from zip file, step one" src="images/evaluation-environment/psat_v0.13.0_psat_repository_2025_03_24.png">
+<img width="1200" alt="Install from zip file, step one" src="images/evaluation-environment/psat_v1.0.0_psat_repository_2025_06_30.png">
 
 Select the latest version from the available tags:
 
-<img width="1200" alt="Install from zip file, step two" src="images/evaluation-environment/psat_v0.13.0_download_zip_2025-03-24.png">
+<img width="1200" alt="Install from zip file, step two" src="images/evaluation-environment/psat_v1.0.0_expand_assets_2025-06-30.png">
 
 Expand the “Assets” dropdown, and click on the file named “extension-v*.*.zip” to download the extension.
 
-<img width="1200" alt="Install from zip file, step three" src="images/evaluation-environment/psat_v0.13.0_download_zip_2025-03-24.png">
+<img width="1200" alt="Install from zip file, step three" src="images/evaluation-environment/psat_v1.0.0_download_zip_2025-06-30.png">
 
 Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension &#10548;](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
-<img width="1200" alt="Chrome Settings page, step four" src="images/evaluation-environment/psat_v0.13.0_chrome_extension_settings_2025-03-25.png">
+<img width="1200" alt="Chrome Settings page, step four" src="images/evaluation-environment/psat_v1.0.0_chrome_extension_settings_2025-06-30.png">
 
 ## PSAT installation from source code
 
