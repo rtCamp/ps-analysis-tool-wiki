@@ -23,7 +23,7 @@ When a user performs an action on a website (e.g., views a specific product), th
 
 The **Interest Groups** tab in the PSAT extension lists all the interest groups that have been added to your browser as you browse different sites.
 
-<img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v0.14.1_interest_groups_2025_04_24.png" width="1200" />
+<img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v1.0.0_interest_groups_2025_06_30.png" width="1200" />
 
 This tab provides useful information for each group, including the event time, access type, name, owner, and expiration time. You can also filter the list by any of these categories for easier analysis.
 
@@ -33,7 +33,7 @@ This tab provides useful information for each group, including the event time, a
 
 The PSAT extension is an essential tool for publishers and ad operations professionals working with Prebid. It offers a transparent window into the complex world of header bidding, directly in your browser. When you visit a website with Prebid-enabled ads, the **Ad Units** tab populates with a wealth of actionable data.
 
-[SCREENSHOT]
+<img src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_ad_unit_prebid_2025_06_30.png" width="1200" alt="PSAT Prebid - Ad Units" />
 
 Here, you will instantly see all configured ad unit codes, their sizes, and the active bidders competing for them. For focused analysis, you can filter the view by a specific bidder.
 
@@ -41,7 +41,7 @@ Here, you will instantly see all configured ad unit codes, their sizes, and the 
 
 The Protected Audience API allows publishers to conduct on-device ad auctions within the user's browser. When a user visits a website with an ad unit configured for the Protected Audience API, the browser runs an auction to determine which ad to display.
 
-<img alt="PSAT Protected Audience - Ad Units" src="images/private-advertising/protected-audience/psat_v0.14.0_ad_unit_2025_04_09.png" width="1200" />
+<img alt="PSAT Protected Audience - Ad Units" src="images/private-advertising/protected-audience/paapi/psat_v1.0.0_ad_unit_paapi_2025_06_30.png" width="1200" />
 
 This tab displays a list of ad units configured for Protected Audience auctions, showing the ad unit code, container size, and participating bidders. You can click on an ad unit to focus on it and view detailed information in a popup. The list can also be filtered by specific bidders.
 
@@ -51,7 +51,7 @@ This tab displays a list of ad units configured for Protected Audience auctions,
 
 A Prebid auction is a process, managed by the Prebid.js library, that allows a website's ad space to be offered to many advertisers simultaneously in a competitive, real-time marketplace.
 
-[SCREENSHOT]
+<img src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_auctions_prebid_2025_06_30.png" width="1200" alt="PSAT Prebid - Auctions" />
 
 The **Auctions** tab in the PSAT extension provides a granular, real-time log of the entire Prebid auction lifecycle. You can track every ad unit from initialization to completion, monitoring key events like bid requests and wins. Powerful filtering options also allow you to instantly sort the data by event type, specific bidders, or bid CPM to quickly debug and analyze auction performance.
 
@@ -61,7 +61,7 @@ A Protected Audience API auction is a process where a publisher makes ad space a
 
 The **Auctions** tab provides detailed information for each ad unit and every event, helping users better understand the on-device auction process.
 
-<img alt="PSAT Protected Audience - Auctions" src="images/private-advertising/protected-audience/psat_v0.14.1_auctions_2025_04_24.png" width="1200" />
+<img alt="PSAT Protected Audience - Auctions" src="images/private-advertising/protected-audience/paapi/psat_v1.0.0_auctions_paapi_2025_06_30.png" width="1200" />
 
 The auction events are listed as the auction progresses, with detailed information including event time, name, interest group origin, bid amount, currency, and component seller. You can also filter the auction events by any of these parameters. When you click a specific ad unit or auction event, you can view the raw JSON data in a footer panel.
 
@@ -71,7 +71,7 @@ The auction events are listed as the auction progresses, with detailed informati
 
 A bid is a formal offer from an advertiser (a "bidder") to purchase a specific ad impression. These bids are the fundamental currency of the Prebid auction, allowing publishers to offer their inventory to multiple bidders simultaneously to maximize revenue.
 
-[SCREENSHOT]
+<img src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_bids_prebid_2025_06_30.png" width="1200" alt="PSAT Prebid - Bids" />
 
 In the extension's **Bids** tab, you can view detailed information for each bid, including the event time, bidder name, bid value (CPM), currency, ad unit code, and ad size. You can also identify bidders who did not participate in the auction and filter the results for easier analysis.
 
@@ -79,14 +79,20 @@ In the extension's **Bids** tab, you can view detailed information for each bid,
 
 In the Protected Audience API, bids are how advertisers express interest in showing an ad within a privacy-preserving, on-device auction.
 
-<img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/psat_v0.14.1_bids_2025_04_24.png" width="1200" />
+<img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/paapi/psat_v1.0.0_bids_paapi_2025_05_30.png" width="1200" />
 
 The Bids section is divided into two subsections: Received Bids and No Bids.
 
 -   **Received Bids**: This section lists all successful bids along with information such as event time, bid value, currency, ad unit, and media type. You can filter this list by any of these parameters.
 -   **No Bids**: This section lists all bidders who were eligible to bid but did not submit a bid in the auction.
 
-[SCREENSHOT]
+<img alt="PSAT Protected Audience - No Bids" src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_bids_nobids_2025_06_30.png" width="1200" />
+
+### Timeline
+
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_timeline_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Timeline" />
+
+The **Timeline** is a diagnostic feature that provides a sequential, visual breakdown of events. For Prebid, this would show the entire auction lifecycle, from request to render. For the Protected Audience API, it visualizes the on-device auction, including script execution and reporting.
 
 ---
 
@@ -97,6 +103,8 @@ Prebid Utilities are the fundamental concepts and tools within the Prebid.js eco
 ### Config
 
 This refers to the central configuration object in Prebid.js, managed primarily through the `pbjs.setConfig()` function. It controls the overall behavior of the Prebid auction.
+
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_config_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Config" />
 
 #### General Configuration (`pbjs.setConfig`)
 
@@ -162,13 +170,13 @@ Prebid.js is modular. You can check which modules (e.g., bidder adapters, user I
 
 ### Events
 
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_events_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Events" />
+
 The **Events Log** is a dedicated tab that serves as a diagnostic tool by providing a clean, searchable, and sortable list of all warnings and errors that occur during a Prebid auction. It features a prominent count of total issues for a quick health check and allows users to efficiently find and analyze specific problems to debug the auction process.
 
-### Timeline
-
-The **Timeline** is a diagnostic feature that provides a sequential, visual breakdown of events. For Prebid, this would show the entire auction lifecycle, from request to render. For the Protected Audience API, it visualizes the on-device auction, including script execution and reporting.
-
 ### Tools
+
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_tools_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Tools" />
 
 This tab offers centralized features that give you direct control over the auction on a live webpage. Key features often include:
 -   **Shortcut to GAM Console**: Provides a direct link to the associated Google Ad Manager (GAM) console.
@@ -176,13 +184,19 @@ This tab offers centralized features that give you direct control over the aucti
 
 ### UserID
 
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_userIds_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - UserID" />
+
 This refers to the **UserID Module** framework within Prebid, which allows publishers to integrate various identity solutions. In a world without third-party cookies, these modules are critical for fetching user identifiers from providers like Unified ID 2.0, RampID, and ID5, allowing bidders to recognize users and bid more accurately.
 
 ### Namespace
 
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_namespace_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Namespace" />
+
 In JavaScript, a namespace is a global variable that holds a library's functions and data to avoid conflicts with other scripts. For Prebid.js, the default namespace is **`pbjs`**. All Prebid commands start with this prefix (e.g., `pbjs.addAdUnits`, `pbjs.requestBids`).
 
 ### Version
+
+<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_version_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Version" />
 
 This is the version number of the Prebid.js library running on the page. You can check the version by typing **`pbjs.version`** into the browser console. This is a crucial first step in debugging, as outdated versions can cause many problems.
 
