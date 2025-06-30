@@ -1,5 +1,13 @@
 ## Reasons for Extension Breakdowns
 
+While the PSAT extension is developed with meticulous attention to detail, the dynamic nature of software and the vast array of user environments mean that unforeseen issues, or "bugs," can emerge. These often arise from unique or previously unencountered scenarios during real-world use.
+
+Software development can be compared to exploring uncharted territory. Though common paths are thoroughly tested, unexpected conditions can lead to the extension behaving in unanticipated ways, potentially causing it to malfunction.
+
+<img width="1200" alt="PSAT Troubleshooting guide example errors" src="images/troubleshooting-guide/psat_v1.0.0_troubleshooting_guide_error_30_06_2025.png">
+
+Users are essential partners in identifying these elusive bugs. As you use the PSAT extension in your specific development workflows, you may encounter edge cases and scenarios that were not anticipated during its creation. Your real-world usage provides the most effective test for the extension's robustness.
+
 ### Idle Chrome Tabs and Service Worker Termination
 
 To ensure smooth performance and prevent excessive memory or CPU consumption, Chrome actively manages system resources. This includes identifying and terminating processes in tabs that are not being actively used. Service workers, which are essential for background tasks and offline capabilities, can be resource-intensive if left running indefinitely.
@@ -69,18 +77,6 @@ Certain user actions can also lead to extension breakdowns:
 * **Network Issues:** If the PSAT extension relies on network connectivity, connection problems can lead to errors.
 * **Browser Crashes or Restarts:** If the browser crashes or is restarted while the PSAT extension is active, it can lead to data loss or corruption.
 
-### Unknown Bugs
-
-#### The Nature of Software Development
-
-While the PSAT extension is developed with meticulous attention to detail, the dynamic nature of software and the vast array of user environments mean that unforeseen issues, or "bugs," can emerge. These often arise from unique or previously unencountered scenarios during real-world use.
-
-Software development can be compared to exploring uncharted territory. Though common paths are thoroughly tested, unexpected conditions can lead to the extension behaving in unanticipated ways, potentially causing it to malfunction.
-
-#### The Role of the Community in Bug Discovery
-
-Users are essential partners in identifying these elusive bugs. As you use the PSAT extension in your specific development workflows, you may encounter edge cases and scenarios that were not anticipated during its creation. Your real-world usage provides the most effective test for the extension's robustness.
-
 ---
 
 ## Troubleshooting Steps
@@ -90,6 +86,8 @@ The Privacy Sandbox Analysis Tool (PSAT) is a valuable Chrome extension for deve
 ### Basic Troubleshooting
 
 Before diving into specific issues, start with these general checks that resolve many common Chrome extension problems:
+
+<img src="images/troubleshooting-guide/psat_v1.0.0_troubleshooting_guide_reload_extension_30_06_2025.png" alt="Reload Extension" width="1200">
 
 * **Restart Chrome:** A simple restart of the browser can often fix temporary glitches.
 * **Update Chrome and the Extension:** Ensure you are using the latest version of both Google Chrome and the PSAT extension. Outdated versions can lead to incompatibility issues.
@@ -101,6 +99,8 @@ Before diving into specific issues, start with these general checks that resolve
 ### Addressing Specific PSAT Issues
 
 If the basic steps don't resolve the problem, consider these issues specific to the Privacy Sandbox Analysis Tool:
+
+<img src="images/troubleshooting-guide/psat_v1.0.0_troubleshooting_guide_reinstall_extension_30_06_2025.png" alt="Reinstall Extension" width="1200">
 
 * **Extension Not Visible or Not Starting:** If the PSAT icon doesn't appear in your toolbar or the extension fails to start, it could be due to an incorrect installation or a conflict.
     * **Reinstall the Extension:** Remove the extension from Chrome (`chrome://extensions`) and then reinstall it from the Chrome Web Store.
