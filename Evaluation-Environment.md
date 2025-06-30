@@ -23,13 +23,64 @@ For the best experience, make sure you keep Chrome updated to the latest version
 
 ## Spinning Chrome Instances from Command Line
 
-PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome with specific configurations. To install these commands, run the following in your terminal:
+PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome for testing with specific configurations. To install these commands, run the following in your terminal:
+
+### Installation
+
+Run the following command
+
+1. Download the PSAT Launcher script:
 
 ```bash
-curl -sL https://rt.cx/psat | bash
+curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/launcher-update/bin/install.sh" -o "install.sh"
+chmod +x install.sh
+```
+2. Install the PSAT Launcher script:
+```bash
+./install.sh
+```
+3. To finalize the installation, close and reopen your terminal. or run source `~/.bashrc` or `~/.zshrc` depending on your shell.
+
+eg:
+```bash
+source "/Users/myuser/bin/chrome_launcher.sh"
+```
+4. To verify the installation, run the following command in your terminal:
+```bash
+chrome-pat-ps
+```
+It should open a new chrome window with the PSAT extension installed and the Privacy Sandbox APIs enabled.
+
+Following options are available to you for installing the PSAT Launcher script:
+
+1. **Override the installation channel**: You can specify a different Chrome channel (Stable, Beta, Dev, Canary) by using the `--chrome-channel` option.
+
+2. **Override the Chrome version**: If you want to install a specific version of Chrome, use the `--chrome-version` option with the desired version number (e.g., 128).
+
+3. **Override the PSAT version**: To install a specific version of the PSAT extension, use the `--psat-version` option with the desired version tag (e.g., v0.14.1).
+
+4. **Uninstall the script**: If you want to remove all files created by this script, use the `--uninstall` option.
+
+5. **Display help message**: Use the `--help` option to see the usage instructions and available options.
+
+```bash
+./install.sh --help               
+Usage: ./install.sh [OPTIONS]
+
+Options:
+  --chrome-channel CHANNEL    Override the installation channel (Stable, Beta, Dev, Canary)
+  --chrome-version VER        Override the Chrome version to be installed (specific milestone number, e.g., 128)
+  --psat-version VER          Override the PSAT version to be installed
+  --uninstall                 Remove all files created by this script and exit
+  --help                      Display this help message and exit
+
+Examples:
+  ./install.sh --chrome-channel Beta
+  ./install.sh --chrome-version 128
+  ./install.sh --psat-version v0.14.1
 ```
 
-The commands you can use are:
+Once the installation is completed you can use the following commands:
 
 - `chrome-default`: Opens a Chrome instance with default settings.
 - `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookies blocked.
@@ -38,10 +89,16 @@ The commands you can use are:
 - `chrome-pat` : Opens a Chrome instance with Private Advertising Testing enabled.
 - `chrome-pat-ps` : Opens a Chrome instance with Private Advertising Testing enabled and the Privacy Analysis Tool extension installed.
 
+#### Updating the PSAT Launcher script
+
 To keep the Chrome Launcher script current with the latest PSAT Extension, simply rerun the installation command:
 
 1. Open your terminal.
-2. Run the following command: `curl -sL https://rt.cx/psat | bash`
+2. Run the following command: 
+```bash
+curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/launcher-update/bin/install.sh" -o "install.sh"
+chmod +x install.sh
+```
 3. To finalize the update, close and reopen your terminal.
 
 PSAT offers three straightforward installation methods:
