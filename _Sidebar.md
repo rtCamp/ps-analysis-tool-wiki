@@ -5,6 +5,7 @@
 - [Contributor Guide](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/CONTRIBUTING.md)
 - [Code of Conduct](https://github.com/GoogleChromeLabs/ps-analysis-tool/blob/master/docs/code-of-conduct.md)
 - [[Localization]]
+- [[Troubleshooting-Guide]]
 
 ## PSAT DevTools Extension
 
