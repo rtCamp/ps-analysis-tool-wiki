@@ -10,7 +10,7 @@ Taxonomy v2 provides more granular category classifications, enabling advertiser
 
 The taxonomy tree for the Topics API offers a hierarchical structure. The top-level categories represent broad topics, such as "Technology," "Arts and Entertainment," or "Health and Fitness." These broad categories are then divided into more specific subcategories. For instance, "Technology" might be divided into "Computer Science," "Mobile Devices," and "Artificial Intelligence."
 
-<img alt="PSAT Protected Audience - Topics Taxonomy Tree" src="images/private-advertising/topics/psat_v0.14.0_topics_taxonomy_tree_2025_04_09.png" width="1200" />
+<img alt="PSAT Protected Audience - Topics Taxonomy Tree" src="images/private-advertising/topics/psat_v1.0.0_topics_taxonomy_tree_2025_06_30.png" width="1200" />
 
 #### Key Features of the Taxonomy Tree Structure:
 
