@@ -30,6 +30,8 @@
   - [[Bounce Tracking]]
   - [[Fingerprinting]]
   - [[User Agent Strings]]
+  - [[IP Protection]]
+    - [[Masked Domains]]
 - [[Private Advertising]]
   - [[Topics]]
   - [[Protected Audience]]
