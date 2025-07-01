@@ -40,10 +40,6 @@ An example of this is Mindbody Inc. which serves embedded iframes for website ow
 
 ![](https://lh5.googleusercontent.com/S8TAjyBXswXkrV_wnXHt2YbDzFQMqjGca97z4-8KoT9Uaonw8MyjN_SR4fCERH4cdz5NarXkabljsde5Y_A1PtMkK3xRAOzptnx1bB8PjxneQc5FyB6V4Nzp5odXrhdMUcQwnfG1adhBW5fLF1HHnfZDXQwuX8nZW87tr_9IO7QsLB4banjcv5gVnqJNNKH1aepPAtq-VMkc1ZYdxUlY-eHKlkfkQ3swWGfkYQ)
 
-## **Checking for known breakages: GSI v2**
-
-GSI v2 is a legacy library from Google Identity that is integrated with plenty of sites and, unfortunately, relies on cross-site cookies to work. This is a very common source of failure and is especially likely when the user-facing breakage is “can not log in”. There are some tips for identifying whether GSI v2 is in use here.
-
 ## **DOM Storage usage**
 
 Some sites are not trying to use cookies, but instead `LocalStorage` or Quota Storage like `IndexedDB`. These can often be spotted by observing exceptions being thrown, see "Look at JS/Network errors".
