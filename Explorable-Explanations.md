@@ -51,16 +51,10 @@ The demo is structured to simulate a user's online journey, showcasing the inter
   - [React](https://react.dev/)
   - [three.js](https://threejs.org/)
 
-- Data Science and Computation
-  - [Jupyter Notebooks](https://jupyter.org/)
-
-- JavaScript Notebook Environment
-  - [Observable](https://observablehq.com/)
-
 - Explorable Explanations Frameworks
   - [Tangle](http://worrydream.com/Tangle/)
 
 ## Resources
-- [Wikipedia](https://en.wikipedia.org/wiki/Explorable_explanations)
+- [Wikipedia](https://en.wikipedia.org/wiki/Explorable_explanation)
 - [Explorable Explanations](https://explorabl.es/)
 - [Brett Victor](https://worrydream.com/ExplorableExplanations/)
