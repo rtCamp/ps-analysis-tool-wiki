@@ -23,7 +23,7 @@ For the best experience, make sure you keep Chrome updated to the latest version
 
 ## Spinning Chrome Instances from Command Line
 
-PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of Chrome for testing with specific configurations. To install these commands, run the following in your terminal:
+PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of `Chrome for testing` with specific configurations. To install these commands, run the following in your terminal:
 
 ### Installation
 
