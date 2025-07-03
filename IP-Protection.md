@@ -1,4 +1,4 @@
-Chrome's IP Protection is a new privacy feature for Incognito mode designed to limit cross-site tracking by hiding a user's real IP address from specific third-party domains. This protection will be enabled for signed-in Chrome users
+Chrome's proposed IP Protection is a new privacy feature for Incognito mode designed to limit cross-site tracking by hiding a user's real IP address from specific third-party domains. This protection will be enabled for signed-in Chrome users in future versions of Chrome.
 
 ## How It Works
 
