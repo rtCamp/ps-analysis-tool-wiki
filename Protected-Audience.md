@@ -42,7 +42,7 @@ The PSAT extension is an essential tool for publishers and ad operations profess
 
 <img src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_ad_unit_prebid_2025_06_30.png" width="1200" alt="PSAT Prebid - Ad Units" />
 
-Here, you will instantly see all configured ad unit codes, their sizes, and the active bidders competing for them. For focused analysis, you can filter the view by a specific bidder.
+Here, you will instantly see all configured ad unit codes, their sizes, and the active bidders competing for them. For focused analysis, you can filter the view by specific bidders.
 
 ### PAAPI
 
@@ -95,7 +95,7 @@ You can also identify bidders who did not participate in the auction and filter 
 
 ### PAAPI
 
-In the Protected Audience API, bids are a crucial component of the ad auction process. bids in the Protected Audience API are the way advertisers express their interest in showing an ad to a user within a privacy-preserving, on-device auction environment.
+In the Protected Audience API, bids are a crucial component of the ad auction process. Bids in the Protected Audience API are the way advertisers express their interest in showing an ad to a user within a privacy-preserving, on-device auction environment.
 
 <img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/paapi/psat_v1.0.0_bids_paapi_2025_05_30.png" width="1200" />
 
@@ -103,7 +103,7 @@ The Bids section contains two subsections, Received Bids and No Bids
 
 The first section of Received Bids show list of bidders along with information such as event time, bid value, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
 
-The second section Received Bids show list of bidders along with information of no bid.
+The second section, No Bids, shows a list of bidders who did not place a bid.
 
 <img alt="PSAT Protected Audience - No Bids" src="images/private-advertising/protected-audience/prebid/psat_v1.0.0_bids_nobids_2025_06_30.png" width="1200" />
 
@@ -111,9 +111,7 @@ The second section Received Bids show list of bidders along with information of 
 
 <img src="images/private-advertising/protected-audience/psat_v1.0.0_bids_timeline_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Timeline" />
 
-The Timeline is a diagnostic feature that provides a sequential, visual breakdown of events. For Prebid and PAAPI bids this would show the entire auction lifecycle, from request to render.
-
----
+The Timeline is a diagnostic feature that provides a sequential, visual breakdown of events. For Prebid and PAAPI bids, this shows the entire auction lifecycle, from request to render.
 
 ## Prebid Utilities
 
@@ -140,7 +138,7 @@ This single, powerful function sets a wide range of auction options. Key configu
 
 #### Bidder Settings (`pbjs.bidderSettings`)
 
-This object allows you to define rules that apply to all bidders or to a specific bidder, providing a powerful way to customize behavior without changing ad units.
+This object allows you to define rules that apply to all bidders or to specific bidders, providing a powerful way to customize behavior without changing ad units.
 
 #### User ID & User Sync Configuration
 
@@ -170,7 +168,7 @@ This tab offers centralized features that give you direct control over the aucti
 
 -   **Shortcut to GAM Console**: Provides a direct link to the associated Google Ad Manager (GAM) console.
 
--   **Override Tool**: A powerful testing utility that allows you to manually change various attributes of any auctions to simulate an test scenarios.
+ -  **Override Tool**: A powerful testing utility that allows you to manually change various attributes of any auction to simulate test scenarios.
 
 ### UserID
 
