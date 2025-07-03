@@ -12,13 +12,13 @@ Users are essential partners in identifying these elusive bugs. As you use the P
 
 To ensure smooth performance and prevent excessive memory or CPU consumption, Chrome actively manages system resources. 
 
-This includes identifying and terminating processes in tabs that are not being actively used. Service workers, which are essential for background tasks and offline capabilities, can be resource-intensive if left running indefinitely.
+This includes managing processes in tabs that are not being actively used. Chrome may terminate service workers after they have been idle for a certain period, regardless of tab activity, to reclaim resources.
 
 To optimize resource usage, Chrome will terminate service workers that have been idle for a certain period. If a service worker hasn't been actively handling events or tasks, Chrome reclaims the resources it was using.
 
 **How This Impacts the PSAT Extension:**
 
-The PSAT extension relies on its service worker for core functionality (such as data processing or background synchronization), Chrome's termination of an idle service worker can disrupt the extension's operations. 
+The PSAT extension relies on its service worker for core functionality, such as data processing or background synchronization. If Chrome terminates an idle service worker, it can disrupt the extension's operations.
 
 This disruption can manifest as:
 
@@ -27,17 +27,17 @@ This disruption can manifest as:
  - Features of the extension ceasing to work.
  - Error messages or crashes within the extension.
 
-In essence, a conflict can arise between Chrome's resource management for idle tabs and the operational requirements of the PSAT extension's service worker. If the extension needs its service worker to remain active even when the associated tab is idle, Chrome's default behavior can lead to instability.
+In essence, a conflict can arise between Chrome's resource management for idle tabs and the operational requirements of the PSAT extension's service worker. If the extension requires its service worker to remain active even when the associated tab is idle, Chrome's default behavior of terminating idle service workers can cause interruptions or instability in the extension's functionality.
 
 ### Data Conflicts
 
 A data conflict occurs when different pieces of information within the PSAT extension become inconsistent or out of sync. This is similar to two people making conflicting edits to the same document without a way to reconcile the changes.
 
-Within the PSAT extension, this could happen in various ways as you interact with its features:
+Within the PSAT extension, this could happen in various ways:
 
   - **Overlapping Operations:** Running multiple analyses for the same website in the same browser but in different tabs simultaneously might lead to conflicts in how data is read and written.
 
-  - **Unexpected Interactions:** Certain combinations of features or settings, while seemingly logical, might interact in unforeseen ways, leading to data inconsistencies.
+  - **Unexpected Interactions:** Certain combinations of features or settings, although seemingly logical, might interact in unforeseen ways, leading to data inconsistencies.
 
   - **Race Conditions:** If different parts of the extension try to access or modify the same data in an unpredictable order, it could result in a conflict.
 
@@ -67,7 +67,7 @@ A Chrome update can disrupt the functionality of the PSAT extension in several w
 
   - **Performance Optimizations:** Changes in how Chrome manages resources can impact the extension's performance, leading to slowdowns or crashes.
 
-  - **Deprecation of Features:** If an update removes or deprecates features that the PSAT extension uses, it may lead to a loss of functionality or errors.
+  - **Deprecation of Features:** If an update removes or deprecates APIs or features that the PSAT extension relies on, it may lead to a loss of functionality or cause errors.
 
 ### Extension Updates
 
