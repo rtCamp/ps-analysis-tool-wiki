@@ -138,7 +138,7 @@ Reports are organized into folders named like “site-domain-report-type” with
 
 <img src="images/psat-cli/tutorial/psat_v0.13.0_cookie_insight_2025_03_25.png" width="1200" alt="PSAT Cookie Insight Page">
 
-Let’s break down the cookie's insight reports into three main parts: the header, sidebar, and main page. The header report contains crucial information to identify the report, such as the domain and date of the report. On the right side of the header is the PSAT CLI version. The Cookie Insights page presents information on cookie categorization, blocked cookies, cookie exemptions, known breakages, and frames. Access these sections via the menu at the top-right of the page.
+Let’s break down the cookie's insight reports into three main parts: the header, sidebar, and main page. The header report contains crucial information to identify the report, such as the domain and date of the report. On the right side of the header is the PSAT CLI version. The Cookie Insights page presents information on cookie categorization, blocked cookies, cookie exemptions and frames. Access these sections via the menu at the top-right of the page.
 
 The sidebar allowed users to navigate between the aggregated reports and individual frames and filter all cookies with issues. Navigation can be done via the sidebar or by clicking on the numbers on the Cookies Insights Page. 
 
