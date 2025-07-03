@@ -13,5 +13,3 @@ The demo is structured to simulate a user's online journey, showcasing the inter
 
 ## Resources
 - [Wikipedia](https://en.wikipedia.org/wiki/Explorable_explanation)
-- [Explorable Explanations](https://explorabl.es/)
-- [Brett Victor](https://worrydream.com/ExplorableExplanations/)
