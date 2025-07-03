@@ -109,7 +109,7 @@ The second section Received Bids show list of bidders along with information of 
 
 ### Timeline
 
-<img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_timeline_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Timeline" />
+<img src="images/private-advertising/protected-audience/psat_v1.0.0_bids_timeline_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Timeline" />
 
 The Timeline is a diagnostic feature that provides a sequential, visual breakdown of events. For Prebid and PAAPI bids this would show the entire auction lifecycle, from request to render.
 
@@ -170,13 +170,13 @@ This tab offers centralized features that give you direct control over the aucti
 
 -   **Shortcut to GAM Console**: Provides a direct link to the associated Google Ad Manager (GAM) console.
 
--   **Bid CPM Override**: A powerful testing utility that allows you to manually change the CPM value of any bid to simulate a win and test ad server configurations.
+-   **Override Tool**: A powerful testing utility that allows you to manually change various attributes of any auctions to simulate an test scenarios.
 
 ### UserID
 
 <img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_userIds_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - UserID" />
 
-This refers to the UserID Module framework within Prebid, which allows publishers to integrate various identity solutions.
+This refers to the UserID Module within Prebid, which allows publishers to integrate various identity solutions.
 
 In a world without third-party cookies, these modules are critical for fetching user identifiers from providers like Unified ID 2.0, RampID, and ID5, allowing bidders to recognize users and bid more accurately.
 
@@ -184,7 +184,7 @@ In a world without third-party cookies, these modules are critical for fetching 
 
 <img src="images/private-advertising/protected-audience/prebid/utilities/psat_v1.0.0_prebid_utilities_namespace_2025_06_30.png" width="1200" alt="PSAT Prebid Utilities - Namespace" />
 
-In JavaScript, a namespace is a global variable that holds a library's functions and data to avoid conflicts with other scripts. For Prebid.js, the default namespace is **`pbjs`**. All Prebid commands start with this prefix (e.g., `pbjs.addAdUnits`, `pbjs.requestBids`).
+In JavaScript, a namespace is a global variable that holds a library's functions and data to avoid conflicts with other scripts. For Prebid.js, the default namespace is **`pbjs`**.
 
 ### Version
 
