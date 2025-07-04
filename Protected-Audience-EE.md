@@ -8,7 +8,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **Nodes**: Each "node" within the visualization represents a distinct website or online platform.
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Nodes" src="images/explorable-explanation/protected-audience/psat_v0.14.0_PA_EE_nodes_2025_04_09.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Nodes" src="images/explorable-explanation/protected-audience/psat_v1.0.0_PA_EE_nodes_2025_06_30.png">
 
 - **Types:**
 
@@ -18,7 +18,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **Colored Circles**
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Interest Groups" src="images/explorable-explanation/protected-audience/psat_v0.14.0_PA_EE_interest_groups_2025_04_09.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Interest Groups" src="images/explorable-explanation/protected-audience/psat_v1.0.0_PA_EE_interest_groups_2025_06_30.png">
 
   - **Representation:** The colored circles visually depict the “interest groups” associated with each node.
 
@@ -29,7 +29,7 @@ This guide will walk you through the key concepts, user controls, and different 
 - **The Footer Panel**
   - **Information Hub:** The footer panel serves as a central hub for detailed information related to the entire process.
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Footer Panel" src="images/explorable-explanation/protected-audience/psat_v0.14.0_PA_EE_footer_panel_2025_04_09.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - Footer Panel" src="images/explorable-explanation/protected-audience/psat_v1.0.0_PA_EE_footer_panel_2025_06_30.png">
 
   Below are key information sections that can be observed:
 
@@ -44,7 +44,7 @@ This guide will walk you through the key concepts, user controls, and different 
 
 - **User Controls:**
 
-<img width="1200" alt="PSAT Protected Audience Explorable Explanations - User controls" src="images/explorable-explanation/protected-audience/psat_v0.14.0_PA_EE_user_controls_2025_04_09.png">
+<img width="1200" alt="PSAT Protected Audience Explorable Explanations - User controls" src="images/explorable-explanation/protected-audience/psat_v1.0.0_PA_EE_user_controls_2025_06_30.png">
 
   - **Speed Control:** Allows users to adjust the speed at which the events unfold in the visualization.
 
