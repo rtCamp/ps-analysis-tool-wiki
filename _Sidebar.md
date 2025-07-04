@@ -31,7 +31,7 @@
   - [[Protected Audience]]
   - [[Attribution Reporting]]
   - [[Private Aggregation]]
-- [[Private Advertising]]
+- [[Privacy Protection]]
   - [[IP Protection]]
   - [[Bounce Tracking]]
   - [[User Agent Strings]]
