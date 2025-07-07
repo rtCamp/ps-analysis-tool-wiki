@@ -32,16 +32,16 @@ Run the following command
 1. Download the PSAT Launcher script:
 
 ```bash
-curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/launcher-update/bin/install.sh" -o "install.sh"
+curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/main/bin/install.sh" -o "install.sh"
 chmod +x install.sh
 ```
 2. Install the PSAT Launcher script:
 ```bash
 ./install.sh
 ```
-3. To finalize the installation, close and reopen your terminal. or run source `~/.bashrc` or `~/.zshrc` depending on your shell.
+3. To finalize the installation, close and reopen your terminal, or run `source ~/.bashrc` or `source ~/.zshrc` depending on your shell.
 
-eg:
+e.g.:
 ```bash
 source "/Users/myuser/bin/chrome_launcher.sh"
 ```
@@ -49,7 +49,7 @@ source "/Users/myuser/bin/chrome_launcher.sh"
 ```bash
 chrome-pat-ps
 ```
-It should open a new chrome window with the PSAT extension installed and the Privacy Sandbox APIs enabled.
+It should open a new Chrome window with the PSAT extension installed and the Privacy Sandbox APIs enabled.
 
 Following options are available to you for installing the PSAT Launcher script:
 
@@ -64,7 +64,7 @@ Following options are available to you for installing the PSAT Launcher script:
 5. **Display help message**: Use the `--help` option to see the usage instructions and available options.
 
 ```bash
-./install.sh --help               
+./install.sh --help
 Usage: ./install.sh [OPTIONS]
 
 Options:
@@ -83,20 +83,20 @@ Examples:
 Once the installation is completed you can use the following commands:
 
 - `chrome-default`: Opens a Chrome instance with default settings.
-- `chrome-3pcd`: Opens a Chrome instance with Third-Party Cookies blocked.
-- `chrome-default-ps`: Opens a Chrome instance with Third-party cookies enabled and PSAT installed.
-- `chrome-3pcd-ps`: Opens a Chrome instance with Third-Party Cookies blocked enabled and the Privacy Sandbox extension installed.
+- `chrome-3pcd`: Opens a Chrome instance with third-party cookies blocked.
+- `chrome-default-ps`: Opens a Chrome instance with third-party cookies enabled and PSAT installed.
+- `chrome-3pcd-ps`: Opens a Chrome instance with third-party cookies blocked and the Privacy Sandbox extension installed.
 - `chrome-pat` : Opens a Chrome instance with Private Advertising Testing enabled.
-- `chrome-pat-ps` : Opens a Chrome instance with Private Advertising Testing enabled and the Privacy Analysis Tool extension installed.
+- `chrome-pat-ps` : Opens a Chrome instance with Private Advertising Testing enabled and the Privacy Sandbox Analysis Tool extension installed.
 
 #### Updating the PSAT Launcher script
 
 To keep the Chrome Launcher script current with the latest PSAT Extension, simply rerun the installation command:
 
 1. Open your terminal.
-2. Run the following command: 
+2. Run the following command:
 ```bash
-curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/launcher-update/bin/install.sh" -o "install.sh"
+curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/main/bin/install.sh" -o "install.sh"
 chmod +x install.sh
 ```
 3. To finalize the update, close and reopen your terminal.
@@ -105,7 +105,7 @@ PSAT offers three straightforward installation methods:
 
 ## Installing PSAT from Chrome Web Store
 
-PSAT is available in the [Chrome Web Store. &#10548;](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef) To install, simply go to the linked store listing and click on `Add to Chrome`.
+PSAT is available in the [Chrome Web Store &#10548;](https://chromewebstore.google.com/detail/privacy-sandbox-analysis/ehbnpceebmgpanbbfckhoefhdibijkef). To install, simply go to the linked store listing and click on `Add to Chrome`.
 
 <img width="1200" alt="PSAT on Chrome Web Store" src="images/evaluation-environment/psat_v1.0.0_chrome_store_2025_06_30.png">
 
@@ -123,7 +123,7 @@ Expand the “Assets” dropdown, and click on the file named “extension-v*.*.
 
 <img width="1200" alt="Install from zip file, step three" src="images/evaluation-environment/psat_v1.0.0_download_zip_2025-06-30.png">
 
-Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode`to [load the unpacked extension &#10548;](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
+Go to `chrome://extensions` in the browser you want PSAT to be installed on, turn on `Developer mode` to [load the unpacked extension &#10548;](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked), click the "Load unpacked" button, and select the unzipped extension folder.
 
 <img width="1200" alt="Chrome Settings page, step four" src="images/evaluation-environment/psat_v1.0.0_chrome_extension_settings_2025-06-30.png">
 
