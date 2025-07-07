@@ -16,8 +16,8 @@ Cookies emerged as a transformative element, revolutionizing how websites intera
 
 Cookies are associated with a specific domain. When a web server sets a cookie, it includes the [web origin &#10548;](https://web.dev/same-site-same-origin/) as part of the cookie's metadata.
 
-Third-party or cross-site cookies, are cookies set or sent from a domain different from the top-level site being accessed by the user.
+Third-party or cross-site cookies are cookies set or sent from a domain different from the top-level site being accessed by the user.
 
-Cookies facilitate tracking because they are persistent across user agent sessions and can be shared between sites. They are not the only mechanism servers can use to track users across HTTP requests, but is certainly one of the most widely used to do that.
+Cookies facilitate tracking because they are persistent across user agent sessions and can be shared between sites. They are not the only mechanism servers can use to track users across HTTP requests, but they are certainly one of the most widely used to do that.
 
-Site owners and developers can avoid compromising their user's privacy by not using **unpartitioned third-party cookies**, that is, cookies set by third-party entities on a site, which can then be accessed by those entities across site boundaries. To enable site owners and developers to achieve this, Chrome has introduced features that allow users to control the behavior of third-party cookies in their Chrome instance, and also various privacy-preserving capabilities and APIs which can be used to implement all CUJs in privacy-preserving ways.
+Site owners and developers can avoid compromising their user's privacy by not using **unpartitioned third-party cookies**, that is, cookies set by third-party entities on a site, which can then be accessed by those entities across site boundaries. To enable site owners and developers to achieve this, Chrome has introduced features that allow users to control the behavior of third-party cookies in their Chrome instance, and also various privacy-preserving capabilities and APIs which can be used to implement all Critical User Journeys (CUJs) in privacy-preserving ways.
