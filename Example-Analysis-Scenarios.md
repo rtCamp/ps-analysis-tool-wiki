@@ -2,7 +2,7 @@ This section describes the analysis/debugging of Critical User Journeys (CUJs) w
 
 ## **Analytics Tracking**
 
-This scenario encompasses a website use of analytics providers (e.g. Google Analytics, others) for tracking user behavior. We want to verify if user activity/events on third-party analytics service platforms are being captured properly. The goal of this demo is to show details that are part of this scenario, and show you how to analyze the behavior and determine if there are failures.
+This scenario encompasses a website's use of analytics providers (e.g. Google Analytics, others) for tracking user behavior. We want to verify if user activity/events on third-party analytics service platforms are being captured properly. The goal of this demo is to show details that are part of this scenario, and show you how to analyze the behavior and determine if there are failures.
 
 ### **How the Demo Works**
 
@@ -10,7 +10,7 @@ In this demo, we have two distinct sites running on [domain A &#10548;](https://
 
 When a visitor accesses site A, an analytics service hosted on domain C assigns a unique identifier to that visitor. This identifier tracks any subsequent visits by the same individual. Should this visitor later browse site B, which also utilizes the analytics service served from domain C, they will be identified using the third-party cookie that was set during their initial visit to site A. This cross-domain identification is possible because the third-party cookie from domain C remains consistent and can be accessed irrespective of whether the visitor is on site A or site B.
 
-Once third-party cookies are deprecated, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon his visit to site B.
+Once third-party cookies are deprecated, when a user visits site A, the analytics service from domain C will no longer be able to store the cookie in the user’s browser, and therefore the user will not be tracked upon their visit to site B.
 
 The following sequence diagram shows these behaviors with cookies enabled and after blocking the use of unrestricted third-party cookies.
 
@@ -104,7 +104,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-    Note over User,DomainC: Current Behaviour
+    Note over User,DomainC: Current Behavior
 
     User->>DomainA: Access homepage
     DomainA->>User: Render homepage with embedded iframe to DomainC/products
@@ -122,7 +122,7 @@ sequenceDiagram
     DomainC->>User: Displays cart contents (Product 1 and Product 2)
 ```
 
-And this one, shows the behavior of the scenario when third-party are not available:
+And this one, shows the behavior of the scenario when third-party cookies are not available:
 
 ```mermaid
 sequenceDiagram
@@ -179,7 +179,7 @@ We can observe in the diagrams how blocked cookies will ruin the shopping experi
 6. **Compare the behavior of the cookies**
 
    1. Identify the cookie that is set in Chrome Open but absent in Chrome Private.
-   2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the
+   2. On Chrome Open, right-click on the identified cookie and select “Show Requests with this Cookie” from the context menu to access information about the network request that initiated the cookie-setting in the default Chrome instance. Take note of the request details.
    3. On Chrome Private, the same cookie identified will not be present (blocked).
    4. Go to the Network tab and search for “[domain-ccc.com &#10548;](https://domain-ccc.com/)”, and click on the network request named “add-to-cart”
    5. Click on the Cookies tab, and nothing will be shown, as the cookie was blocked by Chrome Private. On Chrome Open, if configured via settings to block third-party cookies, you will observe the cookies that domain C attempted to set, highlighted indicating that the operation was rejected.
@@ -207,9 +207,9 @@ When a user accesses [domain A &#10548;](https://domain-aaa.com/single-sign-on) 
 
 Thanks to the third-party cookie set by [domain C &#10548;](https://domain-ccc.com/), both domain A and domain B can recognize and maintain the user's logged-in state seamlessly. The user does not have to log in again on domain B, as the SSO service on domain C confirms their status through the third-party cookie.
 
-However, when third-party cookies are blocked, the behavior changes. When the user first visits domain A and logs in, the domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
+However, when third-party cookies are blocked, the behavior changes. When the user first visits domain A and logs in, domain C cannot set a third-party cookie. Consequently, when the user transitions to domain B, the site won't recognize the user's logged-in status as the third-party cookie is absent. This absence disrupts the seamless cross-domain login experience previously facilitated by third-party cookies.
 
-The following sequence diagram depicts this behavior third-party cookies are enabled:
+The following sequence diagram depicts this behavior when third-party cookies are enabled:
 
 ```mermaid
 sequenceDiagram
@@ -234,7 +234,7 @@ sequenceDiagram
     DomainB->>User: Render profile page
 ```
 
-And this sequence diagram depicts the behavior with third-party cookies enabled:
+And this sequence diagram depicts the behavior with third-party cookies blocked:
 
 ```mermaid
 sequenceDiagram
@@ -243,7 +243,7 @@ sequenceDiagram
     participant DomainB
     participant DomainC
 
-Note over User,DomainC: Third-Party Cookies Blocked
+    Note over User,DomainC: Third-Party Cookies Blocked
 
     User->>DomainA: Visit domain-aaa.com
     DomainA->>User: Render sign-in page
@@ -334,7 +334,7 @@ sequenceDiagram
     participant DomainB
     participant YouTube
 
- Note over User,YouTube: Third-party cookiea blocked
+ Note over User,YouTube: Third-party cookies blocked
 
     User->>DomainA: Navigate to DomainA/embedded-video
     DomainA->>YouTube: Load YouTube video
