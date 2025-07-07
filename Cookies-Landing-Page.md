@@ -14,7 +14,7 @@ The cookie landing page features interactive sections for cookie classification 
 
 <img width="1200" src="images/cookie-analysis/cookie-landing-page/psat_v1.0.0_cookies_landing_page_mapped_sections_2025_06_30.png" alt="PSAT Cookie Landing Page mapped sections.">
 
-PSAT leverages and contributes to the [Open Cookie Database &#10548;](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT's provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
+PSAT leverages and contributes to the [Open Cookie Database &#10548;](https://github.com/jkwakman/Open-Cookie-Database), which is an open-source effort to describe and categorize cookies in the ecosystem. Using that DB, PSAT provides a classification for some of the observed cookies, into the categories: Functional, Marketing, Analytics, and Uncategorized.
 
 As PSAT evolves rapidly, the cookie landing page will incorporate more information and insights about cookie usage and behaviors.
 
@@ -24,7 +24,7 @@ The Cookie Insights page will now display a dedicated section for “Cookie Exem
 
 Some cookies are exempt from blocking for specific technical reasons or based on user actions, such as when a user explicitly allows third-party cookies. The PSAT leverages Chrome DevTools Protocol (CDP) to access this information and provide you with transparency.
 
-PSAT has introduced a dedicated “Cookie Exemptions” section on the Cookie Lading page, displaying information about exempt cookies.
+PSAT has introduced a dedicated “Cookie Exemptions” section on the Cookie Landing page, displaying information about exempt cookies.
 
 <img width="1200" src="images/cookie-analysis/cookie-landing-page/psat_v1.0.0_cookie_landing_exemptions_2025_06_30.png" alt="Cookie Exemptions" />
 
@@ -36,4 +36,4 @@ The data on the Cookies Insights page can be filtered. Enabling the filter at th
 
 <img width="1200" alt="PSAT Cookies Landing Page Filtering Data" src="images/cookie-analysis/cookie-landing-page/psat_v1.0.0_cookies_landing_page_with_filtering_2025_06_30.png">
 
-Once the filter is applied, the report will only display the cookies that fit on those selected filters.
+Once the filter is applied, the report will only display the cookies that fit those selected filters.
