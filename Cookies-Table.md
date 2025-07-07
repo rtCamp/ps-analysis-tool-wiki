@@ -2,7 +2,7 @@ PSAT Cookies table provides functionality similar to the cookies table in DevToo
 
 <img width="1200" alt="PSAT Cookies Table" src="images/cookie-analysis/cookies-table/psat_v1.0.0_cookie_table_2025_06_30.png">
 
-PSAT's cookies table is the starting point for analyzing and debugging cookie behavior in the search process for breakages.
+PSAT's cookie table is the starting point for analyzing and debugging cookie behavior in the search process for breakages.
 
 ## Frames
 
@@ -16,11 +16,11 @@ The main frame is the primary window of the webpage, displaying the main content
 
 ### Embedded Frames
 
-Embedded frames, These are nested frames within the main document that can load and display content independently of the main frame. They can be used to show ads, social media widgets, videos, or other content that is not part of the main page.
+These are nested frames within the main document that can load and display content independently of the main frame. They can be used to show ads, social media widgets, videos, or other content that is not part of the main page.
 
 ### Orphaned Cookies
 
-An Orphaned cookie means the cookies exist in your browser's storage, but the frames that originally set them are no longer present in the DOM.
+An orphaned cookie means the cookies exist in your browser's storage, but the frames that originally set them are no longer present in the DOM.
 
 This typically happens when:
 
@@ -43,7 +43,7 @@ The filtering capability is accessed via the little funnel icon in the top-left 
 
 <img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v1.0.0_cookie_table_filtering_2025_06_30.png">
 
-Clicking on the funnel icon, allows you to select from all the observed cookies,only those that meet certain criteria; e.g. Functional third-party cookies, which have the `SameSite` attribute set to `None`.
+Clicking on the funnel icon, allows you to select from all the observed cookies, only those that meet certain criteria; e.g. Functional third-party cookies, which have the `SameSite` attribute set to `None`.
 
 <img width="1200" alt="PSAT Cookie Filters" src="images/cookie-analysis/cookies-table/psat_v1.0.0_cookie_table_filtering_in_action_2025_06_30.png">
 
@@ -51,7 +51,7 @@ Clicking on the funnel icon, allows you to select from all the observed cookies,
 
 After exploring and analyzing the cookie information presented in the Cookie Table panel, developers can easily generate a CSV report containing all displayed data. This report will dynamically reflect any applied filters, ensuring the exported dataset aligns with the current view.
 
-To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file(www-your-domain-com-report.csv), providing a structured format for subsequent analysis, archiving, or integration with external tools.
+To initiate the export, simply click the download icon (downward-facing arrow) situated to the right of the search bar. This action triggers the immediate creation and download of a CSV file (www-your-domain-com-report.csv), providing a structured format for subsequent analysis, archiving, or integration with external tools.
 
 <img width="1200" alt="PSAT downloading cookies report" src="images/cookie-analysis/cookies-table/psat_v1.0.0_download_csv_report_2025_06_30.png">
 
@@ -63,7 +63,7 @@ PSAT identifies cookie blocking with distinct icons for each scenario of request
 
 <img width="1200" alt="PSAT Cookie Blocking Highlighting" src="images/cookie-analysis/cookies-table/psat_v1.0.0_blocked_cookies_2025_06_30.png">
 
-The following are the possible icons and their scenario.
+The following are the possible icons and their scenarios.
 | Icons | Scenario |
 | ------------- | ------------- |
 | <img src="images/cookie-analysis/icons/past_v0.5.1_blocked_in_all_responses_22_02_2024.svg" width="20" height="20"> | The cookie was blocked in all responses. |
@@ -106,7 +106,7 @@ To utilize this feature, developers should first locate the desired cookie withi
 
 <img width="1200" alt="PSAT Cookie Filtering Access" src="images/cookie-analysis/cookies-table/psat_v1.0.0_network_tab_with_filtered_cookies_2025_06_30.png">
 
-Upon activating this filter(by cookie name and domain), the Network tab becomes a real-time display of network traffic exclusively linked to the selected cookie, facilitating seamless analysis.
+Upon activating this filter (by cookie name and domain), the Network tab becomes a real-time display of network traffic exclusively linked to the selected cookie, facilitating seamless analysis.
 
 ## Allow cookies for specific domains during browsing sessions
 
@@ -114,7 +114,7 @@ For debugging purposes, Chrome provides developers with the ability to unblock c
 
 <img width="1200" alt="Allow Domain During Session" src="images/cookie-analysis/cookies-table/psat_v1.0.0_allow_blocked_domain_2025_06_30.png">
 
-The cookies from the Allowed domain will be highlighted in green to specify those cookies are allowed by the users.
+The cookies from the Allowed domain will be highlighted in green to specify those cookies are allowed by the user.
 
 <img width="1200" alt="Allowed Cookies" src="images/cookie-analysis/cookies-table/psat_v1.0.0_allow_blocked_domain_2025_06_30.png">
 
