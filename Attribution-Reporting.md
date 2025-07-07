@@ -14,7 +14,7 @@ Displays sources that are **currently active** and being tracked for attribution
 ##### Understanding Active Sources:
 - **Source Event ID:** A unique identifier for each source event.
 - **Status:** Indicates whether a source is "Attributable," "Attributed," or "Expired."
-- **Source Origin:** Source Origin: The website where the source event occurred.
+- **Source Origin:** The website where the source event occurred.
 - **Destination:** The website where conversions are expected.
 - **Reporting Origin:** Where attribution reports are sent.
 - **Registration Time:** When the source was registered.
@@ -48,19 +48,19 @@ Shows data related to triggers that have been registered. Triggers are events th
 <img width="1200" alt="PSAT Private Advertising - Trigger Registrations" src="images/private-advertising/attribution-reporting/psat_v1.0.0_trigger_registrations_2025_06_30.png">
 
 ### Understanding Trigger Registrations:
- - **Time:** When the conversion (trigger) happened.
- - **Destination:** The website where the conversion occurred.
- - **Reporting Origin:** Where conversion reports are sent.
- - **Debug Key:** A unique ID for debugging trigger registrations.
- - **Event-Level Result:**
-   - **_Success_**: Report stored
-   - **_Ignored_**: No matching source.
-   - **_Failure_**: Invalid data or duplicate key.
- - **Aggregatable Result:**
-   - **_Success_**: Report stored.
-   - **_Ignored_**: No matching source.
-   - **_Failure_**: Invalid data.
- - **Registration JSON:** The detailed data (in JSON format) sent during trigger registration.
+- **Time:** When the conversion (trigger) happened.
+- **Destination:** The website where the conversion occurred.
+- **Reporting Origin:** Where conversion reports are sent.
+- **Debug Key:** A unique ID for debugging trigger registrations.
+- **Event-Level Result:**
+  - **_Success_**: Report stored
+  - **_Ignored_**: No matching source.
+  - **_Failure_**: Invalid data or duplicate key.
+- **Aggregatable Result:**
+  - **_Success_**: Report stored.
+  - **_Ignored_**: No matching source.
+  - **_Failure_**: Invalid data.
+- **Registration JSON:** The detailed data (in JSON format) sent during trigger registration.
 
 ### References
 - **Proposal**: [Public explanation for the proposed solution (WICG) &#10548;](https://github.com/WICG/attribution-reporting-api)
