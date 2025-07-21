@@ -8,7 +8,7 @@ One of the main purposes of PSAT is to help developers analyze and understand th
 
 When users enable the CDP to troubleshoot their website, Chrome warns them that their session is being debugged. However, to avoid disrupting the user experience, activating CDP doesn't automatically reload other open tabs. Instead, PSAT offers a separate “Reload” button when CDP is turned on, allowing users to refresh tabs manually when needed.
 
-PSAT allows the Enabling and Disabling of its debugging capabilities directly from the tool itself so that the extension can be enabled. Still, the debugging components can be turned on only when needed.
+PSAT allows the enabling and disabling of its debugging capabilities directly from the tool itself so that the extension can be enabled, but the debugging components can be turned on only when needed.
 
 
 <img width="1200" alt="PSAT Enable CDP" src="images/settings/psat_v1.0.0_enabling_cdp_in_psat_2025_06_30.png">
@@ -29,7 +29,7 @@ The purpose of this tool is to help developers analyze and understand the usage 
 
 ### webNavigation
 
-The purpose of this tool is to help developers analyze and understand the usage of third-party cookies during browsing sessions which encompass a sequence of web navigations
+The purpose of this tool is to help developers analyze and understand the usage of third-party cookies during browsing sessions which encompass a sequence of web navigations.
 
 ### webRequest
 
@@ -45,7 +45,7 @@ This tool stores data temporarily as part of the processing necessary to shed li
 
 ### Debugger
 
-The purpose of this tool is to help developers analyze and debug cookie behaviors to transition to a more private web. To do this the tool needs to use the debugger to obtain information regarding cookie blocking reasons and cookie warnings.
+The purpose of this tool is to help developers analyze and debug cookie behaviors to transition to a more private web. To do this, the tool needs to use the debugger to obtain information regarding cookie blocking reasons and cookie warnings.
 
 ### Management Justification
 
