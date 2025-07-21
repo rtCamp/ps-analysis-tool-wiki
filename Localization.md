@@ -12,7 +12,7 @@ To view PSAT in your preferred language, you can change the display language set
 ### Mac
 To change the Chrome's display language on macOS, follow these steps:
 
-1. On your Mac, choose Apple menu  > System Settings, 
+1. On your Mac, choose Apple menu  > System Settings,
 2. Click General  in the sidebar
 3. Click Language & Region on the right. (You may need to scroll down.)
 4. Go to Applications
@@ -28,7 +28,7 @@ To change the Chrome's display language on Windows, follow these steps:
 3. Select the language you want to add.
 4. Once the language is added, click the three dots to the right of the language.
 5. Select "Display Google Chrome in this language" from options.
-6. Once done relaunch the browser.
+6. Once done, relaunch the browser.
 
 
 ### Linux (Steps may vary depending on your Linux distribution)
@@ -40,7 +40,7 @@ To change the Chrome's display language on Ubuntu, follow these steps:
 4. Click on "Install / Remove Languages".
 5. Select your desired language from the list.
 6. Open "Language and Region" again.
-7. Click on language section and select your desired language.
+7. Click on the language section and select your desired language.
 8. Restart your system.
 
 ## Get PSAT CLI Reports in Your Language
