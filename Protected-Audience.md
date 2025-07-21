@@ -20,19 +20,19 @@ The Protected Audience API works by creating “interest groups” based on user
 
 ## Interest Groups
 
-An interest group is a collection of users who share a common interest, similar to a remarketing list, each interest group has an owner, which is typically an advertiser, publisher, or ad tech platform.
+An interest group is a collection of users who share a common interest, similar to a remarketing list. Each interest group has an owner, which is typically an advertiser, publisher, or ad tech platform.
 
-Interest groups allow advertisers to target ads to users who have previously shown interest in their products or services, without relying on third-party cookies
+Interest groups allow advertisers to target ads to users who have previously shown interest in their products or services, without relying on third-party cookies.
 
-When a user visits a website, the website can ask the user's browser to add the user to an interest group. 
+When a user visits a website, the website can ask the user's browser to add the user to an interest group.
 
 The browser stores this information locally on the user's device. When the user visits a website that participates in the Protected Audience API, that stored information can be analyzed by the Interest group tab.
 
-It will list out interest groups as you perform actions on specific elements, for example, if you click on e-commerce site and clicked/searched for a shoe, it will trigger an action that will add an interest group in your browser
+It will list out interest groups as you perform actions on specific elements. For example, if you click on an e-commerce site and click/search for a shoe, it will trigger an action that will add an interest group in your browser.
 
 <img alt="PSAT Protected Audience - Interest Groups" src="images/private-advertising/protected-audience/psat_v1.0.0_interest_groups_2025_06_30.png" width="1200" />
 
-The tab shows that list of interest groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on the similar categories.
+The tab shows the list of interest groups along with useful information such as event time, access type, name, owner, and expiration time. You can also filter based on similar categories.
 
 ## Ad Units
 
@@ -75,11 +75,11 @@ The Auctions tab gives detailed information for each Ad Unit and for every event
 
 The detailed information includes event time, name, interest group origin, interest group name, bid amount, bid currency, and component seller.
 
-The auctions are listed for each cycle and the auction events are listed as the auction make progresses. 
+The auctions are listed for each cycle and the auction events are listed as the auction progresses.
 
 You can also filter the auction process for particular event, interest group owner, group name, bid (amount), bid currency and component seller.
 
-When you click and peculiar Ad Unit or auction event, you can view raw data in JSON format at footer panel. 
+When you click on a particular Ad Unit or auction event, you can view raw data in JSON format at the footer panel.
 
 ## Bids
 
@@ -99,9 +99,9 @@ In the Protected Audience API, bids are a crucial component of the ad auction pr
 
 <img alt="PSAT Protected Audience - Bids" src="images/private-advertising/protected-audience/paapi/psat_v1.0.0_bids_paapi_2025_05_30.png" width="1200" />
 
-The Bids section contains two subsections, Received Bids and No Bids
+The Bids section contains two subsections, Received Bids and No Bids.
 
-The first section of Received Bids show list of bidders along with information such as event time, bid value, currency, Ad Unit, Ad Container Size, Media Type. You can also filter using the bidder using the same information.
+The first section of Received Bids shows a list of bidders along with information such as event time, bid value, currency, Ad Unit, Ad Container Size, Media Type. You can also filter by bidder using this information.
 
 The second section, No Bids, shows a list of bidders who did not place a bid.
 
@@ -168,7 +168,7 @@ This tab offers centralized features that give you direct control over the aucti
 
 -   **Shortcut to GAM Console**: Provides a direct link to the associated Google Ad Manager (GAM) console.
 
- -  **Override Tool**: A powerful testing utility that allows you to manually change various attributes of any auction to simulate test scenarios.
+-   **Override Tool**: A powerful testing utility that allows you to manually change various attributes of any auction to simulate test scenarios.
 
 ### UserID
 
@@ -194,7 +194,7 @@ This is the version number of the Prebid.js library running on the page. You can
 
 The Worklet Breakpoints tab will enable you to set breakpoints directly within the Protected Audience API's worklet code, facilitating debugging and a deeper understanding of the auction process. Additionally, you will be able to use event listener breakpoints (located in the DevTools Sources tab under Event Listener) to pause execution within the event handler code after an ad auction event has occurred.
 
-You will be able to set breakpoints for following events:
+You will be able to set breakpoints for the following events:
 
 - Bidder Phase start
 - Bidder Reporting Phase Start
