@@ -13,7 +13,7 @@ Masked Domains are a specific list of domains (known as the Masked Domain List o
 
 To balance privacy with web usability, IP Protection doesn't proxy all internet traffic. Instead, it uses a list-based approach centered on Masked Domains. 
 
-You can check all the masked domains in PSAT extension by navigating to the "Masked Domains" under IP protection section, You can also search and filter the domains in the list.
+You can check all the masked domains in PSAT extension by navigating to the "Masked Domains" under IP protection section. You can also search and filter the domains in the list.
 
 <img src="images/ip-protection/psat_v1.0.0_ip_protection_masked_domains_2025_06_30.png" alt="Masked Domains in PSAT" width="1200" />
 
