@@ -1,10 +1,10 @@
-The Topics API is a privacy-preserving alternative to 3rd party cookies for interest-based advertising. It categorizes users into broad interest groups based on their recent browsing history. Websites can then access these topics to show relevant ads with a context without tracking individual users.
+The Topics API is a privacy-preserving alternative to third-party cookies for interest-based advertising. It categorizes users into broad interest groups based on their recent browsing history. Websites can then access these topics to show relevant ads in context without tracking individual users.
 
 ### Taxonomy v1 and Taxonomy v2
 
-Taxonomy v1, the first version of the taxonomy used by the Topics API, provides a high-level categorisation of user interests. It's best suited for applications that don't necessitate highly precise targeting and are compatible with older API implementations.
+Taxonomy v1, the first version of the taxonomy used by the Topics API, provides a high-level categorization of user interests. It's best suited for applications that don't necessitate highly precise targeting and are compatible with older API implementations.
 
-Taxonomy v2 provides more granular category classifications, enabling advertisers to target user interests with greater accuracy. While prioritising user privacy, it leverages newer Topics API implementations to support applications demanding highly targeted advertising.
+Taxonomy v2 provides more granular category classifications, enabling advertisers to target user interests with greater accuracy. While prioritizing user privacy, it leverages newer Topics API implementations to support applications demanding highly targeted advertising.
 
 #### Using Taxonomies Tree
 
