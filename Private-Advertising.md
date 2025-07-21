@@ -1,4 +1,4 @@
-The Privacy Sandbox offers advertising solutions without cross-site tracking. Explore and build upon Private advertising APIs such as Attribution Reporting, Protected Audience, Topics, Fenced Frames, and Shared Storage to enable your key advertising functions while prioritizing user privacy.
+The Privacy Sandbox offers advertising solutions without cross-site tracking. Explore and build upon private advertising APIs such as Attribution Reporting, Protected Audience, Topics, Fenced Frames, and Shared Storage to enable your key advertising functions while prioritizing user privacy.
 
 | Proposal                                                                                                              | Description                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
