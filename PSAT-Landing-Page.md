@@ -12,7 +12,7 @@ After the sidebar, the PSAT landing page provides centralized access to the PSAT
 
 <img width="1200" alt="PSAT Landing Page Info Links" src="images/psat-landing-page/psat_v1.0.0_landing_page_quick_links_2025_06_30.png">
 
-At the bottom of the individual landing page such as Site Boundaries, Private Advertising, Privacy Protection, it provides links to learn more about Privacy Sandbox, report bugs and breakages, join the discussion and support forums, and request additional time for migration. It also provides links to the latest Privacy Sandbox news extracted from the Privacy Sandbox site's RSS feed.
+At the bottom of individual landing pages such as Site Boundaries, Private Advertising, and Privacy Protection, it provides links to learn more about Privacy Sandbox, report bugs and breakages, join the discussion and support forums, and request additional time for migration. It also provides links to the latest Privacy Sandbox news extracted from the Privacy Sandbox site's RSS feed.
 
 ## Wiki
 
@@ -22,6 +22,6 @@ The Wiki, accessible directly within the PSAT Extension, covers everything you n
 
 ## Stories
 
-The PSAT Stories section offers interactive narratives showcasing PSAT's capabilities with engaging visualizations. Find concise overviews of the Privacy Sandbox APIs and their implementation. Explore the stories by filtering by category and tag, or by searching by title. Access the full story by clicking on the story.
+The PSAT Stories section offers interactive narratives showcasing PSAT's capabilities with engaging visualizations. You can find concise overviews of the Privacy Sandbox APIs and their implementation. Explore the stories by filtering by category and tag, or by searching by title. Access the full story by clicking on it.
 
 <img width="1200" alt="PSAT Stories" src="images/psat-landing-page/psat_v1.0.0_stories_2025_06_30.png">
