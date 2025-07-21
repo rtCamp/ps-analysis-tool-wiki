@@ -4,7 +4,7 @@ The PSAT CLI is an alternative way to run analysis on your website. You can use 
 
 The sidebar section can help you navigate through various reports. The main section will help you identify all the cookies that are being used by a site.
 
-Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons.".
+Within the CLI Dashboard, you'll find the following sections: "Categories" and "Blocked Reasons."
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ The CLI provides the following options as a source to create a report:
 
 - Analyze a specific URL: `npm run cli https://example.com` or `npm run cli -- -u https://example.com`.
 - Analyze CSV or XML sitemap from URL: `npm run cli -- -s https://example.com/sitemap_index.xml`.
-- Analyze CSV for XML sitemap from file path: `npm run cli -- -f /path/to/urlset.csv`.
+- Analyze CSV or XML sitemap from file path: `npm run cli -- -f /path/to/urlset.csv`.
 
 Ensure the local files follow the standards to run an audit. The sitemap file should be a valid XML file, and the CSV file should contain only one column with a valid URL.
 
@@ -111,7 +111,7 @@ The PSAT CLI is not just a command-line version of the PSAT Extension; it's a ve
 - **Pre-analysis Site Evaluation:** Offers guidance on scope and prioritization for site evaluation.
 - **Integration into CI Pipeline:** Seamlessly incorporate PSAT CLI in CI pipelines to detect issues related to the blocking of third-party cookies.
 - **Cookie Differential Analysis:** Compare site functionality with and without cookies to identify potential breakages.
-- List the reasons for blocked cookies guide developers in solving those issues.
+- List the reasons for blocked cookies to guide developers in solving those issues.
 - Help developers by allowing them to download detailed reports.
 
 ### CLI Options
@@ -178,7 +178,7 @@ The exported reports contain the following files:
 - **cookies.csv** : The file contains a list of all the cookies that are created by the site, either by first-party or third-party frames.
 - **report.csv** : The file contains an overall report of the cookies and their count based on various categories, domains, blocked cookies, etc. A CSV or sitemap analysis will result in both an aggregated cookie report and a site-specific report, organized in separate directories.
 - **report.json** : The file contains data for cookie data in a JSON format.
-- **report.html** : The file contains the resume of the report in HTML format, similar to the Cookies' insight page.
+- **report.html** : The file contains the summary of the report in HTML format, similar to the Cookies' insight page.
 
 ### GDPR
 The PSAT CLI can accept the GDPR banner if it is present on the site. By default, this feature is useful when analyzing websites that require user consent to access cookies. By accepting the GDPR banner, the CLI can analyze the site without any interruptions, providing a comprehensive report on the cookies used. If you want to disable this feature, you can use the `-i` flag.
@@ -216,7 +216,7 @@ The following are three key reasons for discrepancies:
 
 #### 1. Environment
 
-The CLI tool utilizes a browser with the third-party cookie phase-out enabled. While the extension relies on Chrome settings for third-party cookies. This difference in environment can lead to discrepancies in website behavior, contributing to discrepancies.
+The CLI tool utilizes a browser with the third-party cookie phase-out enabled. While the extension relies on Chrome settings for third-party cookies. This difference in environment can lead to discrepancies in website behavior.
 
 #### 2. Duration
 
