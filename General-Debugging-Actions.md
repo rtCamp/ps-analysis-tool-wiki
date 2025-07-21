@@ -8,7 +8,7 @@ Some functionality of a site can be tested without authentication and/or login r
 
 Tests/analysis must be performed on both desktop and mobile, if and only if the mobile version of the site is entirely different.
 
-## **Top–level navigation**
+## **Top-level navigation**
 
 Quite often, top-level navigation happens _invisibly_ to you when you only look at the URL bar, e.g. through server-side 301 redirects.
 
@@ -24,17 +24,17 @@ Lack of access to third-party cookies can cause errors to be thrown in DevTools.
 
 ## **Partitioned storage**
 
-A reported bug on “S-Bahn München status page” reported by https://www.s-bahn-muenchen.de/fahren/betriebslage &#10548;, where lack of partitioned storage throws an error on the `localStorage` getter. Through the JS exception chain, we can actually see the origin of the file that ran this code, and derive that this could be the 3rd party in this case.
+A reported bug on “S-Bahn München status page” reported by https://www.s-bahn-muenchen.de/fahren/betriebslage &#10548;, where lack of partitioned storage throws an error on the `localStorage` getter. Through the JS exception chain, we can actually see the origin of the file that ran this code, and derive that this could be the third-party in this case.
 
 ![](https://lh6.googleusercontent.com/znBDHSuyEGse0gP0SQHU4jJiVUy_3p7iGqSF7D0aL527ePlOQT5bQCgqdxb1_SouLxY5WMO2Od9oDymBpp3s4UU10QIc-VZVpRIXd7shsmkwPbf4ltVQsz90ZxiHhrNdCDmFmYhGWBUx7XaXHooV93aURc0PMt_NnRbtHAofkr5YeoUyhnKCRxFK4Cy0LAIAl5nTkdCQ9caJaTqfvhUeb5NdLHPvXgvoQE2hCw)
 
 ## **Cross-site requests in the network tab**
 
-Sometimes sites send third-party network requests without the right cookies, but those requests don’t fail. They could just return a 200 because the user not being logged in isn’t considered an error state for them. Here, it’s helpful to search the network DevTools panel for “3rd-party requests” only by checking the corresponding checkbox. There might be a lot of noise here, e.g., calls to ads servers, but also some useful information. This is especially useful if you have some repeatable way of triggering the breakage on the site, e.g., by clicking on a login button or similar. Unless the site is using JS-based cookie access through `document.cookie`, there should be an outgoing network request at that moment.
+Sometimes sites send third-party network requests without the right cookies, but those requests don’t fail. They could just return a 200 because the user not being logged in isn’t considered an error state for them. Here, it’s helpful to search the network DevTools panel for “third-party requests” only by checking the corresponding checkbox. There might be a lot of noise here, e.g., calls to ads servers, but also some useful information. This is especially useful if you have some repeatable way of triggering the breakage on the site, e.g., by clicking on a login button or similar. Unless the site is using JS-based cookie access through `document.cookie`, there should be an outgoing network request at that moment.
 
 ## **Authenticated embeds**
 
-Sometimes embedded iframes can appear to be part of the 1P experience on the website. To detect them, it can be helpful to use the DOM inspector in DevTools (starting with the UI that isn’t loading or is showing an error to the user) to figure out if it’s really an iframe. Then, the source of that iframe is likely the third party that is involved, and it’s often an “auth embeds” use case that can be solved with `requestStorageAccess`, or even CHIPS if there’s no top-level navigation.
+Sometimes embedded iframes can appear to be part of the first-party experience on the website. To detect them, it can be helpful to use the DOM inspector in DevTools (starting with the UI that isn’t loading or is showing an error to the user) to figure out if it’s really an iframe. Then, the source of that iframe is likely the third party that is involved, and it’s often an “auth embeds” use case that can be solved with `requestStorageAccess`, or even CHIPS if there’s no top-level navigation.
 
 An example of this is Mindbody Inc. which serves embedded iframes for website owners to allow their customers to book appointments. This iframe looks a lot like it’s part of the website, but reveals itself in the inspector.
 
