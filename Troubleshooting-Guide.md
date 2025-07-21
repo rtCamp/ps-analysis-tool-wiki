@@ -10,7 +10,7 @@ Users are essential partners in identifying these elusive bugs. As you use the P
 
 ### Idle Chrome Tabs and Service Worker Termination
 
-To ensure smooth performance and prevent excessive memory or CPU consumption, Chrome actively manages system resources. 
+To ensure smooth performance and prevent excessive memory or CPU consumption, Chrome actively manages system resources.
 
 This includes managing processes in tabs that are not being actively used. Chrome may terminate service workers after they have been idle for a certain period, regardless of tab activity, to reclaim resources.
 
@@ -55,7 +55,7 @@ When a data conflict arises, the PSAT extension might struggle to operate correc
 
 ### Chrome Updates
 
-Chrome updates can introduce changes that affect how extensions operate, including modifications to the browser's architecture, security protocols, or extension APIs. 
+Chrome updates can introduce changes that affect how extensions operate, including modifications to the browser's architecture, security protocols, or extension APIs.
 
 While these updates aim to improve performance and security, they can sometimes create compatibility issues with existing extensions.
 
@@ -110,7 +110,7 @@ This guide provides a systematic approach to troubleshooting common problems.
 Before diving into specific issues, start with these general checks that resolve many common Chrome extension problems:
 
 
-  - **Reload PSAT Extension:** While keeping devtools open, Goto `chrome://extensions`, enable "Developer Mode" and reload the PSAT extension.
+  - **Reload PSAT Extension:** While keeping devtools open, go to `chrome://extensions`, enable "Developer Mode" and reload the PSAT extension.
 
 <img src="images/troubleshooting-guide/psat_v1.0.0_troubleshooting_guide_reload_extension_30_06_2025.png" alt="Reload Extension" width="1200">
 
