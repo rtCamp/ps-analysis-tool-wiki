@@ -16,14 +16,13 @@ Preparing the environment for analyzing and debugging the behavior of cookies an
 
 ## Prerequisites
 
-- The PSAT extension only works with **Chrome version 113 or newer**. You can see what version of Chrome you're using by going to this address in your browser: `chrome://settings/help`.
-For the best experience, make sure you keep Chrome updated to the latest version.
+- The PSAT extension works with modern Chrome versions (Chrome 113+). You can check your Chrome version at `chrome://settings/help`. For the best experience, keep Chrome updated to the latest stable version.
 
 - To improve your PSAT debugging experience, please disable Chrome's preloading feature. Navigate to `chrome://settings/performance#speed` and uncheck "Preload Pages".
 
 ## Spinning Chrome Instances from Command Line
 
-PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of `Chrome for testing` with specific configurations. To install these commands, run the following in your terminal:
+PSAT's repository includes a set of custom commands streamlining the setup process, by creating ephemeral instances of `Google Chrome for Testing` with specific configurations (supports switching channels such as Stable, Dev, Canary). To install these commands, run the following in your terminal:
 
 ### Installation
 
@@ -39,11 +38,10 @@ chmod +x install.sh
 ```bash
 ./install.sh
 ```
-3. To finalize the installation, close and reopen your terminal, or run `source ~/.bashrc` or `source ~/.zshrc` depending on your shell.
+3. To finalize the installation, close and reopen your terminal, or run `source ~/.bashrc` or `source ~/.zshrc` depending on your shell. Alternatively, source the generated launcher script directly:
 
-e.g.:
 ```bash
-source "/Users/myuser/bin/chrome_launcher.sh"
+source "$HOME/bin/chrome_launcher.sh"
 ```
 4. To verify the installation, run the following command in your terminal:
 ```bash
@@ -82,12 +80,17 @@ Examples:
 
 Once the installation is completed you can use the following commands:
 
-- `chrome-default`: Opens a Chrome instance with default settings.
-- `chrome-3pcd`: Opens a Chrome instance with third-party cookies blocked.
-- `chrome-default-ps`: Opens a Chrome instance with third-party cookies enabled and PSAT installed.
-- `chrome-3pcd-ps`: Opens a Chrome instance with third-party cookies blocked and the Privacy Sandbox extension installed.
-- `chrome-pat` : Opens a Chrome instance with Private Advertising Testing enabled.
-- `chrome-pat-ps` : Opens a Chrome instance with Private Advertising Testing enabled and the Privacy Sandbox Analysis Tool extension installed.
+Note: All launcher commands start an isolated, temporary Chrome profile (user-data-dir) and automatically clean it up after the browser window is closed.
+
+- `chrome-default`: Opens a Google Chrome for Testing instance with default settings.
+- `chrome-3pcd`: Opens a Google Chrome for Testing instance with third-party cookies blocked.
+- `chrome-default-ps`: Opens a Google Chrome for Testing instance with third-party cookies enabled and PSAT installed.
+- `chrome-3pcd-ps`: Opens a Google Chrome for Testing instance with third-party cookies blocked and PSAT installed.
+- `chrome-pat` : Opens a Google Chrome for Testing instance with Private Advertising Testing enabled.
+- `chrome-pat-ps` : Opens a Google Chrome for Testing instance with Private Advertising Testing enabled and the Privacy Sandbox Analysis Tool (PSAT) extension installed.
+- `chrome-prt`: Opens your locally installed Desktop Google Chrome with IP Protection/PRT features enabled. Optional flags: `--stable`, `--dev`, or `--canary` to manually select the installed channel.
+
+Note about Chrome PRT: IP Protection features are not available on Google Chrome for Testing. For PRT testing, the launcher uses your locally installed Desktop Google Chrome (Stable, Dev, or Canary). Channel selection can be controlled manually via flags: `--stable`, `--dev`, or `--canary`.
 
 #### Updating the PSAT Launcher script
 
@@ -98,6 +101,7 @@ To keep the Chrome Launcher script current with the latest PSAT Extension, simpl
 ```bash
 curl -s -f -L "https://raw.githubusercontent.com/GoogleChromeLabs/ps-analysis-tool/main/bin/install.sh" -o "install.sh"
 chmod +x install.sh
+./install.sh
 ```
 3. To finalize the update, close and reopen your terminal.
 
